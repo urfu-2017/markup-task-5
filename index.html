@@ -3,7 +3,265 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
 </head>
 <body>
+    <main>
+        <section class="gallery">
+            <h1 class="gallery__name">Бабуленькин урожай</h1>
+
+            <input id="front-1" type="radio" name="go-to-page" checked>
+            <input id="front-2" type="radio" name="go-to-page">
+            <input id="front-3" type="radio" name="go-to-page">
+            <input id="back-1" type="radio" name="go-to-page">
+            <input id="back-2" type="radio" name="go-to-page">
+            <input id="back-3" type="radio" name="go-to-page">
+            <label for="front-1" class="arrow--right go-to-page-3" title="Вперёд"></label>
+            <label for="front-2" class="arrow--right go-to-page-1" title="Вперёд"></label>
+            <label for="front-3" class="arrow--right go-to-page-2" title="Вперёд"></label>
+            <label for="back-1" class="arrow--left go-to-page-2" title="Назад"></label>
+            <label for="back-2" class="arrow--left go-to-page-3" title="Назад"></label>
+            <label for="back-3" class="arrow--left go-to-page-1" title="Назад"></label>
+
+            <input id="big-photo-1" type="radio" name="big-photo">
+            <input id="big-photo-2" type="radio" name="big-photo">
+            <input id="big-photo-3" type="radio" name="big-photo">
+            <input id="big-photo-4" type="radio" name="big-photo">
+            <input id="big-photo-5" type="radio" name="big-photo">
+            <input id="big-photo-6" type="radio" name="big-photo">
+            <input id="big-photo-7" type="radio" name="big-photo">
+            <input id="big-photo-8" type="radio" name="big-photo">
+            <input id="big-photo-9" type="radio" name="big-photo">
+            <input id="big-photo-10" type="radio" name="big-photo">
+            <input id="big-photo-11" type="radio" name="big-photo">
+            <input id="big-photo-12" type="radio" name="big-photo">
+
+            <section class="gallery-items">
+                <article class="gallery-item page-1">
+                    <label class="item-photo" for="big-photo-1">
+                        <img class="item-photo__source" src="images/pineapple.svg" 
+                        alt="Ананас" title="Ананас">
+                    </label>
+                    <h2 class="gallery-item__name">Ананас</h2>
+                    <p class="gallery-item__description">
+                        Су&shy;ще&shy;ству&shy;ет весь&shy;ма про&shy;стой спо&shy;соб 
+                        раз&shy;де&shy;лать ана&shy;нас. Нуж&shy;но его вы&shy;мыть, сре&shy;зать 
+                        «поп&shy;ку» и ма&shy;куш&shy;ку. Раз&shy;ре&shy;зать вдоль 
+                        по&shy;по&shy;лам. Взять каж&shy;дую по&shy;ло&shy;ви&shy;ну и ещё раз 
+                        раз&shy;ре&shy;зать её вдоль. За&shy;тем каж&shy;дую 
+                        чет&shy;вер&shy;тин&shy;ку на&shy;ре&shy;зать 
+                        тре&shy;уголь&shy;нич&shy;ка&shy;ми, ко&shy;то&shy;рые очень удоб&shy;но 
+                        есть, взяв&shy;шись за ко&shy;роч&shy;ку.
+                    </p>
+                </article>
+
+                <article class="gallery-item page-1">
+                    <label class="item-photo" for="big-photo-2">
+                        <img class="item-photo__source" src="images/orange.svg" 
+                        alt="Апельсин" title="Апельсин">
+                    </label>
+                    <h2 class="gallery-item__name">Апельсин</h2>
+                    <p class="gallery-item__description">
+                        В Аф&shy;га&shy;ни&shy;ста&shy;не апель&shy;си&shy;ны обыч&shy;но 
+                        ис&shy;поль&shy;зу&shy;ют&shy;ся в ка&shy;че&shy;стве при&shy;пра&shy;вы 
+                        к тра&shy;пе&shy;зе. Их раз&shy;ре&shy;за&shy;ют по&shy;по&shy;лам 
+                        и вы&shy;жи&shy;ма&shy;ют сок пря&shy;мо в жа&shy;ре&shy;ные блю&shy;да 
+                        — счи&shy;та&shy;ет&shy;ся, что это по&shy;мо&shy;га&shy;ет быст&shy;рее 
+                        пе&shy;ре&shy;ва&shy;рить жир&shy;ную пи&shy;щу. А на Ямай&shy;ке 
+                        с по&shy;мо&shy;щью апель&shy;си&shy;нов… мо&shy;ют по&shy;лы. 
+                        Прин&shy;цип тот же, что и в Аф&shy;га&shy;ни&shy;ста&shy;не — сок 
+                        апель&shy;си&shy;на хо&shy;ро&shy;шо очи&shy;ща&shy;ет от жи&shy;ра 
+                        и мас&shy;ла.
+                    </p>
+                </article>
+
+                <article class="gallery-item page-1">
+                    <label class="item-photo" for="big-photo-3">
+                        <img class="item-photo__source" src="images/watermelon.svg" 
+                        alt="Арбуз" title="Арбуз">
+                    </label>
+                    <h2 class="gallery-item__name">Арбуз</h2>
+                    <p class="gallery-item__description">
+                        Воз&shy;мож&shy;но, вы ча&shy;сто слы&shy;ша&shy;ли о том, что ар&shy;буз 
+                        яв&shy;ля&shy;ет&shy;ся яго&shy;дой. На са&shy;мом де&shy;ле, ар&shy;буз 
+                        от&shy;но&shy;сит&shy;ся к бо&shy;та&shy;ни&shy;че&shy;ско&shy;му 
+                        се&shy;мей&shy;ству тык&shy;вен&shy;ных, ко&shy;то&shy;рое 
+                        вклю&shy;ча&shy;ет и дру&shy;гие ово&shy;щи та&shy;кие как огу&shy;рец, 
+                        тык&shy;ва и ды&shy;ня.
+                    </p>
+                </article>
+
+                <article class="gallery-item page-1">
+                    <label class="item-photo" for="big-photo-4">
+                        <img class="item-photo__source" src="images/banana.svg" 
+                        alt="Банан" title="Банан">
+                    </label>
+                    <h2 class="gallery-item__name">Банан</h2>
+                    <p class="gallery-item__description">
+                        Ба&shy;на&shy;ны по&shy;чти в пол&shy;то&shy;ра ра&shy;за 
+                        пи&shy;та&shy;тель&shy;ней кар&shy;тош&shy;ки, а в су&shy;ше&shy;ных 
+                        ба&shy;на&shy;нах в пять раз боль&shy;ше ка&shy;ло&shy;рий чем 
+                        в сы&shy;рых. В од&shy;ном ба&shy;на&shy;не со&shy;дер&shy;жит&shy;ся 
+                        до 300 мг ка&shy;лия, ко&shy;то&shy;рый по&shy;мо&shy;га&shy;ет 
+                        бо&shy;роть&shy;ся с по&shy;вы&shy;шен&shy;ным дав&shy;ле&shy;ни&shy;ем 
+                        и укреп&shy;ля&shy;ет сер&shy;деч&shy;ную мыш&shy;цу.
+                    </p>
+                </article>
+
+                <article class="gallery-item page-2">
+                    <label class="item-photo" for="big-photo-5">
+                        <img class="item-photo__source" src="images/broccoli.svg" 
+                        alt="Брокколи" title="Брокколи">
+                    </label>
+                    <h2 class="gallery-item__name">Брокколи</h2>
+                    <p class="gallery-item__description">
+                        Брок&shy;ко&shy;ли воз&shy;де&shy;лы&shy;ва&shy;ли еще две 
+                        ты&shy;ся&shy;чи лет на&shy;зад в Древ&shy;нем Ри&shy;ме, от&shy;ку&shy;да 
+                        она в даль&shy;ней&shy;шем по&shy;па&shy;ла в Ви&shy;зан&shy;тию 
+                        и рас&shy;про&shy;стра&shy;ни&shy;лась по все&shy;му ми&shy;ру.
+                    </p>
+                </article>
+
+                <article class="gallery-item page-2">
+                    <label class="item-photo" for="big-photo-6">
+                        <img class="item-photo__source" src="images/grapes.svg" 
+                        alt="Виноград" title="Виноград">
+                    </label>
+                    <h2 class="gallery-item__name">Виноград</h2>
+                    <p class="gallery-item__description">
+                        Ви&shy;но&shy;град со&shy;дер&shy;жит не&shy;ко&shy;то&shy;рые 
+                        ком&shy;по&shy;нен&shy;ты, ко&shy;то&shy;рые ис&shy;поль&shy;зу&shy;ют 
+                        при из&shy;го&shy;тов&shy;ле&shy;нии кос&shy;ме&shy;ти&shy;ки. Эти 
+                        ком&shy;по&shy;нен&shy;ты вхо&shy;дят в со&shy;став 
+                        кос&shy;ме&shy;ти&shy;ки, ко&shy;то&shy;рую ис&shy;поль&shy;зу&shy;ют 
+                        в борь&shy;бе про&shy;тив ста&shy;ре&shy;ния, так же для 
+                        из&shy;го&shy;тов&shy;ле&shy;ния средств, за&shy;щи&shy;ща&shy;ю&shy;щих 
+                        от солн&shy;ца.
+                    </p>
+                </article>
+
+                <article class="gallery-item page-2">
+                    <label class="item-photo" for="big-photo-7">
+                        <img class="item-photo__source" src="images/lemon.svg" 
+                        alt="Лимон" title="Лимон">
+                    </label>
+                    <h2 class="gallery-item__name">Лимон</h2>
+                    <p class="gallery-item__description">
+                        Спе&shy;лые ли&shy;мо&shy;ны име&shy;ют кис&shy;лый, но очень 
+                        при&shy;ят&shy;ный вкус. В на&shy;ши ме&shy;ста их за&shy;во&shy;зят 
+                        ча&shy;сто не&shy;спе&shy;лы&shy;ми, что про&shy;яв&shy;ля&shy;ет&shy;ся 
+                        спе&shy;ци&shy;фи&shy;че&shy;ской гор&shy;чин&shy;кой. 
+                        К со&shy;жа&shy;ле&shy;нию, та&shy;кие ли&shy;мо&shy;ны 
+                        не на&shy;столь&shy;ко по&shy;лез&shy;ны, как спе&shy;лые.
+                    </p>
+                </article>
+
+                <article class="gallery-item page-2">
+                    <label class="item-photo" for="big-photo-8">
+                        <img class="item-photo__source" src="images/carrot.svg" 
+                        alt="Морковь" title="Морковь">
+                    </label>
+                    <h2 class="gallery-item__name">Морковь</h2>
+                    <p class="gallery-item__description">
+                        В Гер&shy;ма&shy;нии из под&shy;жа&shy;рен&shy;ной мор&shy;ко&shy;ви 
+                        из&shy;го&shy;тав&shy;ли&shy;ва&shy;ли «сол&shy;дат&shy;ский» ко&shy;фе, 
+                        ре&shy;цепт ко&shy;то&shy;ро&shy;го до сих пор со&shy;хра&shy;нил&shy;ся 
+                        в не&shy;ко&shy;то&shy;рых де&shy;рев&shy;нях. Это ко&shy;фе име&shy;ет 
+                        пре&shy;крас&shy;ный аро&shy;мат, вкус и да&shy;же бод&shy;рит.
+                    </p>
+                </article>
+
+                <article class="gallery-item page-3">
+                    <label class="item-photo" for="big-photo-9">
+                        <img class="item-photo__source" src="images/turnip.svg" 
+                        alt="Репа" title="Репа">
+                    </label>
+                    <h2 class="gallery-item__name">Репа</h2>
+                    <p class="gallery-item__description">
+                        В древ&shy;но&shy;сти при по&shy;се&shy;ве ре&shy;пы се&shy;ме&shy;на 
+                        не раз&shy;бра&shy;сы&shy;ва&shy;ли ру&shy;ка&shy;ми, 
+                        а вы&shy;плё&shy;вы&shy;ва&shy;ли. Так де&shy;ла&shy;ли по&shy;то&shy;му, 
+                        что у ре&shy;пы очень мел&shy;кие се&shy;ме&shy;на: в од&shy;ном 
+                        ки&shy;ло&shy;грам&shy;ме их боль&shy;ше мил&shy;ли&shy;о&shy;на. 
+                        Хо&shy;ро&shy;шие пле&shy;валь&shy;щи&shy;ки очень 
+                        по&shy;чи&shy;та&shy;лись од&shy;но&shy;сель&shy;ча&shy;нам, так как эта 
+                        ра&shy;бо&shy;та бы&shy;ла не из про&shy;стых.
+                    </p>
+                </article>
+
+                <article class="gallery-item page-3">
+                    <label class="item-photo" for="big-photo-10">
+                        <img class="item-photo__source" src="images/lettuce.svg" 
+                        alt="Салат" title="Салат">
+                    </label>
+                    <h2 class="gallery-item__name">Салат</h2>
+                    <p class="gallery-item__description">
+                        Ли&shy;стья са&shy;ла&shy;та успо&shy;ка&shy;и&shy;ва&shy;ют нерв&shy;ную 
+                        си&shy;сте&shy;му. Лак&shy;ту&shy;цин, ко&shy;то&shy;рый 
+                        со&shy;дер&shy;жит&shy;ся в са&shy;ла&shy;те, 
+                        успо&shy;ка&shy;и&shy;ва&shy;ю&shy;ще дей&shy;ству&shy;ет на нерв&shy;ную 
+                        си&shy;сте&shy;му и улуч&shy;ша&shy;ет сон.
+                    </p>
+                </article>
+
+                <article class="gallery-item page-3">
+                    <label class="item-photo" for="big-photo-11">
+                        <img class="item-photo__source" src="images/pumpkin.svg" 
+                        alt="Тыква" title="Тыква">
+                    </label>
+                    <h2 class="gallery-item__name">Тыква</h2>
+                    <p class="gallery-item__description">
+                        Ро&shy;ди&shy;ной тык&shy;вы счи&shy;та&shy;ет&shy;ся Мек&shy;си&shy;ка. 
+                        На её тер&shy;ри&shy;то&shy;рии учё&shy;ные на&shy;шли са&shy;мые 
+                        древ&shy;ние се&shy;ме&shy;на тык&shy;вы воз&shy;рас&shy;том око&shy;ло 
+                        7000 лет. По&shy;сле от&shy;кры&shy;тия Аме&shy;ри&shy;ки она 
+                        по&shy;сте&shy;пен&shy;но по&shy;лу&shy;чи&shy;ла ши&shy;ро&shy;кое 
+                        рас&shy;про&shy;стра&shy;не&shy;ние на дру&shy;гих 
+                        кон&shy;ти&shy;нен&shy;тах.
+                    </p>
+                </article>
+
+                <article class="gallery-item page-3">
+                    <label class="item-photo" for="big-photo-12">
+                        <img class="item-photo__source" src="images/apple.svg" 
+                        alt="Яблоко" title="Яблоко">
+                    </label>
+                    <h2 class="gallery-item__name">Яблоко</h2>
+                    <p class="gallery-item__description">
+                        У яб&shy;лок есть за&shy;ме&shy;ча&shy;тель&shy;ное свой&shy;ство 
+                        очи&shy;щать и слег&shy;ка от&shy;бе&shy;ли&shy;вать зу&shy;бы. 
+                        Ко&shy;неч&shy;но же, ре&shy;зуль&shy;тат не бу&shy;дет схо&shy;жим 
+                        с ви&shy;зи&shy;том к сто&shy;ма&shy;то&shy;ло&shy;гу или 
+                        ис&shy;поль&shy;зо&shy;ва&shy;нию зуб&shy;ной пас&shy;ты, но 
+                        в бли&shy;жай&shy;шие не&shy;сколь&shy;ко ча&shy;сов по&shy;сле 
+                        то&shy;го, как вы по&shy;гры&shy;зе&shy;те яб&shy;лоч&shy;ко, 
+                        и до сле&shy;ду&shy;ю&shy;ще&shy;го при&shy;е&shy;ма пи&shy;щи 
+                        ва&shy;ши зу&shy;бы бу&shy;дут про&shy;сто си&shy;ять 
+                        от чи&shy;сто&shy;ты.
+                    </p>
+                </article>
+            </section>
+
+            <input id="close-photo" type="radio" name="big-photo" checked>
+
+            <section class="big-photos">
+                <label for="close-photo" class="big-photos__close"></label>
+                <img class="big-photo-1" src="images/pineapple.svg" alt="Ананас" title="Ананас">
+                <img class="big-photo-2" src="images/orange.svg" alt="Апельсин" title="Апельсин">
+                <img class="big-photo-3" src="images/watermelon.svg" alt="Арбуз" title="Арбуз">
+                <img class="big-photo-4" src="images/banana.svg" alt="Банан" title="Банан">
+                <img class="big-photo-5" src="images/broccoli.svg" alt="Брокколи" title="Брокколи">
+                <img class="big-photo-6" src="images/grapes.svg" alt="Виноград" title="Виноград">
+                <img class="big-photo-7" src="images/lemon.svg" alt="Лимон" title="Лимон">
+                <img class="big-photo-8" src="images/carrot.svg" alt="Морковь" title="Морковь">
+                <img class="big-photo-9" src="images/turnip.svg" alt="Репа" title="Репа">
+                <img class="big-photo-10" src="images/lettuce.svg" alt="Салат" title="Салат">
+                <img class="big-photo-11" src="images/pumpkin.svg" alt="Тыква" title="Тыква">
+                <img class="big-photo-12" src="images/apple.svg" alt="Яблоко" title="Яблоко">
+            </section>
+        </section>
+    </main>
 </body>
 </html>

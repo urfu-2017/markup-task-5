@@ -1,0 +1,186 @@
+html
+{
+    margin: 0;
+    background-color: #fff;
+    font: 14px 'PT Sans', sans-serif;
+    color: #420;
+    cursor: default;
+}
+
+body
+{
+    margin: 0;
+}
+
+.gallery__name
+{
+    margin: 0 0 1rem;
+    padding: 2rem;
+    background-color: #fed;
+    text-align: center;
+    font: 2.5rem 'Marmelad', sans-serif;
+}
+
+.gallery-items
+{
+    width: calc(100% - 12rem);
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.gallery-item
+{
+    display: none;
+    width: 20%;
+    margin: 0 auto;
+    padding: 1%;
+    overflow: hidden;
+    font-size: 0;
+    vertical-align: top;
+}
+
+.gallery-item:hover
+{
+    box-shadow: 0 0 5px rgba(64,32,0, .5);
+}
+
+.gallery-item:hover > .gallery-item__name,
+.gallery-item:hover > .gallery-item__description
+{
+    display: block;
+}
+
+.item-photo__source
+{
+    width: 75%;
+    cursor: pointer;
+}
+
+.gallery-item__name
+{
+    margin: 1rem 0;
+    display: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #040;
+}
+
+.gallery-item__description
+{
+    display: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.arrow--left,
+.arrow--right
+{
+    width: 2rem;
+    height: 2rem;
+    margin: 7.5% 2rem 0;
+    background: 0 0 no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.arrow--left
+{
+    float: left;
+    background-image: url(images/arrowLeft.svg);
+}
+
+.arrow--right
+{
+    float: right;
+    background-image: url(images/arrowRight.svg);
+}
+
+input[name='go-to-page'],
+input[id^='back-']:checked ~ label[for^='back-'],
+input[id^='back-']:checked ~ label[for^='front-'],
+input[id^='front-']:checked ~ label[for^='back-'],
+input[id^='front-']:checked ~ label[for^='front-'],
+input[id^='back-']:checked ~ .gallery-items [class^='page-'],
+input[id^='front-']:checked ~ .gallery-items [class^='page-']
+{
+    display: none;
+}
+
+input[id='back-1']:checked ~ label[for='back-3'],
+input[id='back-1']:checked ~ label[for='front-2'],
+input[id='back-2']:checked ~ label[for='back-1'],
+input[id='back-2']:checked ~ label[for='front-3'],
+input[id='back-3']:checked ~ label[for='back-2'],
+input[id='back-3']:checked ~ label[for='front-1'],
+input[id='front-1']:checked ~ label[for='back-3'],
+input[id='front-1']:checked ~ label[for='front-2'],
+input[id='front-2']:checked ~ label[for='back-1'],
+input[id='front-2']:checked ~ label[for='front-3'],
+input[id='front-3']:checked ~ label[for='back-2'],
+input[id='front-3']:checked ~ label[for='front-1'],
+input[id='back-1']:checked ~ .gallery-items .page-1,
+input[id='back-2']:checked ~ .gallery-items .page-2,
+input[id='back-3']:checked ~ .gallery-items .page-3,
+input[id='front-1']:checked ~ .gallery-items .page-1,
+input[id='front-2']:checked ~ .gallery-items .page-2,
+input[id='front-3']:checked ~ .gallery-items .page-3
+{
+    display: inline-block;
+}
+
+.big-photos
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .75);
+}
+
+.big-photos__close
+{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background: url(images/close.svg) 0 0 no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+[class^='big-photo-']
+{
+    display: none;
+    width: 90%;
+    height: calc(100% - 4rem);
+    margin: 2rem auto;
+}
+
+input[name='big-photo'],
+input[id='close-photo']:checked ~ .big-photos
+{
+    display: none;
+}
+
+input[id^='big-photo-']:checked ~ .big-photos,
+input[id='big-photo-1']:checked ~ .big-photos .big-photo-1,
+input[id='big-photo-2']:checked ~ .big-photos .big-photo-2,
+input[id='big-photo-3']:checked ~ .big-photos .big-photo-3,
+input[id='big-photo-4']:checked ~ .big-photos .big-photo-4,
+input[id='big-photo-5']:checked ~ .big-photos .big-photo-5,
+input[id='big-photo-6']:checked ~ .big-photos .big-photo-6,
+input[id='big-photo-7']:checked ~ .big-photos .big-photo-7,
+input[id='big-photo-8']:checked ~ .big-photos .big-photo-8,
+input[id='big-photo-9']:checked ~ .big-photos .big-photo-9,
+input[id='big-photo-10']:checked ~ .big-photos .big-photo-10,
+input[id='big-photo-11']:checked ~ .big-photos .big-photo-11,
+input[id='big-photo-12']:checked ~ .big-photos .big-photo-12
+{
+    display: block;
+}
