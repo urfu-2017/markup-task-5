@@ -1,7 +1,7 @@
 html
 {
     margin: 0;
-    background-color: #fff;
+    background-color: #dcb;
     font: 14px 'PT Sans', sans-serif;
     color: #420;
     cursor: default;
@@ -12,29 +12,32 @@ body
     margin: 0;
 }
 
-.gallery__name
+.gallery__header
 {
-    margin: 0 0 1rem;
-    padding: 2rem;
-    background-color: #fed;
+    margin: 0;
+    padding: 1rem;
+    background-color: #420;
     text-align: center;
+    text-transform: uppercase;
     font: 2.5rem 'Marmelad', sans-serif;
+    color: #fff9f5;
 }
 
 .gallery-items
 {
-    width: calc(100% - 12rem);
-    margin: 0 auto;
-    padding: 1rem 0;
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
 .gallery-item
 {
     display: none;
+    box-sizing: padding-box;
     width: 20%;
-    margin: 0 auto;
-    padding: 1%;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     font-size: 0;
     vertical-align: top;
@@ -42,34 +45,48 @@ body
 
 .gallery-item:hover
 {
-    box-shadow: 0 0 5px rgba(64,32,0, .5);
+    background-color: #fff9f5;
+    box-shadow: 4px 4px 0 #864;
 }
 
-.gallery-item:hover > .gallery-item__name,
-.gallery-item:hover > .gallery-item__description
+.gallery-item:hover > .item-info
 {
     display: block;
 }
 
+.gallery-item:hover > .item-photo .item-photo__source
+{
+    background-color: #fff9f5;
+    border: none;
+}
+
 .item-photo__source
 {
-    width: 75%;
+    width: 70%;
+    box-sizing: border-box;
+    margin: 5% 5% 0;
+    border: 3px double #864;
+    background-color: #fff9f5;
     cursor: pointer;
 }
 
-.gallery-item__name
+.item-info
 {
-    margin: 1rem 0;
     display: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #040;
 }
 
-.gallery-item__description
+.item-info__name
 {
-    display: none;
-    margin: 0;
+    padding: 0;
+    margin: 5% 0;
+    font: 1.5rem 'Marmelad', sans-serif;
+    color: #420;
+}
+
+.item-info__description
+{
+    box-sizing: padding-box;
+    margin: 5%;
     padding: 0;
     text-align: left;
     font-size: 1rem;
@@ -80,7 +97,7 @@ body
 {
     width: 2rem;
     height: 2rem;
-    margin: 7.5% 2rem 0;
+    margin: 9% 2% 0;
     background: 0 0 no-repeat;
     background-size: cover;
     cursor: pointer;
@@ -103,8 +120,8 @@ input[id^='back-']:checked ~ label[for^='back-'],
 input[id^='back-']:checked ~ label[for^='front-'],
 input[id^='front-']:checked ~ label[for^='back-'],
 input[id^='front-']:checked ~ label[for^='front-'],
-input[id^='back-']:checked ~ .gallery-items [class^='page-'],
-input[id^='front-']:checked ~ .gallery-items [class^='page-']
+input[id^='back-']:checked ~ .gallery-items .gallery-item,
+input[id^='front-']:checked ~ .gallery-items .gallery-item
 {
     display: none;
 }
@@ -149,17 +166,22 @@ input[id='front-3']:checked ~ .gallery-items .page-3
     right: 1rem;
     width: 2rem;
     height: 2rem;
-    background: url(images/close.svg) 0 0 no-repeat;
-    background-size: cover;
     cursor: pointer;
+}
+
+.big-photos__close:before
+{
+    content: '\1f7aa';
+    font-size: 2rem;
+    color: #fff9f5;
 }
 
 [class^='big-photo-']
 {
     display: none;
-    width: 90%;
     height: calc(100% - 4rem);
     margin: 2rem auto;
+    background-color: #fff9f5;
 }
 
 input[name='big-photo'],
