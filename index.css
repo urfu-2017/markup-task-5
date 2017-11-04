@@ -93,7 +93,8 @@ figure:hover
 label[for^='part']
 {
     font-size: 50px;
-    margin: 5.5vw 0;
+    height: 50px;
+    margin: calc(6.5vw - 25px) 0;
     display: none;
 }
 
