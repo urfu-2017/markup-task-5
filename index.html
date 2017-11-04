@@ -3,7 +3,280 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+<section>
+    <input type="radio" id="page1" class="page-select" name="page" checked>
+    <div class="label-group">
+        <label for="page2" class="move-right"></label>
+    </div>
+
+    <input type="radio" id="page2" class="page-select" name="page">
+    <div class="label-group">
+        <label for="page1" class="move-left"></label>
+        <label for="page3" class="move-right"></label>
+    </div>
+
+    <input type="radio" id="page3" class="page-select" name="page">
+    <div class="label-group">
+        <label for="page2" class="move-left"></label>
+    </div>
+
+    <div class="tape">
+        <article class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <label for="full1">
+                        <img src="images/carrot.jpg" alt="морковь">
+                    </label>
+                </div>
+                <div class="card-text">
+                    Морковь посевная (лат. Daucus carota subsp. sativus) — двулетнее растение, подвид вида
+                    морковь дикая. Обычно в быту под словом «морковь» подразумевается широко распространенный
+                    корнеплод именно этого растения.
+                </div>
+            </div>
+        </article>
+        <input type="checkbox" id="full1" class="full-switch">
+        <div class="full-image">
+            <label for="full1" class="cross"></label>
+            <img src="images/carrot.jpg" alt="морковь">
+        </div>
+
+        <article class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <label for="full2">
+                        <img src="images/cucumber.jpg" alt="огурец">
+                    </label>
+                </div>
+                <div class="card-text">
+                    Огуре́ц обыкнове́нный, или Огурец посевно́й (лат. Cucumis sativus) — однолетнее
+                    травянистое растение, вид рода Огурец (Cucumis) семейства Тыквенные (Cucurbitaceae),
+                    овощная культура.
+                </div>
+            </div>
+        </article>
+        <input type="checkbox" id="full2" class="full-switch">
+        <div class="full-image">
+            <label for="full2" class="cross"></label>
+            <img src="images/cucumber.jpg" alt="огурец">
+        </div>
+
+        <article class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <label for="full3">
+                        <img src="images/cabbage.jpg" alt="капуста">
+                    </label>
+                </div>
+                <div class="card-text">
+                    Капу́ста огоро́дная (лат. Brássica olerácea) — двулетнее растение,
+                    сельскохозяйственная культура; вид рода Капуста (лат. Brassica) семейства Капустные
+                    (Крестоцветные).
+                </div>
+            </div>
+        </article>
+        <input type="checkbox" id="full3" class="full-switch">
+        <div class="full-image">
+            <label for="full3" class="cross"></label>
+            <img src="images/cabbage.jpg" alt="капуста">
+        </div>
+
+        <article class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <label for="full4">
+                        <img src="images/onion.jpg" alt="лук">
+                    </label>
+                </div>
+                <div class="card-text">
+                    Лук ре́пчатый (лат. Állium cépa) — многолетнее травянистое растение, вид рода Лук (Allium)
+                    семейства Луковые (Alliaceae), широко распространённая овощная культура.
+                </div>
+            </div>
+        </article>
+        <input type="checkbox" id="full4" class="full-switch">
+        <div class="full-image">
+            <label for="full4" class="cross"></label>
+            <img src="images/onion.jpg" alt="лук">
+        </div>
+
+        <article class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <label for="full5">
+                        <img src="images/beet.jpg" alt="свёкла">
+                    </label>
+                </div>
+                <div class="card-text">
+                    <p>
+                        Свёкла обыкнове́нная (не свекла́; лат. Béta vulgáris) — однолетнее, двулетнее или
+                        многолетнее травянистое растение; вид рода Свёкла семейства Амарантовые (ранее род
+                        относился к семейству Маревые). Культивируется на больших площадях повсеместно.
+                    </p>
+                    <p>
+                        В юго-западных областях России, в Белоруссии и на Украине растение называют бура́к,
+                        или
+                        буря́к.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <input type="checkbox" id="full5" class="full-switch">
+        <div class="full-image">
+            <label for="full5" class="cross"></label>
+            <img src="images/beet.jpg" alt="свёкла">
+        </div>
+
+        <article class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <label for="full6">
+                        <img src="images/tomato.jpg" alt="томат">
+                    </label>
+                </div>
+                <div class="card-text">
+                    Тома́т, или помидор (лат. Solánum lycopérsicum) — однолетнее или многолетнее травянистое
+                    растение, вид рода Паслён (Solanum)[2] семейства Паслёновые (Solanaceae). Возделывается
+                    как овощная культура.
+                </div>
+            </div>
+        </article>
+        <input type="checkbox" id="full6" class="full-switch">
+        <div class="full-image">
+            <label for="full6" class="cross"></label>
+            <img src="images/tomato.jpg" alt="томат">
+        </div>
+
+        <article class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <label for="full7">
+                        <img src="images/cauliflower.jpg" alt="цветная капуста">
+                    </label>
+                </div>
+                <div class="card-text">
+                    Цветна́я капу́ста (Brassica oleracea L. var. botrytis L.) — распространённая овощная
+                    культура, один из культурных сортов вида Капуста огородная. Относится к сортовой группе
+                    botrytis, как и романеско.
+                </div>
+            </div>
+        </article>
+        <input type="checkbox" id="full7" class="full-switch">
+        <div class="full-image">
+            <label for="full7" class="cross"></label>
+            <img src="images/cauliflower.jpg" alt="цветная капуста">
+        </div>
+
+        <article class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <label for="full8">
+                        <img src="images/pumpkins.jpg" alt="тыква">
+                    </label>
+                </div>
+                <div class="card-text">
+                    <p>Ты́ква (лат. Cucurbita) — род травянистых растений семейства Тыквенные
+                        (Cucurbitaceae).</p>
+
+                    <p>Под словом «тыква» в России обычно понимается вид Тыква обыкновенная (Cucurbita pepo),
+                        широко распространённый и культивируемый как пищевое и кормовое растение.</p>
+                </div>
+            </div>
+        </article>
+        <input type="checkbox" id="full8" class="full-switch">
+        <div class="full-image">
+            <label for="full8" class="cross"></label>
+            <img src="images/pumpkins.jpg" alt="тыква">
+        </div>
+        <article class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <label for="full9">
+                        <img src="images/corn.jpg" alt="кукуруза">
+                    </label>
+                </div>
+                <div class="card-text">
+                    Кукуру́за са́харная, также маи́с (лат. Zéa máys) — однолетнее травянистое культурное
+                    растение, единственный культурный представитель рода Кукуруза (Zea) семейства Злаки
+                    (Poaceae). Помимо культурной кукурузы, род Кукуруза включает четыре вида — Zea
+                    diploperennis, Zea perennis, Zea luxurians, Zea nicaraguensis — и три дикорастущих подвида
+                    Zea mays: ssp. parviglumis, ssp. mexicana и ssp. huehuetenangensis.
+                </div>
+            </div>
+        </article>
+        <input type="checkbox" id="full9" class="full-switch">
+        <div class="full-image">
+            <label for="full9" class="cross"></label>
+            <img src="images/corn.jpg" alt="кукуруза">
+        </div>
+
+        <article class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <label for="full10">
+                        <img src="images/dill.jpg" alt="укроп">
+                    </label>
+                </div>
+                <div class="card-text">
+                    Укро́п (лат. Anéthum) — монотипный род короткоживущих однолетних травянистых растений
+                    семейства Зонтичные[2]. Единственный вид — Укроп паху́чий, или Укроп огоро́дный (Anethum
+                    graveolens).
+                </div>
+            </div>
+        </article>
+        <input type="checkbox" id="full10" class="full-switch">
+        <div class="full-image">
+            <label for="full10" class="cross"></label>
+            <img src="images/dill.jpg" alt="укроп">
+        </div>
+
+        <article class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <label for="full11">
+                        <img src="images/melon.jpg" alt="дыня">
+                    </label>
+                </div>
+                <div class="card-text">
+                    <p>Ды́ня (лат. Cucumis melo) — растение семейства Тыквенные (Cucurbitaceae), вид рода
+                        Огурец
+                        (Cucumis), бахчевая культура.</p>
+
+                    <p>Родиной дыни считается Средняя Азия и Малая Азия.</p>
+                </div>
+            </div>
+        </article>
+        <input type="checkbox" id="full11" class="full-switch">
+        <div class="full-image">
+            <label for="full11" class="cross"></label>
+            <img src="images/melon.jpg" alt="дыня">
+        </div>
+
+        <article class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <label for="full12">
+                        <img src="images/garlic.jpg" alt="чеснок">
+                    </label>
+                </div>
+                <div class="card-text">
+                    Чесно́к (лат. Állium satívum) — многолетнее[2] травянистое растение; вид рода Лук
+                    семейства Амариллисовые (Amaryllidaceae) подсемейства Луковые (Allioideae), ранее
+                    помещался в самостоятельное ныне упразднённое семейство Луковые (Alliaceae).
+                </div>
+            </div>
+        </article>
+        <input type="checkbox" id="full12" class="full-switch">
+        <div class="full-image">
+            <label for="full12" class="cross"></label>
+            <img src="images/garlic.jpg" alt="чеснок">
+        </div>
+    </div>
+    <div class="left-field"></div>
+    <div class="right-field"></div>
+</section>
 </body>
 </html>

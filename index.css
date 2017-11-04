@@ -1,0 +1,205 @@
+section
+{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.left-field,
+.right-field
+{
+    position: absolute;
+    top: 0;
+    width: 8vw;
+    height: 100%;
+    background-color: white;
+}
+
+.right-field
+{
+    right: 0;
+}
+
+.tape
+{
+    position: relative;
+    width: 10000px;
+    font-size: 0;
+    transition: left .5s;
+}
+
+input
+{
+    display: none;
+}
+
+.page-select:nth-of-type(1):checked ~ .tape
+{
+    left: 8vw;
+}
+
+.page-select:nth-of-type(2):checked ~ .tape
+{
+    left: calc(8vw - 84vw);
+}
+
+.page-select:nth-of-type(3):checked ~ .tape
+{
+    left: calc(8vw - 168vw);
+}
+
+.move-left,
+.move-right
+{
+    display: none;
+    position: absolute;
+    top: calc(20px + 15vh - 2.1vw);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 3vw 3vw 0;
+    border-color: transparent grey transparent transparent;
+    z-index: 5;
+}
+
+.move-left
+{
+    transform: rotate(-135deg);
+    left: 4vw;
+}
+
+.move-right
+{
+    transform: rotate(45deg);
+    right: 4vw;
+}
+
+.page-select:checked + .label-group .move-left,
+.page-select:checked + .label-group .move-right
+{
+    display: block;
+}
+
+.card
+{
+    display: inline-block;
+    width: 25vw;
+    margin: auto -2vw;
+    vertical-align: top;
+    font-size: 1rem;
+}
+
+.card-content
+{
+    width: 21vw;
+    margin: 0 2vw;
+    background-color: white;
+}
+
+.card-image
+{
+    line-height: 30vh;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.card-text
+{
+    display: none;
+    padding: 10px;
+}
+
+.card-content:hover
+{
+    position: relative;
+    z-index: 1;
+    width: 25vw;
+    margin: 0;
+    box-shadow: 3px 3px 20px grey;
+}
+
+.card-content:hover .card-image
+{
+    padding: 0;
+}
+
+.card-content:hover img
+{
+    max-height: 43vh;
+}
+
+.card-content:hover .card-text
+{
+    display: block;
+}
+
+img
+{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.card-image img
+{
+    max-height: 40vh;
+}
+
+.full-image img
+{
+    max-height: 100%;
+}
+
+.full-image
+{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10vh 10vw;
+    background-color: rgba(128, 128, 128, .86);
+    text-align: center;
+    line-height: 80vh;
+}
+
+.full-switch:checked + .full-image
+{
+    display: block;
+}
+
+.cross
+{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.cross:before,
+.cross:after
+{
+    content: '';
+    position: absolute;
+    left: 19px;
+    height: 40px;
+    display: block;
+    width: 2px;
+    background-color: white;
+}
+
+.cross:before
+{
+    transform: rotate(45deg);
+}
+
+.cross:after
+{
+    transform: rotate(-45deg);
+}
+
