@@ -68,8 +68,8 @@ figure:hover figcaption
 
 .gallery img
 {
-    width: 200px;
-    height: 200px;
+    width: 12.5vw;
+    height: 12.5vw;
     position: relative;
     top: 0;
     left: 0;
@@ -78,8 +78,8 @@ figure:hover figcaption
 
 figure
 {
-    width: 250px;
-    margin: 0 25px;
+    width: 15vw;
+    margin: 0 10px;
     display: none;
     box-sizing: border-box;
     background: palegoldenrod;
@@ -94,8 +94,7 @@ figure:hover
 label[for^='part']
 {
     font-size: 50px;
-    margin: 70px 0;
-    height: 60px;
+    margin: 5.5vw 0;
     display: none;
 }
 
