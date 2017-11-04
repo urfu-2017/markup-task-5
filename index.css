@@ -1,0 +1,58 @@
+@font-face
+{
+    font-family: 'Sirona';
+    src: url('10755.otf');
+}
+
+.harvest
+{
+    display: inline-block;
+    width: 20%;
+    top: 20px;
+    left: 20px;
+    font-family: 'Sirona';
+    vertical-align: top;
+}
+
+.photo
+{
+    text-align: center;
+    margin-top: .5em;
+}
+
+.photo_source
+{
+    width: 90%;
+    border: 2px solid #4c4677;
+    border-radius: 20px;
+}
+
+.description
+{
+    opacity: 0;
+}
+
+.harvest_name
+{
+    text-align: center;
+}
+
+.harvest:hover
+{
+    width: 100%;
+    max-width: 350px;
+    margin: 1em auto;
+    padding: 1em;
+    box-shadow: 0 4px 8px #00000033;
+}
+
+.harvest:hover .photo_source
+{
+    border: 0px;
+}
+
+.harvest:hover .description
+{
+    opacity: 1;
+    hyphens: manual;
+}
