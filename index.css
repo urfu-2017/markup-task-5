@@ -1,0 +1,113 @@
+body
+{
+    text-align: center;
+}
+
+input,
+label[for='close'],
+figure figcaption
+{
+    display: none;
+}
+
+.popups div
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .75);
+    margin: auto;
+}
+
+label[for='close']
+{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 50px;
+    color: white;
+}
+
+label
+{
+    cursor: pointer;
+}
+
+.popups img
+{
+    height: calc(80vh - 20px);
+    margin: 10vh 0;
+    background: white;
+}
+
+input[id='0']:checked ~ .popups .popup-0,
+input[id='1']:checked ~ .popups .popup-1,
+input[id='2']:checked ~ .popups .popup-2,
+input[id='3']:checked ~ .popups .popup-3,
+input[id='4']:checked ~ .popups .popup-4,
+input[id='5']:checked ~ .popups .popup-5,
+input[id='6']:checked ~ .popups .popup-6,
+input[id='7']:checked ~ .popups .popup-7,
+input[id='8']:checked ~ .popups .popup-8,
+input[id='9']:checked ~ .popups .popup-9,
+input[id='10']:checked ~ .popups .popup-10,
+input[id='11']:checked ~ .popups .popup-11
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+input:not([id='close']):checked ~ label[for='close'],
+input:not([id='close']):checked ~ .popups,
+figure:hover figcaption
+{
+    display: block;
+}
+
+.gallery img
+{
+    width: 12.5vw;
+    height: 12.5vw;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+figure
+{
+    width: 15vw;
+    margin: 0 10px;
+    display: none;
+    box-sizing: border-box;
+    background: palegoldenrod;
+    vertical-align: top;
+}
+
+figure:hover
+{
+    border: 2px solid black;
+}
+
+label[for^='part']
+{
+    font-size: 50px;
+    height: 50px;
+    margin: calc(6.5vw - 25px) 0;
+    display: none;
+}
+
+.gallery,
+input[id='part-0']:checked ~ .gallery .page-0,
+input[id='part-1']:checked ~ .gallery .page-1,
+input[id='part-2']:checked ~ .gallery .page-2,
+input[id='part-0']:checked ~ .gallery .prev[for='part-2'],
+input[id='part-0']:checked ~ .gallery .next[for='part-1'],
+input[id='part-1']:checked ~ .gallery .prev[for='part-0'],
+input[id='part-1']:checked ~ .gallery .next[for='part-2'],
+input[id='part-2']:checked ~ .gallery .prev[for='part-1'],
+input[id='part-2']:checked ~ .gallery .next[for='part-0']
+{
+    display: inline-block;
+}
