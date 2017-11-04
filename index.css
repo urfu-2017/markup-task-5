@@ -1,0 +1,217 @@
+
+body
+{
+    margin: 0;
+}
+
+.module
+{
+    text-align: center;
+    padding: 0 5%;
+
+}
+
+input[name='section'],
+input[name='full_size'],
+section[class*='section'],
+input.full_size:checked + .placeholder > .item .description,
+.description,
+.arrow
+{
+    display: none;
+}
+
+label.arrow
+{
+    margin-top: 250px;
+    height: 40px;
+    width: 40px;
+    background-size: 40px;
+    cursor: pointer;
+}
+
+input.section_1:checked ~ .control > label.section_4,
+input.section_2:checked ~ .control > label.section_1,
+input.section_3:checked ~ .control > label.section_2,
+input.section_4:checked ~ .control > label.section_3
+{
+    background-image: url('images/arrow-left.jpg');
+    display: block;
+    float: left;
+}
+
+input.section_1:checked ~ .control > label.section_2,
+input.section_2:checked ~ .control > label.section_3,
+input.section_3:checked ~ .control > label.section_4,
+input.section_4:checked ~ .control > label.section_1
+{
+    background-image: url('images/arrow-right.svg');
+    display: block;
+    float: right;
+}
+
+input.section_1:checked ~ .karusel > section.section_1,
+input.section_2:checked ~ .karusel > section.section_2,
+input.section_3:checked ~ .karusel > section.section_3,
+input.section_4:checked ~ .karusel > section.section_4
+{
+    display: block;
+}
+
+input.full_size:checked + .placeholder
+{
+    position: static;
+}
+
+input.full_size:checked + .placeholder section.item
+{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .49);
+}
+
+input.full_size:checked + .placeholder .item_card img
+{
+    display: inline-block;
+    max-height: 95vh;
+    max-width: 70vw;
+}
+
+input.full_size:checked + .placeholder .item_card
+{
+    display: inline-block;
+    height: 100%;
+}
+
+input.full_size:checked + .placeholder .item_card::before
+{
+    content: ' ';
+    display: inline-block;
+    height: 100vh;
+    width: 1%;
+    vertical-align: middle;
+}
+
+input.full_size:checked + .placeholder .label
+{
+    right: 50px;
+    top: 50px;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+    z-index: 3;
+}
+
+input.full_size:checked + .placeholder .label:hover
+{
+    opacity: 1;
+}
+
+input.full_size:checked + .placeholder .label::before,
+input.full_size:checked + .placeholder .label::after
+{
+    position: absolute;
+    left: 25px;
+    content: ' ';
+    height: 50px;
+    width: 4px;
+    background-color: #fff;
+}
+
+input.full_size:checked + .placeholder .label::before
+{
+    transform: rotate(45deg);
+}
+
+input.full_size:checked + .placeholder .label::after
+{
+    transform: rotate(-45deg);
+}
+
+.karusel
+{
+    padding: 0 50px;
+}
+
+.page
+{
+    height: 500px;
+    white-space: nowrap;
+}
+
+.page::before
+{
+    content: '';
+    height: 500px;
+    width: 1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.karusel::after
+{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.placeholder
+{
+    position: relative;
+    display: inline-block;
+    width: 23%;
+    margin: 0;
+}
+
+.placeholder:hover
+{
+    vertical-align: top;
+}
+
+.placeholder:hover > .item,
+input.full_size:checked + .placeholder .item
+{
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    z-index: 2;
+    width: 120%;
+}
+
+.placeholder:hover .description
+{
+    padding: 0 10px;
+    display: block;
+}
+
+.item
+{
+    background-color: #fff;
+}
+
+.item_card
+{
+    margin: 0;
+}
+
+.label
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.item_card img
+{
+    vertical-align: middle;
+    width: 100%;
+    margin: auto;
+}
+
+.description p
+{
+    white-space: normal;
+    text-align: left;
+    font-size: 1.5em;
+}
