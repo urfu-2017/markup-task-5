@@ -1,7 +1,6 @@
 html
 {
     margin: 0;
-    background-color: #dcb;
     font: 14px 'PT Sans', sans-serif;
     color: #420;
     cursor: default;
@@ -20,7 +19,7 @@ body
     text-align: center;
     text-transform: uppercase;
     font: 2.5rem 'Marmelad', sans-serif;
-    color: #fff9f5;
+    color: #fff7f2;
 }
 
 .gallery-items
@@ -45,8 +44,8 @@ body
 
 .gallery-item:hover
 {
-    background-color: #fff9f5;
-    box-shadow: 4px 4px 0 #864;
+    background-color: #fff7f2;
+    box-shadow: 0 0 3px #420;
 }
 
 .gallery-item:hover > .item-info
@@ -56,8 +55,8 @@ body
 
 .gallery-item:hover > .item-photo .item-photo__source
 {
-    background-color: #fff9f5;
     border: none;
+    background-color: #fff7f2;
 }
 
 .item-photo__source
@@ -65,8 +64,8 @@ body
     width: 70%;
     box-sizing: border-box;
     margin: 5% 5% 0;
-    border: 3px double #864;
-    background-color: #fff9f5;
+    border: 3px double #420;
+    background-color: #fff7f2;
     cursor: pointer;
 }
 
@@ -77,10 +76,12 @@ body
 
 .item-info__name
 {
-    padding: 0;
-    margin: 5% 0;
+    box-sizing: padding-box;
+    padding: 2.5% 0;
+    margin: 5%;
+    border-top: 1px solid #420;
+    border-bottom: 1px solid #420;
     font: 1.5rem 'Marmelad', sans-serif;
-    color: #420;
 }
 
 .item-info__description
