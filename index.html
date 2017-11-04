@@ -1,9 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <title>Бабкин урожай</title>
     <meta charset="utf-8">
-    <title>Задача «Бабуленькин урожай»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+<input type="radio" name="slide" id="left" class="left">
+<input type="radio" name="slide" id="middle" class="middle" checked>
+<input type="radio" name="slide" id="right" class="right">
+<div>
+    <label for="left" class="arrow left-arrow"></label>
+    <label for="middle" class="arrow left-arrow"></label>
+    <label for="right" class="arrow left-arrow"></label>
+    <label for="left" class="arrow right-arrow"></label>
+    <label for="middle" class="arrow right-arrow"></label>
+    <label for="right" class="arrow right-arrow"></label>
+
+    <main class="content">
+        <div class="item" id="image1">
+            <div class="overlay">
+                <a href="#image1">
+                    <div class="preview">
+                        <img src="images/tomato.jpg" alt="Tomato" title="Tomato">
+                        <p>Помидор</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/tomato.jpg" alt="Tomato" title="Tomato">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="item" id="image2">
+            <div class="overlay">
+                <a href="#image2">
+                    <div class="preview">
+                        <img src="images/brocolli.jpg" alt="brocolli" title="brocolli">
+                        <p>Броколли</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/brocolli.jpg" alt="brocolli" title="brocolli">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="item" id="image3">
+            <div class="overlay">
+                <a href="#image3">
+                    <div class="preview">
+                        <img src="images/cucumber.jpg" alt="cucumber" title="cucumber">
+                        <p>
+                            Огурец
+                        </p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/cucumber.jpg" alt="cucumber" title="cucumber">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="item" id="image4">
+            <div class="overlay">
+                <a href="#image4">
+                    <div class="preview">
+                        <img src="images/carrot.jpg" alt="Carrot" title="Carrot">
+                        <p>
+                            Морковь
+                        </p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/carrot.jpg" alt="Carrot" title="Carrot">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="item" id="image5">
+            <div class="overlay">
+                <a href="#image5">
+                    <div class="preview">
+                        <img src="images/hot-pepper.jpg" alt="hot-pepper" title="hot-pepper">
+                        <p>
+                            Острый перец
+                        </p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/hot-pepper.jpg" alt="hot-pepper" title="hot-pepper">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="item" id="image6">
+            <div class="overlay">
+                <a href="#image6">
+                    <div class="preview">
+                        <img src="images/leaf.jpg" alt="leaf" title="leaf">
+                        <p>
+                            Просто какой-то листок - урожай не удался
+                        </p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/leaf.jpg" alt="leaf" title="leaf">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="item" id="image7">
+            <div class="overlay">
+                <a href="#image7">
+                    <div class="preview">
+                        <img src="images/eggplant.jpg" alt="Eggplant" title="Eggplant">
+                        <p>
+                            Баклажан
+                        </p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/eggplant.jpg" alt="Eggplant" title="Eggplant">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="item" id="image8">
+            <div class="overlay">
+                <a href="#image8">
+                    <div class="preview">
+                        <img src="images/mushroom.jpg" alt="mushroom" title="mushroom">
+                        <p>Грибы</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/mushroom.jpg" alt="mushroom" title="mushroom">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="item" id="image9">
+            <div class="overlay">
+                <a href="#image9">
+                    <div class="preview">
+                        <img src="images/olive.jpg" alt="olive" title="olive">
+                        <p>Оливки</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/olive.jpg" alt="" title="olive">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="item" id="image10">
+            <div class="overlay">
+                <a href="#image10">
+                    <div class="preview">
+                        <img src="images/onion.jpg" alt="onion" title="onion">
+                        <p>Лук</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/onion.jpg" alt="onion" title="onion">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="item" id="image11">
+            <div class="overlay">
+                <a href="#image11">
+                    <div class="preview">
+                        <img src="images/pepper.jpg" alt="pepper" title="pepper">
+                        <p>Перец</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/pepper.jpg" alt="pepper" title="pepper">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="item" id="image12">
+            <div class="overlay">
+                <a href="#image12">
+                    <div class="preview">
+                        <img src="images/wheat.jpg" alt="wheat" title="wheat">
+                        <p>Пшеница</p>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/wheat.jpg" alt="wheat" title="wheat">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a class="close" href="#"></a>
+    </main>
+</div>
 </body>
 </html>
