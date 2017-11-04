@@ -168,13 +168,14 @@ input[id='front-3']:checked ~ .gallery-items .page-3
     width: 2rem;
     height: 2rem;
     cursor: pointer;
+    transform: rotate(45deg);
 }
 
 .big-photos__close:before
 {
-    content: '\1f7aa';
-    font-size: 2rem;
-    color: #fff9f5;
+    content: '+';
+    font-size: 3rem;
+    color: #fff7f2;
 }
 
 [class^='big-photo-']
@@ -182,7 +183,7 @@ input[id='front-3']:checked ~ .gallery-items .page-3
     display: none;
     height: calc(100% - 4rem);
     margin: 2rem auto;
-    background-color: #fff9f5;
+    background-color: #fff7f2;
 }
 
 input[name='big-photo'],
