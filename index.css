@@ -1,0 +1,210 @@
+html
+{
+    margin: 0;
+    font: 14px 'PT Sans', sans-serif;
+    color: #420;
+    cursor: default;
+}
+
+body
+{
+    margin: 0;
+}
+
+.gallery__header
+{
+    margin: 0;
+    padding: 1rem;
+    background-color: #420;
+    text-align: center;
+    text-transform: uppercase;
+    font: 2.5rem 'Marmelad', sans-serif;
+    color: #fff7f2;
+}
+
+.gallery-items
+{
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.gallery-item
+{
+    display: none;
+    box-sizing: padding-box;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 0;
+    vertical-align: top;
+}
+
+.gallery-item:hover
+{
+    background-color: #fff7f2;
+    box-shadow: 0 0 3px #420;
+}
+
+.gallery-item:hover > .item-info
+{
+    display: block;
+}
+
+.gallery-item:hover > .item-photo .item-photo__source
+{
+    border: none;
+    background-color: #fff7f2;
+}
+
+.item-photo__source
+{
+    width: 70%;
+    box-sizing: border-box;
+    margin: 5% 5% 0;
+    border: 3px double #420;
+    background-color: #fff7f2;
+    cursor: pointer;
+}
+
+.item-info
+{
+    display: none;
+}
+
+.item-info__name
+{
+    box-sizing: padding-box;
+    padding: 2.5% 0;
+    margin: 5%;
+    border-top: 1px solid #420;
+    border-bottom: 1px solid #420;
+    font: 1.5rem 'Marmelad', sans-serif;
+}
+
+.item-info__description
+{
+    box-sizing: padding-box;
+    margin: 5%;
+    padding: 0;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.arrow--left,
+.arrow--right
+{
+    width: 2rem;
+    height: 2rem;
+    margin: 9% 2% 0;
+    background: 0 0 no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.arrow--left
+{
+    float: left;
+    background-image: url(images/arrowLeft.svg);
+}
+
+.arrow--right
+{
+    float: right;
+    background-image: url(images/arrowRight.svg);
+}
+
+input[name='go-to-page'],
+input[id^='back-']:checked ~ label[for^='back-'],
+input[id^='back-']:checked ~ label[for^='front-'],
+input[id^='front-']:checked ~ label[for^='back-'],
+input[id^='front-']:checked ~ label[for^='front-'],
+input[id^='back-']:checked ~ .gallery-items .gallery-item,
+input[id^='front-']:checked ~ .gallery-items .gallery-item
+{
+    display: none;
+}
+
+input[id='back-1']:checked ~ label[for='back-3'],
+input[id='back-1']:checked ~ label[for='front-2'],
+input[id='back-2']:checked ~ label[for='back-1'],
+input[id='back-2']:checked ~ label[for='front-3'],
+input[id='back-3']:checked ~ label[for='back-2'],
+input[id='back-3']:checked ~ label[for='front-1'],
+input[id='front-1']:checked ~ label[for='back-3'],
+input[id='front-1']:checked ~ label[for='front-2'],
+input[id='front-2']:checked ~ label[for='back-1'],
+input[id='front-2']:checked ~ label[for='front-3'],
+input[id='front-3']:checked ~ label[for='back-2'],
+input[id='front-3']:checked ~ label[for='front-1'],
+input[id='back-1']:checked ~ .gallery-items .page-1,
+input[id='back-2']:checked ~ .gallery-items .page-2,
+input[id='back-3']:checked ~ .gallery-items .page-3,
+input[id='front-1']:checked ~ .gallery-items .page-1,
+input[id='front-2']:checked ~ .gallery-items .page-2,
+input[id='front-3']:checked ~ .gallery-items .page-3
+{
+    display: inline-block;
+}
+
+.big-photos
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .75);
+}
+
+.big-photos__close
+{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.big-photos__close:before
+{
+    content: '+';
+    font-size: 3rem;
+    color: #fff7f2;
+}
+
+[class^='big-photo-']
+{
+    display: none;
+    height: calc(100% - 4rem);
+    margin: 2rem auto;
+    background-color: #fff7f2;
+}
+
+input[name='big-photo'],
+input[id='close-photo']:checked ~ .big-photos
+{
+    display: none;
+}
+
+input[id^='big-photo-']:checked ~ .big-photos,
+input[id='big-photo-1']:checked ~ .big-photos .big-photo-1,
+input[id='big-photo-2']:checked ~ .big-photos .big-photo-2,
+input[id='big-photo-3']:checked ~ .big-photos .big-photo-3,
+input[id='big-photo-4']:checked ~ .big-photos .big-photo-4,
+input[id='big-photo-5']:checked ~ .big-photos .big-photo-5,
+input[id='big-photo-6']:checked ~ .big-photos .big-photo-6,
+input[id='big-photo-7']:checked ~ .big-photos .big-photo-7,
+input[id='big-photo-8']:checked ~ .big-photos .big-photo-8,
+input[id='big-photo-9']:checked ~ .big-photos .big-photo-9,
+input[id='big-photo-10']:checked ~ .big-photos .big-photo-10,
+input[id='big-photo-11']:checked ~ .big-photos .big-photo-11,
+input[id='big-photo-12']:checked ~ .big-photos .big-photo-12
+{
+    display: block;
+}
