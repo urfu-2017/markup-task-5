@@ -1,0 +1,242 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+html
+{
+    margin: 0 auto;
+    max-width: 1366px;
+    height: 100%;
+}
+
+body
+{
+    font-size: 16px;
+    text-align: center;
+}
+
+.item-title
+{
+    margin: 0;
+}
+
+.page
+{
+    margin: 10%;
+}
+
+.title
+{
+    font-size: 1.8em;
+}
+
+.item-container
+{
+    width: 22%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.item-description,
+.cover,
+.cancel,
+.modal-image
+{
+    display: none;
+}
+
+.item-image,
+.item-image-second
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+.item-container:not(:target) .item:hover .item-description
+{
+    display: block;
+}
+
+.item-container:not(:target) .item:hover
+{
+    box-shadow: 0 0 20px #444;
+    padding: 5%;
+    margin: -10%;
+    width: 110%;
+    position: relative;
+    border-radius: 5px;
+    background: #fff;
+    z-index: 1;
+}
+
+.item-container[id='tomato']:target ~ .modal-image
+{
+    background-image: url(images/tomato.jpg);
+}
+
+.item-container[id='egg']:target ~ .modal-image
+{
+    background-image: url(images/egg.jpg);
+}
+
+.item-container[id='lemon']:target ~ .modal-image
+{
+    background-image: url(images/lemon.jpg);
+}
+
+.item-container[id='pear']:target ~ .modal-image
+{
+    background-image: url(images/pear.jpg);
+}
+
+.item-container[id='cheese']:target ~ .modal-image
+{
+    background-image: url(images/cheese.jpg);
+}
+
+.item-container[id='default']:target ~ .modal-image
+{
+    background-image: url(images/default.jpg);
+}
+
+.item-container[id='noodles']:target ~ .modal-image
+{
+    background-image: url(images/noodles.jpg);
+}
+
+.item-container[id='orange']:target ~ .modal-image
+{
+    background-image: url(images/orange.jpg);
+}
+
+.item-container[id='pepper']:target ~ .modal-image
+{
+    background-image: url(images/pepper.jpg);
+}
+
+.item-container[id='pumpkin']:target ~ .modal-image
+{
+    background-image: url(images/pumpkin.jpg);
+}
+
+.item-container[id='sausage']:target ~ .modal-image
+{
+    background-image: url(images/sausage.jpg);
+}
+
+.item-container[id='bow']:target ~ .modal-image
+{
+    background-image: url(images/bow.jpg);
+}
+
+.item-container:target ~ .cancel,
+.item-container:target ~ .cover,
+.item-container:target ~ .modal-image
+{
+    display: block;
+}
+
+.modal-image
+{
+    width: 480px;
+    height: 360px;
+    position: relative;
+    left: 50%;
+    margin: -250px 0 0 -250px;
+    z-index: 4;
+}
+
+.cover
+{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #000;
+    opacity: .7;
+    z-index: 2;
+}
+
+.cancel
+{
+    padding-right: 1%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    color: #fff;
+    font-size: 3em;
+    text-decoration: none;
+    z-index: 3;
+}
+
+input.slider
+{
+    display: none;
+}
+
+figcaption
+{
+    display: none;
+}
+
+.turn-left,
+.turn-right
+{
+    cursor: pointer;
+}
+
+.turn-right
+{
+    position: absolute;
+    margin: 5% 38.5%;
+}
+
+.turn-left
+{
+    position: absolute;
+    margin: 5% -40%;
+}
+
+.turn-left:before
+{
+    font-family: FontAwesome;
+    font-size: 2em;
+    content: '\f060';
+}
+
+.turn-right:before
+{
+    font-family: FontAwesome;
+    font-size: 2em;
+    content: '\f061';
+}
+
+.turn-wrapper
+{
+    position: relative;
+}
+
+input[type='radio'].page1:checked ~ main .second-page,
+input[type='radio'].page1:checked ~ main .third-page,
+input[type='radio'].page1:checked ~ main .sec2first,
+input[type='radio'].page1:checked ~ main .thrid2sec,
+input[type='radio'].page1:checked ~ main .sec2thrid
+{
+    display: none;
+}
+
+input[type='radio'].page2:checked ~ main .first-page,
+input[type='radio'].page2:checked ~ main .third-page,
+input[type='radio'].page2:checked ~ main .first2sec,
+input[type='radio'].page2:checked ~ main .thrid2sec
+{
+    display: none;
+}
+
+input[type='radio'].page3:checked ~ main .first-page,
+input[type='radio'].page3:checked ~ main .second-page,
+input[type='radio'].page3:checked ~ main .sec2first,
+input[type='radio'].page3:checked ~ main .first2sec,
+input[type='radio'].page3:checked ~ main .sec2thrid
+{
+    display: none;
+}
