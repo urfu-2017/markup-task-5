@@ -2,8 +2,346 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Задача «Бабуленькин урожай»</title>
 </head>
 <body>
+    <input type="radio" id="show-kit-1" name="show-kit" class="show-kit-1" checked>
+    <input type="radio" id="show-kit-2" name="show-kit" class="show-kit-2" >
+    <input type="radio" id="show-kit-3" name="show-kit" class="show-kit-3" >
+    <main class="fair">
+        <section class="kit-1">
+            <label for="show-kit-3" class="left-arrow"></label>
+            <article class="product-card">
+                <input type="checkbox" id="product-card-input-1" class="full-size-checkbox">
+                <div class="product-info">
+                    <label for="product-card-input-1" class="big-size-label">
+                        <img src="images/carrot.jpg" alt="Морковь" class="product-image">
+                    </label>
+                    <p class="product-description">
+                        Мор&shy;ковь бо&shy;та&shy;ни&shy;ки от&shy;но&shy;сят 
+                        к рас&shy;те&shy;ни&shy;ям се&shy;мей&shy;ства 
+                        Зон&shy;тич&shy;ные. Это дву&shy;лет&shy;нее рас&shy;те&shy;ние,
+                        кор&shy;не&shy;плод ко&shy;то&shy;ро&shy;го 
+                        (соб&shy;ствен&shy;но овощ) об&shy;ра&shy;зу&shy;ет&shy;ся 
+                        в пер&shy;вый год жиз&shy;ни. 
+                        Мор&shy;ковь рас&shy;про&shy;стра&shy;не&shy;на 
+                        прак&shy;ти&shy;че&shy;ски по&shy;все&shy;мест&shy;но 
+                        и вклю&shy;ча&shy;ет в се&shy;бя по&shy;ряд&shy;ка 
+                        60 раз&shy;но&shy;вид&shy;но&shy;стей рас&shy;те&shy;ния.
+                    </p>
+                </div>
+                <div class="full-image">
+                    <img src="images/carrot.jpg" alt="Морковь">
+                    <label for="product-card-input-1" class="close-label"></label>
+                </div>
+            </article>
+            <article class="product-card">
+                <input type="checkbox" id="product-card-input-2" class="full-size-checkbox">
+                <div class="product-info">
+                    <label for="product-card-input-2" class="big-size-label">
+                        <img src="images/eggplant.jpg" alt="Баклажан" class="product-image">
+                    </label>
+                    <p class="product-description">
+                        Бакла&shy;жан (или пас&shy;лен 
+                        тем&shy;но&shy;плод&shy;ный) – вид 
+                        мно&shy;го&shy;лет&shy;них 
+                        тра&shy;вя&shy;ни&shy;стых рас&shy;те&shy;ний 
+                        ро&shy;да Пас&shy;лен. Его ро&shy;ди&shy;ной 
+                        счи&shy;та&shy;ют&shy;ся тро&shy;пи&shy;че&shy;ские
+                        рай&shy;о&shy;ны Ин&shy;дии, где он 
+                        про&shy;из&shy;рас&shy;та&shy;ет в 
+                        ди&shy;ком ви&shy;де. В Ев&shy;ро&shy;пе 
+                        ба&shy;кла&shy;жан вы&shy;ра&shy;щи&shy;ва&shy;ют с 
+                        XIII–XV ве&shy;ков как од&shy;но&shy;лет&shy;нюю 
+                        куль&shy;ту&shy;ру. В на&shy;ро&shy;де из&shy;ве&shy;стен 
+                        под на&shy;зва&shy;ни&shy;ем си&shy;нень&shy;кие.
+                    </p>
+                </div>
+                <div class="full-image">
+                        <img src="images/eggplant.jpg" alt="Баклажан">
+                    <label for="product-card-input-2" class="close-label"></label>
+                </div>
+            </article>
+            <article class="product-card">
+                <input type="checkbox" id="product-card-input-3" class="full-size-checkbox">
+                <div class="product-info">
+                    <label for="product-card-input-3" class="big-size-label">
+                        <img src="images/cucumbers.jpg" alt="Огурцы" class="product-image">
+                    </label>
+                    <p class="product-description">
+                        Огу&shy;рец за его кра&shy;си&shy;вый зе&shy;ле&shy;ный 
+                        цвет не&shy;ред&shy;ко на&shy;зы&shy;ва&shy;ют 
+                        «изу&shy;мруд&shy;ным ово&shy;щем». На са&shy;мом 
+                        де&shy;ле он пред&shy;став&shy;ля&shy;ет со&shy;бой 
+                        лож&shy;ную яго&shy;ду тра&shy;вя&shy;ни&shy;сто&shy;го 
+                        рас&shy;те&shy;ния, от&shy;но&shy;ся&shy;ще&shy;го&shy;ся 
+                        к се&shy;мей&shy;ству тык&shy;вен&shy;ных. Пло&shy;ды 
+                        огур&shy;ца упо&shy;треб&shy;ля&shy;ют в пи&shy;щу в 
+                        не&shy;до&shy;зре&shy;лом ви&shy;де.
+                    </p>
+                </div>
+                <div class="full-image">
+                    <img src="images/cucumbers.jpg" alt="Огурцы">
+                    <label for="product-card-input-3" class="close-label"></label>
+                </div>
+            </article>
+            <article class="product-card">
+                <input type="checkbox" id="product-card-input-4" class="full-size-checkbox">
+                <div class="product-info">
+                    <label for="product-card-input-4" class="big-size-label">
+                        <img src="images/pumpkin.jpg" alt="Тыква" class="product-image">
+                    </label>
+                    <p class="product-description">
+                        Тык&shy;ва – пред&shy;ста&shy;ви&shy;тель 
+                        рас&shy;те&shy;ний, вхо&shy;дя&shy;щих в 
+                        се&shy;мей&shy;ство тык&shy;вен&shy;ные. Тык&shy;ва 
+                        мо&shy;жет быть од&shy;но&shy;лет&shy;ней или 
+                        мно&shy;го&shy;лет&shy;ней. Ли&shy;стья у 
+                        тык&shy;вы круп&shy;ные, во&shy;ло&shy;си&shy;стые 
+                        или жёст&shy;ко-шер&shy;ша&shy;вые, вет&shy;ки 
+                        ее сте&shy;ля&shy;щи&shy;е&shy;ся или 
+                        цеп&shy;ля&shy;ю&shy;щи&shy;е&shy;ся. Во вре&shy;мя 
+                        цве&shy;те&shy;ния рас&shy;те&shy;ние 
+                        по&shy;кры&shy;ва&shy;ет&shy;ся боль&shy;ши&shy;ми 
+                        цвет&shy;ка&shy;ми, бе&shy;ло&shy;го или 
+                        жел&shy;то&shy;го цве&shy;та. Плод у тык&shy;вы 
+                        круп&shy;ный, ча&shy;сто до&shy;сти&shy;га&shy;ет 
+                        боль&shy;шо&shy;го раз&shy;ме&shy;ра: 
+                        от 2-х до 9-ти кг.
+                    </p>
+                </div>
+                <div class="full-image">
+                    <img src="images/pumpkin.jpg" alt="Тыква" >
+                    <label for="product-card-input-4" class="close-label"></label>
+                </div>
+            </article>
+            <label for="show-kit-2" class="right-arrow"></label>
+        </section>
+        <section class="kit-2">
+            <label for="show-kit-1" class="left-arrow"></label>
+            <article class="product-card">
+                <input type="checkbox" id="product-card-input-5" class="full-size-checkbox">
+                <div class="product-info">
+                    <label for="product-card-input-5" class="big-size-label">
+                        <img src="images/apple.jpg" alt="Яблоко" class="product-image">
+                    </label>
+                    <p class="product-description">
+                        Яб&shy;ло&shy;ки – пло&shy;ды яб&shy;ло&shy;ни, 
+                        ко&shy;то&shy;рые ре&shy;ко&shy;мен&shy;ду&shy;ет&shy;ся 
+                        упо&shy;треб&shy;лять в пи&shy;щу как све&shy;жие, так 
+                        и в со&shy;ста&shy;ве на&shy;пит&shy;ков и 
+                        ку&shy;ли&shy;нар&shy;ных из&shy;де&shy;лий.
+                    </p>
+                </div>
+                <div class="full-image">
+                    <img src="images/apple.jpg" alt="Яблоко" >
+                    <label for="product-card-input-5" class="close-label"></label>
+                </div>
+            </article>
+            <article class="product-card">
+                <input type="checkbox" id="product-card-input-6" class="full-size-checkbox">
+                <div class="product-info">
+                    <label for="product-card-input-6" class="big-size-label">
+                        <img src="images/tomatoes.jpg" alt="Помидоры" class="product-image">
+                    </label>
+                    <p class="product-description">
+                        По&shy;ми&shy;дор (то&shy;мат) – мно&shy;го&shy;лет&shy;нее 
+                        или од&shy;но&shy;лет&shy;нее тра&shy;вя&shy;ни&shy;стое 
+                        рас&shy;те&shy;ние из се&shy;мей&shy;ства 
+                        пас&shy;ле&shy;но&shy;вых. Бла&shy;го&shy;да&shy;ря 
+                        низ&shy;кой ка&shy;ло&shy;рий&shy;но&shy;сти по&shy;ми&shy;дор 
+                        ча&shy;сто вклю&shy;ча&shy;ют в со&shy;став ди&shy;ет, 
+                        ес&shy;ли, ко&shy;неч&shy;но, нет 
+                        про&shy;ти&shy;во&shy;по&shy;ка&shy;за&shy;ний. 
+                        В со&shy;ста&shy;ве то&shy;ма&shy;та 
+                        при&shy;сут&shy;ству&shy;ет боль&shy;шое 
+                        ко&shy;ли&shy;че&shy;ство ми&shy;не&shy;ра&shy;лов 
+                        и ви&shy;та&shy;ми&shy;нов, по&shy;это&shy;му они 
+                        яв&shy;ля&shy;ют&shy;ся от&shy;лич&shy;ны&shy;ми 
+                        по&shy;мощ&shy;ни&shy;ка&shy;ми в борь&shy;бе с 
+                        лиш&shy;ни&shy;ми ки&shy;ло&shy;грам&shy;ма&shy;ми. 
+                        А со&shy;ли ка&shy;лия сни&shy;жа&shy;ют 
+                        спо&shy;соб&shy;ность удер&shy;жи&shy;вать во&shy;ду 
+                        тка&shy;ня&shy;ми ор&shy;га&shy;низ&shy;ма.
+                    </p>
+                </div>
+                <div class="full-image">
+                    <img src="images/tomatoes.jpg" alt="Помидоры" >
+                    <label for="product-card-input-6" class="close-label"></label>
+                </div>
+            </article>
+            <article class="product-card">
+                <input type="checkbox" id="product-card-input-7" class="full-size-checkbox">
+                <div class="product-info">
+                    <label for="product-card-input-7" class="big-size-label">
+                        <img src="images/potatoes.jpg" alt="Картошка" class="product-image">
+                    </label>
+                    <p class="product-description">
+                        Кар&shy;то&shy;фель, как овощ&shy;ная куль&shy;ту&shy;ра, 
+                        за&shy;ро&shy;дил&shy;ся в Юж&shy;ной Аме&shy;ри&shy;ке, 
+                        где и сей&shy;час мож&shy;но уви&shy;деть его 
+                        ди&shy;ко&shy;рас&shy;ту&shy;щие ку&shy;сты. 
+                        Ин&shy;дей&shy;цы не про&shy;сто 
+                        ис&shy;поль&shy;зо&shy;ва&shy;ли кар&shy;то&shy;фель 
+                        в пи&shy;щу, но и по&shy;кло&shy;ня&shy;лись 
+                        пе&shy;ред ним, как пе&shy;ред жи&shy;вым 
+                        су&shy;ще&shy;ством. Вы&shy;ве&shy;ли 
+                        кар&shy;то&shy;фель в пи&shy;ще&shy;вую 
+                        куль&shy;ту&shy;ру бо&shy;лее 14 тыс. лет 
+                        на&shy;зад.
+                    </p>
+                </div>
+                <div class="full-image">
+                    <img src="images/potatoes.jpg" alt="Картошка" >
+                    <label for="product-card-input-7" class="close-label"></label>
+                </div>
+            </article>
+            <article class="product-card">
+                <input type="checkbox" id="product-card-input-8" class="full-size-checkbox">
+                <div class="product-info">
+                    <label for="product-card-input-8" class="big-size-label">
+                        <img src="images/peas.jpg" alt="Горох" class="product-image">
+                    </label>
+                    <p class="product-description">
+                        Кар&shy;то&shy;фель, как овощ&shy;ная куль&shy;ту&shy;ра, 
+                        за&shy;ро&shy;дил&shy;ся в Юж&shy;ной Аме&shy;ри&shy;ке, 
+                        где и сей&shy;час мож&shy;но уви&shy;деть его 
+                        ди&shy;ко&shy;рас&shy;ту&shy;щие ку&shy;сты. 
+                        Ин&shy;дей&shy;цы не про&shy;сто 
+                        ис&shy;поль&shy;зо&shy;ва&shy;ли кар&shy;то&shy;фель 
+                        в пи&shy;щу, но и по&shy;кло&shy;ня&shy;лись 
+                        пе&shy;ред ним, как пе&shy;ред жи&shy;вым 
+                        су&shy;ще&shy;ством. Вы&shy;ве&shy;ли 
+                        кар&shy;то&shy;фель в пи&shy;ще&shy;вую 
+                        куль&shy;ту&shy;ру бо&shy;лее 14 тыс. лет 
+                        на&shy;зад.
+                    </p>
+                </div>
+                <div class="full-image">
+                    <img src="images/peas.jpg" alt="Горох" >
+                    <label for="product-card-input-8" class="close-label"></label>
+                </div>
+            </article>
+            <label for="show-kit-3" class="right-arrow"></label>
+        </section>
+        <section class="kit-3">
+            <label for="show-kit-2" class="left-arrow"></label>
+            <article class="product-card">
+                <input type="checkbox" id="product-card-input-9" class="full-size-checkbox">
+                <div class="product-info">
+                    <label for="product-card-input-9" class="big-size-label">
+                        <img src="images/pepper.jpg" alt="Перец" class="product-image">
+                    </label>
+                    <p class="product-description">
+                        Ро&shy;ди&shy;ной слад&shy;ко&shy;го пер&shy;ца 
+                        яв&shy;ля&shy;ет&shy;ся Аме&shy;ри&shy;ка. 
+                        Там пе&shy;рец рас&shy;тет на 
+                        мно&shy;го&shy;лет&shy;них ку&shy;стар&shy;ни&shy;ках, 
+                        не тре&shy;бу&shy;ю&shy;щих по&shy;сад&shy;ки и 
+                        по&shy;ли&shy;ва. Су&shy;ще&shy;ству&shy;ет 
+                        мно&shy;го сор&shy;тов пер&shy;ца, 
+                        ко&shy;то&shy;рые раз&shy;нят&shy;ся по 
+                        фор&shy;ме и цве&shy;ту. Слад&shy;кий 
+                        пе&shy;рец при&shy;ня&shy;то еще 
+                        на&shy;зы&shy;вать «бол&shy;гар&shy;ским», 
+                        хо&shy;тя по&shy;че&shy;му – не&shy;из&shy;вест&shy;но.
+                    </p>
+                </div>
+                <div class="full-image">
+                    <img src="images/pepper.jpg" alt="Перец" >
+                    <label for="product-card-input-9" class="close-label"></label>
+                </div>
+            </article>
+            <article class="product-card">
+                <input type="checkbox" id="product-card-input-10" class="full-size-checkbox">
+                <div class="product-info">
+                    <label for="product-card-input-10" class="big-size-label">
+                        <img src="images/radish.jpg" alt="Редис" class="product-image">
+                    </label>
+                    <p class="product-description">
+                        Ре&shy;дис яв&shy;ля&shy;ет&shy;ся съе&shy;доб&shy;ным 
+                        рас&shy;те&shy;ни&shy;ем из се&shy;мей&shy;ства 
+                        ка&shy;пуст&shy;ных, ко&shy;то&shy;рое 
+                        рас&shy;про&shy;стра&shy;не&shy;но и по&shy;пу&shy;ляр&shy;но 
+                        во мно&shy;гих стра&shy;нах ми&shy;ра. 
+                        Он вы&shy;ра&shy;щи&shy;ва&shy;ет&shy;ся и 
+                        упо&shy;треб&shy;ля&shy;ет&shy;ся в пи&shy;щу 
+                        как овощ.
+                    </p>
+                </div>
+                <div class="full-image">
+                    <img src="images/radish.jpg" alt="Редис" >
+                    <label for="product-card-input-10" class="close-label"></label>
+                </div>
+            </article>
+            <article class="product-card">
+                <input type="checkbox" id="product-card-input-11" class="full-size-checkbox">
+                <div class="product-info">
+                    <label for="product-card-input-11" class="big-size-label">
+                        <img src="images/onion.jpg" alt="Лук" class="product-image">
+                    </label>
+                    <p class="product-description">
+                        Лук реп&shy;ча&shy;тый – од&shy;на из 
+                        древ&shy;ней&shy;ших овощ&shy;ных 
+                        куль&shy;тур, ко&shy;то&shy;рую стал 
+                        воз&shy;де&shy;лы&shy;вать че&shy;ло&shy;век. 
+                        Поль&shy;за лу&shy;ка реп&shy;ча&shy;то&shy;го 
+                        не толь&shy;ко в его остром вку&shy;се и 
+                        спе&shy;ци&shy;фи&shy;че&shy;ском аро&shy;ма&shy;те, 
+                        из&shy;дав&shy;на из&shy;вест&shy;но о его 
+                        це&shy;ли&shy;тель&shy;ных свой&shy;ствах, 
+                        ко&shy;то&shy;рые с успе&shy;хом 
+                        при&shy;ме&shy;ня&shy;ют&shy;ся и се&shy;го&shy;дня.
+                    </p>
+                </div>
+                <div class="full-image">
+                    <img src="images/onion.jpg" alt="Лук" >
+                    <label for="product-card-input-11" class="close-label"></label>
+                </div>
+            </article>
+            <article class="product-card">
+                <input type="checkbox" id="product-card-input-12" class="full-size-checkbox">
+                <div class="product-info">
+                    <label for="product-card-input-12" class="big-size-label">
+                        <img src="images/cabbage.jpg" alt="Капуста" class="product-image">
+                    </label>
+                    <p class="product-description">
+                        Бе&shy;ло&shy;ко&shy;чан&shy;ная ка&shy;пу&shy;ста – 
+                        са&shy;мая рас&shy;про&shy;стра&shy;нен&shy;ная 
+                        сель&shy;ско&shy;хо&shy;зяй&shy;ствен&shy;ная
+                        куль&shy;ту&shy;ра из всех раз&shy;но&shy;вид&shy;но&shy;стей 
+                        ка&shy;пу&shy;сты. Ее вы&shy;ра&shy;щи&shy;ва&shy;ют 
+                        прак&shy;ти&shy;че&shy;ски во всем ми&shy;ре, 
+                        осо&shy;бен&shy;но боль&shy;шое ува&shy;же&shy;ние 
+                        она по&shy;лу&shy;чи&shy;ла в стра&shy;нах с 
+                        уме&shy;рен&shy;ным кли&shy;ма&shy;том. В 
+                        на&shy;шей стра&shy;не ка&shy;пу&shy;ста 
+                        вы&shy;ра&shy;щи&shy;ва&shy;ет&shy;ся в
+                        каж&shy;дом дво&shy;ре, где есть ого&shy;род, 
+                        и все&shy;гда при&shy;сут&shy;ству&shy;ет в 
+                        каж&shy;дом до&shy;ме, где есть 
+                        хо&shy;ло&shy;диль&shy;ник. Без это&shy;го 
+                        ово&shy;ща слож&shy;но пред&shy;ста&shy;вить 
+                        се&shy;бе зи&shy;му и вес&shy;ну, 
+                        пе&shy;ри&shy;о&shy;ды, ко&shy;гда имен&shy;но 
+                        бе&shy;ло&shy;ко&shy;чан&shy;ная ка&shy;пу&shy;ста 
+                        яв&shy;ля&shy;ет&shy;ся ос&shy;нов&shy;ным 
+                        ис&shy;точ&shy;ни&shy;ком ви&shy;та&shy;ми&shy;нов 
+                        и рас&shy;ти&shy;тель&shy;ных во&shy;ло&shy;кон 
+                        для че&shy;ло&shy;ве&shy;ка. Упо&shy;треб&shy;лять 
+                        в пи&shy;щу без огра&shy;ни&shy;че&shy;ний 
+                        мож&shy;но бе&shy;ло&shy;ко&shy;чан&shy;ную 
+                        ка&shy;пу&shy;сту и де&shy;тям, и взрос&shy;лым.
+                    </p>
+                </div>
+                <div class="full-image">
+                    <img src="images/cabbage.jpg" alt="Капуста" >
+                    <label for="product-card-input-12" class="close-label"></label>
+                </div>
+            </article>
+            <label for="show-kit-1" class="right-arrow"></label>
+        </section>
+    </main>
 </body>
 </html>
