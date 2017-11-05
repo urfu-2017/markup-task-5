@@ -4,12 +4,16 @@
     src: url('10755.otf');
 }
 
+.gallery
+{
+    position: absolute;
+    top: 15%;
+}
+
 .harvest
 {
     display: inline-block;
     width: 20%;
-    top: 20px;
-    left: 20px;
     font-family: 'Sirona';
     vertical-align: top;
 }
@@ -37,22 +41,33 @@
     text-align: center;
 }
 
-.harvest:hover
+.harvest_content:hover
 {
-    width: 100%;
+    position: relative;
+    width: 150%;
     max-width: 350px;
     margin: 1em auto;
     padding: 1em;
     box-shadow: 0 4px 8px #00000033;
+    background: white;
 }
 
 .harvest:hover .photo_source
 {
-    border: 0px;
+    width: 70%;
+    border: none;
 }
 
 .harvest:hover .description
 {
     opacity: 1;
     hyphens: manual;
+    font-size: 14px;
 }
+
+input[name="big-photo"]
+{
+    display: none;
+}
+
+
