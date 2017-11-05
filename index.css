@@ -47,7 +47,7 @@ img
     display: inline-block;
 }
 
-.pic1:hover ~ #t1 /* eslint-disable-line selector-no-id */
+.pic1:hover ~ #t1 /* eslint-disable-line*/
 {
     padding: 0 20px 20px;
     display: inline-table;
@@ -57,7 +57,7 @@ img
     -webkit-box-shadow: 0 0 5px gray;
 }
 
-.pic2:hover ~ #t2 /* eslint-disable-line selector-no-id */
+.pic2:hover ~ #t2 /* eslint-disable-line*/
 {
     padding: 20px;
     padding-top: 0;
@@ -68,7 +68,7 @@ img
     -webkit-box-shadow: 0 0 5px gray;
 }
 
-.pic3:hover ~ #t3 /* eslint-disable-line selector-no-id */
+.pic3:hover ~ #t3 /* eslint-disable-line */
 {
     padding: 20px;
     padding-top: 0;
@@ -79,7 +79,7 @@ img
     -webkit-box-shadow: 0 0 10px gray;
 }
 
-.pic4:hover ~ #t4 /* eslint-disable-line selector-no-id */
+.pic4:hover ~ #t4 /* eslint-disable-line*/
 {
     padding: 20px;
     padding-top: 0;
@@ -90,7 +90,7 @@ img
     -webkit-box-shadow: 0 0 10px gray;
 }
 
-.pic5:hover ~ #t5 /* eslint-disable-line selector-no-id */
+.pic5:hover ~ #t5 /* eslint-disable-line*/
 {
     padding: 20px;
     padding-top: 0;
@@ -101,7 +101,7 @@ img
     -webkit-box-shadow: 0 0 10px gray;
 }
 
-.pic6:hover ~ #t6 /* eslint-disable-line selector-no-id */
+.pic6:hover ~ #t6 /* eslint-disable-line*/
 {
     padding: 20px;
     padding-top: 0;
@@ -112,7 +112,7 @@ img
     -webkit-box-shadow: 0 0 10px gray;
 }
 
-.pic7:hover ~ #t7 /* eslint-disable-line selector-no-id */
+.pic7:hover ~ #t7 /* eslint-disable-line */
 {
     padding: 20px;
     padding-top: 0;
@@ -123,7 +123,7 @@ img
     -webkit-box-shadow: 0 0 10px gray;
 }
 
-.pic8:hover ~ #t8 /* eslint-disable-line selector-no-id */
+.pic8:hover ~ #t8 /* eslint-disable-line*/
 {
     padding: 20px;
     padding-top: 0;
