@@ -36,7 +36,7 @@ img
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0,0,1,0.5);
+    background-color: rgba(0,0,1,.5);
     display: none;
 }
 
@@ -47,7 +47,7 @@ img
     display: inline-block;
 }
 
-.pic1:hover ~ #t1
+.pic1:hover ~ #t1 /* eslint-disable-line selector-no-id */
 {
     padding: 0 20px 20px;
     display: inline-table;
@@ -57,10 +57,10 @@ img
     -webkit-box-shadow: 0 0 5px gray;
 }
 
-.pic2:hover ~ #t2
+.pic2:hover ~ #t2 /* eslint-disable-line selector-no-id */
 {
     padding: 20px;
-    padding-top: 0px;
+    padding-top: 0;
     display: inline-table;
     margin-top: 10%;
     margin-left: -20%;
@@ -68,70 +68,70 @@ img
     -webkit-box-shadow: 0 0 5px gray;
 }
 
-.pic3:hover ~ #t3
+.pic3:hover ~ #t3 /* eslint-disable-line selector-no-id */
 {
     padding: 20px;
-    padding-top: 0px;
+    padding-top: 0;
     display: inline-table;
     margin-top: 10%;
     margin-left: -20%;
     font-size: 12px;
-    -webkit-box-shadow: 0px 0px 10px gray;
+    -webkit-box-shadow: 0 0 10px gray;
 }
 
-.pic4:hover ~ #t4
+.pic4:hover ~ #t4 /* eslint-disable-line selector-no-id */
 {
     padding: 20px;
-    padding-top: 0px;
+    padding-top: 0;
     display: inline-table;
     margin-top: 10%;
     margin-left: -20%;
     font-size: 12px;
-    -webkit-box-shadow: 0px 0px 10px gray;
+    -webkit-box-shadow: 0 0 10px gray;
 }
 
-.pic5:hover ~ #t5
+.pic5:hover ~ #t5 /* eslint-disable-line selector-no-id */
 {
     padding: 20px;
-    padding-top: 0px;
+    padding-top: 0;
     display: inline-table;
     margin-top: 10%;
     margin-left: -20%;
     font-size: 12px;
-    -webkit-box-shadow: 0px 0px 10px gray;
+    -webkit-box-shadow: 0 0 10px gray;
 }
 
-.pic6:hover ~ #t6
+.pic6:hover ~ #t6 /* eslint-disable-line selector-no-id */
 {
     padding: 20px;
-    padding-top: 0px;
+    padding-top: 0;
     display: inline-table;
     margin-top: 10%;
     margin-left: -20%;
     font-size: 12px;
-    -webkit-box-shadow: 0px 0px 10px gray;
+    -webkit-box-shadow: 0 0 10px gray;
 }
 
-.pic7:hover ~ #t7
+.pic7:hover ~ #t7 /* eslint-disable-line selector-no-id */
 {
     padding: 20px;
-    padding-top: 0px;
+    padding-top: 0;
     display: inline-table;
     margin-top: 10%;
     margin-left: -20%;
     font-size: 12px;
-    -webkit-box-shadow: 0px 0px 10px gray;
+    -webkit-box-shadow: 0 0 10px gray;
 }
 
-.pic8:hover ~ #t8
+.pic8:hover ~ #t8 /* eslint-disable-line selector-no-id */
 {
     padding: 20px;
-    padding-top: 0px;
+    padding-top: 0;
     display: inline-table;
     margin-top: 10%;
     margin-left: -20%;
     font-size: 12px;
-    -webkit-box-shadow: 0px 0px 10px gray;
+    -webkit-box-shadow: 0 0 10px gray;
 }
 
 .block1
