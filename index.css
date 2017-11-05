@@ -1,0 +1,139 @@
+img
+{
+    width: 200px;
+    margin: 0 30px 5px 0; /*Интервалы между изображениями*/
+}
+.pic
+{
+    max-width: 40%;
+    min-width: 40%;
+    margin-top: 10%;
+}
+.close
+{
+    position: fixed;
+    line-height: 25px;
+    right: 5%;
+    top: 5%;
+    font-size: 23pt;
+    color: #FFF;
+}
+.text
+{
+    text-align: center;
+    width: 200px;
+    display: none;
+    color: black;
+}
+.modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,1,0.5);
+    display: none;
+}
+.modal:target {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.pic1:hover ~ #t1
+{
+    padding: 0 20px 20px;
+    display: inline-table;
+    margin-top: 10%;
+    margin-left: -20%;
+    font-size: 12px;
+    -webkit-box-shadow:0 0 5px gray;
+}
+.pic2:hover ~ #t2
+{
+    padding: 20px;
+    padding-top: 0px;
+    display:inline-table;
+    margin-top: 10%;
+    margin-left: -20%;
+    font-size: 12px;
+    -webkit-box-shadow:0 0 5px gray;
+}
+.pic3:hover ~ #t3
+{
+    padding: 20px;
+    padding-top: 0px;
+    display:inline-table;
+    margin-top: 10%;
+    margin-left: -20%;
+    font-size: 12px;
+    -webkit-box-shadow:0px 0px 10px gray;
+}
+.pic4:hover ~ #t4
+{
+    padding: 20px;
+    padding-top: 0px;
+    display:inline-table;
+    margin-top: 10%;
+    margin-left: -20%;
+    font-size: 12px;
+    -webkit-box-shadow:0px 0px 10px gray;
+}
+.pic5:hover ~ #t5
+{
+    padding: 20px;
+    padding-top: 0px;
+    display:inline-table;
+    margin-top: 10%;
+    margin-left: -20%;
+    font-size: 12px;
+    -webkit-box-shadow:0px 0px 10px gray;
+}
+.pic6:hover ~ #t6
+{
+    padding: 20px;
+    padding-top: 0px;
+    display:inline-table;
+    margin-top: 10%;
+    margin-left: -20%;
+    font-size: 12px;
+    -webkit-box-shadow:0px 0px 10px gray;
+}
+.pic7:hover ~ #t7
+{
+    padding: 20px;
+    padding-top: 0px;
+    display:inline-table;
+    margin-top: 10%;
+    margin-left: -20%;
+    font-size: 12px;
+    -webkit-box-shadow:0px 0px 10px gray;
+}
+.pic8:hover ~ #t8
+{
+    padding: 20px;
+    padding-top: 0px;
+    display:inline-table;
+    margin-top: 10%;
+    margin-left: -20%;
+    font-size: 12px;
+    -webkit-box-shadow:0px 0px 10px gray;
+}
+.block1
+{
+    display: none;
+}
+.block2
+{
+    display: none;
+}
+.spoiler .radio1:checked + .block1{
+    display: block;
+}
+.spoiler .radio2:checked + .block2{
+    display: block;
+}
+.spoiler
+{
+    margin-top: 20%;
+    text-align: center;
+}
