@@ -1,0 +1,174 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+    width: 1000px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+.gallery_label
+{
+    display: none;
+}
+
+.gallery_input
+{
+    display: none;
+}
+
+.left_gallery_label:after
+{
+    content: '\003C';
+    font: bold 34px sans-serif;
+}
+
+.left_gallery_label,
+.right_gallery_label
+{
+    position: relative;
+    top: 100px;
+    z-index: 1;
+}
+
+.left_gallery_label
+{
+    float: left;
+}
+
+.right_gallery_label:after
+{
+    content: '\003E';
+    font: bold 34px sans-serif;
+}
+
+.right_gallery_label
+{
+    float: right;
+}
+
+.first_page:checked ~ .vegetable_gallery
+{
+    left: 0;
+}
+
+.second_page:checked ~ .vegetable_gallery
+{
+    left: -100%;
+}
+
+.third_page:checked ~ .vegetable_gallery
+{
+    left: -200%;
+}
+
+.first_page:checked ~ .left_gallery_label[for='third_page'],
+.first_page:checked ~ .right_gallery_label[for='second_page'],
+.second_page:checked ~ .left_gallery_label[for='first_page'],
+.second_page:checked ~ .right_gallery_label[for='third_page'],
+.third_page:checked ~ .left_gallery_label[for='second_page'],
+.third_page:checked ~ .right_gallery_label[for='first_page']
+{
+    display: block;
+}
+
+.vegetable_gallery
+{
+    width: 3020px;
+    transition: all 3s ease-in-out;
+    position: relative;
+}
+
+.first_page_vegetable_gallery,
+.second_page_vegetable_gallery,
+.third_page_vegetable_gallery
+{
+    display: inline-block;
+    margin-left: 1px;
+    padding: 0 30px;
+}
+
+.vegetable_gallery_card
+{
+    width: 231px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0);
+    vertical-align: top;
+    display: inline-block;
+}
+
+.vegetable_gallery_card:hover .vegetable_gallery_card_information
+{
+    display: block;
+}
+
+.vegetable_gallery_card:hover
+{
+    border: 1px solid #411d11;
+}
+
+.vegetable_gallery_photo_card img
+{
+    width: 100%;
+}
+
+.vegetable_gallery_card_information
+{
+    display: none;
+    padding: 5px 10px;
+}
+
+.modal
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    pointer-events: none;
+}
+
+.modal:target
+{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal_hidden,
+.modal_close_button
+{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.modal_hidden
+{
+    width: 400px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal_hidden img
+{
+    width: 100%;
+}
+
+.modal_close_button
+{
+    float: right;
+    top: 2%;
+    right: 5%;
+    font: bold 30px serif;
+    text-decoration: none;
+    color: #411d11;
+}
