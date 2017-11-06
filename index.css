@@ -1,0 +1,222 @@
+input
+{
+    display: none;
+}
+
+.gallery
+{
+    padding-top: 20%;
+    height: 50%;
+}
+
+.slide-switchers
+{
+    position: fixed;
+    bottom: 1px;
+    left: 1px;
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+}
+
+.card
+{
+    transition: .2s;
+    vertical-align: top;
+    width: 20%;
+    padding: 1.8%;
+    display: none;
+    border: 2px solid transparent;
+}
+
+img
+{
+    width: 100%;
+}
+
+.description
+{
+    display: none;
+}
+
+.card:hover
+{
+    transform: scale(1.2, 1.2);
+    border: 2px solid black;
+}
+
+.card:hover .description
+{
+    display: block;
+}
+
+input:nth-of-type(1):checked ~ .gallery .card:nth-child(1),
+input:nth-of-type(1):checked ~ .gallery .card:nth-child(2),
+input:nth-of-type(1):checked ~ .gallery .card:nth-child(3),
+input:nth-of-type(1):checked ~ .gallery .card:nth-child(4)
+{
+    display: inline-block;
+}
+
+input:nth-of-type(1):checked ~ .gallery .slide-switchers label:nth-child(1)
+{
+    color: lightseagreen;
+}
+
+input:nth-of-type(2):checked ~ .gallery .card:nth-child(4),
+input:nth-of-type(2):checked ~ .gallery .card:nth-child(5),
+input:nth-of-type(2):checked ~ .gallery .card:nth-child(6),
+input:nth-of-type(2):checked ~ .gallery .card:nth-child(7)
+{
+    display: inline-block;
+}
+
+input:nth-of-type(2):checked ~ .gallery .slide-switchers label:nth-child(2)
+{
+    color: lightseagreen;
+}
+
+input:nth-of-type(3):checked ~ .gallery .card:nth-child(7),
+input:nth-of-type(3):checked ~ .gallery .card:nth-child(8),
+input:nth-of-type(3):checked ~ .gallery .card:nth-child(9),
+input:nth-of-type(3):checked ~ .gallery .card:nth-child(10)
+{
+    display: inline-block;
+}
+
+input:nth-of-type(3):checked ~ .gallery .slide-switchers label:nth-child(3)
+{
+    color: lightseagreen;
+}
+
+.imagens
+{
+    background: darkgray;
+    position: fixed;
+    top: 1px;
+    left: 1px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.imagens img
+{
+    padding: 10%;
+    max-width: 80%;
+    max-height: 80%;
+    vertical-align: center;
+    display: none;
+}
+
+.imagens span
+{
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: .3;
+    display: none;
+}
+
+.imagens span:hover
+{
+    opacity: 1;
+}
+
+.imagens span:before,
+.imagens span:after
+{
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+.imagens span:before
+{
+    transform: rotate(45deg);
+}
+
+.imagens span:after
+{
+    transform: rotate(-45deg);
+}
+
+input[type='checkbox']:checked ~ .gallery
+{
+    display: none;
+}
+
+input[name='cardi-selected']:checked ~ .imagens img:nth-of-type(1),
+input[name='cardi-selected']:checked ~ .imagens,
+input[name='cardi-selected']:checked ~ .imagens label:nth-of-type(1) span
+{
+    display: block;
+}
+
+input[name='cardii-selected']:checked ~ .imagens img:nth-of-type(2),
+input[name='cardii-selected']:checked ~ .imagens,
+input[name='cardii-selected']:checked ~ .imagens label:nth-of-type(2) span
+{
+    display: block;
+}
+
+input[name='cardiii-selected']:checked ~ .imagens img:nth-of-type(3),
+input[name='cardiii-selected']:checked ~ .imagens,
+input[name='cardiii-selected']:checked ~ .imagens label:nth-of-type(3) span
+{
+    display: block;
+}
+
+input[name='cardiv-selected']:checked ~ .imagens img:nth-of-type(4),
+input[name='cardiv-selected']:checked ~ .imagens,
+input[name='cardiv-selected']:checked ~ .imagens label:nth-of-type(4) span
+{
+    display: block;
+}
+
+input[name='cardv-selected']:checked ~ .imagens img:nth-of-type(5),
+input[name='cardv-selected']:checked ~ .imagens,
+input[name='cardv-selected']:checked ~ .imagens label:nth-of-type(5) span
+{
+    display: block;
+}
+
+input[name='cardvi-selected']:checked ~ .imagens img:nth-of-type(6),
+input[name='cardvi-selected']:checked ~ .imagens,
+input[name='cardvi-selected']:checked ~ .imagens label:nth-of-type(6) span
+{
+    display: block;
+}
+
+input[name='cardvii-selected']:checked ~ .imagens img:nth-of-type(7),
+input[name='cardvii-selected']:checked ~ .imagens,
+input[name='cardvii-selected']:checked ~ .imagens label:nth-of-type(7) span
+{
+    display: block;
+}
+
+input[name='cardviii-selected']:checked ~ .imagens img:nth-of-type(8),
+input[name='cardviii-selected']:checked ~ .imagens,
+input[name='cardviii-selected']:checked ~ .imagens label:nth-of-type(8) span
+{
+    display: block;
+}
+
+input[name='cardix-selected']:checked ~ .imagens img:nth-of-type(9),
+input[name='cardix-selected']:checked ~ .imagens,
+input[name='cardix-selected']:checked ~ .imagens label:nth-of-type(9) span
+{
+    display: block;
+}
+
+input[name='cardx-selected']:checked ~ .imagens img:nth-of-type(10),
+input[name='cardx-selected']:checked ~ .imagens,
+input[name='cardx-selected']:checked ~ .imagens label:nth-of-type(10) span
+{
+    display: block;
+}
