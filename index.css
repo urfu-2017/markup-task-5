@@ -1,7 +1,5 @@
 main
 {
-    width: 1500px;
-    margin: 0 auto;
     padding-top: 300px;
 }
 
@@ -13,34 +11,31 @@ input
 .item
 {
     text-align: center;
-    max-width: 300px;
+    width: 20%;
+    box-sizing: content-box;
     float: left;
     z-index: 1;
+    margin: 0 10px;
+    padding: 15px;
+}
+
+.item:hover
+{
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 .item-description
 {
     font-size: 12px;
     font-family: sans-serif;
-}
-
-.item > .item-description
-{
     display: none;
 }
 
-.item img
+.item > label > img
 {
-    max-width: 300px;
+    width: 100%;
     cursor: pointer;
-}
-
-.item:hover
-{
-    margin: 0 10px;
-    z-index: 2;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 .item:hover > .item-description
@@ -83,11 +78,7 @@ input
     cursor: auto;
 }
 
-.view-switch:checked ~ .background
-{
-    display: block;
-}
-
+.view-switch:checked ~ .background,
 .view-switch:checked ~ .big-image
 {
     display: block;
@@ -100,7 +91,8 @@ input
     top: 20px;
     right: 30px;
     cursor: pointer;
-    font-size: 50px;
+
+    font-size: 30px;
     color: #f00;
 }
 
@@ -109,31 +101,62 @@ input
 .page
 {
     display: none;
+    float: left;
+    width: 80%;
+}
+
+.page + .arrow-wrap
+{
+    float: right;
+}
+
+.arrow-wrap
+{
+    display: none;
+    float: left;
+    width: 10%;
+    min-width: 50px;
 }
 
 .arrow
 {
     cursor: pointer;
     float: left;
-    display: none;
     width: 0;
     height: 0;
     border-top: 50px solid transparent;
     border-bottom: 50px solid transparent;
 }
 
+.arrow.disabled
+{
+    cursor: auto;
+}
+
 .arrow.right
 {
-    border-left: 100px solid rgb(0, 0, 0);
+    border-left: 50px solid rgb(0, 0, 0);
+    float: right;
+}
+
+.arrow.right.disabled
+{
+    border-left-color: rgba(0, 0, 0, .2);
 }
 
 .arrow.left
 {
-    border-right: 100px solid rgb(0, 0, 0);
+    border-right: 50px solid rgb(0, 0, 0);
+}
+
+.arrow.left.disabled
+{
+    border-right-color: rgba(0, 0, 0, .2);
 }
 
 input[name='pages']:checked + .page,
 input[name='pages']:checked + label,
+input[name='pages']:checked + label + .page + label,
 input[name='pages']:checked + .page + label,
 input[name='pages']:checked + label + .page
 {
