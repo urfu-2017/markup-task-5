@@ -3,7 +3,176 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link href="index.css" rel="stylesheet">
 </head>
 <body>
+<h2>Достижения сельского хозяйства города N</h2>
+    <!-- СТРАНИЦЫ -->
+    <input type="radio" id="0->1" name="arrows">
+    <input type="radio" id="1->0" name="arrows">
+    <!-- КРЕСТИК -->
+    <input type="radio" id="close-big-picture" name="modal-pictures" value="close" checked>
+    <!-- МОДАЛЬНЫЕ КАРТИНКИ 0 -->
+    <input type="radio" id="orange" name="modal-pictures">
+    <div class="big-picture">
+        <img src="pictures/big-orange.png" alt="апельсин" title="апельсин">
+        <label for="close-big-picture">&times;</label>
+    </div>
+    <input type="radio" id="cucurbita" name="modal-pictures">
+    <div class="big-picture">
+        <img src="pictures/cucurbita.jpg" alt="тыква" title="тыква">
+        <label for="close-big-picture">&times;</label>
+    </div>
+    <input type="radio" id="squash" name="modal-pictures">
+    <div class="big-picture">
+        <img src="pictures/squash.jpg" alt="кабачок" title="кабачок">
+        <label for="close-big-picture">&times;</label>
+    </div>
+    <input type="radio" id="grapefruit" name="modal-pictures">
+    <div class="big-picture">
+        <img src="pictures/grapefruit.jpg" alt="грейпфрут" title="грейпфрут">
+        <label for="close-big-picture">&times;</label>
+    </div>
+    <!-- МОДАЛЬНЫЕ КАРТИНКИ 1 -->
+    <input type="radio" id="carrot" name="modal-pictures">
+    <div class="big-picture">
+        <img src="pictures/carrot.jpg" alt="морковь" title="морковь">
+        <label for="close-big-picture">&times;</label>
+    </div>
+    <input type="radio" id="cucumber" name="modal-pictures">
+    <div class="big-picture">
+        <img src="pictures/cucumber.jpg" alt="огурец" title="огурец">
+        <label for="close-big-picture">&times;</label>
+    </div>
+    <input type="radio" id="tomato" name="modal-pictures">
+    <div class="big-picture">
+        <img src="pictures/tomato.jpg" alt="помидор" title="помидор">
+        <label for="close-big-picture">&times;</label>
+    </div>
+    <input type="radio" id="eggplant" name="modal-pictures">
+    <div class="big-picture">
+        <img src="pictures/eggplant.jpg" alt="баклажан" title="баклажан">
+        <label for="close-big-picture">&times;</label>
+    </div>
+    <!-- СТРАНИЦА 0 -->
+    <section class="page-0">
+        <article class="product">
+            <div class="product-picture">
+                <label for="orange">
+                    <img src="pictures/orange.jpg" alt="апельсин" title="апельсин">
+                </label>
+            </div>
+            <div class="product-info">
+                <p>
+                    Апельсин — самая распространённая цитрусовая культура во всех тропических и
+                    субтропических областях мира
+                </p>
+            </div>
+        </article>
+        <article class="product">
+            <div class="product-picture">
+                <label for="cucurbita">
+                    <img src="pictures/cucurbita.jpg" alt="тыква" title="тыква">
+                </label>
+            </div>
+            <div class="product-info">
+                <p>
+                    Тыква — род травянистых растений семейства Тыквенные
+                </p>
+            </div>
+        </article>
+        <article class="product">
+            <div class="product-picture">
+                <label for="squash">
+                    <img src="pictures/squash.jpg" alt="кабачок" title="кабачок">
+                </label>
+            </div>
+            <div class="product-info">
+                <p>
+                    Кабачок — кустовая разновидность тыквы обыкновенной с продолговатыми плодами, без плетей
+                </p>
+            </div>
+        </article>
+        <article class="product">
+            <div class="product-picture">
+                <label for="eggplant">
+                    <img src="pictures/eggplant.jpg" alt="баклажан" title="баклажан">
+                </label>
+            </div>
+            <div class="product-info">
+                <p>
+                    Баклажан, или Паслён тёмноплодный — вид многолетних травянистых растений рода Паслён
+                </p>
+            </div>
+        </article>
+        <article class="arrow right">
+            <label for="0->1">
+                <img src="pictures/right.png" alt="стрелка вправо"
+                     title="нажмите, чтобы перейти на следующую страницу">
+            </label>
+        </article>
+    </section>
+    <!-- СТРАНИЦА 1-->
+    <section class="page-1">
+        <article class="product">
+            <div class="product-picture">
+                <label for="carrot">
+                    <img src="pictures/carrot.jpg" alt="морковь" title="морковь">
+                </label>
+            </div>
+            <div class="product-info">
+                <p>
+                    Морковь посевная — двулетнее растение, подвид вида морковь дикая.
+                    Обычно в быту под словом «морковь» подразумевается широко распространенный
+                    корнеплод именно этого растения.
+                </p>
+            </div>
+        </article>
+        <article class="product">
+            <div class="product-picture">
+                <label for="cucumber">
+                    <img src="pictures/cucumber.jpg" alt="огурец" title="огурец">
+                </label>
+            </div>
+            <div class="product-info">
+                <p>
+                    Огурец обыкновенный, или Огурец посевно́й — однолетнее травянистое растение,
+                    вид рода Огурец семейства Тыквенные, овощная культура.
+                </p>
+            </div>
+        </article>
+        <article class="product">
+            <div class="product-picture">
+                <label for="tomato">
+                    <img src="pictures/tomato.jpg" alt="помидор" title="помидор">
+                </label>
+            </div>
+            <div class="product-info">
+                <p>
+                    Томат, или помидор — однолетнее или многолетнее травянистое растение,
+                    вид рода Паслён. Возделывается как овощная культура.
+                </p>
+            </div>
+        </article>
+        <article class="product">
+            <div class="product-picture">
+                <label for="grapefruit">
+                    <img src="pictures/grapefruit.jpg" alt="грейпфрут" title="грейпфрут">
+                </label>
+            </div>
+            <div class="product-info">
+                <p>
+                    Грейпфрут — субтропическое вечнозелёное дерево;
+                    вид рода Цитрус семейства Рутовые; а также его плод, достигающий в диаметре 10—15 см.
+                </p>
+            </div>
+        </article>
+        <article class="arrow left">
+            <label for="1->0">
+                <img src="pictures/left.png" alt="стрелка вправо"
+                     title="нажмите, чтобы перейти на следующую страницу">
+            </label>
+        </article>
+    </section>
 </body>
 </html>
