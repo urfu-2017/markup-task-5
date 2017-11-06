@@ -2,8 +2,204 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «Бабуленькин урожай»</title>
 </head>
 <body>
+<main>
+    <h1 class="header">Бабуленькин урожай</h1>
+    <input type="radio" id="page1" name="page-selection" checked>
+    <input type="radio" id="page2" name="page-selection">
+    <input type="radio" id="page3" name="page-selection">
+    <div class="items">
+        <label for="page1" class="nav backward">← сюда</label>
+        <label for="page2" class="nav backward">← сюда</label>
+        <label for="page3" class="nav backward">← сюда</label>
+        <div class="item page1">
+            <label class="img" for="1big"><img src="images/beet.png" alt="Свекла"></label>
+            <div class="info">
+                <h3 class="name">Свекла</h3>
+                <div class="description">Свёк&shy;ла (кор&shy;не&shy;плод) — кор&shy;не&shy;плод куль&shy;ти&shy;ви&shy;ру&shy;е&shy;мых
+                    раз&shy;но&shy;вид&shy;но&shy;стей рас&shy;те&shy;ний ви&shy;да свёк&shy;ла обык&shy;но&shy;вен&shy;ная.
+                    У ди&shy;ко&shy;рас&shy;ту&shy;щих раз&shy;но&shy;вид&shy;но&shy;стей дан&shy;но&shy;го ви&shy;да
+                    кор&shy;не&shy;плод от&shy;сут&shy;ству&shy;ет.
+                </div>
+            </div>
+        </div>
+        <div class="item page1">
+            <label class="img" for="2big"><img src="images/broccoli.png" alt="Брокколи"></label>
+            <div class="info">
+                <h3 class="name">Брокколи</h3>
+                <div class="description">Бро́кко&shy;ли, или Спа́рже&shy;вая ка&shy;пу́ста — од&shy;но&shy;лет&shy;нее
+                    овощ&shy;ное рас&shy;те&shy;ние се&shy;мей&shy;ства Ка&shy;пуст&shy;ные, раз&shy;но&shy;вид&shy;ность
+                    ка&shy;пу&shy;сты ого&shy;род&shy;ной. Бли&shy;жай&shy;ший род&shy;ствен&shy;ник и ге&shy;не&shy;ти&shy;че&shy;ский
+                    пред&shy;ше&shy;ствен&shy;ник цвет&shy;ной ка&shy;пу&shy;сты.
+                </div>
+            </div>
+        </div>
+        <div class="item page1">
+            <label class="img" for="3big"><img src="images/cabbage.png" alt="Капуста"></label>
+            <div class="info">
+                <h3 class="name">Капуста</h3>
+                <div class="description">Ка&shy;пу́ста ого&shy;ро́дная (лат. Brássica olerácea) — дву&shy;лет&shy;нее
+                    рас&shy;те&shy;ние, сель&shy;ско&shy;хо&shy;зяй&shy;ствен&shy;ная куль&shy;ту&shy;ра; вид
+                    ро&shy;да
+                    Ка&shy;пу&shy;ста (лат. Brassica) се&shy;мей&shy;ства Ка&shy;пуст&shy;ные (Кре&shy;сто&shy;цвет&shy;ные).
+                </div>
+            </div>
+        </div>
+        <div class="item page1">
+            <label class="img" for="4big"><img src="images/carrot.png" alt="Морковь"></label>
+            <div class="info">
+                <h3 class="name">Морковь</h3>
+                <div class="description">Мор&shy;ковь по&shy;сев&shy;ная (лат. Daucus carota subsp. sativus) —
+                    дву&shy;лет&shy;нее
+                    рас&shy;те&shy;ние, под&shy;вид ви&shy;да мор&shy;ковь ди&shy;кая. Обыч&shy;но в бы&shy;ту
+                    под
+                    сло&shy;вом «мор&shy;ковь» под&shy;ра&shy;зу&shy;ме&shy;ва&shy;ет&shy;ся ши&shy;ро&shy;ко
+                    рас&shy;про&shy;стра&shy;нен&shy;ный
+                    кор&shy;не&shy;плод имен&shy;но это&shy;го рас&shy;те&shy;ния.
+                </div>
+            </div>
+        </div>
+        <div class="item page2">
+            <label class="img" for="5big"><img src="images/cauliflower.png" alt="Цветная капуста"></label>
+            <div class="info">
+                <h3 class="name">Цветная капуста</h3>
+                <div class="description">Цвет&shy;на́я ка&shy;пу́ста (Brassica oleracea L. var. botrytis L.) —
+                    рас&shy;про&shy;стра&shy;нён&shy;ная
+                    овощ&shy;ная куль&shy;ту&shy;ра, один из куль&shy;тур&shy;ных сор&shy;тов ви&shy;да Ка&shy;пу&shy;ста
+                    ого&shy;род&shy;ная. От&shy;но&shy;сит&shy;ся к сор&shy;то&shy;вой груп&shy;пе botrytis,
+                    как и
+                    ро&shy;ма&shy;не&shy;ско.
+                </div>
+            </div>
+        </div>
+        <div class="item page2">
+            <label class="img" for="6big"><img src="images/corn.png" alt="Кукуруза"></label>
+            <div class="info">
+                <h3 class="name">Кукуруза</h3>
+                <div class="description">Ку&shy;ку&shy;ру́за са́хар&shy;ная, так&shy;же маи́с (лат. Zéa máys)
+                    — од&shy;но&shy;лет&shy;нее
+                    тра&shy;вя&shy;ни&shy;стое куль&shy;тур&shy;ное рас&shy;те&shy;ние, един&shy;ствен&shy;ный
+                    куль&shy;тур&shy;ный пред&shy;ста&shy;ви&shy;тель ро&shy;да Ку&shy;ку&shy;ру&shy;за (Zea)
+                    се&shy;мей&shy;ства
+                    Зла&shy;ки (Poaceae).
+                </div>
+            </div>
+        </div>
+        <div class="item page2">
+            <label class="img" for="7big"><img src="images/cucumber.png" alt="Огурец"></label>
+            <div class="info">
+                <h3 class="name">Огурец</h3>
+                <div class="description">Огу&shy;ре́ц обык&shy;но&shy;ве́нный, или Огу&shy;рец по&shy;сев&shy;но́й
+                    (лат. Cucumis sativus) — од&shy;но&shy;лет&shy;нее тра&shy;вя&shy;ни&shy;стое рас&shy;те&shy;ние,
+                    вид ро&shy;да Огу&shy;рец (Cucumis) се&shy;мей&shy;ства Тык&shy;вен&shy;ные
+                    (Cucurbitaceae),
+                    овощ&shy;ная куль&shy;ту&shy;ра.
+                </div>
+            </div>
+        </div>
+        <div class="item page2">
+            <label class="img" for="8big"><img src="images/eggplant.png" alt="Баклажан"></label>
+            <div class="info">
+                <h3 class="name">Баклажан</h3>
+                <div class="description">Ба&shy;кла&shy;жа́н, или Пас&shy;лён тём&shy;нопло́дный (лат. Solánum
+                    melongéna) — вид мно&shy;го&shy;лет&shy;них тра&shy;вя&shy;ни&shy;стых рас&shy;те&shy;ний
+                    ро&shy;да
+                    Пас&shy;лён (Solanum). Воз&shy;де&shy;лы&shy;ва&shy;ет&shy;ся как од&shy;но&shy;лет&shy;нее
+                    рас&shy;те&shy;ние. Съе&shy;до&shy;бен толь&shy;ко плод. В бо&shy;та&shy;ни&shy;че&shy;ском
+                    смыс&shy;ле это яго&shy;да, в ку&shy;ли&shy;нар&shy;ном рас&shy;смат&shy;ри&shy;ва&shy;ет&shy;ся
+                    как овощ.
+                </div>
+            </div>
+        </div>
+        <div class="item page3">
+            <label class="img" for="9big"><img src="images/garlic.png" alt="Чеснок"></label>
+            <div class="info">
+                <h3 class="name">Чеснок</h3>
+                <div class="description">Чес&shy;но́к (лат. Állium satívum) — мно&shy;го&shy;лет&shy;нее тра&shy;вя&shy;ни&shy;стое
+                    рас&shy;те&shy;ние; вид ро&shy;да Лук се&shy;мей&shy;ства Ама&shy;рил&shy;ли&shy;со&shy;вые
+                    (Amaryllidaceae) под&shy;се&shy;мей&shy;ства Лу&shy;ко&shy;вые (Allioideae), ра&shy;нее по&shy;ме&shy;щал&shy;ся
+                    в са&shy;мо&shy;сто&shy;я&shy;тель&shy;ное ны&shy;не упразд&shy;нён&shy;ное се&shy;мей&shy;ство
+                    Лу&shy;ко&shy;вые (Alliaceae).<br></div>
+            </div>
+        </div>
+        <div class="item page3">
+            <label class="img" for="10big"><img src="images/ginger.png" alt="Имбирь"></label>
+            <div class="info">
+                <h3 class="name">Имбирь</h3>
+                <div class="description">Им&shy;би́рь ап&shy;те́чный, или Им&shy;бирь ле&shy;ка́рствен&shy;ный,
+                    или Им&shy;бирь на&shy;стоя́щий, или Им&shy;бирь обык&shy;но&shy;ве́нный (лат. Zīngiber
+                    officināle) — мно&shy;го&shy;лет&shy;нее тра&shy;вя&shy;ни&shy;стое рас&shy;те&shy;ние; ти&shy;по&shy;вой
+                    вид ро&shy;да Им&shy;бирь се&shy;мей&shy;ства Им&shy;бир&shy;ные (Zingiberaceae). В рус&shy;ском
+                    язы&shy;ке ча&shy;сто на&shy;зы&shy;ва&shy;ет&shy;ся про&shy;сто им&shy;бирь; им&shy;би&shy;рём
+                    на&shy;зы&shy;ва&shy;ют так&shy;же сы&shy;рые или пе&shy;ре&shy;ра&shy;бо&shy;тан&shy;ные
+                    кор&shy;не&shy;ви&shy;ща
+                    рас&shy;те&shy;ния.
+                </div>
+            </div>
+        </div>
+        <div class="item page3">
+            <label class="img" for="11big"><img src="images/olives.png" alt="Оливки"></label>
+            <div class="info">
+                <h3 class="name">Оливки</h3>
+                <div class="description">Плод оли&shy;вы — ко&shy;стян&shy;ка ча&shy;ще все&shy;го удли&shy;нён&shy;но-оваль&shy;ной
+                    фор&shy;мы дли&shy;ной от 0,7 до 4 сан&shy;ти&shy;мет&shy;ров и диа&shy;мет&shy;ром от 1
+                    до 2
+                    сан&shy;ти&shy;мет&shy;ров, с за&shy;ост&shy;рён&shy;ным или ту&shy;пым но&shy;си&shy;ком,
+                    с
+                    мя&shy;си&shy;стым око&shy;ло&shy;плод&shy;ни&shy;ком, со&shy;дер&shy;жа&shy;щим мас&shy;ло.
+                </div>
+            </div>
+        </div>
+        <div class="item page3">
+            <label class="img" for="12big"><img src="images/onion.png" alt="Лук"></label>
+            <div class="info">
+                <h3 class="name">Лук</h3>
+                <div class="description">Лук (лат. Allium) — род дву&shy;лет&shy;них и мно&shy;го&shy;лет&shy;них
+                    тра&shy;вя&shy;ни&shy;стых рас&shy;те&shy;ний, от&shy;но&shy;си&shy;мых к под&shy;се&shy;мей&shy;ству
+                    Лу&shy;ко&shy;вые (Alliaceae) се&shy;мей&shy;ства Ама&shy;рил&shy;ли&shy;со&shy;вые
+                    (Amaryllidaceae) по&shy;ряд&shy;ка Спар&shy;же&shy;цвет&shy;ные (Asparagales) (ра&shy;нее
+                    от&shy;но&shy;си&shy;ли
+                    к ли&shy;лей&shy;ным).
+                </div>
+            </div>
+        </div>
+        <label for="page1" class="nav forward">туда →</label>
+        <label for="page2" class="nav forward">туда →</label>
+        <label for="page3" class="nav forward">туда →</label>
+
+    </div>
+
+    <input type="radio" id="close" name="big-images" checked>
+    <input type="radio" id="1big" name="big-images">
+    <input type="radio" id="2big" name="big-images">
+    <input type="radio" id="3big" name="big-images">
+    <input type="radio" id="4big" name="big-images">
+    <input type="radio" id="5big" name="big-images">
+    <input type="radio" id="6big" name="big-images">
+    <input type="radio" id="7big" name="big-images">
+    <input type="radio" id="8big" name="big-images">
+    <input type="radio" id="9big" name="big-images">
+    <input type="radio" id="10big" name="big-images">
+    <input type="radio" id="11big" name="big-images">
+    <input type="radio" id="12big" name="big-images">
+    <div class="big-images">
+        <div class="big1"><img src="images/beet.png" alt="Свекла"></div>
+        <div class="big2"><img src="images/broccoli.png" alt="Брокколи"></div>
+        <div class="big3"><img src="images/cabbage.png" alt="Капуста"></div>
+        <div class="big4"><img src="images/carrot.png" alt="Морковь"></div>
+        <div class="big5"><img src="images/cauliflower.png" alt="Цветная капуста"></div>
+        <div class="big6"><img src="images/corn.png" alt="Кукуруза"></div>
+        <div class="big7"><img src="images/cucumber.png" alt="Огурец"></div>
+        <div class="big8"><img src="images/eggplant.png" alt="Баклажан"></div>
+        <div class="big9"><img src="images/garlic.png" alt="Чеснок"></div>
+        <div class="10big"><img src="images/ginger.png" alt="Имбирь"></div>
+        <div class="11big"><img src="images/olives.png" alt="Оливки"></div>
+        <div class="12big"><img src="images/onion.png" alt="Лук"></div>
+    </div>
+    <label for="close">✕</label>
+</main>
 </body>
 </html>

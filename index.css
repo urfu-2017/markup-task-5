@@ -1,0 +1,150 @@
+body
+{
+    margin: 0;
+}
+
+main
+{
+    display: block;
+}
+
+.header
+{
+    background-color: rgba(77, 36, 106, .64);
+    margin: 0;
+    text-align: center;
+    color: rgba(214, 204, 99, .95);
+    padding: 5px;
+}
+
+.items
+{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.page1,
+.page2,
+.page3
+{
+    display: none;
+}
+
+.item
+{
+    width: 20vw;
+    box-sizing: border-box;
+    background-color: #bcb150;
+    border: dashed #000;
+    padding: .5%;
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+.info
+{
+    display: none;
+}
+
+.item:hover
+{
+    border-style: solid;
+}
+
+.item:hover > .info
+{
+    display: inline-block;
+}
+
+.img
+{
+    display: block;
+}
+
+.img > img
+{
+    width: 90%;
+}
+
+.description
+{
+    text-align: left;
+}
+
+input
+{
+    display: none;
+}
+
+.big-images div
+{
+    display: none;
+    background: rgba(110, 110, 110, .8);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.big-images img
+{
+    height: 80%;
+}
+
+input[id='1big']:checked ~ div .big1,
+input[id='2big']:checked ~ div .big2,
+input[id='3big']:checked ~ div .big3,
+input[id='4big']:checked ~ div .big4,
+input[id='5big']:checked ~ div .big5,
+input[id='6big']:checked ~ div .big6,
+input[id='7big']:checked ~ div .big7,
+input[id='8big']:checked ~ div .big8,
+input[id='9big']:checked ~ div .big9,
+input[id='10big']:checked ~ div .big10,
+input[id='11big']:checked ~ div .big11,
+input[id='12big']:checked ~ div .big12
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+label[for='close']
+{
+    color: #fff;
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+input[id='close']:not(:checked) ~ label[for='close']
+{
+    display: block;
+    z-index: 3;
+}
+
+.nav
+{
+    margin-top: 7%;
+    display: none;
+}
+
+input[id='page1']:checked ~ div .page1,
+input[id='page2']:checked ~ div .page2,
+input[id='page3']:checked ~ div .page3,
+input[id='page1']:checked ~ div label[for='page3'].backward,
+input[id='page1']:checked ~ div label[for='page2'].forward,
+input[id='page2']:checked ~ div label[for='page1'].backward,
+input[id='page2']:checked ~ div label[for='page3'].forward,
+input[id='page3']:checked ~ div label[for='page2'].backward,
+input[id='page3']:checked ~ div label[for='page1'].forward
+{
+    display: inline-block;
+}
