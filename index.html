@@ -3,7 +3,218 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <h1>Бабуленькин урожай: и музыка, и суп</h1>
+    </header>
+    <main>
+        <input type="radio" name="page" class="page1" id="page1" checked>
+        <input type="radio" name="page" class="page2" id="page2">
+        <input type="radio" name="page" class="page3" id="page3">
+        <input type="radio" name="big_picture" class="chosen_pic" id="close" checked>
+        <div class="page">
+        <label for="page3" class="arrow_left"></label>
+            <section class="vegetable">
+                <input type="radio" name="big_picture" class="chosen_pic" id="pic1">
+                <div class="big_picture">
+                    <img src="pic1.jpeg" alt="Тыква">
+                    <label for="close" class="close"></label>
+                </div>
+                <article class="card">
+                    <label for="pic1">
+                        <img src="pic1.jpeg" alt="Тыква">
+                    </label>
+                    <div class="information">
+                        <p>Тыква</p>
+                        <div class="description">
+                            Бабушка заставляла все детство кушать тыкву, а&nbsp;я&nbsp;хотел холодец.
+                            Годы шли, вкусы менялись. Сейчас люблю тыкву больше, чем желе из&nbsp;мяса,
+                            поэтому выставляю ее&nbsp;тут с&nbsp;трудом. Любуйтесь.
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="vegetable">
+                <input type="radio" name="big_picture" class="chosen_pic" id="pic2">
+                <div class="big_picture">
+                    <img src="pic1.jpg" alt="Морковь">
+                    <label for="close" class="close"></label>
+                </div>
+                <article class="card">
+                    <label for="pic2">
+                        <img src="pic1.jpg" alt="Морковь">
+                    </label>
+                    <div class="information">
+                        <p>Морковь</p>
+                        <div class="description">
+                            Со&nbsp;стороны кажется, что я&nbsp;дую морковь, но, на&nbsp;самом деле,
+                            я&nbsp;ее&nbsp;ем. Уж&nbsp;очень хочется продлить удовольствие.
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="vegetable">
+                <input type="radio" name="big_picture" class="chosen_pic" id="pic3">
+                <div class="big_picture">
+                    <img src="pic3.jpg" alt="Перец">
+                    <label for="close" class="close"></label>
+                </div>
+                <article class="card">
+                    <label for="pic3">
+                        <img src="pic3.jpg" alt="Перец">
+                    </label>
+                    <div class="information">
+                        <p>Перец</p>
+                        <div class="description">
+                            В&nbsp;свободное время мы&nbsp;с&nbsp;друзьями слушаем Bon Iver
+                            и&nbsp;кушаем фаршированные перцы. Бабушкины перцы -
+                            лучшие перцы в&nbsp;городе!
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="vegetable">
+                <input type="radio" name="big_picture" class="chosen_pic" id="pic4">
+                <div class="big_picture">
+                    <img src="pic4.jpg" alt="Капуста">
+                    <label for="close" class="close"></label>
+                </div>
+                <article class="card">
+                    <label for="pic4">
+                        <img src="pic4.jpg" alt="Капуста">
+                    </label>
+                    <div class="information">
+                        <p>Капуста</p>
+                        <div class="description">
+                            Наверное, это капуста. Наверное, она полезная.
+                            Наверное, она и&nbsp;вкусная. Бабушка сама не&nbsp;знает.
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <label for="page2" class="arrow_right"></label>
+        </div>
+
+        <div class="page">
+            <label for="page1" class="arrow_left"></label>
+            <section class="vegetable">
+                <input type="radio" name="big_picture" class="chosen_pic" id="pic5">
+                <div class="big_picture">
+                    <img src="pic5.jpg" alt="Дайкон">
+                    <label for="close" class="close"></label>
+                </div>
+                <article class="card">
+                    <label for="pic5">
+                        <img src="pic5.jpg" alt="Дайкон">
+                    </label>
+                    <div class="information">
+                        <p>Дайкон</p>
+                        <div class="description">
+                            Другие бабушки завидуют моей, ведь самый большой дайкон
+                            можно найти только в&nbsp;нашем огороде.
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="vegetable">
+                <input type="radio" name="big_picture" class="chosen_pic" id="pic6">
+                <div class="big_picture">
+                    <img src="picp1.png" alt="Какие-то листья">
+                    <label for="close" class="close"></label>
+                </div>
+                <article class="card">
+                    <label for="pic6">
+                        <img src="picp1.png" alt="Какие-то листья">
+                    </label>
+                    <div class="information">
+                        <p>Какие-то листья</p>
+                        <div class="description">Вот, что еще нашлось у бабули.</div>
+                    </div>
+                </article>
+            </section>
+            <section class="vegetable">
+                <input type="radio" name="big_picture" class="chosen_pic" id="pic7">
+                <div class="big_picture">
+                    <img src="picp2.png" alt="Красный перец">
+                    <label for="close" class="close"></label>
+                </div>
+                <article class="card">
+                    <label for="pic7">
+                        <img src="picp2.png" alt="Красный перец">
+                    </label>
+                    <div class="information">
+                        <p>Красный перец</p>
+                        <div class="description">Он&nbsp;помогает переваривать пищу.
+                            Другими словами, если повар в&nbsp;процессе приготовления
+                            мясных блюд применял его, то&nbsp;еда будет
+                            не&nbsp;только более легкой, она почти вдвое теряет свою калорийность</div>
+                    </div>
+                </article>
+            </section>
+            <section class="vegetable">
+                <input type="radio" name="big_picture" class="chosen_pic" id="pic8">
+                <div class="big_picture">
+                    <img src="picp3.png" alt="Баклажан">
+                    <label for="close" class="close"></label>
+                </div>
+                <article class="card">
+                    <label for="pic8">
+                        <img src="picp3.png" alt="Баклажан">
+                    </label>
+                    <div class="information">
+                        <p>Баклажан</p>
+                        <div class="description">В&nbsp;ботаническом смысле это ягода,
+                            в&nbsp;кулинарном рассматривается как овощ.
+                            Известен также под названием бадриджа&#769;н.</div>
+                    </div>
+                </article>
+            </section>
+            <label for="page3" class="arrow_right"></label>
+        </div>
+        
+        <div class="page">
+            <label for="page2" class="arrow_left"></label>
+            <section class="vegetable">
+                <input type="radio" name="big_picture" class="chosen_pic" id="pic9">
+                <div class="big_picture">
+                    <img src="picp4.png" alt="Сельдерей">
+                    <label for="close" class="close"></label>
+                </div>
+                <article class="card">
+                    <label for="pic9">
+                        <img src="picp4.png" alt="Сельдерей">
+                    </label>
+                    <div class="information">
+                        <p>Сельдерей</p>
+                        <div class="description">Сами знаете&nbsp;&mdash; хотите
+                        похудеть, ешьте, ешьте!</div>
+                    </div>
+                </article>
+            </section>
+            <section class="vegetable">
+                <input type="radio" name="big_picture" class="chosen_pic" id="pic10">
+                <div class="big_picture">
+                    <img src="pic10.jpg" alt="Вау, какой лук">
+                    <label for="close" class="close"></label>
+                </div>
+                <article class="card">
+                    <label for="pic10">
+                        <img src="pic10.jpg" alt="Вау, какой лук">
+                    </label>
+                    <div class="information">
+                        <p>Вау, какой лук</p>
+                        <div class="description">Вау, какой лук</div>
+                    </div>
+                </article>
+            </section>
+            <label for="page1" class="arrow_right"></label>
+        </div>
+        <div class="footer"></div>
+    </main>
 </body>
 </html>
