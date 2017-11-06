@@ -1,0 +1,160 @@
+main
+{
+    width: 90%;
+    height: 25%;
+    min-width: 800px;
+    left: 5%;
+    font-size: 10px;
+    position: absolute;
+}
+
+p
+{
+    font: bold 1.3em Arial;
+    text-indent: 10px;
+}
+
+input,
+label
+{
+    display: none;
+}
+
+.slider:checked + .view + .prev,
+.slider:checked + .view + .prev + .next
+{
+    width: 5%;
+    font-size: 6em;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+}
+
+.slider:checked + .view + .prev + .next
+{
+    right: 1px;
+}
+
+.view
+{
+    width: 90%;
+    height: 100%;
+    left: 5%;
+    position: absolute;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.slider:checked + .view
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.view-item
+{
+    width: 22%;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+}
+
+.view-item img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.view-item p
+{
+    display: none;
+}
+
+.x
+{
+    width: 22%;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+}
+
+.x span
+{
+    display: none;
+}
+
+.first
+{
+    left: 1.8%;
+}
+
+.second
+{
+    left: 25.6%;
+}
+
+.third
+{
+    left: 49.4%;
+}
+
+.fourth
+{
+    left: 73.2%;
+}
+
+.x:hover + .view-item p
+{
+    display: block;
+}
+
+.x:hover + .view-item
+{
+    width: 30%;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.full:checked + .x
+{
+    width: 10%;
+    z-index: 5;
+    left: 105%;
+}
+
+.full:checked + .x span
+{
+    font: bold 8em Arial;
+    color: rgba(255,255,255,.8);
+    display: block;
+}
+
+.full:checked + .x + .view-item
+{
+    width: 122%;
+    height: 395.3%;
+    top: -8px;
+    left: -12%;
+    z-index: 4;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgba(0,0,0,.8);
+}
+
+.full:checked + .x + .view-item p
+{
+    display: none;
+}
+
+.full:checked + .x + .view-item img
+{
+    position: relative;
+    top: 16%;
+    vertical-align: middle;
+    max-height: 68%;
+}
