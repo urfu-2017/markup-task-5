@@ -13,9 +13,15 @@
     white-space: normal;
 }
 
-.item:hover
+.item:hover .item-content
 {
+    display: block;
     box-shadow: grey 0 0 10px;
+}
+
+.item-content
+{
+    display: none;
 }
 
 img
