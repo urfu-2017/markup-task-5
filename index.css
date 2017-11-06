@@ -13,20 +13,26 @@
 .harvest
 {
     display: inline-block;
+    margin-left: 20px;
     width: 20%;
     font-family: 'Sirona';
     vertical-align: top;
 }
 
-.photo
+.harvest_content
 {
     text-align: center;
-    margin-top: .5em;
+    margin: 1em;
+}
+
+.photo
+{
+    cursor: pointer;
 }
 
 .photo_source
 {
-    width: 90%;
+    width: 100%;
     border: 2px solid #4c4677;
     border-radius: 20px;
 }
@@ -69,5 +75,19 @@ input[name="big-photo"]
 {
     display: none;
 }
+
+.big_photos img
+{
+    display: none;
+    position: fixed;
+    width: 100%;
+}
+
+input[id='big_photo_1']:checked ~ .big_photos .big_photo_1
+{
+    display: inline-block;
+}
+
+
 
 
