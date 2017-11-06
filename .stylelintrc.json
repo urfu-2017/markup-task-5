@@ -1,6 +1,6 @@
 {
- "extends": "stylelint-config-hrundel",
- "rules": {
-   "selector-no-id": null
- }
+  "extends": "stylelint-config-hrundel",
+  "rules": {
+    "selector-no-id": null
+  }
 }
