@@ -1,11 +1,33 @@
+.carusel
+{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .item
 {
     display: inline-block;
     width: 300px;
     vertical-align: middle;
+    white-space: normal;
+}
+
+.item:hover
+{
+    box-shadow: grey 0 0 10px;
 }
 
 img
 {
     max-width: 100%;
+}
+
+main,
+body
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
 }
