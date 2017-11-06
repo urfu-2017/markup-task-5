@@ -1,0 +1,113 @@
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery
+{
+    position: relative;
+    top: 10em;
+}
+
+.gallery-item
+{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+
+.gallery-item img
+{
+    width: 90%;
+    vertical-align: middle;
+}
+
+.item-description
+{
+    display: none;
+}
+
+.item-content:hover
+{
+    position: relative;
+    left: -10%;
+    width: 130%;
+    box-shadow: 0 0 5px #808080;
+}
+
+.item-content:hover .item-description
+{
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.big-image-container
+{
+    display: none;
+}
+
+[class^='page-']
+{
+    display: none;
+    text-align: center;
+}
+
+input
+{
+    display: none;
+}
+
+input[id='show-page-1']:checked ~ .gallery .page-1,
+input[id='show-page-2']:checked ~ .gallery .page-2
+{
+    display: block;
+    height: 100%;
+}
+
+input[id^='big-image-']:checked ~ .item-content .big-image-container
+{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, .8);
+}
+
+input[id^='big-image-']:checked ~ .item-content .big-image-container img
+{
+    width: 60%;
+    max-height: 80%;
+}
+
+input[id^='big-image-']:checked ~ .item-content .close-label:before
+{
+    content: '\2715';
+    position: absolute;
+    top: 0;
+    right: 2%;
+    color: #fff;
+    font-size: 3rem;
+}
+
+label:before
+{
+    font-size: 5rem;
+}
+
+.left-arrow:before
+{
+    content: '\2190';
+}
+
+.right-arrow:before
+{
+    content: '\2192';
+}
