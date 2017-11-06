@@ -1,0 +1,11 @@
+.item
+{
+    display: inline-block;
+    width: 300px;
+    vertical-align: middle;
+}
+
+img
+{
+    max-width: 100%;
+}
