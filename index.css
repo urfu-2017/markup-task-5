@@ -1,0 +1,172 @@
+html
+{
+    font-family: sans-serif;
+}
+
+h1
+{
+    margin: 0 auto;
+    text-align: center;
+    font-family: serif;
+}
+
+.left,
+.right
+{
+    width: 3rem;
+    height: 3rem;
+    margin: 10% 3% 0;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.left
+{
+    float: left;
+    background-image: url(left.png);
+}
+
+.right
+{
+    float: right;
+    background-image: url(right.png);
+}
+
+.fair
+{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.product
+{
+    box-sizing: padding-box;
+    width: 20%;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.product:hover
+{
+    background-color: #c5c2c1;
+    box-shadow: 0 0 3px rgb(8, 4, 1);
+}
+
+.info
+{
+    display: none;
+}
+
+.product:hover > .info
+{
+    display: block;
+}
+
+.photo > img
+{
+    width: 100%;
+    box-sizing: border-box;
+    border: solid rgb(100, 81, 62);
+    cursor: pointer;
+}
+
+.name
+{
+    font: 2rem sans-serif;
+}
+
+.description
+{
+    margin: 5%;
+    text-align: left;
+}
+
+input[name='move'],
+input[id^='back_']:checked ~ label[for^='back_'],
+input[id^='back_']:checked ~ label[for^='forward_'],
+input[id^='back_']:checked ~ .fair .product,
+input[id^='forward_']:checked ~ label[for^='back_'],
+input[id^='forward_']:checked ~ label[for^='forward_'],
+input[id^='forward_']:checked ~ .fair .product
+{
+    display: none;
+}
+
+input[id='forward_1']:checked ~ label[for='back_3'],
+input[id='forward_1']:checked ~ label[for='forward_2'],
+input[id='back_1']:checked ~ label[for='back_3'],
+input[id='back_1']:checked ~ label[for='forward_2'],
+input[id='forward_1']:checked ~ .fair .page-1,
+input[id='back_1']:checked ~ .fair .page-1,
+input[id='forward_2']:checked ~ label[for='back_1'],
+input[id='forward_2']:checked ~ label[for='forward_3'],
+input[id='back_2']:checked ~ label[for='back_1'],
+input[id='back_2']:checked ~ label[for='forward_3'],
+input[id='forward_2']:checked ~ .fair .page-2,
+input[id='back_2']:checked ~ .fair .page-2,
+input[id='forward_3']:checked ~ label[for='back_2'],
+input[id='forward_3']:checked ~ label[for='forward_1'],
+input[id='back_3']:checked ~ label[for='back_2'],
+input[id='back_3']:checked ~ label[for='forward_1'],
+input[id='forward_3']:checked ~ .fair .page-3,
+input[id='back_3']:checked ~ .fair .page-3
+{
+    display: inline-block;
+}
+
+.increased_photos
+{
+    display: none;
+    position: fixed;
+    background: rgba(49, 38, 38, .75);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+[class^='increased_photo_']
+{
+    display: none;
+    margin: 1rem auto;
+    height: 90%;
+}
+
+input[name='increased_photo'],
+input[id='close_photo']:checked ~ .increased_photos
+{
+    display: none;
+}
+
+input[id^='increased_photo_']:checked ~ .increased_photos,
+input[id='increased_photo_1']:checked ~ .increased_photos .increased_photo_1,
+input[id='increased_photo_2']:checked ~ .increased_photos .increased_photo_2,
+input[id='increased_photo_3']:checked ~ .increased_photos .increased_photo_3,
+input[id='increased_photo_4']:checked ~ .increased_photos .increased_photo_4,
+input[id='increased_photo_5']:checked ~ .increased_photos .increased_photo_5,
+input[id='increased_photo_6']:checked ~ .increased_photos .increased_photo_6,
+input[id='increased_photo_7']:checked ~ .increased_photos .increased_photo_7,
+input[id='increased_photo_8']:checked ~ .increased_photos .increased_photo_8,
+input[id='increased_photo_9']:checked ~ .increased_photos .increased_photo_9,
+input[id='increased_photo_10']:checked ~ .increased_photos .increased_photo_10,
+input[id='increased_photo_11']:checked ~ .increased_photos .increased_photo_11,
+input[id='increased_photo_12']:checked ~ .increased_photos .increased_photo_12
+{
+    display: block;
+}
+
+.increased_photos_close
+{
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.increased_photos_close:before
+{
+    content: '+';
+    color: #fff;
+    font-size: 4rem;
+}
