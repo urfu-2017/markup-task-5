@@ -145,22 +145,22 @@ input[name='arrows']
     display: none;
 }
 
-input[id='0->1']:checked ~ .page-0
+input[id='0-to-1']:checked ~ .page-0
 {
     display: none;
 }
 
-input[id='0->1']:checked ~ .page-1
+input[id='0-to-1']:checked ~ .page-1
 {
     display: block;
 }
 
-input[id='1->0']:checked ~ .page-1
+input[id='1-to-0']:checked ~ .page-1
 {
     display: none;
 }
 
-input[id='1->0']:checked ~ .page-0
+input[id='1-to-0']:checked ~ .page-0
 {
     display: block;
 }
