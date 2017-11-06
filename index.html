@@ -3,7 +3,174 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <main>
+        <input type="radio" name="slidesSwitcher" class="radio1" id="r1" checked>
+        <input type="radio" name="slidesSwitcher" class="radio2" id="r2">
+        <br>
+        <label for="r1" class="rtlArrow"></label>
+        <div class="productsList">
+            <div class="product">
+                <img class="miniature" src="carrot.jpg" alt="carrot">
+                <figure>
+                    <label for="viewmode">
+                        <img src="carrot.jpg" alt="carrot">
+                    </label>
+
+                    <figcaption>Морковь – двулетнее растение, в первый год жизни образует
+                        розетку листьев и корнеплод,
+                        во второй год жизни – семенной куст и семена. По содержанию каротина морковь
+                        уступает лишь сладкому перцу. Экспериментально установлено, что морковь
+                        активизирует внутриклеточные окислительно-восстановительные процессы,
+                        регулирует углеводный обмен, обладает антисептическим, противовоспалительным,
+                        обезболивающим и ранозаживляющим свойствами.
+                    </figcaption>
+                </figure>
+                <input type="checkbox" id="viewmode" class="maxview">
+                <div class="tele">
+                        <label for="viewmode" class="cross"></label>
+                        <img src="carrot.jpg" alt="carrot">
+                </div>
+            </div>
+
+            <div class="product">
+                <img class="miniature" src="cabbage.jpg" alt="cabbage">
+                <figure>
+                    <label for="viewmode1">
+                        <img src="cabbage.jpg" alt="cabbage">
+                    </label>
+                    <figcaption>Капу́ста огородная(лат. Brássica olerácea) —
+                    двулетнее растение, сельскохозяйственная
+                    культура; вид рода Капуста (лат. Brassica) семейства Капустные (Крестоцветные).
+                    Капуста — ценный диетический продукт, рекомендуемый больным подагрой, жёлчнокаменной
+                    болезнью, атеросклерозом, при избыточной массе тела
+                    </figcaption>
+                </figure>
+
+                <input type="checkbox" id="viewmode1">
+                <div class="tele">
+                        <label for="viewmode1" class="cross"></label>
+                        <img src="cabbage.jpg" alt="cabbage">
+                </div>
+            </div>
+
+            <div class="product">
+                <img class="miniature" src="cucumber.jpg" alt="cucumber">
+                <figure>
+                    <label for="viewmode2">
+                        <img src="cucumber.jpg" alt="cucumber">
+                    </label>
+                    <figcaption>Огурцами (Cucumis sativus) называют
+                    травянистый однолетник семейства Тыквенные,
+                    плоды которого имеют форму длинного цилиндра, окрашены в зелёный цвет – от
+                    светло-салатовых до тёмно-зелёных оттенков. Огурцы богаты сложными органическими
+                    веществами, которые играют важную роль в обмене веществ. Эти вещества
+                    возбуждают аппетит, способствуют усвоению других продуктов питания
+                    и улучшают пищеварение
+                    </figcaption>
+                </figure>
+
+                <input type="checkbox" id="viewmode2">
+                <div class="tele">
+                        <label for="viewmode2" class="cross"></label>
+                        <img src="cucumber.jpg" alt="cucumber">
+                </div>
+            </div>
+
+            <div class="product">
+                <img class="miniature" src="perec.jpg" alt="perec">
+                <figure>
+                    <label for="viewmode3">
+                        <img src="perec.jpg" alt="perec">
+                    </label>
+                    <figcaption>Плод однолетних травянистых растений семейства паслёновых.
+                    Плоды сладкого перца -
+                    ложные пустотелые ягоды, многосемянные, красные, оранжевые, жёлтые или коричневые,
+                    разнообразной формы и величины. В сладком перце сожердатся витамины С, В1, В2, В9,
+                    Р, РР и каротин, поэтому людям страдающим депрессией, сахарным диабетом,а также при
+                    ухудшении памяти,бессоннице,упадке сил следует включать перец в меню. По количеству
+                    витамина С перец превосходит лимоны и черную смородину.
+                    </figcaption>
+                </figure>
+                <input type="checkbox" id="viewmode3">
+                <div class="tele">
+                    <label for="viewmode3" class="cross"></label>
+                    <img src="perec.jpg" alt="perec">
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="potatoes.jpg" alt="potatoes">
+                <figure>
+                    <label for="viewmode4">
+                        <img src="potatoes.jpg" alt="potatoes">
+                    </label>
+                    <figcaption>
+                    картофель - вид многолетних клубненосных травянистых растений из рода Паслён
+                    (Solanum) семейства Паслёновые (Solanaceae) В картофеле отмечается
+                    повышенное содержание углеводов, а его калорийность составляет 80 кКал на
+                    100 г сырого продукта. В 100 г отварного картофеля – 82 кКал, а в 100 г
+                    жареного – 192 кКал. Энергетическая ценность сушеного картофеля – 298 кКал на 100 г.
+                    Чрезмерное употребление данного продукта может стать причиной ожирения.
+                    </figcaption>
+                </figure>
+
+                <input type="checkbox" id="viewmode4">
+                <div class="tele">
+                    <label for="viewmode4" class="cross"></label>
+                    <img src="potatoes.jpg" alt="potatoes">
+                </div>
+            </div>
+
+            <div class="product">
+                <img class="miniature" src="pumpkin.jpg" alt="pumpkin">
+                <figure>
+                    <label for="viewmode5">
+                        <img src="pumpkin.jpg" alt="pumpkin">
+                    </label>
+
+                    <figcaption>
+                        Плод однолетних травянистых растений семейства паслёновых. Плоды сладкого перца
+                        - ложные пустотелые ягоды, многосемянные, красные, оранжевые, жёлтые или
+                        коричневые, разнообразной формы и величины. В сладком перце сожердатся витамины
+                        С, В1, В2, В9, Р, РР и каротин, поэтому людям страдающим депрессией, сахарным
+                        диабетом,а также при ухудшении памяти,бессоннице,упадке сил следует включать
+                        перец в меню. По количеству витамина С перец превосходит лимоны и черную смородину.
+                    </figcaption>
+                </figure>
+
+                <input type="checkbox" id="viewmode5">
+                <div class="tele">
+                    <label for="viewmode5" class="cross"></label>
+                    <img src="pumpkin.jpg" alt="pumpkin">
+                </div>
+            </div>
+
+            <div class="product">
+                <img class="miniature" src="tomatos.jpg" alt="tomatos">
+                <figure>
+                    <label for="viewmode6">
+                        <img src="tomatos.jpg" alt="tomatos">
+                    </label>
+                    <figcaption>
+                    Тома́т, или помидор (лат. Solánum lycopérsicum) — однолетнее или многолетнее травянистое
+                    растение, вид рода Паслён (Solanum)[2] семейства Паслёновые (Solanaceae). Томаты и
+                    их сок благодаря высокому содержанию железа полезны при сердечно-сосудистых
+                    заболеваниях и малокровии. Вещества, содержащиеся в томатах, нормализуют обмен
+                    веществ, стимулируют работу почек и кишечника, снижают давление и уровень
+                    холестерина в крови.
+                    </figcaption>
+                </figure>
+                <input type="checkbox" id="viewmode6">
+                <div class="tele">
+                        <label for="viewmode6" class="cross"></label>
+                        <img src="tomatos.jpg" alt="tomatos">
+                </div>
+            </div>
+            <label for="r2" class="ltrArrow"></label>
+        </div>
+    </main>
 </body>
 </html>
