@@ -2,8 +2,355 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Задача «Бабуленькин урожай»</title>
 </head>
 <body>
+    <header>Бабуленькин урожай</header>
+    <input type="radio" id="slider1" name="slider" checked>
+    <input type="radio" id="slider2" name="slider">
+    <input type="radio" id="slider3" name="slider">
+    <input type="radio" id="slider4" name="slider">
+    <label for="slider2" class="arrow-right list-1"></label>
+    <label for="slider1" class="arrow-left list-2"></label>
+    <label for="slider3" class="arrow-right list-2"></label>
+    <label for="slider2" class="arrow-left list-3"></label>
+    <label for="slider4" class="arrow-right list-3"></label>
+    <label for="slider3" class="arrow-left list-4"></label>
+    <main class="gallery">
+        <div class="list-1">
+            <div class="card" id="1.1">
+                <div class="photo">
+                    <a href="#1.1">
+                        <img src="images/капуста.jpg" alt="капуста">
+                    </a>
+                    <img src="images/капуста.jpg" alt="капуста" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                            Ги&shy;брид ха&shy;рак&shy;те&shy;ри&shy;зу&shy;ет&shy;ся вы&shy;со&shy;кой 
+                            вы&shy;рав&shy;нен&shy;но&shy;стью и плот&shy;но&shy;стью ко&shy;ча&shy;нов, 
+                            друж&shy;ным фор&shy;ми&shy;ро&shy;ва&shy;ни&shy;ем уро&shy;жая, 
+                            устой&shy;чи&shy;во&shy;стью к рас&shy;трес&shy;ки&shy;ва&shy;нию. 
+                            Ре&shy;ко&shy;мен&shy;до&shy;ван для по&shy;треб&shy;ле&shy;ния в све&shy;жем 
+                            ви&shy;де, дли&shy;тель&shy;но&shy;го зим&shy;не&shy;го хра&shy;не&shy;ния и 
+                            про&shy;мыш&shy;лен&shy;ной пе&shy;ре&shy;ра&shy;бот&shy;ки. 
+                            От&shy;но&shy;си&shy;тель&shy;но устой&shy;чив к се&shy;рой гни&shy;ли.
+                        </p>
+                </div>
+            </div>
+            <div class="card" id="1.2">
+                <div class="photo">
+                    <a href="#1.2">
+                        <img src="images/горох.jpg" alt="горох">
+                    </a>
+                    <img src="images/горох.jpg" alt="горох" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                            Го&shy;рох (лат. pisum) — тра&shy;вя&shy;ни&shy;стое рас&shy;те&shy;ние 
+                            се&shy;мей&shy;ства бо&shy;бо&shy;вые. Это вью&shy;ще&shy;е&shy;ся и 
+                            сте&shy;лю&shy;ще&shy;е&shy;ся рас&shy;те&shy;ние с тон&shy;ки&shy;ми 
+                            уси&shy;ка&shy;ми, бе&shy;ло-ро&shy;зо&shy;вы&shy;ми цвет&shy;ка&shy;ми и 
+                            зе&shy;ле&shy;ны&shy;ми струч&shy;ко&shy;об&shy;раз&shy;ны&shy;ми пло&shy;да&shy;ми 
+                            со съе&shy;доб&shy;ны&shy;ми се&shy;ме&shy;на&shy;ми. Сор&shy;тов го&shy;ро&shy;ха 
+                            из&shy;вест&shy;но не&shy;ма&shy;ло — по&shy;сев&shy;ной, лу&shy;щиль&shy;ный, 
+                            са&shy;хар&shy;ный, моз&shy;го&shy;вой. Са&shy;мая из&shy;вест&shy;ная и 
+                            рас&shy;про&shy;стра&shy;нен&shy;ная куль&shy;ту&shy;ра — го&shy;рох 
+                            по&shy;сев&shy;ной.
+                        </p>
+                </div>
+            </div>
+            <div class="card" id="1.3">
+                <div class="photo">
+                    <a href="#1.3">
+                        <img src="images/картофель.jpg" alt="картофель">
+                    </a>
+                    <img src="images/картофель.jpg" alt="картофель" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                            Ран&shy;не&shy;спе&shy;лый вы&shy;со&shy;ко&shy;уро&shy;жай&shy;ный сорт 
+                            кар&shy;то&shy;фе&shy;ля не&shy;мец&shy;кой се&shy;лек&shy;ции. Ши&shy;ро&shy;ко 
+                            рас&shy;про&shy;стра&shy;нен в Ев&shy;ро&shy;пе, осо&shy;бен&shy;но 
+                            по&shy;пу&shy;ля&shy;рен в Гер&shy;ма&shy;нии. Име&shy;ет 
+                            ве&shy;ли&shy;ко&shy;леп&shy;ные вку&shy;со&shy;вые ка&shy;че&shy;ства. 
+                            Об&shy;ла&shy;да&shy;ет все&shy;ми пре&shy;иму&shy;ще&shy;ства&shy;ми 
+                            не&shy;мец&shy;ких сор&shy;тов - уни&shy;вер&shy;са&shy;лен в 
+                            ис&shy;поль&shy;зо&shy;ва&shy;нии, пла&shy;сти&shy;чен по от&shy;но&shy;ше&shy;нию 
+                            к грун&shy;то&shy;во - кли&shy;ма&shy;ти&shy;че&shy;ским усло&shy;ви&shy;ям.
+                        </p>
+                </div>
+            </div>
+            <div class="card" id="1.4">
+                <div class="photo">
+                    <a href="#1.4">
+                        <img src="images/кабачок.jpg" alt="кабачок">
+                    </a>
+                    <img src="images/кабачок.jpg" alt="кабачок" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                            Как од&shy;на из раз&shy;но&shy;вид&shy;но&shy;стей тык&shy;вы, в 
+                            Ев&shy;ро&shy;пу был при&shy;ве&shy;зен в XV ве&shy;ке Ко&shy;лум&shy;бом
+                            из Аме&shy;ри&shy;ки, где ис&shy;поль&shy;зо&shy;вал&shy;ся для еды
+                            не&shy;сколь&shy;ко ты&shy;ся&shy;че&shy;ле&shy;тий на&shy;зад. 
+                            В те&shy;че&shy;ние 300 лет, вы&shy;ра&shy;щи&shy;ва&shy;е&shy;мый в 
+                            Ита&shy;лии в бо&shy;та&shy;ни&shy;че&shy;ских са&shy;дах как 
+                            де&shy;ко&shy;ра&shy;тив&shy;ное рас&shy;те&shy;ние, ка&shy;ба&shy;чок 
+                            толь&shy;ко в XVIII ве&shy;ке ста&shy;ли упо&shy;треб&shy;лять в пи&shy;щу.
+                        </p>
+                </div>
+            </div>
+            <div class="background"></div>
+            <a href="#1" class="close"></a>
+        </div>
+        <div class="list-2">
+            <div class="card" id="2.1">
+                <div class="photo">
+                    <a href="#2.1">
+                        <img src="images/красныйперец.jpg" alt="красный перец">
+                    </a>
+                    <img src="images/красныйперец.jpg" alt="красный перец" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                        Сред&shy;не&shy;го раз&shy;ме&shy;ра сорт ви&shy;да кап&shy;си&shy;кум овощ&shy;ной 
+                        (Capsicum annuum), вы&shy;ве&shy;ден&shy;ный в Ка&shy;ли&shy;фор&shy;нии. 
+                        На&shy;по&shy;ми&shy;на&shy;ет пе&shy;рец чи&shy;ли ха&shy;ла&shy;пе&shy;ньо, 
+                        но с бо&shy;лее тон&shy;ки&shy;ми стен&shy;ка&shy;ми. Ко&shy;ни&shy;че&shy;ской 
+                        фор&shy;мы, ок. 2.5 см у ос&shy;но&shy;ва&shy;ния и ок. 5 см в дли&shy;ну. 
+                        Остро&shy;та по шка&shy;ле Ско&shy;вил&shy;ла — 2.500 — 5.000 еди&shy;ниц 
+                        (сред&shy;не&shy;ост&shy;рый). По&shy;пу&shy;ляр&shy;ный в США сорт чи&shy;ли 
+                        об&shy;ще&shy;го на&shy;зна&shy;че&shy;ния.
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="2.2">
+                <div class="photo">
+                    <a href="#2.2">
+                        <img src="images/лук.jpg" alt="лук">
+                    </a>
+                    <img src="images/лук.jpg" alt="лук" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                        Сред&shy;не&shy;спе&shy;лый (от всхо&shy;дов до по&shy;ле&shy;га&shy;ния 
+                        пе&shy;ра 95-115 дней) сорт. Лу&shy;ко&shy;ви&shy;цы округ&shy;лые, мас&shy;сой 
+                        65-80 до 120-150 г. Су&shy;хие че&shy;шуи жел&shy;то-ко&shy;рич&shy;не&shy;вые, 
+                        соч&shy;ные – бе&shy;лые. Вкус по&shy;лу&shy;ост&shy;рый.<br>Цен&shy;ность 
+                        сор&shy;та: фор&shy;ми&shy;ро&shy;ва&shy;ние лу&shy;ко&shy;ви&shy;цы за один 
+                        се&shy;зон и при&shy;год&shy;ность для дли&shy;тель&shy;но&shy;го хра&shy;не&shy;ния.
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="2.3">
+                <div class="photo">
+                    <a href="#2.3">
+                        <img src="images/морковь.jpg" alt="морковь">
+                    </a>
+                    <img src="images/морковь.jpg" alt="морковь" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                        Пло&shy;ды яр&shy;ко-оран&shy;же&shy;вые с ту&shy;пым кон&shy;чи&shy;ком, 
+                        ци&shy;лин&shy;дри&shy;че&shy;ский не&shy;боль&shy;шой, ве&shy;сом 50-120 г. 
+                        Мя&shy;коть неж&shy;ная, очень слад&shy;кая, соч&shy;ная с ма&shy;лень&shy;кой 
+                        се&shy;ре&shy;дин&shy;кой. Вы&shy;ра&shy;щи&shy;ва&shy;ет&shy;ся для ран&shy;ней 
+                        про&shy;дук&shy;ции, сорт устой&shy;чив к рас&shy;трес&shy;ки&shy;ва&shy;нию, к 
+                        цве&shy;туш&shy;но&shy;сти, вы&shy;со&shy;ко&shy;уро&shy;жай&shy;ный.
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="2.4">
+                <div class="photo">
+                    <a href="#2.4">
+                        <img src="images/лукзеленый.jpg" alt="лук зеленый">
+                    </a>
+                    <img src="images/лукзеленый.jpg" alt="лук зеленый" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                        Лук упо&shy;треб&shy;ля&shy;ют в сы&shy;ром (в са&shy;ла&shy;тах, 
+                        гар&shy;ни&shy;рах), от&shy;ва&shy;рен&shy;ном и ту&shy;ше&shy;ном ви&shy;де — для 
+                        при&shy;го&shy;тов&shy;ле&shy;ния су&shy;пов и в ка&shy;че&shy;стве 
+                        гар&shy;ни&shy;ра для мяс&shy;ных и рыб&shy;ных блюд.<br>Для сред&shy;ней 
+                        по&shy;ло&shy;сы наи&shy;бо&shy;лее при&shy;го&shy;ден сорт 
+                        Ка&shy;ран&shy;тан&shy;ский. Он хо&shy;ро&shy;шо зи&shy;му&shy;ет. 
+                        Вы&shy;ра&shy;щи&shy;ва&shy;ют его че&shy;рез рас&shy;са&shy;ду.
+                    </p>
+                </div>
+            </div>
+            <div class="background"></div>
+            <a href="#1" class="close"></a>
+        </div>
+        <div class="list-3">
+            <div class="card" id="3.1">
+                <div class="photo">
+                    <a href="#3.1">
+                        <img src="images/огурцы.jpeg" alt="огурцы">
+                    </a>
+                    <img src="images/огурцы.jpeg" alt="огурцы" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                        Ран&shy;не&shy;спе&shy;лый, кор&shy;ни&shy;шон&shy;ный ги&shy;брид. 
+                        Вы&shy;со&shy;кие уро&shy;жаи в от&shy;кры&shy;том грун&shy;те и вре&shy;мен&shy;ных
+                        теп&shy;ли&shy;цах. Ком&shy;плекс&shy;но устой&shy;чив к бо&shy;лез&shy;ням и 
+                        пло&shy;хой по&shy;го&shy;де. Вы&shy;со&shy;кий уро&shy;жай со&shy;зре&shy;ва&shy;ет 
+                        в лю&shy;бых усло&shy;ви&shy;ях и при не&shy;хват&shy;ке све&shy;та. 
+                        Пло&shy;до&shy;но&shy;ше&shy;ние про&shy;дол&shy;жа&shy;ет&shy;ся до 
+                        за&shy;мо&shy;роз&shy;ков. Каж&shy;дый узел фор&shy;ми&shy;ру&shy;ет боль&shy;ше 3 
+                        за&shy;вя&shy;зей. 
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="3.2">
+                <div class="photo">
+                    <a href="#3.2">
+                        <img src="images/помидоры.jpg" alt="помидоры">
+                    </a>
+                    <img src="images/помидоры.jpg" alt="помидоры" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                        Пло&shy;ды очень боль&shy;шие – по&shy;ми&shy;до&shy;ры на&shy;би&shy;ра&shy;ют 
+                        вес до 1 кг, так что по срав&shy;не&shy;нию с боль&shy;шин&shy;ством сор&shy;тов 
+                        их мож&shy;но на&shy;звать очень круп&shy;но&shy;плод&shy;ны&shy;ми. Они име&shy;ют 
+                        плос&shy;ко&shy;округ&shy;лую фор&shy;му, окра&shy;ше&shy;ны в 
+                        на&shy;сы&shy;щен&shy;ный крас&shy;но-ма&shy;ли&shy;но&shy;вый цвет, 
+                        при этом об&shy;ла&shy;да&shy;ют от&shy;лич&shy;ны&shy;ми вку&shy;со&shy;вы&shy;ми 
+                        ка&shy;че&shy;ства&shy;ми.
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="3.3">
+                <div class="photo">
+                    <a href="#3.3">
+                        <img src="images/салат.jpg" alt="салат">
+                    </a>
+                    <img src="images/салат.jpg" alt="салат" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                        Но&shy;вый уро&shy;жай&shy;ный сорт хру&shy;стя&shy;ще&shy;го 
+                        ко&shy;чан&shy;но&shy;го са&shy;ла&shy;та. С мо&shy;мен&shy;та всхо&shy;дов до 
+                        тех&shy;ни&shy;че&shy;ской спе&shy;ло&shy;сти про&shy;хо&shy;дит 75-90 дней. 
+                        Этот сорт пред&shy;на&shy;зна&shy;чен для вы&shy;ра&shy;щи&shy;ва&shy;ния в 
+                        ве&shy;сен&shy;не-лет&shy;ний пе&shy;ри&shy;од. Устой&shy;чив к 
+                        стрел&shy;ко&shy;ва&shy;нию. Ко&shy;ча&shy;ны са&shy;ла&shy;та круп&shy;ные, 
+                        плот&shy;ные, мас&shy;сой 300-600 гр.
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="3.4">
+                <div class="photo">
+                    <a href="#3.4">
+                        <img src="images/перец.png" alt="перец">
+                    </a>
+                    <img src="images/перец.png" alt="перец" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                        От по&shy;яв&shy;ле&shy;ния всхо&shy;дов до пло&shy;до&shy;но&shy;ше&shy;ния 
+                        это&shy;го ран&shy;не&shy;го сор&shy;та слад&shy;ко&shy;го пер&shy;ца 
+                        про&shy;хо&shy;дит при&shy;мер&shy;но 110–115 дней. Рас&shy;те&shy;ние 
+                        вы&shy;со&shy;ко&shy;рос&shy;лое, куст мо&shy;жет до&shy;сти&shy;гать 
+                        1 м в вы&shy;со&shy;ту. Пло&shy;ды круп&shy;ные, пря&shy;мо&shy;уголь&shy;ной 
+                        фор&shy;мы. Мас&shy;са до&shy;хо&shy;дит до 180 г.
+                    </p>
+                </div>
+            </div>
+            <div class="background"></div>
+            <a href="#1" class="close"></a>
+        </div>
+        <div class="list-4">
+            <div class="card" id="4.1">
+                <div class="photo">
+                    <a href="#4.1">
+                        <img src="images/клубника.jpg" alt="клубника">
+                    </a>
+                    <img src="images/клубника.jpg" alt="клубника" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                        Ре&shy;мон&shy;тант&shy;ный сорт клуб&shy;ни&shy;ки, вы&shy;ве&shy;ден&shy;ный в 
+                        1991 го&shy;ду во Фран&shy;ции. Куст не&shy;вы&shy;со&shy;кий, пра&shy;виль&shy;ной 
+                        округ&shy;лой фор&shy;мы. Сорт лег&shy;ко пе&shy;ре&shy;но&shy;сит зи&shy;му в 
+                        сред&shy;ней по&shy;ло&shy;се Рос&shy;сии: вы&shy;жи&shy;ва&shy;е&shy;мость 
+                        со&shy;став&shy;ля&shy;ет 90-95%. Ягод&shy;ка пра&shy;виль&shy;ной округ&shy;лой 
+                        фор&shy;мы. Сорт ха&shy;рак&shy;те&shy;ри&shy;зу&shy;ет&shy;ся при&shy;тор&shy;ной 
+                        сла&shy;до&shy;стью, ста&shy;нет лю&shy;би&shy;мым ла&shy;ком&shy;ством 
+                        ма&shy;лень&shy;ко&shy;го дач&shy;ни&shy;ка.
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="4.2">
+                <div class="photo">
+                    <a href="#4.2">
+                        <img src="images/малина.jpg" alt="малина">
+                    </a>
+                    <img src="images/малина.jpg" alt="малина" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                        Куст вы&shy;со&shy;кий, мощ&shy;ный, сла&shy;бо&shy;рас&shy;ки&shy;ди&shy;стый, 
+                        со сред&shy;ней по&shy;бе&shy;го&shy;об&shy;ра&shy;зо&shy;ва&shy;тель&shy;ной 
+                        спо&shy;соб&shy;но&shy;стью. По&shy;бе&shy;ги с по&shy;ни&shy;ка&shy;ю&shy;щи&shy;ми 
+                        вер&shy;хуш&shy;ка&shy;ми и не&shy;боль&shy;шим ко&shy;ли&shy;че&shy;ством 
+                        ши&shy;пов. Уро&shy;жай&shy;ность вы&shy;ше сред&shy;ней (50-80 ц/га). 
+                        Яго&shy;ды круп&shy;ные (3,0 г), ту&shy;по&shy;ко&shy;ни&shy;че&shy;ской или 
+                        округ&shy;ло-ко&shy;ни&shy;че&shy;ской фор&shy;мы, ру&shy;би&shy;но&shy;вые. 
+                        Мя&shy;коть аро&shy;мат&shy;ная, слад&shy;кая, неж&shy;ная.
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="4.3">
+                <div class="photo">
+                    <a href="#4.3">
+                        <img src="images/груша.jpg" alt="груша">
+                    </a>
+                    <img src="images/груша.jpg" alt="груша" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                        Гру&shy;ша обык&shy;но&shy;вен&shy;ная – вы&shy;со&shy;кое де&shy;ре&shy;во, 
+                        до&shy;сти&shy;га&shy;ю&shy;щее до 25 м или круп&shy;ный ку&shy;стар&shy;ник. 
+                        Ствол пря&shy;мой, до 80 см в диа&shy;мет&shy;ре, с мор&shy;щи&shy;ни&shy;стой 
+                        ко&shy;рой. Дре&shy;ве&shy;си&shy;на проч&shy;ная, твер&shy;дая. Кро&shy;на 
+                        гу&shy;стая, обиль&shy;но вет&shy;вя&shy;ща&shy;я&shy;ся. Пло&shy;ды 
+                        про&shy;дол&shy;го&shy;ва&shy;тые, округ&shy;лые, гру&shy;ше&shy;вид&shy;ные. 
+                        По ве&shy;ли&shy;чи&shy;не, фор&shy;ме, окра&shy;су и вку&shy;су мо&shy;гут быть 
+                        раз&shy;ны&shy;ми, в за&shy;ви&shy;си&shy;мо&shy;сти от сор&shy;та. 
+                        Внут&shy;ри пло&shy;да со&shy;дер&shy;жат&shy;ся се&shy;ме&shy;на, 
+                        по&shy;кры&shy;тые ко&shy;рич&shy;не&shy;вой ко&shy;жу&shy;рой.
+                    </p>
+                </div>
+            </div>
+            <div class="card" id="4.4">
+                <div class="photo">
+                    <a href="#4.4">
+                        <img src="images/яблоки.jpg" alt="яблоки">
+                    </a>
+                    <img src="images/яблоки.jpg" alt="яблоки" class="big">
+                </div>
+                <div class="description">
+                    <p>
+                        Сорт яб&shy;лок ка&shy;над&shy;ско&shy;го про&shy;ис&shy;хож&shy;де&shy;ния, 
+                        со&shy;зре&shy;ва&shy;ет в кон&shy;це ле&shy;та. Они сред&shy;не&shy;го, 
+                        ча&shy;сто круп&shy;но&shy;го раз&shy;ме&shy;ров, 
+                        округ&shy;ло-вы&shy;тя&shy;ну&shy;тые. Окрас зе&shy;ле&shy;ный, 
+                        на&shy;по&shy;ло&shy;ви&shy;ну укра&shy;шен&shy;ный на&shy;ряд&shy;ным 
+                        крас&shy;ным ру&shy;мян&shy;цем в по&shy;лос&shy;ку. Мя&shy;коть 
+                        Мель&shy;бы бе&shy;ло&shy;снеж&shy;ная. Не&shy;ве&shy;ро&shy;ят&shy;но 
+                        хо&shy;ро&shy;ша, кис&shy;ло-слад&shy;кая, с ощу&shy;ти&shy;мым 
+                        кон&shy;фет&shy;ным за&shy;па&shy;хом. Пло&shy;до&shy;но&shy;сит уже в 4 го&shy;да.
+                    </p>
+                </div>
+            </div>
+            <div class="background"></div>
+            <a href="#1" class="close"></a>
+        </div>
+    </main>
 </body>
 </html>
