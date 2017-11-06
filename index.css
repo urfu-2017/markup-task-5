@@ -1,0 +1,201 @@
+body
+{
+    font-size: 15px;
+    margin: 0;
+}
+
+header
+{
+    font-size: 200%;
+    text-align: center;
+    margin: 50px 0;
+}
+
+header:first-letter
+{
+    color: #f00;
+}
+
+.gallery
+{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card
+{
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+    padding: 5px 0;
+    z-index: 1;
+}
+
+.card img:first-child
+{
+    width: 250px;
+    height: auto;
+}
+
+.card .photo
+{
+    width: 250px;
+    height: 180px;
+}
+
+.card .description
+{
+    display: none;
+    margin: 5px;
+}
+
+.card:hover .description
+{
+    display: block;
+}
+
+.card:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    z-index: 2;
+}
+
+.big
+{
+    pointer-events: none;
+}
+
+.card .photo img:first-child:hover
+{
+    cursor: zoom-in;
+}
+
+input
+{
+    display: none;
+}
+
+#slider1:checked ~ label[class='arrow-right list-1'],
+#slider1:checked ~ .gallery .list-1,
+#slider2:checked ~ label[class='arrow-left list-2'],
+#slider2:checked ~ label[class='arrow-right list-2'],
+#slider2:checked ~ .gallery .list-2,
+#slider3:checked ~ label[class='arrow-left list-3'],
+#slider3:checked ~ label[class='arrow-right list-3'],
+#slider3:checked ~ .gallery .list-3,
+#slider4:checked ~ label[class='arrow-left list-4'],
+#slider4:checked ~ .gallery .list-4
+{
+    display: block;
+}
+
+#slider1:checked ~ label:not([class*='list-1']),
+#slider2:checked ~ label:not([class*='list-2']),
+#slider3:checked ~ label:not([class*='list-3']),
+#slider4:checked ~ label:not([class*='list-4']),
+#slider1:not(:checked) ~ .gallery .list-1,
+#slider2:not(:checked) ~ .gallery .list-2,
+#slider3:not(:checked) ~ .gallery .list-3,
+#slider4:not(:checked) ~ .gallery .list-4
+{
+    display: none;
+}
+
+.background
+{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: .9;
+    z-index: 3;
+    position: absolute;
+    display: none;
+}
+
+.photo .big
+{
+    display: none;
+}
+
+.card:target .big
+{
+    display: block;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 600px;
+    box-shadow: 0 0 15px #ff7256;
+}
+
+.card:target ~ .background
+{
+    display: block;
+}
+
+.card:target .description
+{
+    display: none;
+}
+
+.card:target
+{
+    box-shadow: none;
+    transform: none;
+}
+
+.close
+{
+    width: 20px;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 5;
+    display: none;
+    text-decoration: none;
+}
+
+.close:before
+{
+    content: '\2716';
+}
+
+.card:target ~ .close
+{
+    display: block;
+}
+
+.arrow-left,
+.arrow-right
+{
+    font-size: 25px;
+    width: 52px;
+    height: 40px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.arrow-left
+{
+    top: 220px;
+    left: 50px;
+    background: url('images/left.png') 0 0 no-repeat;
+}
+
+.arrow-right
+{
+    top: 220px;
+    right: 50px;
+    background: url('images/right.png') 0 0 no-repeat;
+}
