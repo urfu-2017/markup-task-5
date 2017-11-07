@@ -8,23 +8,30 @@
 </head>
 
 <body>
-    <header>Я и мои друзья.</header>
+    <header>Овощи.</header>
     <section class="mainBlock">
-        <span id="sliderImage1"></span>
-        <span id="sliderImage2"></span>
-        <span id="sliderImage3"></span>
+        <input class="sliderImage1" id="sliderImage1" type="radio" name="sliderChange"
+            checked>
+        <input class="sliderImage2" id="sliderImage2" type="radio" name="sliderChange">
+        <input class="sliderImage3" id="sliderImage3" type="radio" name="sliderChange">
 
         <div class="imageHolder">
 
+            <div class="marginLeft">
+            </div>
             <div class="veggie">
                 <a class="lightBox" href="#box1">
                     <img src="bakl.jpg" alt="Eggplant image">
                 </a>
-                <div class="lightboxTarget first" class="second" id="box1">
+                <div class="lightboxTarget first" id="box1">
                     <img src="bakl.jpg" alt="Eggplant image">
                     <a class="lightboxClose" href="#"></a>
                 </div>
-                <p>u want sum text</p>
+                <p>Вид мно&shy;го&shy;лет&shy;них тра&shy;вя&shy;ни&shy;стых
+                    рас&shy;те&shy;ний ро&shy;да Пас&shy;лён
+                    (Solanum). Воз&shy;де&shy;лы&shy;ва&shy;ет&shy;ся
+                    как од&shy;но&shy;лет&shy;нее рас&shy;те&shy;ние.
+                    Съе&shy;до&shy;бен толь&shy;ко плод.</p>
             </div>
             <div class="veggie">
                 <a class="lightBox" href="#box2">
@@ -34,7 +41,11 @@
                     <img src="cauliflower.jpg" alt="Cauliflower image">
                     <a class="lightboxClose" href="#"></a>
                 </div>
-                <p>u want sum text</p>
+                <p>Рас&shy;про&shy;стра&shy;нён&shy;ная овощ&shy;ная
+                    куль&shy;ту&shy;ра, один из куль&shy;тур&shy;ных
+                    сор&shy;тов ви&shy;да Ка&shy;пу&shy;ста ого&shy;род&shy;ная.
+                    От&shy;но&shy;сит&shy;ся к сор&shy;то&shy;вой
+                    груп&shy;пе botrytis, как и ро&shy;ма&shy;не&shy;ско.</p>
             </div>
             <div class="veggie">
                 <a class="lightBox" href="#box3">
@@ -44,7 +55,11 @@
                     <img src="celery.jpg" alt="Celery image">
                     <a class="lightboxClose" href="#"></a>
                 </div>
-                <p>u want sum text</p>
+                <p>Род тра&shy;вя&shy;ни&shy;стых рас&shy;те&shy;ний
+                    се&shy;мей&shy;ства Зон&shy;тич&shy;ные (Apiaceae).
+                    <br>Са&shy;мый из&shy;вест&shy;ный вид Сель&shy;де&shy;рей
+                    па&shy;ху&shy;чий (Apium graveolens) — рас&shy;про&shy;стра&shy;нён&shy;ная
+                    овощ&shy;ная куль&shy;ту&shy;ра.</p>
             </div>
             <div class="veggie">
                 <a class="lightBox" href="#box4">
@@ -54,8 +69,16 @@
                     <img src="french-bean.jpg" alt="Beans image">
                     <a class="lightboxClose" href="#"></a>
                 </div>
-                <p>u want sum text</p>
+                <p>Ти&shy;по&shy;вой род рас&shy;те&shy;ний се&shy;мей&shy;ства
+                    Бо&shy;бо&shy;вые (Fabaceae), объ&shy;еди&shy;ня&shy;ю&shy;щий
+                    око&shy;ло 97 ви&shy;дов в бо&shy;лее тёп&shy;лых
+                    об&shy;ла&shy;стях обо&shy;их по&shy;лу&shy;ша&shy;рий.
+                    Раз&shy;во&shy;дят&shy;ся из-за пло&shy;дов
+                    и се&shy;мян — а не&shy;ко&shy;то&shy;рые
+                    ви&shy;ды так&shy;же из-за цве&shy;тов.</p>
             </div>
+            <label class="sliderImage2" for="sliderImage2"></label>
+            <label class="sliderImage1" for="sliderImage1"></label>
             <div class="veggie">
                 <a class="lightBox" href="#box5">
                     <img src="pepper.jpg" alt="Pepper image">
@@ -97,6 +120,8 @@
                 </div>
                 <p>u want sum text</p>
             </div>
+            <label class="sliderImage3" for="sliderImage3"></label>
+            <label class="sliderImage2Back" for="sliderImage2"></label>
             <div class="veggie">
                 <a class="lightBox" href="#box9">
                     <img src="brussels-sprouts.jpg" alt="Brussels image">
@@ -109,7 +134,7 @@
             </div>
             <div class="veggie">
                 <a class="lightBox" href="#box10">
-                    <img src="french-bean.jpg" alt="Beans image">
+                    <img src="corn.png" alt="Beans image">
                 </a>
                 <div class="lightboxTarget" id="box10">
                     <img src="corn.png" alt="Corn image">
@@ -137,11 +162,6 @@
                 </div>
                 <p>u want sum text</p>
             </div>
-        </div>
-        <div class="buttonHolder">
-            <a href="#sliderImage1" class="sliderChange"></a>
-            <a href="#sliderImage2" class="sliderChange"></a>
-            <a href="#sliderImage3" class="sliderChange"></a>
         </div>
     </section>
 </body>
