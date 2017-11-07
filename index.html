@@ -3,7 +3,306 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link href="index.css" rel="stylesheet">
 </head>
 <body>
-</body>
-</html>
+    <input name="page_switch" type="radio" id="to_page_1" class="page_1_input" checked>
+    <input name="page_switch" type="radio" id="to_page_2" class="page_2_input">
+    <input name="page_switch" type="radio" id="to_page_3" class="page_3_input">
+
+    <div class="gallery_page page_1">
+        <label class="right_arrow" for="to_page_2"></label>
+        <div class="fruit_card_container">
+            <article class="fruit_card">
+                <label for="full_picture_1">
+                    <img src="img/apricot.jpg" alt="Абрикос" class="fruit_picture">
+                </label>
+                <div class="description">
+                    <h3>Абрикос</h3>
+                    <p>
+                        Небольшое дерево или крупный кустарник с широкоокруглой кроной. Очень нарядны
+                        его красновато-коричневые или буро-оливковые, блестящие, голые побеги, часто
+                        местами (но не сплошь) покрытые сероватой пленкой, почки по 2-3 рядом. Очень
+                        декоративен в пору цветения,
+                    </p>
+                </div>
+            </article>
+            <input name="full_picture_controller" type="radio" id="close_picture_1">
+            <input name="full_picture_controller" type="radio" id="full_picture_1">
+            <div class="full_picture">
+                <label for="close_picture_1" class="close_picture"></label>
+                <img src="img/apricot.jpg" alt="Абрикос">
+            </div>
+        </div>
+        <div class="fruit_card_container">
+            <article class="fruit_card">
+                <label for="full_picture_2">
+                    <img src="img/avocado.jpg" alt="Авокадо" class="fruit_picture">
+                </label>
+                <div class="description">
+                    <h3>Авокадо</h3>
+                    <p>
+                        Авокадо (англ. alligatorpear - аллигаторова груша) – высокорослое вечнозеленое
+                        дерево с крупными одноименными плодами. Плоды растения имеют форму груши, овала
+                        или шара и достигают размеров 5-20 см.
+                    </p>
+                </div>
+            </article>
+            <input name="full_picture_controller" type="radio" id="close_picture_2">
+            <input name="full_picture_controller" type="radio" id="full_picture_2">
+            <div class="full_picture">
+                <label for="close_picture_2" class="close_picture"></label>
+                <img src="img/avocado.jpg" alt="Авокадо">
+            </div>
+        </div>
+        <div class="fruit_card_container">
+            <article class="fruit_card">
+                <label for="full_picture_3">
+                    <img src="img/quince.jpg" alt="Айва" class="fruit_picture">
+                </label>
+                <div class="description">
+                    <h3>Айва</h3>
+                    <p>
+                        Айва - дерево высотой до 4—5 метров с цельнокрайними, яйцевидными листьями,
+                        снизу волосистыми. Цветки очень крупные, большей частью одиночные. Плоды айвы
+                        волосистые, почти шарообразные или грушевидные. На Востоке плоды айвы считаются
+                        символом чистоты и здоровья. Созревает осенью. Ароматные плоды имеют
+                        терпковато-кисловатый вкус. Очень твердый плод.
+                    </p>
+                </div>
+            </article>
+            <input name="full_picture_controller" type="radio" id="close_picture_3">
+            <input name="full_picture_controller" type="radio" id="full_picture_3">
+            <div class="full_picture">
+                <label for="close_picture_3" class="close_picture"></label>
+                <img src="img/quince.jpg" alt="Айва">
+            </div>
+        </div>
+        <div class="fruit_card_container">
+            <article class="fruit_card">
+                <label for="full_picture_4">
+                    <img src="img/cherry_plum.jpg" alt="Алыча" class="fruit_picture">
+                </label>
+                <div class="description">
+                    <h3>Алыча</h3>
+                    <p>
+                        Сильно колючие ветвистые многоствольные деревья, иногда кустарник, с тонкими
+                        буровато-зелёными побегами, высотой 3—10 метров. Цветки алычи белые или розовые,
+                        одиночные. Цветет в первых числах мая. Плоды алычи созревают в августе-сентябре.
+                        Прекрасный медонос и подвой для сливы.
+                    </p>
+                </div>
+            </article>
+            <input name="full_picture_controller" type="radio" id="close_picture_4">
+            <input name="full_picture_controller" type="radio" id="full_picture_4">
+            <div class="full_picture">
+                <label for="close_picture_4" class="close_picture"></label>
+                <img src="img/cherry_plum.jpg" alt="Алыча">
+            </div>
+        </div>
+    </div>
+    <div class="gallery_page page_2">
+        <label class="left_arrow" for="to_page_1"></label>
+        <label class="right_arrow" for="to_page_3"></label>
+        <div class="fruit_card_container">
+            <article class="fruit_card">
+                <label for="full_picture_5">
+                <img src="img/pineapple.jpg" alt="Ананас"  class="fruit_picture">
+                </label>
+                <div class="description">
+                    <h3>Ананас</h3>
+                    <p>
+                        Наземное травянистое растение ананас, котооре часто называют фруктом. Имеет колючий
+                        стеблель и листья. Цветение длится 15—20 дней, и в результате образуется соплодие,
+                        представляющее собой сросшиеся основания завязей, кроющие листья цветков и ось
+                        соцветия. Соплодие мощное, напоминающее по форме шишку, золотисто-жёлтое. На
+                        верхушке ананаса всегда развивается группа вегетативных листьев «хохолок»
+                    </p>
+                </div>
+            </article>
+            <input name="full_picture_controller" type="radio" id="close_picture_5">
+            <input name="full_picture_controller" type="radio" id="full_picture_5">
+            <div class="full_picture">
+                <label for="close_picture_5" class="close_picture"></label>
+                <img src="img/pineapple.jpg" alt="Ананас">
+            </div>
+        </div>
+        <div class="fruit_card_container">
+            <article class="fruit_card">
+                <label for="full_picture_6">
+                    <img src="img/sugar_apple.jpg" alt="Аннона (гуанабана)" class="fruit_picture">
+                </label>
+                <div class="description">
+                    <h3>Аннона (гуанабана)</h3>
+                    <p>
+                        Дерево в природных условиях достигает 6м высоты, в комнате гораздо ниже. В отличии
+                        от некоторых других аннона это вечнозеленое дерево. Листья овальной или продолговатой
+                        формы, глянцевые, кожистые, темно-зеленые, длиной до 15 см. Они имеют слегка пряный
+                        запах, особенно заметный при растирании. Цветы ароматные, большие (до 4,5 см в
+                        диаметре), состоят из трех желто-зеленых мясистых внешних лепестков и трех
+                        бледно-желтых внутренних, могут появляться в разных местах - на стволе, ветвях и
+                        небольших веточках. Цветы полностью никогда не раскрываются. Плоды гуанабаны
+                        овальные или сердцевидные, чаще неправильной формы, до 30 см в длину, 15 см в диаметре
+                        и весом до 3 кг, темно-зеленого цвета, при созревании становятся желто-зелеными.
+                    </p>
+                </div>
+            </article>
+            <input name="full_picture_controller" type="radio" id="close_picture_6">
+            <input name="full_picture_controller" type="radio" id="full_picture_6">
+            <div class="full_picture">
+                <label for="close_picture_6" class="close_picture"></label>
+                <img src="img/sugar_apple.jpg" alt="Аннона (гуанабана)">
+            </div>
+        </div>
+        <div class="fruit_card_container">
+            <article class="fruit_card">
+                <label for="full_picture_7">
+                    <img src="img/orange.jpg" alt="Апельсин" class="fruit_picture">
+                </label>
+                <div class="description">
+                    <h3>Апельсин</h3>
+                    <p>
+                        Вечнозелёное плодовое дерево рода цитрус семейства рутовых. В диком виде не найден.
+                        На сильнорослых подвоях достигает высоты 12 м, на карликовых 4-6 м. Листья кожистые,
+                        овальные, с заострённой верхушкой. Цветки обоеполые, белые, душистые, одиночные или
+                        в соцветиях. Плоды апельсина - многогнёздная ягода; в зависимости от сорта сильно
+                        различаются по размеру, форме и окраске кожуры (от светло-жёлтой до
+                        красновато-оранжевой). Апельсин имеет сочную, сладкую или кисло-сладкую мякоть.
+                    </p>
+                </div>
+            </article>
+            <input name="full_picture_controller" type="radio" id="close_picture_7">
+            <input name="full_picture_controller" type="radio" id="full_picture_7">
+            <div class="full_picture">
+                <label for="close_picture_7" class="close_picture"></label>
+                <img src="img/orange.jpg" alt="Апельсин">
+            </div>
+        </div>
+        <div class="fruit_card_container">
+            <article class="fruit_card">
+                <label for="full_picture_8">
+                    <img src="img/banana.jpg" alt="Банан" class="fruit_picture">
+                </label>
+                <div class="description">
+                    <h3>Банан</h3>
+                    <p>
+                        Банан (лат. Músa) – плод травянистого одноименного растения, которое произрастает
+                        в тропическом климате. Насчитывается более 40 видов бананов, однако для экспорта
+                        и массового употребления выращивают искусственно выведенный сорт Musa paradisiaca.
+                        В некоторых странах культивирование этого фрукта является основным источником
+                        государственных поступлений в экономику.
+                    </p>
+                </div>
+            </article>
+            <input name="full_picture_controller" type="radio" id="close_picture_8">
+            <input name="full_picture_controller" type="radio" id="full_picture_8">
+            <div class="full_picture">
+                <label for="close_picture_8" class="close_picture"></label>
+                <img src="img/banana.jpg" alt="Банан" >
+            </div>
+        </div>
+    </div>
+    <div class="gallery_page page_3">
+        <label class="left_arrow" for="to_page_2"></label>
+        <div class="fruit_card_container">
+            <article class="fruit_card">
+                <label for="full_picture_9">
+                    <img src="img/bergamot.jpg" alt="Бергамот" class="fruit_picture">
+                </label>
+                <div class="description">
+                    <h3>Бергамот</h3>
+                    <p>
+                        Бергамотом называют гибридный вид выведенного искусственно растения рода Цитрус.
+                        Растение получили методом скрещивания померанца и цитрона. В кожице бергамота есть
+                        ценные эфирные масла, применяемые в косметической и парфюмерной промышленности, а
+                        также в медицине.
+                    </p>
+                </div>
+            </article>
+            <input name="full_picture_controller" type="radio" id="close_picture_9">
+            <input name="full_picture_controller" type="radio" id="full_picture_9">
+            <div class="full_picture">
+                <label for="close_picture_9" class="close_picture"></label>
+                <img src="img/bergamot.jpg" alt="Бергамот">
+            </div>
+        </div>
+        <div class="fruit_card_container">
+            <article class="fruit_card">
+                <label for="full_picture_10">
+                    <img src="img/pomegranate.jpg" alt="Гранат" class="fruit_picture">
+                </label>
+                <div class="description">
+                    <h3>Гранат</h3>
+                    <p>
+                        Представляет собой кустарник или ветвистое дерево семейства гранатовых высотой до
+                        6 м. Цветки колокольчиковые двойные и одиночные, оранжево-красного цвета, достигают
+                        4 см в диаметре. Плоды граната - крупные шарообразные,внутри делятся 9-12-ю
+                        перепонками, образовывая гнезда. В каждом гнезде по два ряда зерен, в которых семена
+                        обернуты в сочную съедобную мякоть - пульпу. Мякоть граната кисло-сладкая,
+                        темно-рубинового цвета, иногда более светлая. Диаметр плода может варьироваться
+                        от 8 до 18 см, а цвет кожуры - от жёлто-оранжевого до темно-красного. Внутри плода
+                        граната в большом количестве содержатся маленькие семена, окруженные ярко-красной
+                        сочной мякотью.
+                    </p>
+                </div>
+            </article>
+            <input name="full_picture_controller" type="radio" id="close_picture_10">
+            <input name="full_picture_controller" type="radio" id="full_picture_10">
+            <div class="full_picture">
+                <label for="close_picture_10" class="close_picture"></label>
+                <img src="img/pomegranate.jpg" alt="Гранат">
+            </div>
+        </div>
+        <div class="fruit_card_container">
+            <article class="fruit_card">
+                <label for="full_picture_11">
+                    <img src="img/grapefruit.jpg" alt="Грейпфрут" class="fruit_picture">
+                </label>
+                <div class="description">
+                    <h3>Грейпфрут</h3>
+                    <p>
+                        Грейпфрут (англ. grape и fruit – виноград и фрукт) – цитрусовый желто-оранжевый
+                        фрукт, произрастающий в субтропических климатических широтах. Грейпфрут растет
+                        на одноименном вечнозеленом дереве, достигающим в высоту 13-15 м. Спелый плод
+                        в диаметре бывает не более 15 см. По внешним признакам грейпфрут наибольшее
+                        сходство имеет с апельсином, однако его мякоть более кислая, а внутренние белые
+                        прожилки горькие. Многие ученые считают, что грейпфрут появился в Индии в
+                        результате естественной гибридизации помело и апельсина.
+                    </p>
+                </div>
+            </article>
+            <input name="full_picture_controller" type="radio" id="close_picture_11">
+            <input name="full_picture_controller" type="radio" id="full_picture_11">
+            <div class="full_picture">
+                <label for="close_picture_11" class="close_picture"></label>
+                <img src="img/grapefruit.jpg" alt="Грейпфрут">
+            </div>
+        </div>
+        <div class="fruit_card_container">
+            <article class="fruit_card">
+                <label for="full_picture_12">
+                    <img src="img/pear.jpg" alt="Груша" class="fruit_picture">
+                </label>
+                <div class="description">
+                    <h3>Груша</h3>
+                    <p>
+                        Одно из древнейших плодовых деревьев культивируемых человечеством. Плод груши
+                        средних размеров, своей формой напоминающий лампочку, хотя встречаются сорта с
+                        округлой формой. Мякоть спелой груши нежная и сочная, с характерным ароматом
+                        (чем сильнее издаваемый плодом аромат, тем больше в нем витаминов и других
+                        полезных веществ) и сладким вкусом. Груши кроме употребления в свежем виде
+                        имеют десятки способов приготовления: их вялят, пекут, консервируют, из них
+                        делают соки и компоты, варят варенье, получают джемы и повидло.
+                    </p>
+                </div>
+            </article>
+            <input name="full_picture_controller" type="radio" id="close_picture_12">
+            <input name="full_picture_controller" type="radio" id="full_picture_12">
+            <div class="full_picture">
+                <label for="close_picture_12" class="close_picture"></label>
+                <img src="img/pear.jpg" alt="Груша">
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>
