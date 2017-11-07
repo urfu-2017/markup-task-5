@@ -1,0 +1,123 @@
+.header-text
+{
+    font-size: 40px;
+    text-align: center;
+}
+
+.container
+{
+    text-align: center;
+}
+
+.card
+{
+    display: none;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 10px;
+    width: 23.5%;
+}
+
+.card:hover
+{
+    box-shadow: 0 0 4px #999;
+    border-radius: 4px;
+}
+
+.image
+{
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.description
+{
+    display: none;
+    text-align: justify;
+}
+
+.card:hover > .description
+{
+    display: block;
+}
+
+.card:target ~ .blackout
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+    z-index: 1;
+}
+
+.card:target ~ .close-btn::after
+{
+    content: '×';
+    display: block;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    z-index: 2;
+    font: 40px /.6 Arial, sans-serif;
+    color: #fff;
+}
+
+.card:target .image
+{
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    max-height: 100%;
+    z-index: 2;
+}
+
+.card:target .description
+{
+    display: none;
+}
+
+.card:target:hover
+{
+    box-shadow: none;
+}
+
+.switch-1:checked ~ .cards > .card:nth-child(n+0):not(:nth-child(n+5)),
+.switch-2:checked ~ .cards > .card:nth-child(n+5):not(:nth-child(n+9)),
+.switch-3:checked ~ .cards > .card:nth-child(n+9):not(:nth-child(n+13))
+{
+    display: inline-block;
+}
+
+.switch-1,
+.switch-2,
+.switch-3
+{
+    display: none;
+}
+
+.switch-1:checked ~ .arrow-3::after,
+.switch-2:checked ~ .arrow-1::after,
+.switch-3:checked ~ .arrow-2::after
+{
+    content: '◀';
+    margin-top: 70px;
+    font-size: 30px;
+    float: left;
+}
+
+.switch-1:checked ~ .arrow-2::after,
+.switch-2:checked ~ .arrow-3::after,
+.switch-3:checked ~ .arrow-1::after
+{
+    content: '▶';
+    margin-top: 70px;
+    font-size: 30px;
+    float: right;
+}
