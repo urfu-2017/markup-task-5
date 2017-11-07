@@ -1,0 +1,125 @@
+
+body
+{
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+.gallery_page
+{
+    display: none;
+}
+
+input.page_1_input:checked ~ .page_1,
+input.page_2_input:checked ~ .page_2,
+input.page_3_input:checked ~ .page_3
+{
+    display: block;
+}
+
+.fruit_card
+{
+    margin: 20px;
+    border: solid 2px #000;
+}
+
+.fruit_card_container
+{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+
+.fruit_picture
+{
+    width: 100%;
+}
+
+.description
+{
+    display: none;
+    text-align: left;
+}
+
+.fruit_card:hover
+{
+    width: 130%;
+    position: relative;
+    z-index: 1;
+}
+
+.fruit_card:hover > .description
+{
+    display: block;
+}
+
+.full_picture
+{
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.full_picture > img
+{
+    position: relative;
+    margin: 70px auto;
+    height: 70%;
+}
+
+.close_picture:before
+{
+    content: '+';
+    font-size: 60px;
+    color: #000;
+}
+
+.close_picture
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+.right_arrow
+{
+    background: url('img/right_arrow.png');
+    position: absolute;
+    right: 30px;
+    top: 70px;
+    width: 70px;
+    height: 70px;
+}
+
+.left_arrow
+{
+    background: url('img/left_arrow.png');
+    position: absolute;
+    left: 30px;
+    top: 70px;
+    width: 70px;
+    height: 70px;
+}
+
+input
+{
+    display: none;
+}
+
+.fruit_card_container > input[id^='full_picture']:checked ~ .full_picture
+{
+    display: block;
+}
+
+.fruit_card_container > input[id^='close_picture']:checked ~ .full_picture
+{
+    display: none;
+}
+
