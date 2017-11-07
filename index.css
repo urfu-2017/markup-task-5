@@ -64,8 +64,8 @@
 {
     display: block;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
@@ -83,7 +83,7 @@
 .show-modal:not(:checked) + .item-content:hover 
 {
     border: 2px solid gray;
-    padding: 0px 20px;
+    padding: 0 20px;
     z-index: 1000;
     background: white;
 }
