@@ -1,0 +1,188 @@
+.gallery
+{
+    width: 1200px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-holder
+{
+    width: 4800px;
+    height: 400px;
+    clear: both;
+    position: relative;
+
+    transition: left 2s;
+}
+
+.slider-image
+{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+input
+{
+    visibility: hidden;
+}
+
+input.slider-image-1:checked ~ .image-holder
+{
+    left: 0;
+}
+
+input.slider-image-2:checked ~ .image-holder
+{
+    left: -1200px;
+}
+
+input.slider-image-3:checked ~ .image-holder
+{
+    left: -2400px;
+}
+
+input.slider-image-4:checked ~ .image-holder
+{
+    left: -3600px;
+}
+
+input.slider-image-1:checked ~ .slide2
+{
+    right: 20px;
+    z-index: 1000;
+}
+
+input.slider-image-2:checked ~ .slide1
+{
+    left: 20px;
+    z-index: 1000;
+    transform: scaleX(-1);
+}
+
+input.slider-image-2:checked ~ .slide3
+{
+    right: 20px;
+    z-index: 1000;
+}
+
+input.slider-image-3:checked ~ .slide2
+{
+    left: 20px;
+    z-index: 1000;
+    transform: scaleX(-1);
+}
+
+input.slider-image-3:checked ~ .slide4
+{
+    right: 20px;
+    z-index: 1000;
+}
+
+input.slider-image-4:checked ~ .slide3
+{
+    left: 20px;
+    z-index: 1000;
+    transform: scaleX(-1);
+}
+
+.slider
+{
+    position: absolute;
+    top: 150px;
+}
+
+.label-img
+{
+    width: 50px;
+    height: 70px;
+}
+
+.open-modal:hover .element
+{
+    position: absolute;
+    z-index: 100;
+    border: solid gold;
+}
+
+.open-modal:hover .description
+{
+    display: inline;
+    color: #000;
+}
+
+.element
+{
+    width: 250px;
+}
+
+.wrap
+{
+    background-color: white;
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+
+.description
+{
+    display: none;
+    bottom: 0;
+    left: 0;
+}
+
+.modalDialog
+{
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modalDialog:target
+{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog > div
+{
+    position: relative;
+    margin: 10% auto;
+}
+
+.close
+{
+    background: #606061;
+    color: #fff;
+    line-height: 25px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.close:hover
+{
+    background: #00d9ff;
+}
+
+.modal-img
+{
+    max-height: 600px;
+    max-width: 600px;
+}

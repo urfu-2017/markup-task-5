@@ -1,9 +1,362 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Бабуленькин урожай»</title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Задача «Бабуленькин урожай»</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <main>
+            <div class="gallery">
+                <input type="radio" checked name="selector" class="slider-image-1" id="slide1">
+                <input type="radio" name="selector" class="slider-image-2" id="slide2">
+                <input type="radio" name="selector" class="slider-image-3" id="slide3">
+                <input type="radio" name="selector" class="slider-image-4" id="slide4">
+                <label for="slide1" class="slider slide1">
+                    <img src="arrows/Ic_keyboard_arrow_right_48px.svg.png" alt="vegetable"
+                        class="label-img-1 label-img">
+                </label>
+                <label for="slide2" class="slider slide2">
+                    <img src="arrows/Ic_keyboard_arrow_right_48px.svg.png" alt="vegetable"
+                        class="label-img-2 label-img">
+                </label>
+                <label for="slide3" class="slider slide3">
+                    <img src="arrows/Ic_keyboard_arrow_right_48px.svg.png" alt="vegetable"
+                        class="label-img-2 label-img">
+                </label>
+                <label for="slide4" class="slider slide4">
+                    <img src="arrows/Ic_keyboard_arrow_right_48px.svg.png" alt="vegetable"
+                        class="label-img-2 label-img">
+                </label>
+                <div class="image-holder">
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal1">
+                            <div class="element">
+                                <img src="vegetables/beetroot.jpg" alt="vegetable"
+                                    class="slider-image">
+                                <p class="description">
+                                    свекла свекла свекла свекла свекла свекла свекла свекла
+                                    свекла свекла свекла свекла свекла свекла свекла
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal2">
+                            <div class="element">
+                                <img src="vegetables/broccoli.jpg" alt="vegetable"
+                                    class="slider-image">
+                                <p class="description">
+                                    брокколи брокколи брокколи брокколи брокколи брокколи брокколи
+                                    брокколи брокколи брокколи брокколи брокколи брокколи брокколи
+                                    брокколи брокколи брокколи брокколи брокколи брокколи брокколи
+                                    брокколи брокколи брокколи брокколи брокколи брокколи брокколи
+                                    брокколи брокколи брокколи брокколи брокколи брокколи
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal3">
+                            <div class="element">
+                                <img src="vegetables/carrots.jpg" alt="vegetable"
+                                    class="slider-image">
+                                <p class="description">
+                                    морковь морковь морковь морковь морковь морковь морковь морковь
+                                    морковь морковь морковь морковь морковь морковь морковь морковь
+                                    морковь морковь морковь морковь морковь морковь морковь морковь
+                                    морковь морковь морковь морковь морковь морковь морковь морковь
+                                    морковь морковь морковь морковь морковь морковь
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal4">
+                            <div class="element"><img src="vegetables/eggplant.jpg" alt="vegetable"
+                                class="slider-image">
+                                <p class="description">
+                                    баклажан баклажан баклажан баклажан баклажан баклажан баклажан
+                                    баклажан баклажан баклажан баклажан баклажан баклажан баклажан
+                                    баклажан баклажан баклажан баклажан баклажан баклажан баклажан
+                                    баклажан баклажан баклажан баклажан баклажан баклажан баклажан
+                                    баклажан баклажан баклажан баклажан баклажан баклажан баклажан
+                                    баклажан баклажан
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal5">
+                            <div class="element"><img src="vegetables/gabage.jpg" alt="vegetable"
+                                class="slider-image">
+                                <p class="description">
+                                    капуста капуста капуста капуста капуста капуста капуста капуста
+                                    капуста капуста капуста капуста капуста капуста капуста капуста
+                                    капуста капуста капуста капуста капуста капуста капуста капуста
+                                    капуста капуста капуста капуста капуста
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal6">
+                            <div class="element"><img src="vegetables/garlic.jpg" alt="vegetable"
+                                class="slider-image">
+                                <p class="description">
+                                    чеснок чеснок чеснок чеснок чеснок чеснок чеснок чеснок чеснок
+                                    чеснок чеснок чеснок чеснок чеснок чеснок чеснок чеснок чеснок
+                                    чеснок чеснок чеснок чеснок чеснок чеснок чеснок чеснок чеснок
+                                    чеснок чеснок чеснок чеснок чеснок чеснок чеснок чеснок чеснок
+                                    чеснок чеснок
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal7">
+                            <div class="element"><img src="vegetables/green%20beans.jpg"
+                                alt="vegetable"
+                                class="slider-image">
+                                <p class="description">
+                                    бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы
+                                    бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы
+                                    бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal8">
+                            <div class="element"><img src="vegetables/green%20bell%20pepper.jpeg"
+                                alt="vegetable"
+                                class="slider-image">
+                                <p class="description">
+                                    зеленый перец зеленый перец зеленый перец зеленый перец зеленый
+                                    перец зеленый перец зеленый перец зеленый перец зеленый перец
+                                    зеленый перец зеленый перец зеленый перец зеленый перец зеленый
+                                    перец зеленый перец зеленый перец зеленый перец зеленый перец
+                                    зеленый перец зеленый перец зеленый перец зеленый перец зеленый
+                                    перец зеленый перец зеленый перец зеленый перец зеленый перец
+                                    зеленый перец зеленый перец зеленый перец зеленый перец зеленый
+                                    перец
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal9">
+                            <div class="element"><img src="vegetables/marrow.jpg" alt="vegetable"
+                                class="slider-image">
+                                <p class="description">
+                                    кабачок кабачок кабачок кабачок кабачок кабачок кабачок кабачок
+                                    кабачок кабачок кабачок кабачок кабачок кабачок кабачок кабачок
+                                    кабачок кабачок кабачок кабачок кабачок кабачок кабачок кабачок
+                                    кабачок кабачок кабачок кабачок кабачок кабачок кабачок кабачок
+                                    кабачок кабачок кабачок кабачок кабачок кабачок кабачок
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal10">
+                            <div class="element"><img src="vegetables/onion.jpg" alt="vegetable"
+                                class="slider-image">
+                                <p class="description">
+                                    лук лук лук лук лук лук лук лук лук лук лук лук лук лук лук лук
+                                    лук лук лук лук лук лук лук лук лук лук лук лук лук лук лук лук
+                                    лук лук лук лук лук лук лук
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal11">
+                            <div class="element"><img src="vegetables/papper.jpg" alt="vegetable"
+                                class="slider-image">
+                                <p class="description">
+                                    перец перец перец перец перец перец перец перец перец перец
+                                    перец перец перец перец перец перец перец перец перец перец
+                                    перец перец перец перец перец перец перец перец перец перец
+                                    перец перец перец перец перец перец перец перец перец перец
+                                    перец перец перец перец перец перец перец
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal12">
+                            <div class="element"><img src="vegetables/pease.jpg" alt="vegetable"
+                                class="slider-image">
+                                <p class="description">
+                                    горох горох горох горох горох горох горох горох горох горох
+                                    горох горох горох горох горох горох горох горох горох горох
+                                    горох горох горох горох горох горох горох горох горох горох
+                                    горох горох горох горох горох горох горох горох
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal13">
+                            <div class="element"><img src="vegetables/potatoe.jpg" alt="vegetable"
+                                class="slider-image">
+                                <p class="description">
+                                    картофель картофель картофель картофель картофель картофель
+                                    картофель картофель картофель картофель картофель картофель
+                                    картофель картофель картофель картофель картофель картофель
+                                    картофель картофель картофель картофель картофель картофель
+                                    картофель картофель картофель картофель картофель картофель
+                                    картофель картофель картофель картофель картофель картофель
+                                    картофель картофель картофель картофель картофель картофель
+                                    картофель картофель картофель картофель картофель картофель
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal14">
+                            <div class="element"><img src="vegetables/pumpkin.jpg" alt="vegetable"
+                                class="slider-image">
+                                <p class="description">
+                                    тыква тыква тыква тыква тыква тыква тыква тыква тыква тыква
+                                    тыква тыква тыква тыква тыква тыква тыква тыква тыква тыква
+                                    тыква тыква тыква тыква тыква тыква тыква тыква тыква тыква
+                                    тыква тыква тыква тыква тыква тыква тыква
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal15">
+                            <div class="element">
+                                <img src="vegetables/radish.png" alt="vegetable"
+                                    class="slider-image">
+                                <p class="description">
+                                    редиска редиска редиска редиска редиска редиска редиска редиска
+                                    редиска редиска редиска редиска редиска редиска редиска редиска
+                                    редиска редиска редиска редиска редиска редиска редиска редиска
+                                    редиска редиска редиска редиска редиска редиска редиска редиска
+                                    редиска редиска редиска редиска редиска редиска редиска
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal16">
+                            <div class="element"><img src="vegetables/tomato.jpg" alt="vegetable"
+                                class="slider-image">
+                                <p class="description">
+                                    томат томат томат томат томат томат томат томат томат томат
+                                    томат
+                                    томат томат томат томат томат томат томат томат томат томат
+                                    томат
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="modals">
+                    <div id="modal1" class="modalDialog img1">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/beetroot.jpg" alt="beetroot-img" class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal2" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/broccoli.jpg" alt="broccoli-img" class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal3" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/carrots.jpg" alt="carrot-img" class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal4" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/eggplant.jpg" alt="eggplant-img" class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal5" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/gabage.jpg" alt="gabage-img" class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal6" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/garlic.jpg" alt="garlic-img" class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal7" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/green%20beans.jpg" alt="beans-img"
+                                class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal8" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/green%20bell%20pepper.jpeg" alt="pepper-img"
+                                class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal9" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/marrow.jpg" alt="marrow-img" class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal10" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/onion.jpg" alt="onion-img" class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal11" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/papper.jpg" alt="papper-img" class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal12" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/pease.jpg" alt="pease-img" class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal13" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/potatoe.jpg" alt="potatoe-img" class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal14" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/pumpkin.jpg" alt="pumpkin-img" class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal15" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/radish.png" alt="radish-img" class="modal-img">
+                        </div>
+                    </div>
+                    <div id="modal16" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div>
+                            <img src="vegetables/tomato.jpg" alt="tomato-img" class="modal-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
