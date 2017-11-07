@@ -1,9 +1,17 @@
-.name, .description, input[name="2"], label[for='close'], .big-photo, #front-1, #front-2
+.name,
+.description,
+input[name='2'],
+label[for='close'],
+.big-photo,
+label[id='front-1'],
+label[id='front-2'],
+input[name='1']
 {
     display: none;
 }
 
-.prev, .next
+.prev,
+.next
 {
     font-size: 30px;
     height: 50px;
@@ -23,22 +31,26 @@
     height: 100%;
     background: rgba(0, 0, 0, .75);
     margin: auto;
+
 }
 
 .big-photo img
 {
     height: 500px;
     width: 600px;
-    margin-left: 250px; 
-    float:center;
+    margin-left: 250px;
+    float: center;
     background: white;
+
 }
 
-.page1, .page2
+.page1,
+.page2
 {
     position: absolute;
     margin-top: -60px;
     margin-left: 150px;
+
 }
 
 .item
@@ -48,7 +60,8 @@
     vertical-align: top;
 }
 
-.item:hover > .name, .item:hover > .description
+.item:hover > .name,
+.item:hover > .description
 {
     display: block;
 }
@@ -61,7 +74,7 @@
 
 .name
 {
-   text-align: center;
+    text-align: center;
 }
 
 .arrowLeft
@@ -76,22 +89,22 @@
     background-image: url(images/arrowRight.svg);
 }
 
-#front-1:checked ~ .page1
+input[id='front-1']:checked ~ .page1
 {
     z-index: 1;
 }
 
-#front-2:checked ~ .page2
+input[id='front-1']:checked ~ .page2
 {
     z-index: -1;
 }
 
-#front-2:checked ~ .page1
+input[id='front-2']:checked ~ .page1
 {
     z-index: -1;
 }
 
-#front-2:checked ~ .page2
+input[id='front-2']:checked ~ .page2
 {
     z-index: 1;
 }
@@ -110,14 +123,14 @@ label
     cursor: pointer;
 }
 
-input[id="1"]:checked ~ .big-photo .big-photo-1,
-input[id="2"]:checked ~ .big-photo .big-photo-2,
-input[id="3"]:checked ~ .big-photo .big-photo-3,
-input[id="4"]:checked ~ .big-photo .big-photo-4,
-input[id="5"]:checked ~ .big-photo .big-photo-5,
-input[id="6"]:checked ~ .big-photo .big-photo-6,
-input[id="7"]:checked ~ .big-photo .big-photo-7,
-input[id="8"]:checked ~ .big-photo .big-photo-8
+input[id='1']:checked ~ .big-photo .big-photo-1,
+input[id='2']:checked ~ .big-photo .big-photo-2,
+input[id='3']:checked ~ .big-photo .big-photo-3,
+input[id='4']:checked ~ .big-photo .big-photo-4,
+input[id='5']:checked ~ .big-photo .big-photo-5,
+input[id='6']:checked ~ .big-photo .big-photo-6,
+input[id='7']:checked ~ .big-photo .big-photo-7,
+input[id='8']:checked ~ .big-photo .big-photo-8
 {
     display: block;
     position: absolute;
@@ -125,22 +138,22 @@ input[id="8"]:checked ~ .big-photo .big-photo-8
     left: 0;
 }
 
-input[id="1"]:checked ~ .page1,
-input[id="1"]:checked ~ .page2,
-input[id="2"]:checked ~ .page1,
-input[id="2"]:checked ~ .page2,
-input[id="3"]:checked ~ .page1,
-input[id="3"]:checked ~ .page2,
-input[id="4"]:checked ~ .page1,
-input[id="4"]:checked ~ .page2,
-input[id="5"]:checked ~ .page1,
-input[id="5"]:checked ~ .page2,
-input[id="6"]:checked ~ .page1,
-input[id="6"]:checked ~ .page2,
-input[id="7"]:checked ~ .page1,
-input[id="7"]:checked ~ .page2,
-input[id="8"]:checked ~ .page1,
-input[id="8"]:checked ~ .page2
+input[id='1']:checked ~ .page1,
+input[id='1']:checked ~ .page2,
+input[id='2']:checked ~ .page1,
+input[id='2']:checked ~ .page2,
+input[id='3']:checked ~ .page1,
+input[id='3']:checked ~ .page2,
+input[id='4']:checked ~ .page1,
+input[id='4']:checked ~ .page2,
+input[id='5']:checked ~ .page1,
+input[id='5']:checked ~ .page2,
+input[id='6']:checked ~ .page1,
+input[id='6']:checked ~ .page2,
+input[id='7']:checked ~ .page1,
+input[id='7']:checked ~ .page2,
+input[id='8']:checked ~ .page1,
+input[id='8']:checked ~ .page2
 {
     display: none;
 }
@@ -151,8 +164,6 @@ figure:hover figcaption
 {
     display: block;
 }
-
-
 
 input[id='front-1']:checked ~ .page-1,
 input[id='front-2']:checked ~ .page-2,
