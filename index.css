@@ -1,11 +1,16 @@
+body
+{
+    height: 215px;
+}
+
 main
 {
     width: 90%;
-    height: 25%;
+    height: 100%;
     min-width: 800px;
     left: 5%;
     font-size: 10px;
-    position: absolute;
+    position: relative;
 }
 
 p
@@ -65,7 +70,6 @@ label
 .view-item img
 {
     max-width: 100%;
-    max-height: 100%;
 }
 
 .view-item p
@@ -124,25 +128,25 @@ label
 {
     width: 5%;
     z-index: 5;
-    left: 105%;
+    left: 106%;
+    text-align: center;
 }
 
 .full:checked + .x span
 {
-    font: bold 8em Arial;
-    color: rgba(255,255,255,.8);
+    font: bold 6em Arial;
+    color: rgba(255,255,255,.6);
     display: block;
 }
 
 .full:checked + .x + .view-item
 {
-    width: 122%;
-    height: 395.3%;
+    width: 124.5%;
+    height: 395%;
     top: -8px;
-    left: -12%;
+    left: -13%;
     z-index: 4;
     text-align: center;
-    line-height: 100px;
     background-color: rgba(0,0,0,.8);
 }
 
@@ -153,8 +157,6 @@ label
 
 .full:checked + .x + .view-item img
 {
-    position: relative;
-    top: 16%;
-    vertical-align: middle;
+    margin-top: 8%;
     max-height: 68%;
 }
