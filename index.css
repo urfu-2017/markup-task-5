@@ -143,6 +143,7 @@
 {
     left: -960px;
 }
+
 .changer-3:checked ~ .gallery .gallery__photo-holder
 {
     left: -1920px;
