@@ -1,0 +1,189 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+html,
+body
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+header
+{
+    margin: 0;
+    padding: 10px;
+    color: #6e1818;
+    text-align: center;
+    font: bold 60px 'Pacifico', cursive;
+}
+
+input
+{
+    display: none;
+}
+
+main
+{
+    text-align: center;
+}
+
+.grandmother
+{
+    right: 0;
+    bottom: 0;
+    width: 17%;
+    position: absolute;
+}
+
+.card
+{
+    width: 20%;
+    z-index: 1;
+    margin-top: 20px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.image
+{
+    width: 90%;
+    margin: 5%;
+    height: auto;
+}
+
+.description
+{
+    width: 90%;
+    margin: 5%;
+    display: none;
+    text-align: center;
+    font: 11px 'Pacifico', cursive;
+}
+
+.card:hover .description
+{
+    display: block;
+}
+
+.card:hover
+{
+    z-index: 3;
+    background: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #6e1818;
+}
+
+.background
+{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: 3;
+    opacity: .9;
+    display: none;
+    background: #000;
+    position: absolute;
+}
+
+.card:target .image 
+{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    width: auto;
+    margin: auto;
+    height: 500px;
+    display: block;
+    position: absolute;
+    border: 15px solid #6e1818;
+}
+
+.card:target ~ .background
+{
+    display: block;
+}
+
+.card:target .description
+{
+    display: none;
+}
+
+.card:target
+{
+    box-shadow: none;
+    transform: none;
+}
+
+.close
+{
+    top: 5px;
+    z-index: 4;
+    color: red;
+    right: 25px;
+    width: 20px;
+    height: auto;
+    display: none;
+    font: 35px bold;
+    position: absolute;
+    text-decoration: none;
+}
+
+.close:before
+{
+    content: '\2716';
+}
+
+.card:target ~ .close
+{
+    display: block;
+}
+
+.arrow-left:before,
+.arrow-right:before
+{
+    top: 220px;
+    font-family: FontAwesome;
+    font-size: 2.5em;
+    bottom: 0;
+    position: fixed;
+    cursor: pointer;
+}
+
+.arrow-left:before
+{
+    left: 50px;
+    content: '\f060';
+}
+
+.arrow-right:before
+{
+    right: 50px;
+    content: '\f061';
+}
+
+input[type='radio']#page1:checked ~ label[class='arrow-right firstPage'],
+input[type='radio']#page2:checked ~ label[class='arrow-left secondPage'],
+input[type='radio']#page2:checked ~ label[class='arrow-right secondPage'],
+input[type='radio']#page3:checked ~ label[class='arrow-left thirdPage'],
+input[type='radio']#page1:checked ~ main .firstPage,
+input[type='radio']#page2:checked ~ main .secondPage,
+input[type='radio']#page3:checked ~ main .thirdPage
+{
+    display: block;
+}
+
+input[type='radio']#page1:checked ~ label:not([class*='firstPage']),
+input[type='radio']#page2:checked ~ label:not([class*='secondPage']),
+input[type='radio']#page3:checked ~ label:not([class*='thirdPage']),
+input[type='radio']#page1:not(:checked) ~ main .firstPage,
+input[type='radio']#page2:not(:checked) ~ main .secondPage,
+input[type='radio']#page3:not(:checked) ~ main .thirdPage
+{
+    display: none;
+}
