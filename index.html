@@ -2,8 +2,190 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link href="index.css" rel="stylesheet">
     <title>Задача «Бабуленькин урожай»</title>
 </head>
 <body>
+<main>
+    <section class="slider">
+        <input type="radio" id="page-1" class="page-1" name="slider" checked>
+        <input type="radio" id="page-2" class="page-2" name="slider">
+        <input type="radio" id="page-3" class="page-3" name="slider">
+        <label for="page-2" class="page-1 arrow arrow-forward">🡢</label>
+        <label for="page-1" class="page-2 arrow arrow-back">🡠</label>
+        <label for="page-3" class="page-2 arrow arrow-forward">🡢</label>
+        <label for="page-2" class="page-3 arrow arrow-back">🡠</label>
+        <article class="item page-1">
+            <div class="hover-box">
+                <input type="checkbox" class="item-switch" id="switch-1">
+                <div class="modal">
+                    <label for="switch-1" class="cross">✕</label>
+                    <img src="Images/carrot.jpg" alt="Оранжевая морковь" title="">
+                </div>
+                <figure class="item-preview">
+                    <label for="switch-1">
+                        <img src="Images/carrot.jpg" alt="Оранжевая морковь" title="">
+                    </label>
+                    <figcaption class="item-description">
+                        Корни и плоды дикой и культурной моркови могут быть использованы как
+                        пряность.
+                        Плоды, обладающие жгучим пряным вкусом, употребляют как приправу к кушаньям,
+                        используют в маринадах, ликёро-наливочном производстве. Испытаны и одобрены
+                        в
+                        качестве пряности при обработке рыбы. Плоды могут найти применение в
+                        консервной
+                        промышленности.
+                    </figcaption>
+                </figure>
+            </div>
+        </article>
+
+        <article class="item page-1">
+            <div class="hover-box">
+                <input type="checkbox" class="item-switch" id="switch-2">
+                <div class="modal">
+                    <label for="switch-2" class="cross">✕</label>
+                    <img src="Images/pumpkin.jpg" alt="Тыквы" title="">
+                </div>
+                <figure class="item-preview">
+                    <label for="switch-2">
+                        <img src="Images/pumpkin.jpg" alt="Тыквы" title="">
+                    </label>
+                    <figcaption class="item-description">
+                        В отличие от декоративных, съедобные сорта тыквы употребляются в пищу. После
+                        тепловой обработки варёная или печёная тыква очень хорошо усваивается
+                        организмом и широко применяется даже для детского и диетического питания.
+                        Также хорошо используется для салатов и гарниров.
+                    </figcaption>
+                </figure>
+            </div>
+        </article>
+
+        <article class="item page-1">
+            <div class="hover-box">
+                <input type="checkbox" class="item-switch" id="switch-3">
+                <div class="modal">
+                    <label for="switch-3" class="cross">✕</label>
+                    <img src="Images/potato.jpg" alt="Картофель" title="">
+                </div>
+                <figure class="item-preview">
+                    <label for="switch-3">
+                        <img src="Images/potato.jpg" alt="Картофель" title="">
+                    </label>
+                    <figcaption class="item-description">
+                        Родина картофеля — Южная Америка, где до сих пор можно встретить
+                        дикорастущий картофель. Введение картофеля в культуру (сначала путём
+                        эксплуатации диких зарослей) было начато примерно 9—7 тысяч лет тому назад
+                        на территории современной Боливии. Индейцы не только употребляли картофель в
+                        пищу, но и поклонялись ему, считая одушевлённым существом.
+                    </figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="item page-2">
+            <div class="hover-box">
+                <input type="checkbox" class="item-switch" id="switch-4">
+                <div class="modal">
+                    <label for="switch-4" class="cross">✕</label>
+                    <img src="Images/cucumber.jpg" alt="Огурцы" title="">
+                </div>
+                <figure class="item-preview">
+                    <label for="switch-4">
+                        <img src="Images/cucumber.jpg" alt="Огурцы" title="">
+                    </label>
+                    <figcaption class="item-description">
+                        Плоды растения — огурцы пригодны для пищи в сыром виде, так же широко
+                        используются в кулинарии в качестве ингредиентов разнообразных блюд, в том
+                        числе используются для консервирования различными способами, в том числе
+                        повсеместно известны малосольные огурцы, маринованные и солёные огурцы.
+                    </figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="item page-2">
+            <div class="hover-box">
+                <input type="checkbox" class="item-switch" id="switch-5">
+                <div class="modal">
+                    <label for="switch-5" class="cross">✕</label>
+                    <img src="Images/cabbage.jpg" alt="Капуста" title="">
+                </div>
+                <figure class="item-preview">
+                    <label for="switch-5">
+                        <img src="Images/cabbage.jpg" alt="Капуста" title="">
+                    </label>
+                    <figcaption class="item-description">
+                        Капуста принадлежит к числу важнейших овощных растений. Она введена в
+                        культуру, по-видимому, в доисторические времена. Археологические раскопки
+                        свидетельствуют о том, что капусту люди стали использовать со времён
+                        каменного и бронзового веков. Возделывали капусту древние египтяне, а
+                        позднее освоили технологию её выращивания древние греки и римляне, им было
+                        известно всего от 3 до 10 сортов капусты.
+                    </figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="item page-2">
+            <div class="hover-box">
+                <input type="checkbox" class="item-switch" id="switch-6">
+                <div class="modal">
+                    <label for="switch-6" class="cross">✕</label>
+                    <img src="Images/onion.jpg" alt="Лук" title="">
+                </div>
+                <figure class="item-preview">
+                    <label for="switch-6">
+                        <img src="Images/onion.jpg" alt="Лук" title="">
+                    </label>
+                    <figcaption class="item-description">
+                        Лук (лат. Allium) — род двулетних и многолетних травянистых растений,
+                        относимых к подсемейству Луковые (Alliaceae) семейства Амариллисовые
+                        (Amaryllidaceae) порядка Спаржецветные (Asparagales) (ранее относили к
+                        лилейным).
+                    </figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="item page-3">
+            <div class="hover-box">
+                <input type="checkbox" class="item-switch" id="switch-7">
+                <div class="modal">
+                    <label for="switch-7" class="cross">✕</label>
+                    <img src="Images/beans.jpg" alt="Фасоль" title="">
+                </div>
+                <figure class="item-preview">
+                    <label for="switch-7">
+                        <img src="Images/beans.jpg" alt="Фасоль" title="">
+                    </label>
+                    <figcaption class="item-description">
+                        Фасо́ль (лат. Phaséolus) — типовой род растений семейства Бобовые
+                        (Fabaceae), объединяющий около 97 видов в более тёплых областях обоих
+                        полушарий. Разводятся из-за плодов и семян — а некоторые виды также из-за
+                        цветов (под названием «турецких бобов»).
+                    </figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="item page-3">
+            <div class="hover-box">
+                <input type="checkbox" class="item-switch" id="switch-8">
+                <div class="modal">
+                    <label for="switch-8" class="cross">✕</label>
+                    <img src="Images/tomatoes.jpg" alt="Помидоры" title="">
+                </div>
+                <figure class="item-preview">
+                    <label for="switch-8">
+                        <img src="Images/tomatoes.jpg" alt="Помидоры" title="">
+                    </label>
+                    <figcaption class="item-description">
+                        Томат сегодня — одна из самых популярных культур благодаря своим ценным
+                        питательным и диетическим качествам, большому разнообразию сортов, высокой
+                        отзывчивости на применяемые приёмы выращивания. Его возделывают в открытом
+                        грунте, под плёночными укрытиями, в теплицах, парниках, на балконах, лоджиях
+                        и даже в комнатах на подоконниках.
+                    </figcaption>
+                </figure>
+            </div>
+        </article>
+    </section>
+</main>
 </body>
 </html>
