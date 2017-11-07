@@ -53,39 +53,17 @@ input.slider-image-4:checked ~ .image-holder
     left: -3600px;
 }
 
-input.slider-image-1:checked ~ .slide2
-{
-    right: 20px;
-    z-index: 1000;
-}
-
-input.slider-image-2:checked ~ .slide1
-{
-    left: 20px;
-    z-index: 1000;
-    transform: scaleX(-1);
-}
-
-input.slider-image-2:checked ~ .slide3
-{
-    right: 20px;
-    z-index: 1000;
-}
-
-input.slider-image-3:checked ~ .slide2
-{
-    left: 20px;
-    z-index: 1000;
-    transform: scaleX(-1);
-}
-
+input.slider-image-2:checked ~ .slide3,
+input.slider-image-1:checked ~ .slide2,
 input.slider-image-3:checked ~ .slide4
 {
     right: 20px;
     z-index: 1000;
 }
 
-input.slider-image-4:checked ~ .slide3
+input.slider-image-4:checked ~ .slide3,
+input.slider-image-2:checked ~ .slide1,
+input.slider-image-3:checked ~ .slide2
 {
     left: 20px;
     z-index: 1000;
