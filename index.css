@@ -37,8 +37,13 @@ input
 
 html
 {
-    max-width: 1800px;
     text-align: center;
+}
+
+body
+{
+    margin: 150px auto;
+    max-width: 1400px;
 }
 
 .content
@@ -151,6 +156,8 @@ html
     top: 0;
     bottom: 0;
     margin: auto;
+    height: 450px;
+    width: 450px;
 }
 
 .item:target ~ .close
