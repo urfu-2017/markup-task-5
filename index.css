@@ -1,0 +1,163 @@
+html
+{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main
+{
+    margin-top: 200px;
+}
+
+.arrow
+{
+    position: absolute;
+    right: 2%;
+    top: 32%;
+}
+
+.arrow2
+{
+    position: absolute;
+    left: 2%;
+    top: 32%;
+}
+
+.arrow img
+{
+    width: 100px;
+    opacity: .5;
+    transform: rotate(90deg);
+}
+
+.arrow2 img
+{
+    width: 100px;
+    opacity: .5;
+    transform: rotate(270deg);
+}
+
+input.rightarrow,
+input.leftarrow
+{
+    display: none;
+}
+
+.vegetable
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    margin-left: 10px;
+    width: 15%;
+}
+
+section:nth-of-type(4n+1)
+{
+    margin-left: 15%;
+}
+
+img
+{
+    width: 100%;
+}
+
+a[href='']
+{
+    display: none;
+}
+
+.description
+{
+    display: none;
+    overflow: auto;
+    max-height: 200px;
+    min-height: 200px;
+
+}
+
+.vegetable:hover
+{
+    box-shadow: 0 0 5px 4px #c0cedb;
+}
+
+.vegetable:hover .description
+{
+    display: block;
+}
+
+.vegetable:target
+{
+    box-shadow: 0 0 0 0 #fff;
+}
+
+.vegetable:target .vegetable-img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+@keyframes ani
+{
+    from 
+    {
+        opacity: 0;
+    }
+    to 
+    {
+        opacity: 1;
+    }
+}
+
+.vegetable:target img
+{
+    width: 30%;
+    display: block;
+    margin: 200px auto;
+    animation-name: ani;
+    animation-duration: 5s;
+}
+
+.vegetable:target a[href='']
+{
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    font-size: 48px;
+    top: 0;
+    right: 2%;
+    color: red;
+}
+
+.vegetable:target a[href='']:hover
+{
+    color: #08e208;
+}
+
+.vegetable:target .description
+{
+    display: none;
+}
+
+.hide2,
+.arrow2,
+input.rightarrow:checked ~ .arrow,
+input.rightarrow:checked ~ .hide
+{
+    display: none;
+}
+
+input.rightarrow:checked ~ .hide2
+{
+    display: inline-block;
+}
+
+input.rightarrow:checked ~ .arrow2
+{
+    display: block;
+}
+
