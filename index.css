@@ -107,7 +107,8 @@ html
 
 input[name='big-image']
 {
-    display: none;
+    opacity: 0;
+    position: absolute;
 }
 
 input[name='big-image']:checked html
