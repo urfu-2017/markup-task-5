@@ -1,0 +1,188 @@
+input.left:checked ~ div .item
+{
+    left: 0;
+}
+
+input.middle:checked ~ div .item
+{
+    left: -100%;
+}
+
+input.right:checked ~ div .item
+{
+    left: -200%;
+}
+
+input.left:checked ~ div > .left-arrow[for='right'],
+input.left:checked ~ div > .right-arrow[for='middle'],
+input.middle:checked ~ div > .left-arrow[for='left'],
+input.middle:checked ~ div > .right-arrow[for='right'],
+input.right:checked ~ div > .left-arrow[for='middle'],
+input.right:checked ~ div > .right-arrow[for='left']
+{
+    display: initial;
+}
+
+input.left:checked ~ div > .left-arrow[for='right'],
+input.right:checked ~ div > .right-arrow[for='left']
+{
+    color: #888;
+    pointer-events: none;
+}
+
+input
+{
+    display: none;
+}
+
+html
+{
+    text-align: center;
+}
+
+body
+{
+    margin: 150px auto;
+    max-width: 1400px;
+}
+
+.content
+{
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 150px;
+}
+
+.arrow
+{
+    font-size: 150px;
+    display: none;
+}
+
+.arrow:hover
+{
+    cursor: pointer;
+}
+
+.left-arrow
+{
+    float: left;
+}
+
+.right-arrow
+{
+    float: right;
+}
+
+.left-arrow:before
+{
+    content: '<';
+}
+
+.right-arrow:before
+{
+    content: '>';
+}
+
+.item
+{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    width: 25%;
+
+}
+
+.overlay
+{
+    margin: 5px;
+}
+
+.item p
+{
+    display: none;
+}
+
+.item:not(:target):hover > .overlay
+{
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.item:hover p
+{
+    display: initial;
+}
+
+.item img
+{
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    margin: auto;
+}
+
+.image-box
+{
+    display: none;
+}
+
+.item:target
+{
+    left: 0;
+}
+
+.item:target > a
+{
+    cursor: default;
+}
+
+.item:target .preview > p
+{
+    opacity: 0;
+}
+
+.item:target .image-box
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: initial;
+}
+
+.item:target .image-box > img
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 450px;
+    width: 450px;
+}
+
+.item:target ~ .close
+{
+    position: fixed;
+    right: 0;
+    top: 0;
+    font-size: initial;
+    z-index: 3;
+}
+
+.item:target ~ .close:before
+{
+    font-size: 50px;
+    content: 'Х';
+}
+
+.item
+{
+    position: relative;
+    transition: 1s;
+}
+
