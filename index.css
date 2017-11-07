@@ -1,3 +1,8 @@
+html
+{
+    overflow:  hidden;
+}
+
 @font-face
 {
     font-family: Antipasto;
@@ -53,10 +58,11 @@ input[id='page-id_3']:checked ~ .page_3
 .arrows
 {
     display: inline-block;
-    width: 70px;
-    margin: 100px 10px;
-    padding: 10px;
+    width: 6rem;
+    margin: 8rem  1rem;
+    padding: 0px;
     /* vertical-align: top; */
+    box-sizing: border-box;
 }
 
 .arrow-hidden
@@ -66,26 +72,25 @@ input[id='page-id_3']:checked ~ .page_3
 
 .vegetable
 {
+    box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
-    margin: 20px;
-    padding: 10px;
-    width: 200px;
-    height: 200px;
+    margin: 2rem 1%;
+    padding: 1rem;
+    width: 15rem;
+    height: 15rem;
 }
-
-/* .vegetable
-{
-    display: none;
-} */
 
 .veg_photo
 {
+    box-sizing: border-box;
     position: relative;
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 180px;
-    height: 180px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    /* width: 100%;
+    height: 100%; */
+    width: 100%;
+    height: 100%;
 }
 
 .veg_pic
@@ -99,28 +104,25 @@ input[id='page-id_3']:checked ~ .page_3
 {
     display: none;
     position: absolute;
-    margin-top: 200px;
+    margin-top: 13rem;
     cursor: pointer;
     text-align: center;
-    font: bold 14px Antipasto;
-    width: 90%;
-    padding: 10px 0;
+    font: bold 1rem Antipasto;
+    padding: 1rem 0;
     box-sizing: border-box;
 }
 
 .vegetable:hover > .veg_photo
 {
-    margin: 0;
-    width: 200px;
-    height: 200px;
-    box-shadow: 5px -5px 2px black;
+    margin: 1.3rem 1.3rem 0 0;
+    box-shadow: 0.3rem -0.3rem 0.3rem black;
 }
 
 .vegetable:hover .veg_subscription
 {
     display: block;
-    width: 250px;
-    height: 250px;
+    width: 15rem;
+    height: 15rem;
 }
 
 label[for^='modal_']
