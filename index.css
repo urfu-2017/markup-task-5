@@ -1,0 +1,199 @@
+h1
+{
+    background: #b8e964;
+    color: #201f1f;
+    text-align: center;
+    font: 500 50px 'Marck Script', cursive;
+}
+
+input[type='radio']
+{
+    display: none;
+}
+
+.pages
+{
+    display: none;
+    text-align: center;
+}
+
+.pages label,
+.pages .product
+{
+    display: inline-block;
+}
+
+.product
+{
+    width: 20%;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.product_image
+{
+    width: 100%;
+}
+
+.product_description
+{
+    display: none;
+}
+
+p
+{
+    width: 90%;
+    margin: 2% 5%;
+    text-align: left;
+}
+
+.product:hover
+{
+    border: 1px solid #b8e964;
+    transform: scale(1.1);
+}
+
+.product:hover > .product_description
+{
+    display: block;
+    border-top: 1px solid #b8e964;
+}
+
+.arrows
+{
+    width: 30px;
+}
+
+.modal_window
+{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(126, 112, 112, .49);
+    text-align: center;
+    z-index: 1;
+}
+
+.modal_image
+{
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    width: 40%;
+}
+
+.modal_window > label
+{
+    display: block;
+    padding-right: 25%;
+    text-align: right;
+    color: #000;
+    font-size: 60px;
+}
+
+/*отображение модальных окон*/
+
+input[id='watermelon_open']:checked ~ .watermelon
+{
+    display: block;
+}
+
+input[id='strawberry_open']:checked ~ .strawberry
+{
+    display: block;
+}
+
+input[id='gooseberry_open']:checked ~ .gooseberry
+{
+    display: block;
+}
+
+input[id='raspberry_open']:checked ~ .raspberry
+{
+    display: block;
+}
+
+input[id='pumpkin_open']:checked ~ .pumpkin
+{
+    display: block;
+}
+
+input[id='pepper_open']:checked ~ .pepper
+{
+    display: block;
+}
+
+input[id='zucchini_open']:checked ~ .zucchini
+{
+    display: block;
+}
+
+input[id='cauliflower_open']:checked ~ .cauliflower
+{
+    display: block;
+}
+
+input[id='broccoli_open']:checked ~ .broccoli
+{
+    display: block;
+}
+
+input[id='carrot_open']:checked ~ .carrot
+{
+    display: block;
+}
+
+input[id='cucumber_open']:checked ~ .cucumber
+{
+    display: block;
+}
+
+input[id='tomato_open']:checked ~ .tomato
+{
+    display: block;
+}
+
+/* Переключение между страницами */
+
+input[id='to_right_from_0']:checked ~ :not(.page_1)
+{
+    display: none;
+}
+
+input[id='to_right_from_0']:checked ~ .page_1
+{
+    display: block;
+}
+
+input[id='to_left_from_1']:checked ~ :not(.page_0)
+{
+    display: none;
+}
+
+input[id='to_left_from_1']:checked ~ .page_0
+{
+    display: block;
+}
+
+input[id='to_right_from_1']:checked ~ :not(.page_2)
+{
+    display: none;
+}
+
+input[id='to_right_from_1']:checked ~ .page_2
+{
+    display: block;
+}
+
+input[id='to_left_from_2']:checked ~ :not(.page_1)
+{
+    display: none;
+}
+
+input[id='to_left_from_2']:checked ~ .page_1
+{
+    display: block;
+}
