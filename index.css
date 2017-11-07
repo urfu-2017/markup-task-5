@@ -8,7 +8,7 @@ html
 
 .market
 {
-    margin: 250px 0 0 0;
+    margin: 250px auto;
     text-align: center;
 }
 
@@ -110,7 +110,7 @@ input[name='big-image']
     display: none;
 }
 
-input[name='big-image']:checked  html
+input[name='big-image']:checked html
 {
     background-color: #222831;
 }
