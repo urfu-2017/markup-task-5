@@ -1,0 +1,193 @@
+.slider
+{
+    width: 70%;
+    margin: 200px auto;
+    position: relative;
+}
+
+.slides
+{
+    padding: 10px;
+}
+
+.product
+{
+    display: inline-block;
+    width: 20%;
+    margin: 10px;
+}
+
+.inner
+{
+    width: 500%;
+}
+
+.page
+{
+    float: left;
+    width: 20%;
+}
+
+.page img
+{
+    width: 100%;
+}
+
+.overflow
+{
+    overflow: hidden;
+}
+
+.slider input
+{
+    display: none;
+}
+
+.controls
+{
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    left: 0;
+    height: 50px;
+}
+
+.controls label
+{
+    display: none;
+    opacity: .3;
+    cursor: pointer;
+}
+
+.controls label:hover
+{
+    opacity: .8;
+}
+
+.slide1:checked ~ .controls label:last-child
+{
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid #333;
+    border-bottom: 20px solid transparent;
+    float: right;
+    margin-right: -30px;
+    display: block;
+}
+
+.slide2:checked ~ .controls label:first-child
+{
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid  rgb(51, 51, 51);
+    float: left;
+    display: block;
+    margin-left: -27px;
+}
+
+.slide1:checked ~ .slides .inner
+{
+    margin-left: 0;
+}
+
+.slide2:checked ~ .slides .inner
+{
+    margin-left: -100%;
+}
+
+.active
+{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.active label
+{
+    width: 15px;
+    height: 10px;
+    background: #ccc;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.active label:hover
+{
+    background: #999;
+}
+
+.slide1:checked ~ .active label:first-child,
+.slide2:checked ~ .active label:last-child
+{
+    background: #333;
+}
+
+.slides .inner
+{
+    transition: all .8s ease-in-out;
+}
+
+.hover
+{
+    display: none;
+    transition: all .5s ease;
+}
+
+.product:hover .hover
+{
+    display: block;
+    float: left;
+}
+
+.product:hover
+{
+    box-shadow: 2px 2px 4px #333, inset 1px 1px 1px #ddd;
+}
+
+.product:hover h4
+{
+    display: none;
+}
+
+.modal-wind
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    pointer-events: none;
+}
+
+.modal-wind:target
+{
+    display: block;
+    pointer-events: auto;
+}
+
+.modal-wind > div
+{
+    width: 700px;
+    position: relative;
+    margin: 10% auto;
+}
+
+.close
+{
+    margin: -10% 0 0 70%;
+    color: #fff;
+    position: fixed;
+    text-align: center;
+    width: 24px;
+    text-decoration: none;
+}
+
+.close:hover
+{
+    background: #f00;
+}
