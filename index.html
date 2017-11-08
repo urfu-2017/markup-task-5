@@ -1,9 +1,436 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Бабуленькин урожай»</title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>Задача «Бабуленькин урожай»</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <main>
+            <section class="gallery">
+                <h2>Vegetables</h2>
+                <input type="radio" checked name="selector" class="slider-image-1" id="slide1">
+                <input type="radio" name="selector" class="slider-image-2" id="slide2">
+                <input type="radio" name="selector" class="slider-image-3" id="slide3">
+                <input type="radio" name="selector" class="slider-image-4" id="slide4">
+                <label for="slide1" class="slider slide1">
+                    <img src="arrows/Ic_keyboard_arrow_right_48px.svg.png" alt="vegetable"
+                        class="label-img-1 label-img">
+                </label>
+                <label for="slide2" class="slider slide2">
+                    <img src="arrows/Ic_keyboard_arrow_right_48px.svg.png" alt="vegetable"
+                        class="label-img-2 label-img">
+                </label>
+                <label for="slide3" class="slider slide3">
+                    <img src="arrows/Ic_keyboard_arrow_right_48px.svg.png" alt="vegetable"
+                        class="label-img-2 label-img">
+                </label>
+                <label for="slide4" class="slider slide4">
+                    <img src="arrows/Ic_keyboard_arrow_right_48px.svg.png" alt="vegetable"
+                        class="label-img-2 label-img">
+                </label>
+                <section class="image-holder">
+                    <h2>Elements with wrappers</h2>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal1">
+                            <figure class="element">
+                                <img src="vegetables/beetroot.jpg" alt="vegetable"
+                                    class="slider-image">
+                                <figcaption class="description">
+                                    свекла свекла свекла свекла свекла свекла свекла свекла
+                                    свекла свекла свекла свекла свекла свекла свекла
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal2">
+                            <figure class="element">
+                                <img src="vegetables/broccoli.jpg" alt="vegetable"
+                                    class="slider-image">
+                                <figcaption class="description">
+                                    брокколи брокколи брокколи брокколи брокколи брокколи
+                                    брокколи
+                                    брокколи брокколи брокколи брокколи брокколи брокколи
+                                    брокколи
+                                    брокколи брокколи брокколи брокколи брокколи брокколи
+                                    брокколи
+                                    брокколи брокколи брокколи брокколи брокколи брокколи
+                                    брокколи
+                                    брокколи брокколи брокколи брокколи брокколи брокколи
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal3">
+                            <figure class="element">
+                                <img src="vegetables/carrots.jpg" alt="vegetable"
+                                    class="slider-image">
+                                <figcaption class="description">
+                                    морковь морковь морковь морковь морковь морковь морковь
+                                    морковь
+                                    морковь морковь морковь морковь морковь морковь морковь
+                                    морковь
+                                    морковь морковь морковь морковь морковь морковь морковь
+                                    морковь
+                                    морковь морковь морковь морковь морковь морковь морковь
+                                    морковь
+                                    морковь морковь морковь морковь морковь морковь
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal4">
+                            <figure class="element"><img src="vegetables/eggplant.jpg"
+                                alt="vegetable"
+                                class="slider-image">
+                                <figcaption class="description">
+                                    баклажан баклажан баклажан баклажан баклажан баклажан
+                                    баклажан
+                                    баклажан баклажан баклажан баклажан баклажан баклажан
+                                    баклажан
+                                    баклажан баклажан баклажан баклажан баклажан баклажан
+                                    баклажан
+                                    баклажан баклажан баклажан баклажан баклажан баклажан
+                                    баклажан
+                                    баклажан баклажан баклажан баклажан баклажан баклажан
+                                    баклажан
+                                    баклажан баклажан
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal5">
+                            <figure class="element"><img src="vegetables/gabage.jpg"
+                                alt="vegetable"
+                                class="slider-image">
+                                <figcaption class="description">
+                                    капуста капуста капуста капуста капуста капуста капуста
+                                    капуста
+                                    капуста капуста капуста капуста капуста капуста капуста
+                                    капуста
+                                    капуста капуста капуста капуста капуста капуста капуста
+                                    капуста
+                                    капуста капуста капуста капуста капуста
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal6">
+                            <figure class="element"><img src="vegetables/garlic.jpg"
+                                alt="vegetable"
+                                class="slider-image">
+                                <figcaption class="description">
+                                    чеснок чеснок чеснок чеснок чеснок чеснок чеснок чеснок
+                                    чеснок
+                                    чеснок чеснок чеснок чеснок чеснок чеснок чеснок чеснок
+                                    чеснок
+                                    чеснок чеснок чеснок чеснок чеснок чеснок чеснок чеснок
+                                    чеснок
+                                    чеснок чеснок чеснок чеснок чеснок чеснок чеснок чеснок
+                                    чеснок
+                                    чеснок чеснок
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal7">
+                            <figure class="element"><img src="vegetables/green%20beans.jpg"
+                                alt="vegetable"
+                                class="slider-image">
+                                <figcaption class="description">
+                                    бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы
+                                    бобы
+                                    бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы
+                                    бобы
+                                    бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы бобы
+                                    бобы
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal8">
+                            <figure class="element"><img
+                                src="vegetables/green%20bell%20pepper.jpeg"
+                                alt="vegetable"
+                                class="slider-image">
+                                <figcaption class="description">
+                                    зеленый перец зеленый перец зеленый перец зеленый перец
+                                    зеленый
+                                    перец зеленый перец зеленый перец зеленый перец зеленый
+                                    перец
+                                    зеленый перец зеленый перец зеленый перец зеленый перец
+                                    зеленый
+                                    перец зеленый перец зеленый перец зеленый перец зеленый
+                                    перец
+                                    зеленый перец зеленый перец зеленый перец зеленый перец
+                                    зеленый
+                                    перец зеленый перец зеленый перец зеленый перец зеленый
+                                    перец
+                                    зеленый перец зеленый перец зеленый перец зеленый перец
+                                    зеленый
+                                    перец
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal9">
+                            <figure class="element"><img src="vegetables/marrow.jpg"
+                                alt="vegetable"
+                                class="slider-image">
+                                <figcaption class="description">
+                                    кабачок кабачок кабачок кабачок кабачок кабачок кабачок
+                                    кабачок
+                                    кабачок кабачок кабачок кабачок кабачок кабачок кабачок
+                                    кабачок
+                                    кабачок кабачок кабачок кабачок кабачок кабачок кабачок
+                                    кабачок
+                                    кабачок кабачок кабачок кабачок кабачок кабачок кабачок
+                                    кабачок
+                                    кабачок кабачок кабачок кабачок кабачок кабачок кабачок
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal10">
+                            <figure class="element"><img src="vegetables/onion.jpg" alt="vegetable"
+                                class="slider-image">
+                                <figcaption class="description">
+                                    лук лук лук лук лук лук лук лук лук лук лук лук лук лук лук
+                                    лук
+                                    лук лук лук лук лук лук лук лук лук лук лук лук лук лук лук
+                                    лук
+                                    лук лук лук лук лук лук лук
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal11">
+                            <figure class="element"><img src="vegetables/papper.jpg"
+                                alt="vegetable"
+                                class="slider-image">
+                                <figcaption class="description">
+                                    перец перец перец перец перец перец перец перец перец перец
+                                    перец перец перец перец перец перец перец перец перец перец
+                                    перец перец перец перец перец перец перец перец перец перец
+                                    перец перец перец перец перец перец перец перец перец перец
+                                    перец перец перец перец перец перец перец
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal12">
+                            <figure class="element"><img src="vegetables/pease.jpg" alt="vegetable"
+                                class="slider-image">
+                                <figcaption class="description">
+                                    горох горох горох горох горох горох горох горох горох горох
+                                    горох горох горох горох горох горох горох горох горох горох
+                                    горох горох горох горох горох горох горох горох горох горох
+                                    горох горох горох горох горох горох горох горох
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal13">
+                            <figure class="element"><img src="vegetables/potatoe.jpg"
+                                alt="vegetable"
+                                class="slider-image">
+                                <figcaption class="description">
+                                    картофель картофель картофель картофель картофель картофель
+                                    картофель картофель картофель картофель картофель картофель
+                                    картофель картофель картофель картофель картофель картофель
+                                    картофель картофель картофель картофель картофель картофель
+                                    картофель картофель картофель картофель картофель картофель
+                                    картофель картофель картофель картофель картофель картофель
+                                    картофель картофель картофель картофель картофель картофель
+                                    картофель картофель картофель картофель картофель картофель
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal14">
+                            <figure class="element"><img src="vegetables/pumpkin.jpg"
+                                alt="vegetable"
+                                class="slider-image">
+                                <figcaption class="description">
+                                    тыква тыква тыква тыква тыква тыква тыква тыква тыква тыква
+                                    тыква тыква тыква тыква тыква тыква тыква тыква тыква тыква
+                                    тыква тыква тыква тыква тыква тыква тыква тыква тыква тыква
+                                    тыква тыква тыква тыква тыква тыква тыква
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal15">
+                            <figure class="element">
+                                <img src="vegetables/radish.png" alt="vegetable"
+                                    class="slider-image">
+                                <figcaption class="description">
+                                    редиска редиска редиска редиска редиска редиска редиска
+                                    редиска
+                                    редиска редиска редиска редиска редиска редиска редиска
+                                    редиска
+                                    редиска редиска редиска редиска редиска редиска редиска
+                                    редиска
+                                    редиска редиска редиска редиска редиска редиска редиска
+                                    редиска
+                                    редиска редиска редиска редиска редиска редиска редиска
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="wrap">
+                        <a class="open-modal" href="#modal16">
+                            <figure class="element"><img src="vegetables/tomato.jpg"
+                                alt="vegetable"
+                                class="slider-image">
+                                <figcaption class="description">
+                                    томат томат томат томат томат томат томат томат томат томат
+                                    томат
+                                    томат томат томат томат томат томат томат томат томат томат
+                                    томат
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </section>
+                <section class="modals">
+                    <h2>Modal windows</h2>
+                    <div id="modal1" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/beetroot.jpg" alt="beetroot-img"
+                                class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal2" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/broccoli.jpg" alt="broccoli-img"
+                                class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal3" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/carrots.jpg" alt="carrot-img"
+                                class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal4" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/eggplant.jpg" alt="eggplant-img"
+                                class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal5" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/gabage.jpg" alt="gabage-img" class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal6" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/garlic.jpg" alt="garlic-img" class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal7" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/green%20beans.jpg" alt="beans-img"
+                                class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal8" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/green%20bell%20pepper.jpeg" alt="pepper-img"
+                                class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal9" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/marrow.jpg" alt="marrow-img" class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal10" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/onion.jpg" alt="onion-img" class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal11" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/papper.jpg" alt="papper-img" class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal12" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/pease.jpg" alt="pease-img" class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal13" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/potatoe.jpg" alt="potatoe-img"
+                                class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal14" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/pumpkin.jpg" alt="pumpkin-img"
+                                class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal15" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/radish.png" alt="radish-img" class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div id="modal16" class="modalDialog">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <figure>
+                            <img src="vegetables/tomato.jpg" alt="tomato-img" class="modal-img">
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </body>
 </html>
