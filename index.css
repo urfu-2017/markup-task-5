@@ -10,7 +10,8 @@ body
 .gallery
 {
     position: relative;
-    top: 10em;
+    top: 15%;
+    text-align: center;
 }
 
 .gallery-item
@@ -23,10 +24,12 @@ body
 .gallery-item img
 {
     width: 90%;
-    vertical-align: middle;
 }
 
-.item-description
+input,
+section[class^='page-'],
+.item-description,
+.big-image-container
 {
     display: none;
 }
@@ -34,40 +37,23 @@ body
 .item-content:hover
 {
     position: relative;
+    z-index: 1;
     left: -10%;
     width: 130%;
-    box-shadow: 0 0 5px #808080;
+    box-shadow: 0 0 7px #808080;
 }
 
 .item-content:hover .item-description
 {
     display: block;
     width: 90%;
-    text-align: center;
     margin: 0 auto;
-}
-
-.big-image-container
-{
-    display: none;
-}
-
-[class^='page-']
-{
-    display: none;
-    text-align: center;
-}
-
-input
-{
-    display: none;
 }
 
 input[id='show-page-1']:checked ~ .gallery .page-1,
 input[id='show-page-2']:checked ~ .gallery .page-2
 {
     display: block;
-    height: 100%;
 }
 
 input[id^='big-image-']:checked ~ .item-content .big-image-container
@@ -83,8 +69,10 @@ input[id^='big-image-']:checked ~ .item-content .big-image-container
 
 input[id^='big-image-']:checked ~ .item-content .big-image-container img
 {
+    position: relative;
+    top: 15%;
     width: 60%;
-    max-height: 80%;
+    height: 60%;
 }
 
 input[id^='big-image-']:checked ~ .item-content .close-label:before
@@ -97,17 +85,21 @@ input[id^='big-image-']:checked ~ .item-content .close-label:before
     font-size: 3rem;
 }
 
-label:before
+label[class$='-arrow']:before
 {
-    font-size: 5rem;
+    position: relative;
+    top: 4rem;
+    font-size: 3rem;
 }
 
 .left-arrow:before
 {
     content: '\2190';
+    right: 4%;
 }
 
 .right-arrow:before
 {
     content: '\2192';
+    left: 4%;
 }
