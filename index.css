@@ -28,6 +28,11 @@
     position: relative;
 }
 
+h2
+{
+    display: none;
+}
+
 input
 {
     visibility: hidden;
@@ -135,7 +140,7 @@ input.slider-image-3:checked ~ .slide2
     pointer-events: auto;
 }
 
-.modalDialog > div
+.modalDialog > figure
 {
     position: relative;
     margin: 10% auto;
