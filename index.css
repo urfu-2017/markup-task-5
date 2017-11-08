@@ -1,14 +1,19 @@
 main
 {
-    box-shadow: 10px rgba(0, 0, 0, .5);
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 15%;
-    display: block;
-    width: 80%;
+    width: 90%;
 }
 
-.slide_1:not(:checked) ~ .vegetables_1,
-.slide_2:not(:checked) ~ .vegetables_2
+.vegetables
+{
+    margin-left: 5%;
+    width: 90%;
+}
+
+.slide_1:not(:checked) ~ .vegetables > .vegetables_1,
+.slide_2:not(:checked) ~ .vegetables > .vegetables_2,
+.slide_3:not(:checked) ~ .vegetables > .vegetables_3
 {
     display: none;
 }
@@ -21,48 +26,60 @@ main
 .big_potato,
 .big_squash,
 .big_apple,
+.big_raspberry,
+.big_strawberry,
+.big_onion,
+.big_balloon,
 .slide_1,
-.slide_2
+.slide_2,
+.slide_3
 {
     display: none;
 }
 
 .vegetables_1,
-.vegetables_2
+.vegetables_2,
+.vegetables_3
 {
     margin: 1% 0 1% .5%;
     background: #fff;
     vertical-align: top;
     display: inline-block;
     width: 24%;
+    z-index: 1;
 }
 
 .vegetables_1 p,
-.vegetables_2 p
+.vegetables_2 p,
+.vegetables_3 p
 {
     display: none;
 }
 
 .vg_picture
 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     max-height: 90%;
     margin: 5%;
     width: 90%;
 }
 
 .vegetables_1:hover,
-.vegetables_2:hover
+.vegetables_2:hover,
+.vegetables_3:hover
 {
     z-index: 2;
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -o-transform: scale(2);
-    box-shadow: inset 10px rgba(0, 0, 0, .5);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, .5);
 }
 
 .vegetables_1:hover p,
-.vegetables_2:hover p
+.vegetables_2:hover p,
+.vegetables_3:hover p
 {
+    margin-right: 5%;
     margin-left: 5%;
     display: block;
 }
@@ -83,7 +100,11 @@ main
 .big_cabbage:not(:checked) ~ .big_cabbage_mod,
 .big_potato:not(:checked) ~ .big_potato_mod,
 .big_squash:not(:checked) ~ .big_squash_mod,
-.big_apple:not(:checked) ~ .big_apple_mod
+.big_apple:not(:checked) ~ .big_apple_mod,
+.big_raspberry:not(:checked) ~ .big_raspberry_mod,
+.big_strawberry:not(:checked) ~ .big_strawberry_mod,
+.big_onion:not(:checked) ~ .big_onion_mod,
+.big_balloon:not(:checked) ~ .big_balloon_mod
 {
     display: none;
 }
@@ -95,7 +116,11 @@ main
 .big_cabbage_mod,
 .big_potato_mod,
 .big_squash_mod,
-.big_apple_mod
+.big_apple_mod,
+.big_raspberry_mod,
+.big_strawberry_mod,
+.big_onion_mod,
+.big_balloon_mod
 {
     z-index: 3;
     display: block;
@@ -114,7 +139,11 @@ main
 .big_cabbage_mod > img,
 .big_potato_mod > img,
 .big_squash_mod > img,
-.big_apple_mod > img
+.big_apple_mod > img,
+.big_raspberry_mod > img,
+.big_strawberry_mod > img,
+.big_onion_mod > img,
+.big_balloon_mod > img
 {
     position: absolute;
     top: 0;
@@ -122,7 +151,52 @@ main
     bottom: 0;
     right: 0;
     margin: auto;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 75%;
+    max-height: 75%;
     z-index: 4;
+}
+
+.arrow_right_1 img,
+.arrow_right_2 img,
+.arrow_left_1 img,
+.arrow_left_2 img
+{
+    width: 100%;
+}
+
+.arrow_right_1,
+.arrow_right_2
+{
+    float: right;
+    position: relative;
+    width: 4%;
+}
+
+.arrow_left_1,
+.arrow_left_2
+{
+    float: left;
+    position: relative;
+    width: 4%;
+}
+
+.arrow_right_1,
+.arrow_right_2,
+.arrow_left_1,
+.arrow_left_2
+{
+    display: none;
+}
+
+.slide_1:checked ~ .arrow_right_1,
+.slide_2:checked ~ .arrow_right_2,
+.slide_2:checked ~ .arrow_left_1,
+.slide_3:checked ~ .arrow_left_2
+{
+    display: inline;
+}
+
+.slide_1:checked ~ .vegetables_1
+{
+    margin-left: 5%;
 }
