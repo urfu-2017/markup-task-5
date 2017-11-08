@@ -1,0 +1,453 @@
+
+@font-face
+{
+    font-family: RobotoCondensed;
+    src: url(RobotoCondensed.ttf);
+}
+
+body
+{
+    font-family: RobotoCondensed, Arial, sans-serif;
+    min-width: 800px;
+    margin: auto;
+}
+
+/* ванильная цитатка */
+
+blockquote
+{
+    display: block;
+    background: #fff;
+    padding: 15px 20px 15px 45px;
+    margin: 0;
+    position: relative;
+    color: #ff1493;
+    box-shadow: 2px 2px 15px #ff1493;
+    border-left-style: solid;
+    border-left-width: 15px;
+    border-right-style: solid;
+    border-right-width: 2px;
+}
+
+blockquote span
+{
+    font-size: 20px;
+}
+
+blockquote::before
+{
+    content: '\201C';
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #999;
+    position: absolute;
+    left: 10px;
+    line-height: 2.2;
+    margin-top: 14px;
+}
+
+blockquote::after
+{
+    content: '';
+}
+
+blockquote span
+{
+    color: #ff1493;
+}
+
+blockquote p
+{
+    color: #000;
+}
+
+/* статейки */
+
+.gallery article
+{
+    display: inline-block;
+    width: 212px;
+    height: 400px;
+    vertical-align: top;
+    margin-left: 29px;
+    margin-right: 29px;
+}
+
+ul
+{
+    padding-left: 5px;
+}
+
+.image .description
+{
+    text-align: justify;
+    width: 192px;
+    height: 180px;
+    font-size: 10px;
+}
+
+.image .description
+{
+    display: none;
+}
+
+.image:hover .description
+{
+    display: block;
+}
+
+section
+{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+}
+
+.image
+{
+    width: 192px;
+    height: 192px;
+    padding: 10px;
+    box-shadow: 0 0 10px #ff1493;
+    border-radius: 5px 20px;
+    position: absolute;
+    top: 0;
+}
+
+.image img
+{
+    width: inherit;
+    height: inherit;
+    z-index: 1;
+}
+
+.image .close
+{
+    display: none;
+    position: absolute;
+    right: 12px;
+    top: 15px;
+}
+
+.image .close a
+{
+    padding: 5px;
+    color: #999;
+    text-decoration: none;
+    border-radius: 5px 8px;
+}
+
+.image .close a:hover
+{
+    box-shadow: 0 0 2px #ff1493;
+}
+
+.image .open
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 0;
+}
+
+div[class='image']:target
+{
+    width: 300px;
+    height: 300px;
+    top: -30px;
+    z-index: 4;
+    left: 500px;
+}
+
+div[class='image']:target + .overlay
+{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 106px;
+    background-color: #000;
+    opacity: .5;
+    position: fixed;
+    z-index: 3;
+}
+
+div[class='image']:target .description
+{
+    display: none;
+}
+
+div[class='image']:target .close
+{
+    display: block;
+    z-index: 4;
+}
+
+div[class='image']:target .open
+{
+    display: none;
+}
+
+/* стрелочки */
+
+section
+{
+    display: none;
+}
+
+section h4
+{
+    display: none;
+}
+
+label
+{
+    cursor: pointer;
+}
+
+label img
+{
+    padding-top: 82px;
+}
+
+input[value='1to2']:checked ~ .gallery .sec1
+{
+    display: none;
+}
+
+input[value='1to2']:checked ~ .gallery .sec2
+{
+    display: block;
+}
+
+input[value='2to1']:checked ~ .gallery .sec2
+{
+    display: none;
+}
+
+input[value='2to1']:checked ~ .gallery .sec1
+{
+    display: block;
+}
+
+input[value='2to3']:checked ~ .gallery .sec2
+{
+    display: none;
+}
+
+input[value='2to3']:checked ~ .gallery .sec3
+{
+    display: block;
+}
+
+input[value='3to2']:checked ~ .gallery .sec3
+{
+    display: none;
+}
+
+input[value='3to2']:checked ~ .gallery .sec2
+{
+    display: block;
+}
+
+input[value='3to4']:checked ~ .gallery .sec3
+{
+    display: none;
+}
+
+input[value='3to4']:checked ~ .gallery .sec4
+{
+    display: block;
+}
+
+input[value='4to3']:checked ~ .gallery .sec4
+{
+    display: none;
+}
+
+input[value='4to3']:checked ~ .gallery .sec3
+{
+    display: block;
+}
+
+input[value='4to5']:checked ~ .gallery .sec4
+{
+    display: none;
+}
+
+input[value='4to5']:checked ~ .gallery .sec5
+{
+    display: block;
+}
+
+input[value='5to4']:checked ~ .gallery .sec5
+{
+    display: none;
+}
+
+input[value='5to4']:checked ~ .gallery .sec4
+{
+    display: block;
+}
+
+input[value='5to6']:checked ~ .gallery .sec5
+{
+    display: none;
+}
+
+input[value='5to6']:checked ~ .gallery .sec6
+{
+    display: block;
+}
+
+input[value='6to5']:checked ~ .gallery .sec6
+{
+    display: none;
+}
+
+input[value='6to5']:checked ~ .gallery .sec5
+{
+    display: block;
+}
+
+.stop
+{
+    opacity: .5;
+    cursor: auto;
+}
+
+input[type='radio']
+{
+    display: none;
+}
+
+/* маркеры */
+
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+.avocado:before 
+{
+    content: '\1F951  ';
+}
+
+.eggplant:before 
+{
+    content: '\1F346  ';
+}
+
+.carrot:before
+{
+    content: '\1F955  ';
+}
+
+.corn:before
+{
+    content: '\1F33D  ';
+}
+
+.spice:before
+{
+    content: '\1F336  ';
+}
+
+.cucumber:before
+{
+    content: '\1F952 ';
+}
+
+.cabbage:before
+{
+    content: '\1F957 ';
+}
+
+.kiwi:before
+{
+    content: '\1F95D ';
+}
+
+.tomato:before
+{
+    content: '\1F345 ';
+}
+
+.persimmon:before
+{
+    content: '\1F351 ';
+}
+
+.banana:before
+{
+    content: '\1F34C ';
+}
+
+.lemon:before
+{
+    content: '\1F34B ';
+}
+
+.orange:before
+{
+    content: '\1F34A ';
+}
+
+.raspberry:before
+{
+    content: '\1F353 ';
+}
+
+.cranberry:before
+{
+    content: '\1F352 ';
+}
+
+.herbs:before
+{
+    content: '\1F33F ';
+}
+
+.pumpkin:before
+{
+    content: '\1F383 ';
+}
+
+.apple:before
+{
+    content: '\1F34F ';
+}
+
+.dragon:before
+{
+    content: '\1F409 ';
+}
+
+.beans:before
+{
+    content: '\1F95C ';
+}
+
+.guava:before
+{
+    content: '\1F350 ';
+}
+
+.rhubarb:before
+{
+    content: '\1F331 ';
+}
+
+.mango:before
+{
+    content: '\1F348 ';
+}
+
+.beet:before
+{
+    content: '\1F33A ';
+}
