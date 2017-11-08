@@ -7,21 +7,29 @@
 </head>
 <body>
     <main>
-        <section class="carusel">
-            <article class="item">
-                <img src="images/potato.jpg" alt="картошка">
+        <input id='page_1' type='radio' name='page' checked>
+        <input id='page_2' type='radio' name='page'>
+        <input id='page_3' type='radio' name='page'>
+        <br>
+        <section class="carusel" id="scene_page_1">
+            <label for="ch1">
+            <article class="item" id="modal1">
+
+                    <img src="images/potato.jpg" alt="картошка">
+
                 <div class="item-content">
                     <h2>Картофель</h2>
                     <p>
                         Его ещё Пётр I завёз в Россию
                     </p>
                 </div>
+
             </article>
-            <section class="modal" id="potato">
-                <img src="images/potato.jpg">
-            </section>
+            </label>
             <article class="item">
-                <img src="images/tomato.jpg" alt="картошка">
+                <label for="ch2">
+                    <img src="images/tomato.jpg" alt="картошка">
+                </label>
                 <div class="item-content">
                     <h2>Помидоры</h2>
                     <p>
@@ -29,11 +37,10 @@
                     </p>
                 </div>
             </article>
-            <section class="modal" id="tomato">
-
-            </section>
             <article class="item">
-                <img src="images/ogurets.jpeg" alt="картошка">
+                <label for="ch3">
+                    <img src="images/ogurets.jpeg" alt="картошка">
+                </label>
                 <div class="item-content">
                     <h2>Огурцы</h2>
                     <p>
@@ -42,7 +49,9 @@
                 </div>
             </article>
             <article class="item">
-                <img src="images/luk.jpg" alt="картошка">
+                <label for="ch4">
+                    <img src="images/luk.jpg" alt="картошка">
+                </label>
                 <div class="item-content">
                     <h2>Лук</h2>
                     <p>
@@ -50,8 +59,18 @@
                     </p>
                 </div>
             </article>
+            <label for='page_2'>
+                <img src="images/arrow-right.png" class="arrow">
+            </label>
+        </section>
+        <section class="carusel" id="scene_page_2">
+            <label for='page_1'>
+                <img src="images/arrow-left.png" class="arrow">
+            </label>
             <article class="item">
-                <img src="images/baklazhan.jpg" alt="картошка">
+                <label for="ch4">
+                    <img src="images/baklazhan.jpg" alt="картошка">
+                </label>
                 <div class="item-content">
                     <h2>Баклажан</h2>
                     <p>
@@ -60,7 +79,9 @@
                 </div>
             </article>
             <article class="item">
-                <img src="images/svekla.jpg" alt="картошка">
+                <label for="ch5">
+                    <img src="images/svekla.jpg" alt="картошка">
+                </label>
                 <div class="item-content">
                     <h2>Свёкла</h2>
                     <p>
@@ -69,7 +90,9 @@
                 </div>
             </article>
             <article class="item">
-                <img src="images/kapusta.jpg" alt="картошка">
+                <label for="ch6">
+                    <img src="images/kapusta.jpg" alt="картошка">
+                </label>
                 <div class="item-content">
                     <h2>Капуста</h2>
                     <p>
@@ -78,7 +101,9 @@
                 </div>
             </article>
             <article class="item">
-                <img src="images/perets.jpg" alt="картошка">
+                <label for="ch7">
+                    <img src="images/perets.jpg" alt="картошка">
+                </label>
                 <div class="item-content">
                     <h2>Перец</h2>
                     <p>
@@ -86,8 +111,18 @@
                     </p>
                 </div>
             </article>
+            <label for='ch8'>
+                <img src="images/arrow-right.png" class="arrow">
+            </label>
+        </section>
+        <section class="carusel" id="scene_page_3">
+            <label for='page_2'>
+                <img src="images/arrow-left.png" class="arrow">
+            </label>
             <article class="item">
-                <img src="images/morkov.jpg" alt="картошка">
+                <label for="ch9">
+                    <img src="images/morkov.jpg" alt="картошка">
+                </label>
                 <div class="item-content">
                     <h2>Морковь</h2>
                     <p>
@@ -96,7 +131,9 @@
                 </div>
             </article>
             <article class="item">
-                <img src="images/tykva.jpg" alt="картошка">
+                <label for="ch10">
+                    <img src="images/tykva.jpg" alt="картошка">
+                </label>
                 <div class="item-content">
                     <h2>Тыква</h2>
                     <p>
@@ -105,30 +142,52 @@
                 </div>
             </article>
         </section>
-        <div class="modal" id="ogurets">
-
+        <input type="checkbox" class="shower" id="cross">
+        <input type="checkbox"  class='shower' id="ch1">
+        <div class="modal" id="modal01">
+            <img src="images/potato.jpg">
         </div>
-        <div class="modal" id="luk">
-
+        <input type="checkbox"  class='shower' id="ch2">
+        <div class="modal" id="modal02">
+            <img src="images/tomato.jpg">
         </div>
-        <div class="modal" id="baklazhan">
-
+        <input type="checkbox"  class='shower' id="ch3">
+        <div class="modal" id="modal03">
+            <img src="images/ogurets.jpeg">
         </div>
-        <div class="modal" id="svekla">
-
+        <input type="checkbox"  class='shower' id="ch4">
+        <div class="modal" id="modal04">
+            <img src="images/luk.jpg">
         </div>
-        <div class="modal" id="kapusta">
-
+        <input type="checkbox"  class='shower' id="ch5">
+        <div class="modal" id="modal05">
+            <img src="images/baklazhan.jpg">
         </div>
-        <div class="modal" id="perets">
-
+        <input type="checkbox"  class='shower' id="ch6">
+        <div class="modal" id="modal06">
+            <img src="images/svekla.jpg">
         </div>
-        <div class="modal" id="morkov">
-
+        <input type="checkbox"  class='shower' id="ch7">
+        <div class="modal" id="modal07">
+            <img src="images/kapusta.jpg">
         </div>
-        <div class="modal" id="tykva">
-
+        <input type="checkbox"  class='shower' id="ch8">
+        <div class="modal" id="modal08">
+            <img src="images/perets.jpg">
         </div>
+        <input type="checkbox"  class='shower' id="ch9">
+        <div class="modal" id="modal09">
+            <img src="images/morkov.jpg">
+        </div>
+        <input type="checkbox"  class='shower' id="ch10">
+        <div class="modal" id="modal10">
+            <img src="images/tykva.jpg">
+        </div>
+        <span class="close_cross">
+        <label for="cross">
+            <h1>X</h1>
+        </label>
+    </span>
     </main>
 </body>
 </html>
