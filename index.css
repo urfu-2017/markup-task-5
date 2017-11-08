@@ -7,15 +7,10 @@ body
 main
 {
     width: 1000px;
-    overflow-x: hidden;
     margin: 0 auto;
 }
 
-.gallery_label
-{
-    display: none;
-}
-
+.gallery_label,
 .gallery_input
 {
     display: none;
@@ -31,13 +26,17 @@ main
 .right_gallery_label
 {
     position: relative;
-    top: 100px;
-    z-index: 1;
+    top: 50px;
 }
 
 .left_gallery_label
 {
     float: left;
+}
+
+.right_gallery_label
+{
+    float: right;
 }
 
 .right_gallery_label:after
@@ -52,22 +51,17 @@ main
     color: #924025;
 }
 
-.right_gallery_label
-{
-    float: right;
-}
-
-.first_page:checked ~ .vegetable_gallery
+.first_page:checked ~ .vegetable_gallery .vegetable_gallery_card
 {
     left: 0;
 }
 
-.second_page:checked ~ .vegetable_gallery
+.second_page:checked ~ .vegetable_gallery .vegetable_gallery_card
 {
     left: -100%;
 }
 
-.third_page:checked ~ .vegetable_gallery
+.third_page:checked ~ .vegetable_gallery .vegetable_gallery_card
 {
     left: -200%;
 }
@@ -84,32 +78,26 @@ main
 
 .vegetable_gallery
 {
-    width: 3020px;
-    transition: all 1s ease-in-out;
+    overflow-x: hidden;
+    white-space: nowrap;    
     position: relative;
-}
-
-.first_page_vegetable_gallery,
-.second_page_vegetable_gallery,
-.third_page_vegetable_gallery
-{
-    display: inline-block;
-    margin-left: 1px;
-    padding: 0 30px;
 }
 
 .vegetable_gallery_card
 {
     width: 231px;
     box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0);
+    margin-left: 5px;
+    position: relative;
     vertical-align: top;
     display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
 
 .vegetable_gallery_card:hover .vegetable_gallery_card_information
 {
     display: block;
+    white-space: normal;
 }
 
 .vegetable_gallery_card:hover
@@ -117,7 +105,8 @@ main
     border: 1px solid #411d11;
 }
 
-.vegetable_gallery_photo_card img
+.vegetable_gallery_photo_card img,
+.modal_hidden img
 {
     width: 100%;
 }
@@ -139,6 +128,7 @@ main
     opacity: 0;
     transition: opacity 200ms ease-in;
     pointer-events: none;
+    z-index: 1;
 }
 
 .modal:target
@@ -162,11 +152,6 @@ main
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.modal_hidden img
-{
-    width: 100%;
 }
 
 .modal_close_button
