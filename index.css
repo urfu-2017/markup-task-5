@@ -78,9 +78,9 @@ main
 
 .vegetable_gallery
 {
-    overflow-x: hidden;
-    white-space: nowrap;    
     position: relative;
+    overflow-x: hidden;
+    white-space: nowrap;
 }
 
 .vegetable_gallery_card
