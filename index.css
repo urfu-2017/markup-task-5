@@ -1,0 +1,128 @@
+main
+{
+    box-shadow: 10px rgba(0, 0, 0, .5);
+    margin-left: 10%;
+    margin-top: 15%;
+    display: block;
+    width: 80%;
+}
+
+.slide_1:not(:checked) ~ .vegetables_1,
+.slide_2:not(:checked) ~ .vegetables_2
+{
+    display: none;
+}
+
+.big_cucumber,
+.big_carrot,
+.big_tomato,
+.big_beet,
+.big_cabbage,
+.big_potato,
+.big_squash,
+.big_apple,
+.slide_1,
+.slide_2
+{
+    display: none;
+}
+
+.vegetables_1,
+.vegetables_2
+{
+    margin: 1% 0 1% .5%;
+    background: #fff;
+    vertical-align: top;
+    display: inline-block;
+    width: 24%;
+}
+
+.vegetables_1 p,
+.vegetables_2 p
+{
+    display: none;
+}
+
+.vg_picture
+{
+    max-height: 90%;
+    margin: 5%;
+    width: 90%;
+}
+
+.vegetables_1:hover,
+.vegetables_2:hover
+{
+    z-index: 2;
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    box-shadow: inset 10px rgba(0, 0, 0, .5);
+}
+
+.vegetables_1:hover p,
+.vegetables_2:hover p
+{
+    margin-left: 5%;
+    display: block;
+}
+
+.close_x
+{
+    color: rgb(202, 201, 201);
+    font-size: 56px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.big_carrot:not(:checked) ~ .big_carrot_mod,
+.big_cucumber:not(:checked) ~ .big_cucumber_mod,
+.big_tomato:not(:checked) ~ .big_tomato_mod,
+.big_beet:not(:checked) ~ .big_beet_mod,
+.big_cabbage:not(:checked) ~ .big_cabbage_mod,
+.big_potato:not(:checked) ~ .big_potato_mod,
+.big_squash:not(:checked) ~ .big_squash_mod,
+.big_apple:not(:checked) ~ .big_apple_mod
+{
+    display: none;
+}
+
+.big_carrot_mod,
+.big_beet_mod,
+.big_cucumber_mod,
+.big_tomato_mod,
+.big_cabbage_mod,
+.big_potato_mod,
+.big_squash_mod,
+.big_apple_mod
+{
+    z-index: 3;
+    display: block;
+    background: rgba(0, 0, 0, .6);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.big_carrot_mod > img,
+.big_beet_mod > img,
+.big_cucumber_mod > img,
+.big_tomato_mod > img,
+.big_cabbage_mod > img,
+.big_potato_mod > img,
+.big_squash_mod > img,
+.big_apple_mod > img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+    z-index: 4;
+}
