@@ -1,0 +1,100 @@
+html
+{
+    background-color: #a7a7a7;
+}
+
+body
+{
+    min-width: 1000px;
+}
+
+h1
+{
+    text-align: center;
+    text-shadow: 0 0 15px #fff;
+}
+
+.cards
+{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.card
+{
+    position: relative;
+    text-align: center;
+    background-color: #fbfceca6;
+    box-shadow: 0 0 25px #000;
+    width: 22%;
+    vertical-align: top;
+    padding: .4rem;
+    margin: .3rem;
+    margin-top: 15%;
+    z-index: 1;
+}
+
+.card:hover
+{
+    transform: scale(1.25);
+    box-shadow: 0 0 15px #e7e7e7;
+    vertical-align: top;
+    z-index: 2;
+}
+
+.card:hover .info
+{
+    display: block;
+    padding: .8rem;
+}
+
+img.little
+{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.left_p,
+.right_p
+{
+    width: 40px;
+    height: 30px;
+    position: fixed;
+}
+
+.left_p
+{
+    top: 50%;
+    left: 3%;
+    background: url('l_p.png') 0 0 no-repeat;
+}
+
+.right_p
+{
+    top: 50%;
+    right: 2%;
+    background: url('r_p.png') 0 0 no-repeat;
+}
+
+input[id='first_p']:checked ~ label:not([class*='first_p']),
+input[id='second_p']:checked ~ label:not([class*='second_p']),
+input[id='first_p']:not(:checked) ~ .cards .first_p,
+input[id='second_p']:not(:checked) ~ .cards .second_p,
+.info,
+.full,
+input
+{
+    display: none;
+}
+
+input[id='first_p']:checked ~ label[class='pointer right_p'],
+input[id='first_p']:checked ~ .cards .first_p,
+input[id='second_p']:checked ~ label[class='pointer left_p'],
+input[id='second_p']:checked ~ .cards .second_p
+{
+    display: inline-block;
+    top: 50%;
+}
+
