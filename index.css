@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Marmelad');
+
+header
+{
+    background: #f8b0a3;
+    font-size: 50px;
+    color: rgb(73, 38, 30);
+    text-align: center;
+    padding: 10px;
+}
+
+body
+{
+    margin: 0;
+    background: #ffe1d8;
+    font-family: 'Marmelad', sans-serif;
+}
+
+h2
+{
+    text-align: center;
+    background: #f8b0a3;
+    font-size: 1.5em;
+}
+
+.item
+{
+    vertical-align: top;
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+    padding: 10px;
+}
+
+main
+{
+    margin-top: 200px;
+    text-align: center;
+}
+
+.gallery_image
+{
+    width: 100%;
+}
+
+.description
+{
+    display: none;
+    position: absolute;
+}
+
+label:hover
+{
+    cursor: pointer;
+}
+
+.item:hover
+{
+    box-shadow: 0 0 50px #000;
+}
+
+.item:hover .description 
+{
+    display: block;
+    position: relative;
+}
+
+.arrow_next
+{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin: auto;
+    font-size: 5em;
+}
+
+.arrow_back
+{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    margin: auto;
+    font-size: 5em;
+}
+
+.big_photo
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-height: 80%;
+    max-width: 80%;
+    margin: auto;
+}
+
+.modal_window
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: rgba(153, 109, 109, .86);
+}
+
+.close
+{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 4em;
+    color: white;
+}
+
+input,
+.page_1,
+.page_2,
+.modal
+{
+    display: none;
+}
+
+input[id='1']:checked ~ .page_1,
+input[id='2']:checked ~ .page_2,
+.modal:checked + .modal_window
+{
+    display: block;
+}
