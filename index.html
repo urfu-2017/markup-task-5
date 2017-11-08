@@ -3,7 +3,529 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link href="index.css" rel="stylesheet">
 </head>
 <body>
+    <input type="radio" name="arrows" id="rightarrow1" value="1to2">
+    <input type="radio" name="arrows" id="leftarrow2" value="2to1" checked>
+    <input type="radio" name="arrows" id="rightarrow2" value="2to3">
+    <input type="radio" name="arrows" id="leftarrow3" value="3to2">
+    <input type="radio" name="arrows" id="rightarrow3" value="3to4">
+    <input type="radio" name="arrows" id="leftarrow4" value="4to3">
+    <input type="radio" name="arrows" id="rightarrow4" value="4to5">
+    <input type="radio" name="arrows" id="leftarrow5" value="5to4">
+    <input type="radio" name="arrows" id="rightarrow5" value="5to6">
+    <input type="radio" name="arrows" id="leftarrow6" value="6to5">
+    <div class="galleryName">
+        <blockquote>
+            <span>Бабуленькин урожай</span>
+            <p>Food as art</p>
+        </blockquote>
+    </div>    
+    <div class="gallery">
+        <section class="sec1">
+            <img src="leftarrow.jpg" class="stop" alt="left arrow image">
+            <h4>Секция #1</h4>
+            <article>
+                <div class="image" id="image1">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="apple.jpg" alt="apple">
+                    <a class="open" href="#image1"></a>
+                    <div class="description">
+                        <h5>Яблоко</h5>
+                        <ul>
+                            <li class="apple">
+                                Компот от &copy;Apple
+                            </li>
+                        </ul>        
+                        <img src="nyan.gif" alt="nyan cat">
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image2">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="pumpkin.jpg" alt="pumpkin">
+                    <a class="open" href="#image2"></a>
+                    <div class="description">
+                        <h5>Тыква</h5>
+                        <ul>
+                            <li class="pumpkin">Тыква — это ягода</li>
+                            <li class="pumpkin">Существует около 800 различных сортов, но только 200
+                                 съедобны</li>
+                            <li class="pumpkin">Родиной является Мексика</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+                
+            </article>
+            <article>
+                <div class="image" id="image3">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="mango.jpg" alt="mango">
+                    <a class="open" href="#image3"></a>
+                    <div class="description">
+                        <h5>Манго</h5>
+                        <ul>
+                            <li class="mango">Родиной манго считаются влажные тропические леса Мьянмы
+                                 и индийского штата Ассам</li>
+                            <li class="mango">Фрукт выразивается более 4000 лет</li>
+                            <li class="mango">Основной производитель — Индия, ежегодно собирают урожай
+                                 из 13,5 млн тонн плодов</li>
+                            <li class="mango">Содержит полезные вещества, укрепляющие сердце и
+                                 улучшающие работу мозга</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+               
+            </article>
+            <article>
+                <div class="image" id="image4">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="beet.jpg" alt="beet">
+                    <a class="open" href="#image4"></a>
+                    <div class="description">
+                        <h5>Свёкла</h5>
+                        <ul>
+                            <li class="beet">СвЁкла, а не свеклА</li>
+                            <li class="beet">Древние греки настолько ценили этот овощ, что подарки в знак
+                                 благодарности делали в форме серебряной свеклы</li>
+                            <li class="beet">Первые упоминание о свекле на Руси относят к X—XI векам, её
+                                 запекали в печи и подавали к чаю</li>
+                            <li class="beet">Широкое распространение она получила в XIV столетии, а в XVII
+                                 произошло разделение на кормовые и пищевые сорта.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+                
+            </article>
+            <label for="rightarrow1"><img src="rightarrow.jpg" alt="right arrow image"></label>
+        </section>
+        <section class="sec2">
+            <h4>Секция #2</h4>
+            <label for="leftarrow2"><img src="leftarrow.jpg" alt="left arrow image"></label>
+            <article>
+                <div class="image" id="image5">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="cucumber.jpg" alt="cucumber">
+                    <a class="open" href="#image5"></a>
+                    <div class="description">
+                        <h5>Огурец</h5>
+                        <ul>
+                            <li class="cucumber">Огурец появился в культуре более 6 тысяч лет назад в
+                                 тропических районах Индии</li>
+                            <li class="cucumber">В Русском государстве огурец был известен в XVI веке</li>
+                            <li class="cucumber">27 июля отмечается Международный День Огурца</li>
+                            <li class="cucumber">Огурец по ботанической классификации является фруктом
+                                 и рассматривается как ложная ягода, по кулинарной – овощем</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image6">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="carrot.jpg" alt="carrot">
+                    <a class="open" href="#image6"></a>
+                    <div class="description">
+                        <h5>Морковь</h5>
+                        <ul>
+                            <li class="carrot">
+                                Ты так похудела! Это новая диета?
+                            </li>
+                            <li class="carrot">
+                                Да, морковная 
+                            </li>
+                            <li class="carrot">
+                                А что делала, варила? 
+                            </li>    
+                            <li class="carrot">
+                                Копала!
+                            </li>
+                        </ul>    
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image7">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="tomato.jpg" alt="tomato">
+                    <a class="open" href="#image7"></a>
+                    <div class="description">
+                        <h5>Помидорка</h5>
+                        <ul>
+                            <li class="tomato">Навание произошло от итал. pomo d'oro — золотое яблоко</li>
+                            <li class="tomato">Родина — Перу</li>
+                            <li class="tomato">Долгое время томаты считались несъедобными и даже ядовитыми.
+                                 Сущесвует легенда как подкупленный повар пытался отравить блюдом из
+                                  помидоров Джорджа Вашингтона</li>
+                            <li class="tomato">Cодержат "гормон счастья" — серотонин, поэтому способны
+                                 поднимать настроение даже в самый унылый и пасмурный день.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image8">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="eggplant.jpg" alt="eggplant">
+                    <a class="open" href="#image8"></a>
+                    <div class="description">
+                        <h5>Баклажан</h5>
+                        <ul>
+                            <li class="eggplant">Родина баклажана — Индия</li>
+                            <li class="eggplant">По-английски баклажан называется еggplant. Он появилось
+                                 в XIX веке, благодаря сорту с белыми небольшими плодами, похожими на
+                                 куриные яйца</li>
+                            <li class="eggplant">Древние греки были убеждены, что отведавшие его лишаются
+                                 рассудка и называли «яблоком безумия»</li>
+                            <li class="eggplant">На самом деле употребление баклажанов поможет защитить
+                                 мозг от свободных радикалов</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <label for="rightarrow2"><img src="rightarrow.jpg" alt="right arrow image"></label>
+        </section>
+        <section class="sec3">
+            <h4>Секция #3</h4>
+            <label for="leftarrow3"><img src="leftarrow.jpg" alt="left arrow image"></label>
+            <article>
+                <div class="image" id="image9">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="persimmon.jpg" alt="persimmon">
+                    <a class="open" href="#image9"></a>
+                    <div class="description">
+                        <h5>Хурма</h5>
+                        <ul>
+                            <li class="persimmon">Что объединяет полицейского, бабушку и хурму? 
+                                — Они вяжут</li>
+                            <li class="persimmon">Родина хурмы — Китай</li>
+                            <li class="persimmon">Помогает бороться с депрессией. В хурме много
+                                 магния, а он помогает успокоить расшатанные нервы, а также 
+                                 глюкозы и фруктозы – источника хорошего настроения</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image10">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="beans.jpg" alt="beans">
+                    <a class="open" href="#image10"></a>
+                    <div class="description">
+                        <h5>Боб</h5>
+                        <ul>
+                            <li class="beans">Родина бобов — Средиземноморье</li>
+                            <li class="beans">Египтяне и греки считали боб священным растением</li>
+                            <li class="beans">На Руси начали выращивать бобы при Ярославе Мудром.
+                                 Они вошли в быт народа и были ежедневным дополнением к обычной
+                                 пище (хлеб, каша) многие века.</li>
+                            <li class="beans">По питательным свойствам занимают лидирующее положение
+                                 среди овощей</li>     
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image11">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="dragon.jpg" alt="dragon fruit">
+                    <a class="open" href="#image11"></a>
+                    <div class="description">
+                        <h5>Питайя</h5>
+                        <ul>
+                            <li class="dragon">Содержит много клетчатки, богат антиоксидантами, обладает
+                                 противовоспалительными свойствами
+                            </li>
+                            <li class="dragon">В Тайланде существует легенда: В ней рассказывается о
+                                 древнем времени и о смертельной битве людей с драконами. Когда
+                                 обессиленный исполин уже не мог изрыгать на людей пламя, из пасти
+                                 его выпадал удивительный фрукт. Поэтому в Тайланде он носит название
+                                 сердце дракона
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image12">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="cranberry.jpg" alt="cranberry">
+                    <a class="open" href="#image12"></a>
+                    <div class="description">
+                        <h5>Клюква</h5>
+                        <ul>
+                            <li class="cranberry">В переводе "ягода-журавль", так как раскрытые цветки на
+                                 стеблях напоминали первым европейцам шею и голову журавля</li>
+                            <li class="cranberry">Клюква — официальная ягода штата Массачусетс с 1994
+                                 года</li>
+                            <li class="cranberry">Ягоды клюквы почти на 90% состоят из воды</li>
+                        </ul>
+                    </div>
+                </div>    
+                <div class="overlay"></div>
+            </article>
+            <label for="rightarrow3"><img src="rightarrow.jpg" alt="right arrow image"></label>
+        </section>
+        <section class="sec4">
+            <h4>Секция #4</h4>
+            <label for="leftarrow4"><img src="leftarrow.jpg" alt="left arrow image"></label>
+            <article>
+                <div class="image" id="image13">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="cabbage.jpg" alt="cabbage">
+                    <a class="open" href="#image13"></a>
+                    <div class="description">
+                        <h5>Капуста</h5>
+                        <ul>
+                            <li class="cabbage">Легенда, связанная с происхождением капусты, гласит о том,
+                                 что капли пота скатились на землю с головы бога Юпитера. Из них и выросла
+                                 капуста</li>
+                            <li class="cabbage">Во время бракосочетания царя Алексея Михайловича с Натальей
+                                 Нарышкиной на свадебном столе подавали капусту «во щах богатых».</li>
+                            <li class="cabbage">По капусте гадали о суженом: высаживали в одну лунку капусту
+                                 и брюкву и называли при этом имена парня и девушки. Если оба растения
+                                 вырастали хорошо – играли свадьбу, а если нет, то от предложения
+                                 отказывались.</li>     
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image14">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="guava.jpg" alt="guava">
+                    <a class="open" href="#image14"></a>
+                    <div class="description">
+                        <h5>Гуава</h5>
+                        <ul>
+                            <li class="guava">Родиной растения считается Перу</li>
+                            <li class="guava">Вкусовыми качествами напоминает яблоко, лимон и грушу</li>
+                            <li class="guava">Фрукт востребован в домашней и ресторанной кулинарии, а
+                                 полезные свойства гуавы используют рецепты народной медицины.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image15">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="rhubarb.jpg" alt="rhubarb">
+                    <a class="open" href="#image15"></a>
+                    <div class="description">
+                        <h5>Ревень</h5>
+                        <ul>
+                            <li class="rhubarb">В Европе и Северной Америке его называют pie plant —
+                                 растение для пирога</li>
+                            <li class="rhubarb">Длительное время, около 4500 лет ревень использовали
+                                 исключительно в лекарственных целях</li>
+                            <li class="rhubarb">Срок жизни ревеня составляет 15 лет</li>     
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image16">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="spice.jpg" alt="spice">
+                    <a class="open" href="#image16"></a>
+                    <div class="description">
+                        <h5>Перец Чили</h5>
+                        <ul>
+                            <li class="spice">Перец чили был впервые культивирован Центральной и Южной
+                                 Америке около 3000 до н.э</li>
+                            <li class="spice">Чили перец содержит капсацин — бесцветное, острое,
+                                 кристаллическое вещество, которое и придает перцу такой вкус.</li>
+                            <li class="spice">Более 140 сортов перца чили выращивается в Мексике</li>
+                            <li class="spice">Чили является второй наиболее распространенной специей
+                                 в мире, после соли</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <label for="rightarrow4"><img src="rightarrow.jpg" alt="right arrow image"></label>
+        </section>
+        <section class="sec5">
+            <h4>Секция #5</h4>
+            <label for="leftarrow5"><img src="leftarrow.jpg" alt="left arrow image"></label>
+            <article>
+                <div class="image" id="image17">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="kiwi.jpg" alt="kiwi">
+                    <a class="open" href="#image17"></a>
+                    <div class="description">
+                        <h5>Киви</h5>
+                        <ul>
+                            <li class="kiwi">Новозеландский селекционер Александр Эллисон назвал фрукт 
+                                «киви» из-за его внешнего сходства с одноименной птичкой, которая 
+                                является национальной гордостью Новой Зеландии</li>
+                            <li class="kiwi">Киви на 84% состоит из воды и богат витамином С</li>
+                            <li class="kiwi">Вес киви не превышает 100 граммов</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image18">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="lemon.jpg" alt="lemon">
+                    <a class="open" href="#image18"></a>
+                    <div class="description">
+                        <h5>Лимон</h5>
+                        <ul>
+                            <li class="lemon">Родом из Индии или Китая</li>
+                            <li class="lemon">Испанцы считают лимон символом безответной любви</li>
+                            <li class="lemon">Шостакович на чаепитии у королевы Великобритании 
+                                Елизаветы II съел дольку лимона, после того, как выпил чай бывшую в нём. 
+                                Это вызвало шок у приглашённых, так как лимон нужно было оставить в чашке.
+                                 Однако Елизавета II поступила по-королевски. Она вслед за известным
+                                 композитором съела и свой ломтик лимона. То же пришлось 
+                                сделать и остальным. А теперь это вошло в традицию.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image19">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="herbs.jpg" alt="herbs">
+                    <a class="open" href="#image19"></a>
+                    <div class="description">
+                        <h5>Зелень</h5>
+                        <ul>
+                            <li class="herbs">
+                                Зелень – единственный вид пищи, содержащий абсолютно все питательные
+                                 вещества, необходимые человеку
+                            </li>
+                            <li class="herbs">
+                                Все зелёные растения имеют в своем составе 8 главных (незаменимых)
+                                 аминокислот
+                            </li>
+                        </ul>    
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image20">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="bananas.jpg" alt="bananas">
+                    <a class="open" href="#image20"></a>
+                    <div class="description">
+                        <h5>Банан</h5>
+                        <ul>
+                            <li class="banana">Банановая пальма — трава, однако банановый стебель
+                                 является очень плотным и высоким, имеет древовидную структуру,
+                                 поэтому существует заблуждение, что бананы растут на деревьях</li>
+                            <li class="banana">Таким образом, банан — это ягода, а не фрукт</li>
+                            <li class="banana">На кенийском референдуме о принятии конституции 2005
+                                 года сторонники проекта использовали в качестве своего символа банан,
+                                 а противники — апельсин.</li>
+                            <li class="banana">Слово "банан" с арабского языка переводится как палец.
+                                 Поэтому правильнее говорить не гроздь бананов, а кисть.</li>     
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <label for="rightarrow5"><img src="rightarrow.jpg" alt="right arrow image"></label>
+        </section>
+        <section class="sec6">
+            <h4>Секция #6</h4>
+            <label for="leftarrow6"><img src="leftarrow.jpg" alt="left arrow image"></label>
+            <article>
+                <div class="image" id="image21">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="blackorange.jpg" alt="blood orange">
+                    <a class="open" href="#image21"></a>
+                    <div class="description">
+                        <h5>Кровавый апельсин</h5>
+                        <ul>
+                            <li class="orange">Кровавые апельсины были открыты на Сицилии. Отсюда второе
+                                 нразвание — сицилийские</li>
+                            <li class="orange">Цвет мякоти и «мутная» кожура у кровавых апельсинов
+                                 получаются благодаря пигменту антоцианину, он является антиоксидантом,
+                                 замедляющим процессы старения в организме</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image22">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="raspberry.jpg" alt="raspberry">
+                    <a class="open" href="#image22"></a>
+                    <div class="description">
+                        <h5>Малина</h5>
+                        <ul>
+                            <li class="raspberry">Малину упоминал в числе других плодовых растений Катон
+                                 Старший еще в III веке до н.э</li>
+                            <li class="raspberry">Больше всего малины выращивают в России</li>
+                            <li class="raspberry">Малина — популярная героиня русских сказок, является
+                                 символом родины, воли, свободы, сладкой привольной жизни, в отличие
+                                 от калины, которая символизирует горькую долю, неволю</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image23">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="corn.jpg" alt="corn">
+                    <a class="open" href="#image23"></a>
+                    <div class="description">
+                        <h5>Кукуруза</h5>
+                        <ul>
+                            <li class="corn">Мы привыкли к тому, что цвет семян кукурузы жёлтый. На самом
+                                 деле сортов кукурузы более тысячи, а цвет может быть не только жёлтым,
+                                 но и белым, красным, фиолетовым, чёрным и даже разноцветным - сорт
+                                 «Glass Gem»</li>
+                            <li class="corn">Мексиканцы – абсолютные лидеры по употреблению кукурузы</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <article>
+                <div class="image" id="image24">
+                    <div class="close"><a href="#">✕</a></div>
+                    <img src="avokado.jpg" alt="avokado">
+                    <a class="open" href="#image24"></a>
+                    <div class="description">
+                        <h5>Авокадо</h5>
+                        <ul>
+                            <li class="avocado">Авокадо занесён в книгу рекордов Гиннеса за то, что он
+                                 является самым питательным фруктом в мире</li>
+                            <li class="avocado">Родом из Мексики</li>
+                            <li class="avocado">Авокадо культивируют в Бразилии, Африке, Израиле и США.
+                                 При этом одно дерево даёт до 300 кг плодов ежегодно</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+            <img src="rightarrow.jpg" class="stop" alt="right arrow image">
+        </section>
+    </div>
 </body>
 </html>
