@@ -7,6 +7,7 @@ body
     width: 100%;
     height: 100%;
     overflow: hidden;
+    user-select: none;
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
@@ -167,23 +168,23 @@ main
     content: '\f061';
 }
 
-input[type='radio']#page1:checked ~ label[class='arrow-right firstPage'],
-input[type='radio']#page2:checked ~ label[class='arrow-left secondPage'],
-input[type='radio']#page2:checked ~ label[class='arrow-right secondPage'],
-input[type='radio']#page3:checked ~ label[class='arrow-left thirdPage'],
-input[type='radio']#page1:checked ~ main .firstPage,
-input[type='radio']#page2:checked ~ main .secondPage,
-input[type='radio']#page3:checked ~ main .thirdPage
+.first:checked ~ label[class='arrow-right firstPage'],
+.second:checked ~ label[class='arrow-left secondPage'],
+.second:checked ~ label[class='arrow-right secondPage'],
+.third:checked ~ label[class='arrow-left thirdPage'],
+.first:checked ~ main .firstPage,
+.second:checked ~ main .secondPage,
+.third:checked ~ main .thirdPage
 {
     display: block;
 }
 
-input[type='radio']#page1:checked ~ label:not([class*='firstPage']),
-input[type='radio']#page2:checked ~ label:not([class*='secondPage']),
-input[type='radio']#page3:checked ~ label:not([class*='thirdPage']),
-input[type='radio']#page1:not(:checked) ~ main .firstPage,
-input[type='radio']#page2:not(:checked) ~ main .secondPage,
-input[type='radio']#page3:not(:checked) ~ main .thirdPage
+.first:checked ~ label:not([class*='firstPage']),
+.second:checked ~ label:not([class*='secondPage']),
+.third:checked ~ label:not([class*='thirdPage']),
+.first:not(:checked) ~ main .firstPage,
+.second:not(:checked) ~ main .secondPage,
+.third:not(:checked) ~ main .thirdPage
 {
     display: none;
 }
