@@ -1,0 +1,248 @@
+.mainBlock
+{
+    padding: 0;
+    height: 500px;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.block
+{
+    width: 33.33%;
+    float: left;
+}
+
+.imageHolder :first-child :first-child
+{
+    padding-left: 12px;
+}
+
+.imageHolder
+{
+    width: 300%;
+    height: 400px;
+    clear: both;
+    position: relative;
+    transition: left 2s;
+}
+
+header
+{
+    text-align: center;
+    font-size: 36px;
+}
+
+.veggie
+{
+    float: left;
+    width: 20%;
+    height: 400px;
+}
+
+.sliderImage1:checked ~ .imageHolder
+{
+    transform: translateX(0);
+}
+
+.sliderImage2:checked ~ .imageHolder
+{
+    transform: translateX(-100vw);
+}
+
+.sliderImage3:checked ~ .imageHolder
+{
+    transform: translateX(-200vw);
+}
+
+.buttonHolder
+{
+    position: relative;
+    top: -20px;
+}
+
+figure
+{
+    margin: 0;
+}
+
+p
+{
+    visibility: hidden;
+}
+
+.mainBlock img
+{
+    position: relative;
+    width: 100%;
+}
+
+.lightboxTarget
+{
+    z-index: 1;
+    position: fixed;
+    background: rgba(0, 0, 0, .9);
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-left: auto;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    overflow: hidden;
+}
+
+input
+{
+    display: none;
+}
+
+label.sliderImage1::before
+{
+    width: 100px;
+    height: 130px;
+    transform: scale(.5);
+    margin-top: 60px;
+    display: block;
+    content: '';
+    float: left;
+    background-image: url('left.png');
+}
+
+label.sliderImage2::before
+{
+    width: 100px;
+    height: 130px;
+    transform: scale(.5);
+    margin-top: 60px;
+    display: block;
+    content: '';
+    float: right;
+    background-image: url('right.png');
+}
+
+label.sliderImage2Back::before
+{
+    width: 100px;
+    height: 130px;
+    transform: scale(.5);
+    margin-top: 60px;
+    display: block;
+    content: '';
+    float: left;
+    background-image: url('left.png');
+}
+
+label.sliderImage3::before
+{
+    width: 100px;
+    height: 130px;
+    transform: scale(.5);
+    margin-top: 60px;
+    display: block;
+    content: '';
+    float: right;
+    background-image: url('right.png');
+}
+
+.lightboxTarget img
+{
+    margin: auto;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 80%;
+    max-height: 80%;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.lightboxTarget:target
+{
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+}
+
+.lightboxTarget:target img
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.lightboxTarget:target img ~
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.lightboxTarget:target a.lightboxClose
+{
+    top: 0;
+}
+
+.lightBox:hover img
+{
+    z-index: 1;
+    position: relative;
+    padding: 5px;
+}
+
+.lightBox:hover ~ p
+{
+    opacity: .99;
+    visibility: visible;
+}
+
+a.lightboxClose:before
+{
+    content: '';
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top: 10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+a.lightboxClose:after
+{
+    content: '';
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top: 10px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+a.lightboxClose
+{
+    display: block;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    position: absolute;
+    top: -80px;
+    right: 0;
+}
