@@ -9,7 +9,7 @@
 
 .block
 {
-    width: 33%;
+    width: 33.33%;
     float: left;
 }
 
@@ -42,17 +42,18 @@ header
 
 .sliderImage1:checked ~ .imageHolder
 {
-    left: 0;
+    transform: translateX(0vw);
+    /* left: 0; */
 }
 
 .sliderImage2:checked ~ .imageHolder
 {
-    left: -100%;
+    transform: translateX(-100vw);
 }
 
 .sliderImage3:checked ~ .imageHolder
 {
-    left: -200%;
+    transform: translateX(-200vw);
 }
 
 .buttonHolder
