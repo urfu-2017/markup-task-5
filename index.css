@@ -42,8 +42,7 @@ header
 
 .sliderImage1:checked ~ .imageHolder
 {
-    transform: translateX(0vw);
-    /* left: 0; */
+    transform: translateX(0);
 }
 
 .sliderImage2:checked ~ .imageHolder
