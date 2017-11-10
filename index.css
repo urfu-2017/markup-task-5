@@ -26,19 +26,19 @@ body {
     transition: 1s;
 }
 
-.slider input[type='radio']#button-1:checked ~ .slider-wrapper {
+.slider input#button-1:checked ~ .slider-wrapper {
     left: 0;
 }
 
-.slider input[type='radio']#button-2:checked ~ .slider-wrapper {
+.slider input#button-2:checked ~ .slider-wrapper {
     left: -71%;
 }
 
-.slider input[type='radio']#button-3:checked ~ .slider-wrapper {
+.slider input#button-3:checked ~ .slider-wrapper {
     left: -144%;
 }
 
-.slider input[type='radio']#button-4:checked ~ .slider-wrapper {
+.slider input#button-4:checked ~ .slider-wrapper {
     left: -218%;
 }
 
@@ -51,6 +51,7 @@ body {
     transition: .2s;
     margin: 0 1%;
     background-color: #fff;
+    overflow: hidden;
 }
 
 .description {
@@ -99,6 +100,7 @@ body {
     width: 32px;
     height: 32px;
     opacity: .3;
+    z-index: 1010;
 }
 
 .close:before,
@@ -138,16 +140,16 @@ label.arrows:hover {
     opacity: 1;
 }
 
-input[type='radio']#button-1:checked ~ .arrows#arrow-2,
-input[type='radio']#button-2:checked ~ .arrows#arrow-3,
-input[type='radio']#button-3:checked ~ .arrows#arrow-4 {
+input#button-1:checked ~ .arrows#arrow-2,
+input#button-2:checked ~ .arrows#arrow-3,
+input#button-3:checked ~ .arrows#arrow-4 {
     right: 0;
     display: block;
 }
 
-input[type='radio']#button-2:checked ~ .arrows#arrow-1,
-input[type='radio']#button-3:checked ~ .arrows#arrow-2,
-input[type='radio']#button-4:checked ~ .arrows#arrow-3 {
+input#button-2:checked ~ .arrows#arrow-1,
+input#button-3:checked ~ .arrows#arrow-2,
+input#button-4:checked ~ .arrows#arrow-3 {
     left: 0;
     display: block;
     transform: scaleX(-1);
