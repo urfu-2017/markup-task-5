@@ -9,30 +9,29 @@ section
 .leftArrow,
 .rightArrow
 {
+    
     width: 10%;
 }
 
+.rightArrow,
 .leftArrow
 {
-    float: left;
-    
-}
-
-.rightArrow
-{
-    float: right;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .leftArrow img,
 .rightArrow img
 {
-    vertical-align: middle;
     width: 50%;
     cursor: pointer;
 }
 
 input,
-.cross
+.cross,
+.card-text,
+.full-size:checked + .card .card-text,
+.pages:not(:checked) + section
 {
     display: none;
 }
@@ -57,11 +56,6 @@ input,
 .card-image img
 {
     cursor: pointer;
-}
-
-.card-text
-{
-    display: none;
 }
 
 .card-info:hover
@@ -113,11 +107,6 @@ img
     margin-top: 10%;
 }
 
-.full-size:checked + .card .card-text
-{
-    display: none;
-}
-
 .full-size:checked + .card .cross
 {
     display: block;
@@ -127,7 +116,3 @@ img
     cursor: pointer;
 }
 
-.pages:not(:checked) + section
-{
-    display: none;
-}
