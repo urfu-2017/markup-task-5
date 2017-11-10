@@ -9,7 +9,7 @@ main
     position: relative;
     padding: 50px 0;
     width: 100%;
-    min-width: 1400px;
+    min-width: 500px;
 }
 
 .item-switch,
@@ -25,6 +25,7 @@ input[name='slider']
     position: relative;
     width: 400px;
     height: 300px;
+    vertical-align: top;
 }
 
 .hover-box
@@ -85,11 +86,6 @@ input[name='slider']
     text-align: left;
 }
 
-.item:hover .item-description
-{
-    display: block;
-}
-
 .item-preview
 {
     margin: 0;
@@ -97,9 +93,21 @@ input[name='slider']
 
 .item-preview img
 {
-    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
+.item-preview label
+{
+    line-height: 300px;
+    display: block;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.item:hover .item-description,
 .item-switch:checked + .modal
 {
     display: block;
