@@ -3,7 +3,296 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <h1>Бабуленькин урожай</h1>
+    </header>
+    <!-- Модальные окна каждой картинки -->
+    <input type="radio" name="modal_windows" id="watermelon_open">
+    <input type="radio" name="modal_windows" id="watermelon_close">
+    <div class="watermelon modal_window">
+        <label for="watermelon_close">&times;</label>
+        <img class="modal_image" src="images/watermelon.jpg" alt="watermelon">
+    </div>
+    <input type="radio" name="modal_windows" id="strawberry_open">
+    <input type="radio" name="modal_windows" id="strawberry_close">
+    <div class="strawberry modal_window">
+        <label for="strawberry_close">&times;</label>
+        <img class="modal_image" src="images/strawberry.jpg" alt="strawberry">
+    </div>
+    <input type="radio" name="modal_windows" id="gooseberry_open">
+    <input type="radio" name="modal_windows" id="gooseberry_close">
+    <div class="gooseberry modal_window">
+        <label for="gooseberry_close">&times;</label>
+        <img class="modal_image" src="images/gooseberry.jpg" alt="gooseberry">
+    </div>
+    <input type="radio" name="modal_windows" id="raspberry_open">
+    <input type="radio" name="modal_windows" id="raspberry_close">
+    <div class="raspberry modal_window">
+        <label for="raspberry_close">&times;</label>
+        <img class="modal_image" src="images/raspberry.jpg" alt="raspberry">
+    </div>
+    <input type="radio" name="modal_windows" id="pumpkin_open">
+    <input type="radio" name="modal_windows" id="pumpkin_close">
+    <div class="pumpkin modal_window">
+        <label for="pumpkin_close">&times;</label>
+        <img class="modal_image" src="images/pumpkin.jpg" alt="pumpkin">
+    </div>
+    <input type="radio" name="modal_windows" id="pepper_open">
+    <input type="radio" name="modal_windows" id="pepper_close">
+    <div class="pepper modal_window">
+        <label for="pepper_close">&times;</label>
+        <img class="modal_image" src="images/pepper.jpg" alt="pepper">
+    </div>
+    <input type="radio" name="modal_windows" id="zucchini_open">
+    <input type="radio" name="modal_windows" id="zucchini_close">
+    <div class="zucchini modal_window">
+        <label for="zucchini_close">&times;</label>
+        <img class="modal_image" src="images/zucchini.jpg" alt="zucchini">
+    </div>
+    <input type="radio" name="modal_windows" id="cauliflower_open">
+    <input type="radio" name="modal_windows" id="cauliflower_close">
+    <div class="cauliflower modal_window">
+        <label for="cauliflower_close">&times;</label>
+        <img class="modal_image" src="images/cauliflower.jpg" alt="cauliflower">
+    </div>
+    <input type="radio" name="modal_windows" id="broccoli_open">
+    <input type="radio" name="modal_windows" id="broccoli_close">
+    <div class="broccoli modal_window">
+        <label for="broccoli_close">&times;</label>
+        <img class="modal_image" src="images/broccoli.jpg" alt="broccoli">
+    </div>
+    <input type="radio" name="modal_windows" id="carrot_open">
+    <input type="radio" name="modal_windows" id="carrot_close">
+    <div class="carrot modal_window">
+        <label for="carrot_close">&times;</label>
+        <img class="modal_image" src="images/carrot.jpg" alt="carrot">
+    </div>
+    <input type="radio" name="modal_windows" id="cucumber_open">
+    <input type="radio" name="modal_windows" id="cucumber_close">
+    <div class="cucumber modal_window">
+        <label for="cucumber_close">&times;</label>
+        <img class="modal_image" src="images/cucumber.jpg" alt="cucumber">
+    </div>
+    <input type="radio" name="modal_windows" id="tomato_open">
+    <input type="radio" name="modal_windows" id="tomato_close">
+    <div class="tomato modal_window">
+        <label for="tomato_close">&times;</label>
+        <img class="modal_image" src="images/tomato.jpg" alt="tomato">
+    </div>
+    <!-- Работа со страницами -->
+    <input type="radio" name="pages" id="to_right_from_0">
+    <input type="radio" name="pages" id="to_left_from_1" checked>
+    <input type="radio" name="pages" id="to_right_from_1">
+    <input type="radio" name="pages" id="to_left_from_2">
+    <div class="page_0 pages">
+        <figure class="product">
+            <label for="watermelon_open">
+                <img class="product_image" src="images/watermelon.jpg" alt="watermelon">
+            </label>
+            <figcaption class="product_description">
+                <p>Ар&shy;буз – лю&shy;би&shy;мый, вкус&shy;ный, слад&shy;кий плод, ко&shy;
+                    то&shy;рый мно&shy;гие счи&shy;та&shy;ют фрук&shy;том из-за боль&shy;ших 
+                    раз&shy;ме&shy;ров. Од&shy;на&shy;ко ар&shy;буз – на&shy;сто&shy;я&shy;щая 
+                    яго&shy;да. Клет&shy;чат&shy;ка и пек&shy;тин по&shy;ло&shy;жи&shy;тель&shy;
+                    но вли&shy;я&shy;ют на ра&shy;бо&shy;ту ки&shy;шеч&shy;ни&shy;ка, очи&shy;щая 
+                    ор&shy;га&shy;низм от вред&shy;ных ве&shy;ществ и шла&shy;ков.
+                </p>
+            </figcaption>
+        </figure>
+        <figure class="product">
+            <label for="strawberry_open">
+                <img class="product_image" src="images/strawberry.jpg" alt="strawberry">
+            </label>
+            <figcaption class="product_description">
+                <p>Клуб&shy;ни&shy;ка – ко&shy;ро&shy;ле&shy;ва ягод, имен&shy;но так 
+                    на&shy;зы&shy;ва&shy;ют этот аро&shy;мат&shy;ный, соч&shy;ный, слад&shy;кий 
+                    плод, яв&shy;ля&shy;ю&shy;щий&shy;ся лю&shy;би&shy;мым ла&shy;ком&shy;ством
+                    мно&shy;гих лю&shy;дей. Клуб&shy;ни&shy;ка (зем&shy;ля&shy;ни&shy;ка) 
+                    со&shy;дер&shy;жит боль&shy;шое ко&shy;ли&shy;че&shy;ство по&shy;лез&shy;ных 
+                    ве&shy;ществ, не&shy;об&shy;хо&shy;ди&shy;мых для под&shy;дер&shy;жа&shy;ния
+                    жиз&shy;не&shy;де&shy;я&shy;тель&shy;но&shy;сти ор&shy;га&shy;низ&shy;ма.
+                </p>
+            </figcaption>
+        </figure>
+        <figure class="product">
+            <label for="gooseberry_open">
+                <img class="product_image" src="images/gooseberry.jpg" alt="gooseberry">
+            </label>
+            <figcaption class="product_description">
+                <p>Кры&shy;жов&shy;ник со&shy;че&shy;та&shy;ет&shy;ся с тво&shy;ро&shy;гом, 
+                    сы&shy;ром, слив&shy;ка&shy;ми, а кис&shy;ло-слад&shy;кие пи&shy;кант&shy;ные 
+                    со&shy;усы, ко&shy;то&shy;рые де&shy;ла&shy;ют из кры&shy;жов&shy;ни&shy;ка,
+                    под&shy;хо&shy;дят к мяс&shy;ным и рыб&shy;ным блю&shy;дам. По&shy;лез&shy;ные 
+                    свой&shy;ства кры&shy;жов&shy;ни&shy;ка поз&shy;во&shy;ля&shy;ют 
+                    ис&shy;поль&shy;зо&shy;вать его в ка&shy;че&shy;стве 
+                    ле&shy;кар&shy;ствен&shy;но&shy;го сред&shy;ства.
+                </p>
+            </figcaption>
+        </figure>
+        <figure class="product">
+            <label for="raspberry_open">
+                <img class="product_image" src="images/raspberry.jpg" alt="raspberry">
+            </label>
+            <figcaption class="product_description">
+                <p>Ма&shy;ли&shy;на ис&shy;поль&shy;зу&shy;ет&shy;ся при ле&shy;че&shy;нии 
+                    про&shy;студ, нерв&shy;ных рас&shy;стройств и ин&shy;фек&shy;ци&shy;он&shy;ных 
+                    не&shy;ду&shy;гов. Ма&shy;ли&shy;на ока&shy;зы&shy;ва&shy;ет 
+                    по&shy;то&shy;гон&shy;ный эф&shy;фект и сби&shy;ва&shy;ет вы&shy;со&shy;кую 
+                    тем&shy;пе&shy;ра&shy;ту&shy;ру во вре&shy;мя бо&shy;лез&shy;ни.
+                    Ма&shy;ли&shy;на по&shy;лез&shy;на при ги&shy;пер&shy;то&shy;нии, 
+                    за&shy;бо&shy;ле&shy;ва&shy;ни&shy;ях ЖКТ и ма&shy;ло&shy;кро&shy;вии.
+                </p>
+            </figcaption>
+        </figure>
+        <label for="to_right_from_0"><img class="arrows" src="images/to_right_arrow.png" 
+            alt="to_right_arrow"></label>
+    </div>
+    <div class="page_1 pages">
+        <label for="to_left_from_1"><img class="arrows" src="images/to_left_arrow.png" 
+            alt="to_left_arrow"></label>
+        <figure class="product">
+            <label for="pumpkin_open">
+                <img class="product_image" src="images/pumpkin.jpg" alt="pumpkin">
+            </label>
+            <figcaption class="product_description">
+                <p>Мно&shy;гие вра&shy;чи ре&shy;ко&shy;мен&shy;ду&shy;ют вклю&shy;чать в 
+                    еже&shy;днев&shy;ный ра&shy;ци&shy;он пи&shy;та&shy;ния блю&shy;да из 
+                    тык&shy;вы лю&shy;дям, име&shy;ю&shy;щим за&shy;бо&shy;ле&shy;ва&shy;ния:
+                    хро&shy;ни&shy;че&shy;ские и ост&shy;рые бо&shy;лез&shy;ни по&shy;чек и 
+                    мо&shy;че&shy;по&shy;ло&shy;вой си&shy;сте&shy;мы; ге&shy;па&shy;ти&shy;ты 
+                    и цир&shy;роз пе&shy;че&shy;ни; ги&shy;пер&shy;то&shy;ния и 
+                    ате&shy;ро&shy;скле&shy;роз; на&shy;ру&shy;ше&shy;ния ра&shy;бо&shy;ты 
+                    сер&shy;деч&shy;но-со&shy;су&shy;ди&shy;стой си&shy;сте&shy;мы.
+                </p>
+            </figcaption>
+        </figure>
+        <figure class="product">
+            <label for="pepper_open">
+                <img class="product_image" src="images/pepper.jpg" alt="Sweet pepper">
+            </label>
+            <figcaption class="product_description">
+                <p>По&shy;лез&shy;ные свой&shy;ства пер&shy;ца со&shy;хра&shy;ня&shy;ют&shy;ся в 
+                    за&shy;мо&shy;ро&shy;жен&shy;ном ви&shy;де. Слад&shy;кий пе&shy;рец 
+                    по&shy;ло&shy;жи&shy;тель&shy;но вли&shy;я&shy;ет на со&shy;сто&shy;я&shy;ние
+                    ко&shy;жи, во&shy;лос, ног&shy;тей, укреп&shy;ля&shy;ет им&shy;мун&shy;ную 
+                    си&shy;сте&shy;му, по&shy;мо&shy;га&shy;ет при ум&shy;ствен&shy;ном и 
+                    фи&shy;зи&shy;че&shy;ском пе&shy;ре&shy;утом&shy;ле&shy;нии, в 
+                    осо&shy;бен&shy;но&shy;сти при мы&shy;шеч&shy;ных на&shy;груз&shy;ках, 
+                    от&shy;сут&shy;ствии или ослаб&shy;ле&shy;нии ап&shy;пе&shy;ти&shy;та,
+                    а так&shy;же при стрес&shy;се и бес&shy;сон&shy;ни&shy;це.
+                </p>
+            </figcaption>
+        </figure>
+        <figure class="product">
+            <label for="zucchini_open">
+                <img class="product_image" src="images/zucchini.jpg" alt="zuсchini">
+            </label>
+            <figcaption class="product_description">
+                <p>Ка&shy;ба&shy;чок лег&shy;ко усва&shy;и&shy;ва&shy;ет&shy;ся, 
+                    со&shy;дер&shy;жит ма&shy;ло ка&shy;ло&shy;рий, а так&shy;же в нем мно&shy;го 
+                    мик&shy;ро&shy;эле&shy;мен&shy;тов – же&shy;ле&shy;за, ме&shy;ди, 
+                    фос&shy;фо&shy;ра, ка&shy;лия, маг&shy;ния и на&shy;трия. Вы&shy;со&shy;ко 
+                    со&shy;дер&shy;жа&shy;ние ви&shy;та&shy;ми&shy;нов груп&shy;пы C и 
+                    B.Ка&shy;бач&shy;ки ре&shy;ко&shy;мен&shy;ду&shy;ют лю&shy;дям, 
+                    име&shy;ю&shy;щим ма&shy;ло&shy;кро&shy;вие, 
+                    сер&shy;деч&shy;но-со&shy;су&shy;ди&shy;стые за&shy;бо&shy;ле&shy;ва&shy;ния 
+                    и ги&shy;пер&shy;то&shy;нию.
+                </p>
+            </figcaption>
+        </figure>
+        <figure class="product">
+            <label for="cauliflower_open">
+                <img class="product_image" src="images/cauliflower.jpg" alt="cauliflower">
+            </label>
+            <figcaption class="product_description">
+                <p>Цвет&shy;ная ка&shy;пу&shy;ста со&shy;дер&shy;жит огром&shy;ное 
+                    ко&shy;ли&shy;че&shy;ство ви&shy;та&shy;ми&shy;нов.
+                    В со&shy;став ка&shy;пу&shy;сты вхо&shy;дят уг&shy;ле&shy;во&shy;ды, 
+                    клет&shy;чат&shy;ка, ор&shy;га&shy;ни&shy;че&shy;ские
+                    и по&shy;ли&shy;не&shy;на&shy;сы&shy;щен&shy;ные кис&shy;ло&shy;ты, 
+                    крах&shy;мал, са&shy;ха&shy;ра. Это по&shy;ис&shy;ти&shy;не 
+                    ле&shy;кар&shy;ствен&shy;ное сред&shy;ство, спо&shy;соб&shy;ное 
+                    из&shy;ба&shy;вить от мно&shy;гих не&shy;ду&shy;гов и про&shy;блем со 
+                    здо&shy;ро&shy;вьем.
+                </p>
+            </figcaption>
+        </figure>
+        <label for="to_right_from_1"><img class="arrows" src="images/to_right_arrow.png" 
+            alt="to_right_arrow"></label>
+    </div>
+    <div class="page_2 pages">
+        <label for="to_left_from_2"><img class="arrows" src="images/to_left_arrow.png" 
+            alt="to_left_arrow"></label>
+        <figure class="product">
+            <label for="broccoli_open">
+                <img class="product_image" src="images/broccoli.jpg" alt="broccoli">
+            </label>
+            <figcaption class="product_description">
+                <p>Брок&shy;ко&shy;ли - это раз&shy;но&shy;вид&shy;ность ка&shy;пу&shy;сты, 
+                    ко&shy;то&shy;рая бо&shy;га&shy;та мик&shy;ро&shy;эле&shy;мен&shy;та&shy;ми 
+                    и ви&shy;та&shy;ми&shy;на&shy;ми. В со&shy;ста&shy;ве 
+                    пре&shy;об&shy;ла&shy;да&shy;ют ви&shy;та&shy;ми&shy;ны С и К, 
+                    ко&shy;то&shy;рые не&shy;об&shy;хо&shy;ди&shy;мы для 
+                    нор&shy;маль&shy;но&shy;го функ&shy;ци&shy;о&shy;ни&shy;ро&shy;ва&shy;ния 
+                    со&shy;еди&shy;ни&shy;тель&shy;ной и кост&shy;ной тка&shy;ни,
+                    а так&shy;же для здо&shy;ро&shy;вой ра&shy;бо&shy;ты по&shy;чек.
+                </p>
+            </figcaption>
+        </figure>
+        <figure class="product">
+            <label for="carrot_open">
+                <img class="product_image" src="images/carrot.jpg" alt="carrot">
+            </label>
+            <figcaption class="product_description">
+                <p>Поль&shy;за мор&shy;ко&shy;ви за&shy;клю&shy;ча&shy;ет&shy;ся в 
+                    про&shy;фи&shy;лак&shy;ти&shy;ке и ле&shy;че&shy;нии
+                    ави&shy;та&shy;ми&shy;но&shy;зов. На&shy;род&shy;ная ме&shy;ди&shy;ци&shy;на 
+                    ре&shy;ко&shy;мен&shy;ду&shy;ет упо&shy;треб&shy;лять в пи&shy;щу ее при 
+                    ма&shy;ло&shy;кро&shy;вии, за&shy;бо&shy;ле&shy;ва&shy;ни&shy;ях по&shy;чек 
+                    и пе&shy;че&shy;ни. Сок из мор&shy;ко&shy;ви об&shy;ла&shy;да&shy;ет 
+                    ан&shy;ти&shy;сеп&shy;ти&shy;че&shy;ским дей&shy;стви&shy;ем, им 
+                    об&shy;ра&shy;ба&shy;ты&shy;ва&shy;ют ра&shy;ны и ис&shy;поль&shy;зу&shy;ют для
+                    по&shy;лос&shy;ка&shy;ния гор&shy;ла.
+                </p>
+            </figcaption>
+        </figure>
+        <figure class="product">
+            <label for="cucumber_open">
+                <img class="product_image" src="images/cucumber.jpg" alt="cucumber">
+            </label>
+            <figcaption class="product_description">
+                <p>Цен&shy;ность во&shy;ды в огур&shy;це огром&shy;на, она об&shy;ла&shy;да&shy;ет 
+                    воз&shy;мож&shy;но&shy;стью де&shy;ток&shy;си&shy;ка&shy;ции 
+                    ор&shy;га&shy;низ&shy;ма. Огур&shy;цы по&shy;лез&shy;но есть при 
+                    пи&shy;ще&shy;вых отрав&shy;ле&shy;ни&shy;ях. Как из&shy;вест&shy;но, 
+                    ка&shy;лий об&shy;ла&shy;да&shy;ет спо&shy;соб&shy;но&shy;стью
+                    вы&shy;во&shy;дить лиш&shy;нюю во&shy;ду из ор&shy;га&shy;низ&shy;ма 
+                    че&shy;ло&shy;ве&shy;ка – это нуж&shy;но отрав&shy;лен&shy;но&shy;му 
+                    ор&shy;га&shy;низ&shy;му: осво&shy;бо&shy;дит&shy;ся от вред&shy;ных 
+                    ве&shy;ществ.
+                </p>
+            </figcaption>
+        </figure>
+        <figure class="product">
+            <label for="tomato_open">
+                <img class="product_image" src="images/tomato.jpg" alt="tomato">
+            </label>
+            <figcaption class="product_description">
+                <p>Зе&shy;лё&shy;ные по&shy;ми&shy;до&shy;ры при за&shy;са&shy;ли&shy;ва&shy;нии 
+                    без ук&shy;су&shy;са со&shy;хра&shy;ня&shy;ют по&shy;чти все 
+                    ви&shy;та&shy;ми&shy;ны, кис&shy;ло&shy;ты и 
+                    ан&shy;ти&shy;ок&shy;си&shy;дан&shy;ты. Ча&shy;стое 
+                    упо&shy;треб&shy;ле&shy;ние то&shy;мат&shy;но&shy;го со&shy;ка 
+                    сни&shy;жа&shy;ет риск по&shy;яв&shy;ле&shy;ния тром&shy;бо&shy;за, 
+                    ки&shy;шеч&shy;ной не&shy;про&shy;хо&shy;ди&shy;мо&shy;сти, 
+                    ва&shy;ри&shy;ко&shy;за и улуч&shy;ша&shy;ет са&shy;мо&shy;чув&shy;ствие.
+                </p>
+            </figcaption>
+        </figure>
+    </div>
 </body>
 </html>
