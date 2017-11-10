@@ -27,7 +27,7 @@ input
 img
 {
     display: inline-block;
-    max-width: 300px;
+    max-width: 100%;
 }
 
 .photo-description 
@@ -42,6 +42,11 @@ img
 main
 {
     text-align: center;
+}
+
+article
+{
+    max-width: 15%;
 }
 
 article:hover .photo-description
@@ -83,22 +88,20 @@ label[id='button4']:not(:checked) ~ main .first-line
 
 .left
 {
-    top: 260px;
-    left: 50px;
+    left: 2%;
     background: url('left-arrow.png') 0 0 no-repeat;
 }
 
 .right
 {
-    width: auto;
-    top: 260px;
-    right: 50px;
+    right: 2%;
     background: url('right-arrow.png') 0 0 no-repeat;
 }
 
 .left,
 .right 
 {
+    margin-top: 30px;
     font-size: 25px;
     width: 64px;
     height: 64px;
