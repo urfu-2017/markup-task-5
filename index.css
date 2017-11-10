@@ -59,7 +59,7 @@ main
     display: block;
     vertical-align: top;
     width: 250px;
-    color: rgb(255, 255, 255);
+    color: #fff;
     background: rgba(0, 0, 0, .95);
     margin: 5px;
     transform: scale(1.07);
@@ -85,7 +85,7 @@ p
     border-top: 2px solid;
 }
 
-input[class='chosen_pic']:checked + .big_picture
+.chosen_pic:checked + .big_picture
 {
     position: fixed;
     top: 0;
@@ -96,7 +96,7 @@ input[class='chosen_pic']:checked + .big_picture
     z-index: 1;
 }
 
-input[class='chosen_pic']:checked + .big_picture > img
+.chosen_pic:checked + .big_picture > img
 {
     position: fixed;
     display: block;
@@ -105,7 +105,7 @@ input[class='chosen_pic']:checked + .big_picture > img
     width: 52%;
 }
 
-input[class='chosen_pic']:checked + .big_picture > .close
+.chosen_pic:checked + .big_picture > .close
 {
     display: block;
     position: fixed;
@@ -114,7 +114,26 @@ input[class='chosen_pic']:checked + .big_picture > .close
     cursor: pointer;
     top: 10px;
     right: 10px;
-    background: url(close.png) no-repeat;
+}
+
+.close:before,
+.close:after
+{
+    position: fixed;
+    content: '';
+    height: 32px;
+    width: 2px;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.close:before
+{
+    transform: rotate(45deg);
+}
+
+.close:after 
+{
+    transform: rotate(-45deg);
 }
 
 .arrow_right
@@ -125,7 +144,6 @@ input[class='chosen_pic']:checked + .big_picture > .close
     height: 100px;
     cursor: pointer;
     margin: 60px 150px 0 10px;
-
 }
 
 .arrow_left
@@ -136,12 +154,11 @@ input[class='chosen_pic']:checked + .big_picture > .close
     height: 150px;
     cursor: pointer;
     margin: 60px 0 0 -70px;
-
 }
 
-input[class='page1']:checked ~ .page:nth-of-type(1),
-input[class='page2']:checked ~ .page:nth-of-type(2),
-input[class='page3']:checked ~ .page:nth-of-type(3),
+.page1:checked ~ .page:nth-of-type(1),
+.page2:checked ~ .page:nth-of-type(2),
+.page3:checked ~ .page:nth-of-type(3),
 .card:hover > .information
 {
     display: block;
