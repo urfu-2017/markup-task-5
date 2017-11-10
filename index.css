@@ -9,20 +9,24 @@ section
 .leftArrow,
 .rightArrow
 {
-    
     width: 10%;
 }
 
-.rightArrow,
 .leftArrow
 {
-    display: inline-block;
-    vertical-align: middle;
+    float: left;
+    
+}
+
+.rightArrow
+{
+    float: right;
 }
 
 .leftArrow img,
 .rightArrow img
 {
+    vertical-align: middle;
     width: 50%;
     cursor: pointer;
 }
