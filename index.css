@@ -1,0 +1,106 @@
+.kit
+{
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+
+.product-card
+{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+
+.product-image
+{
+    max-width: 100%;
+    cursor: pointer;
+}
+
+input,
+.full-image,
+.product-description
+{
+    display: none;
+}
+
+.product-info:hover
+{
+    position: relative;
+    right: 10%;
+    width: 120%;
+    box-shadow: 0 0 10px grey;
+}
+
+.product-info:hover .product-description
+{
+    display: block;
+}
+
+.full-size-checkbox:checked ~ .full-image
+{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(128, 128, 128, .7);
+}
+
+.full-size-checkbox:checked ~ .full-image .close-label::before
+{
+    content: '\2718';
+    font-size: 60px;
+    color: black;
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+}
+
+.full-image img
+{
+    position: relative;
+    top: 20%;
+    height: 60%;
+   
+}
+
+.kit
+{
+    display: none;
+}
+
+.show-kit-1:checked ~ .fair .kit-1
+{
+    display: block;
+}
+
+.show-kit-2:checked ~ .fair .kit-2
+{
+    display: block;
+}
+
+.show-kit-3:checked ~ .fair .kit-3
+{
+    display: block;
+}
+
+.left-arrow::before
+{
+    display: inline;
+    content: '\2190';
+    font-size: 5vw;
+    cursor: pointer;
+}
+
+.right-arrow::before
+{
+    display: inline;
+    content: '\2192';
+    font-size: 5vw;
+    cursor: pointer;
+}
