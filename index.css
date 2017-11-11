@@ -27,14 +27,14 @@ h2
 {
     vertical-align: top;
     display: inline-block;
-    margin: 20px;
-    width: 200px;
-    padding: 10px;
+    width: 18%;
+    min-width: 100px;
+    padding: 1%;
 }
 
 main
 {
-    margin-top: 200px;
+    margin-top: 30vh;
     text-align: center;
 }
 
@@ -65,22 +65,21 @@ label:hover
     position: relative;
 }
 
-.arrow_next
+.arrow
 {
     position: absolute;
-    top: 50%;
-    right: 20px;
-    margin: auto;
-    font-size: 5em;
+    font-size: 3em;
+    top:50vh;
 }
 
-.arrow_back
+.arrow.next
 {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    margin: auto;
-    font-size: 5em;
+     right: 0;
+}
+
+.arrow.back
+{
+    left: 0;
 }
 
 .big_photo
