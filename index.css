@@ -66,12 +66,12 @@
     right: 0;
     left: 0;
     margin: 10px auto;
-    width: 50%;
+    max-width: 90%;
     max-height: 90%;
     z-index: 2000;
 }
 
-.modal img:target ~  .overlay
+.modal img:target ~ .overlay
 {
     display: block;
     position: absolute;
@@ -103,7 +103,6 @@
 {
     content: '\2715';
 }
-
 
 .item-content:hover 
 {
