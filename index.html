@@ -3,7 +3,148 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+    <header>Бабуленькин урожай</header>
+    <main class="gallery">
+        <input type="radio" id="1" name="page" checked>
+        <input type="radio" id="2" name="page">
+        <div class="page_1">
+            <article class="item">
+                <label for="malina">
+                    <img src="images/malina.jpg" alt="malina" class="gallery_image">
+                </label>
+                <section class="description">
+                    <h2>Малина</h2>
+                    <p>
+                        Инфа.
+                    </p>
+                </section>
+            </article>
+            <article class="item">
+                <label for="blackberry">
+                    <img src="images/blackberry.jpg" alt="Черника" class="gallery_image">
+                </label>
+                <section class="description">
+                    <h2>Черника</h2>
+                    <p>
+                        Инфа.
+                    </p>
+                </section>
+            </article>
+            <article class="item">
+                <label for="oblepixa">
+                    <img src="images/oblepixa.jpg" alt="Облепиха" class="gallery_image">
+                </label>
+                <section class="description">
+                    <h2>Клубника</h2>
+                    <p>
+                        Инфа.
+                    </p>
+                </section>
+            </article>
+            <article class="item">
+                <label for="smorodina">
+                    <img src="images/smorodina.jpg" alt="Смородина" class="gallery_image">
+                </label>
+                <section class="description">
+                    <h2>Смородина</h2>
+                    <p>
+                        Инфа.
+                    </p>
+                </section>
+            </article>
+            <label for="2" class="arrow next">&#x25B6;</label>
+        </div>
+        <div class="page_2">
+            <label for="1" class="arrow back">&#x25C0;</label>
+            <article class="item">
+                <label for="apple">
+                    <img src="images/apple.jpg" alt="Яблоки" class="gallery_image">
+                </label>
+                <section class="description">
+                    <h2>Яблоки</h2>
+                    <p>
+                        Инфа.
+                    </p>
+                </section>
+            </article>
+            <article class="item">
+                <label for="crygovnik">
+                    <img src="images/crygovnik.jpg" alt="Крыжовник" class="gallery_image">
+                </label>
+                <section class="description">
+                    <h2>Крыжовник</h2>
+                    <p>
+                        Инфа.
+                    </p>
+                </section>
+            </article>
+            <article class="item">
+                <label for="grusha">
+                    <img src="images/grusha.jpg" alt="Груша" class="gallery_image">
+                </label>
+                <section class="description">
+                    <h2>Груша</h2>
+                    <p>
+                        Инфа.
+                    </p>
+                </section>
+            </article>
+            <article class="item">
+                <label for="sliva">
+                    <img src="images/sliva.jpg" alt="Слива" class="gallery_image">
+                </label>
+                <section class="description">
+                    <h2>Слива</h2>
+                    <p>
+                        Инфа.
+                    </p>
+                </section>
+            </article>
+        </div>
+    </main>
+    <input type="checkbox" name="modal" id="malina" class="modal">
+    <div class="modal_window">
+        <img alt="Малина" class="big_photo" src="images/malina.jpg">
+        <label for="malina" class="close">&#x2716;</label>
+    </div>
+    <input type="checkbox" name="modal" id="blackberry" class="modal">
+    <div class="modal_window">
+        <img alt="Черника" class="big_photo" src="images/blackberry.jpg">
+        <label for="blackberry" class="close">&#x2716;</label>
+    </div>
+    <input type="checkbox" name="modal" id="oblepixa" class="modal">
+    <div class="modal_window">
+        <img alt="Облепиха" class="big_photo" src="images/oblepixa.jpg">
+        <label for="oblepixa" class="close">&#x2716;</label>
+    </div>
+    <input type="checkbox" name="modal" id="smorodina" class="modal">
+    <div class="modal_window">
+        <img alt="Смородина" class="big_photo" src="images/smorodina.jpg">
+        <label for="smorodina" class="close">&#x2716;</label>
+    </div>
+
+    <input type="checkbox" name="modal" id="apple" class="modal">
+    <div class="modal_window">
+        <img alt="Яблоки" class="big_photo" src="images/apple.jpg">
+        <label for="apple" class="close">&#x2716;</label>
+    </div>
+    <input type="checkbox" name="modal" id="crygovnik" class="modal">
+    <div class="modal_window">
+        <img alt="Крыжовник" class="big_photo" src="images/crygovnik.jpg">
+        <label for="crygovnik" class="close">&#x2716;</label>
+    </div>
+    <input type="checkbox" name="modal" id="grusha" class="modal">
+    <div class="modal_window">
+        <img alt="Груша" class="big_photo" src="images/grusha.jpg">
+        <label for="grusha" class="close">&#x2716;</label>
+    </div>
+    <input type="checkbox" name="modal" id="sliva" class="modal">
+    <div class="modal_window">
+        <img alt="Слива" class="big_photo" src="images/sliva.jpg">
+        <label for="sliva" class="close">&#x2716;</label>
+    </div>
 </body>
 </html>
