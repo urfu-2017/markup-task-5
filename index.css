@@ -69,12 +69,12 @@ label:hover
 {
     position: absolute;
     font-size: 3em;
-    top:50vh;
+    top: 50vh;
 }
 
 .arrow.next
 {
-     right: 0;
+    right: 0;
 }
 
 .arrow.back
