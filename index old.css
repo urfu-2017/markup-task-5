@@ -1,0 +1,150 @@
+.gallery
+{
+    width: 950px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    height: 600px;
+}
+
+.gallery-content
+{
+    padding: 10px;
+    width: 100000px;
+    height: 400px;
+}
+
+.show-modal
+{
+    display: none;
+}
+
+.item-content
+{
+    display: inline-block;
+    padding: 2px;
+    position: relative;
+    width: 210px;
+}
+
+.item-content .description
+{
+    display: none;
+}
+
+.item-content img
+{
+    width: 200px;
+}
+
+.show-modal:checked + .item-content img
+{
+    position: fixed;
+    top: 40px;
+    right: 0;
+    left: 0;
+    margin: 10px auto;
+    width: 50%;
+    z-index: 2000;
+}
+
+.overlay
+{
+    background: black;
+    opacity: .8;
+    display: none;
+}
+
+.show-modal:checked ~ .overlay
+{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.show-modal:checked + .item-content > .modal-close
+{
+    display: block;
+}
+
+.show-modal:checked + .item-content
+{
+    pointer-events: none;
+}
+
+.show-modal:checked + .item-content > .modal-close
+{
+    pointer-events: auto;
+}
+
+.show-modal:not(:checked) + .item-content:hover 
+{
+    border: 2px solid gray;
+    padding: 0 20px;
+    z-index: 1000;
+    background: white;
+}
+
+.show-modal:not(:checked) + .item-content:hover .description
+{
+    display: block;
+}
+
+.modal-close
+{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    z-index: 2000;
+}
+
+.modal-close:before
+{
+    content: '\2715';
+}
+
+.slider-right
+{
+    margin-right: 1000px;
+}
+
+.slider-arrow
+{
+    font-size: 100px;
+}
+
+.slider
+{
+    position: relative;
+    top: 400px;
+}
+
+.slider:checked ~ .gallery-content .item-content
+{
+    transition: .4s;
+}
+
+.slider:nth-of-type(1):checked ~ .gallery-content .item-content,
+.slider:nth-of-type(1):checked ~ .slider-arrow
+{
+    left: 0;
+}
+
+.slider:nth-of-type(2):checked ~ .gallery-content .item-content,
+.slider:nth-of-type(2):checked ~ .slider-arrow
+{
+    left: -1840px;
+}
+
+.slider:nth-of-type(3):checked ~ .gallery-content .item-content,
+.slider:nth-of-type(3):checked ~ .slider-arrow
+{
+    left: -3680px;
+}
+
