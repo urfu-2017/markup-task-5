@@ -28,6 +28,7 @@
 
 .item-content
 {
+    vertical-align: top;
     text-decoration: none;
     color: black;
     display: inline-block;
@@ -107,7 +108,7 @@
 .item-content:hover 
 {
     border: 2px solid gray;
-    padding: 0 10px;
+    padding: 0 8px;
     z-index: 1000;
     background: white;
 }
