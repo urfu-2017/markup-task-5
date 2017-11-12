@@ -11,6 +11,24 @@ img
     margin-top: 10%;
 }
 
+.pic1
+{
+    max-width: 15%;
+    margin-top: 0%;
+}
+
+.pic2
+{
+    max-width: 15%;
+    margin: -7% 20px 20px;
+}
+
+.pic3
+{
+    max-width: 15%;
+    margin-top: -3%;
+}
+
 .close
 {
     position: fixed;
@@ -23,9 +41,9 @@ img
 
 .text
 {
+    display: none;
     text-align: center;
     width: 200px;
-    display: none;
     color: black;
 }
 
@@ -47,12 +65,13 @@ img
     display: inline-block;
 }
 
-.pic1:hover + div
+a:hover + div
 {
-    padding: 0 20px 20px;
+    background: white;
+    position: fixed;
     display: inline-table;
-    margin-top: 10%;
-    margin-left: -20%;
+    margin-top: 12%;
+    margin-left: -19%;
     font-size: 12px;
     -webkit-box-shadow: 0 0 5px gray;
 }
@@ -67,18 +86,67 @@ img
     display: none;
 }
 
-.spoiler .radio1:checked + .block1
+.block3
+{
+    display: none;
+}
+
+.block4
+{
+    display: none;
+}
+
+.spoiler .radio1:checked ~ .block1
 {
     display: block;
 }
 
-.spoiler .radio2:checked + .block2
+.spoiler .radio2:checked ~ .block2
+{
+    display: block;
+}
+
+.spoiler .radio3:checked ~ .block3
+{
+    display: block;
+    margin-left: -5%;
+}
+
+.spoiler .radio4:checked ~ .block4
 {
     display: block;
 }
 
 .spoiler
 {
-    margin-top: 20%;
+    margin-top: 14%;
     text-align: center;
+}
+
+.radio1
+{
+    position: absolute;
+    margin-top: 18%;
+    margin-left: -5%;
+}
+
+.radio2
+{
+    position: absolute;
+    margin-top: 18%;
+    margin-left: -3%;
+}
+
+.radio3
+{
+    position: absolute;
+    margin-top: 18%;
+    margin-left: -1%;
+}
+
+.radio4
+{
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 1%;
 }
