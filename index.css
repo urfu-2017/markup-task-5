@@ -111,12 +111,8 @@ img
     margin-top: 10%;
 }
 
-.full-size:checked + .card .cross
+input.full-size:checked .cross
 {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
+    display: none;
 }
 
