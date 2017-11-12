@@ -11,6 +11,12 @@ body
 
 }
 
+label.arrow,
+label.cross
+{
+    cursor: pointer;
+}
+
 input[name='section'],
 input[name='full_size'],
 section[class*='section'],
@@ -28,7 +34,6 @@ label.arrow
     height: 40px;
     width: 40px;
     background-size: 40px;
-    cursor: pointer;
 }
 
 input.section_1:checked ~ .control > label.section_4,
@@ -50,10 +55,10 @@ input.section_4:checked ~ .control > label.section_1
     float: right;
 }
 
-input.section_1:checked ~ .karusel > section.section_1,
-input.section_2:checked ~ .karusel > section.section_2,
-input.section_3:checked ~ .karusel > section.section_3,
-input.section_4:checked ~ .karusel > section.section_4
+input.section_1:checked ~ .slider > section.section_1,
+input.section_2:checked ~ .slider > section.section_2,
+input.section_3:checked ~ .slider > section.section_3,
+input.section_4:checked ~ .slider > section.section_4
 {
     display: block;
 }
@@ -90,11 +95,11 @@ input.full_size:checked + .placeholder .item_card::before
     content: ' ';
     display: inline-block;
     height: 100vh;
-    width: 1%;
+    width: 1px;
     vertical-align: middle;
 }
 
-input.full_size:checked + .placeholder .label
+input.full_size:checked + .placeholder .cross
 {
     right: 50px;
     top: 50px;
@@ -104,13 +109,13 @@ input.full_size:checked + .placeholder .label
     z-index: 3;
 }
 
-input.full_size:checked + .placeholder .label:hover
+input.full_size:checked + .placeholder .cross:hover
 {
     opacity: 1;
 }
 
-input.full_size:checked + .placeholder .label::before,
-input.full_size:checked + .placeholder .label::after
+input.full_size:checked + .placeholder .cross::before,
+input.full_size:checked + .placeholder .cross::after
 {
     position: absolute;
     left: 25px;
@@ -120,17 +125,17 @@ input.full_size:checked + .placeholder .label::after
     background-color: #fff;
 }
 
-input.full_size:checked + .placeholder .label::before
+input.full_size:checked + .placeholder .cross::before
 {
     transform: rotate(45deg);
 }
 
-input.full_size:checked + .placeholder .label::after
+input.full_size:checked + .placeholder .cross::after
 {
     transform: rotate(-45deg);
 }
 
-.karusel
+.slider
 {
     padding: 0 50px;
 }
@@ -148,13 +153,6 @@ input.full_size:checked + .placeholder .label::after
     width: 1px;
     display: inline-block;
     vertical-align: middle;
-}
-
-.karusel::after
-{
-    content: '';
-    clear: both;
-    display: table;
 }
 
 .placeholder
@@ -195,7 +193,7 @@ input.full_size:checked + .placeholder .item
     margin: 0;
 }
 
-.label
+.cross
 {
     position: absolute;
     width: 100%;
