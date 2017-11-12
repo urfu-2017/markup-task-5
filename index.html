@@ -1,9 +1,419 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <title>Задача «Бабуленькин урожай»</title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+        <title>Задача «Бабуленькин урожай»</title>
+    </head>
+    <body>
+        <header>
+            <h1>Бабуленькин урожай</h1>
+        </header>
+        <input type="radio" name="pages" id="page1to2">
+        <input type="radio" name="pages" id="page2to1">
+        <input type="radio" name="pages" id="page2to3">
+        <input type="radio" name="pages" id="page3to2">
+
+        <input type="radio" name="modal" id="modalClose" checked>
+
+        <input type="radio" name="modal" id="page1Item1Modal">
+        <article class="itemModal">
+            <label for="modalClose" class="modalBg"></label>
+            <img src="images/cucumber.jpeg" alt="Огурец" class="itemModalImg">
+            <label for="modalClose"><span class="closeButton">&times;</span></label>
+        </article>
+        <input type="radio" name="modal" id="page1Item2Modal">
+        <article class="itemModal">
+            <label for="modalClose" class="modalBg"></label>
+            <img src="images/egg-plant.jpg" alt="Баклажан" class="itemModalImg">
+            <label for="modalClose"><span class="closeButton">&times;</span></label>
+        </article>
+        <input type="radio" name="modal" id="page1Item3Modal">
+        <article class="itemModal">
+            <label for="modalClose" class="modalBg"></label>
+            <img src="images/marrow.jpeg" alt="Кабачок" class="itemModalImg">
+            <label for="modalClose"><span class="closeButton">&times;</span></label>
+        </article>
+        <input type="radio" name="modal" id="page1Item4Modal">
+        <article class="itemModal">
+            <label for="modalClose" class="modalBg"></label>
+            <img src="images/tomato.jpg" alt="Помидор" class="itemModalImg">
+            <label for="modalClose"><span class="closeButton">&times;</span></label>
+        </article>
+
+        <input type="radio" name="modal" id="page2Item1Modal">
+        <article class="itemModal">
+            <label for="modalClose" class="modalBg"></label>
+            <img src="images/cabbage.jpg" alt="Капуста" class="itemModalImg">
+            <label for="modalClose"><span class="closeButton">&times;</span></label>
+        </article>
+        <input type="radio" name="modal" id="page2Item2Modal">
+        <article class="itemModal">
+            <label for="modalClose" class="modalBg"></label>
+            <img src="images/carrot.jpg" alt="Морковь" class="itemModalImg">
+            <label for="modalClose"><span class="closeButton">&times;</span></label>
+        </article>
+        <input type="radio" name="modal" id="page2Item3Modal">
+        <article class="itemModal">
+            <label for="modalClose" class="modalBg"></label>
+            <img src="images/onion.jpg" alt="Лук" class="itemModalImg">
+            <label for="modalClose"><span class="closeButton">&times;</span></label>
+        </article>
+        <input type="radio" name="modal" id="page2Item4Modal">
+        <article class="itemModal">
+            <label for="modalClose" class="modalBg"></label>
+            <img src="images/watermelon.jpg" alt="Арбуз" class="itemModalImg">
+            <label for="modalClose"><span class="closeButton">&times;</span></label>
+        </article>
+
+        <input type="radio" name="modal" id="page3Item1Modal">
+        <article class="itemModal">
+            <label for="modalClose" class="modalBg"></label>
+            <img src="images/strawberry.jpg" alt="Клубника" class="itemModalImg">
+            <label for="modalClose"><span class="closeButton">&times;</span></label>
+        </article>
+        <input type="radio" name="modal" id="page3Item2Modal">
+        <article class="itemModal">
+            <label for="modalClose" class="modalBg"></label>
+            <img src="images/red_current.jpg" alt="Красная смородина" class="itemModalImg">
+            <label for="modalClose"><span class="closeButton">&times;</span></label>
+        </article>
+        <input type="radio" name="modal" id="page3Item3Modal">
+        <article class="itemModal">
+            <label for="modalClose" class="modalBg"></label>
+            <img src="images/raspberry.jpg" alt="Малина" class="itemModalImg">
+            <label for="modalClose"><span class="closeButton">&times;</span></label>
+        </article>
+        <input type="radio" name="modal" id="page3Item4Modal">
+        <article class="itemModal">
+            <label for="modalClose" class="modalBg"></label>
+            <img src="images/black_currant.jpg" alt="Чёрная страница" class="itemModalImg">
+            <label for="modalClose"><span class="closeButton">&times;</span></label>
+        </article>
+        <main>
+            <section class="page page1">
+                <div class="buffer prevPage"></div>
+                <figure class="item">
+                    <label for="page1Item1Modal">
+                        <img src="images/cucumber.jpeg" alt="Огурец" class="itemImg">
+                    </label>
+                    <figcaption class="itemDescription">
+                        <p>Огур&shy;цы на 95% со&shy;сто&shy;ят из во&shy;ды и со&shy;дер&shy;жат очень
+                            ма&shy;лое
+                            ко&shy;ли&shy;че&shy;ство бел&shy;ков, жи&shy;ров и уг&shy;ле&shy;во&shy;дов.
+                            Све&shy;жие
+                            огур&shy;цы по&shy;лез&shy;ны стра&shy;да&shy;ю&shy;щим
+                            за&shy;бо&shy;ле&shy;ва&shy;ни&shy;я&shy;ми
+                            сер&shy;деч&shy;но-со&shy;су&shy;ди&shy;стой си&shy;сте&shy;мы,
+                            пе&shy;че&shy;ни,
+                            по&shy;чек, ожи&shy;ре&shy;ни&shy;ем, об&shy;мен&shy;ным
+                            по&shy;ли&shy;арт&shy;ри&shy;том,
+                            по&shy;дагрой. Огур&shy;цы улуч&shy;ша&shy;ют ап&shy;пе&shy;тит,
+                            об&shy;ла&shy;да&shy;ют
+                            жел&shy;че&shy;гон&shy;ным, мо&shy;че&shy;гон&shy;ным и
+                            сла&shy;би&shy;тель&shy;ным
+                            дей&shy;стви&shy;ем.</p>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <label for="page1Item2Modal"><img src="images/egg-plant.jpg" alt="Баклажан"
+                                                      class="itemImg"></label>
+                    <figcaption class="itemDescription">
+                        <p>Ба&shy;кла&shy;жа&shy;ны це&shy;нят&shy;ся тем, что в них
+                            со&shy;дер&shy;жат&shy;ся
+                            все не&shy;об&shy;хо&shy;ди&shy;мые че&shy;ло&shy;ве&shy;че&shy;ско&shy;му
+                            ор&shy;га&shy;низ&shy;му
+                            мик&shy;ро&shy;эле&shy;мен&shy;ты. И эта цен&shy;ность не
+                            умень&shy;ша&shy;ет&shy;ся,
+                            ес&shy;ли из них при&shy;го&shy;то&shy;вить блю&shy;да или про&shy;сто
+                            за&shy;кон&shy;сер&shy;ви&shy;ро&shy;вать.
+                            Пек&shy;тин, ко&shy;то&shy;рый со&shy;дер&shy;жит&shy;ся в
+                            ба&shy;кла&shy;жа&shy;нах,
+                            по&shy;мо&shy;га&shy;ет сти&shy;му&shy;ли&shy;ро&shy;вать
+                            пи&shy;ще&shy;ва&shy;ре&shy;ние
+                            и не да&shy;ет за&shy;ста&shy;и&shy;вать&shy;ся жел&shy;чи.
+                            Бла&shy;го&shy;да&shy;ря
+                            пек&shy;ти&shy;ну, вы&shy;во&shy;дит&shy;ся из&shy;лиш&shy;ний
+                            хо&shy;ле&shy;сте&shy;рин.</p>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <label for="page1Item3Modal">
+                        <img src="images/marrow.jpeg" alt="Кабачок" class="itemImg">
+                    </label>
+                    <figcaption class="itemDescription">
+                        <p>В ка&shy;бач&shy;ках при&shy;сут&shy;ству&shy;ют ви&shy;та&shy;ми&shy;ны групп А,
+                            В, С, Н, PP и зна&shy;ме&shy;ни&shy;тый ви&shy;та&shy;мин мо&shy;ло&shy;до&shy;сти
+                            – Е (то&shy;ко&shy;фе&shy;рол) – при&shy;род&shy;ный
+                            ан&shy;ти&shy;ок&shy;си&shy;дант,
+                            по&shy;мо&shy;га&shy;ю&shy;щий ор&shy;га&shy;низ&shy;му бо&shy;роть&shy;ся со
+                            сво&shy;бод&shy;ны&shy;ми
+                            ра&shy;ди&shy;ка&shy;ла&shy;ми и за&shy;мед&shy;лять ста&shy;ре&shy;ние.
+                            Бла&shy;го&shy;да&shy;ря
+                            боль&shy;шо&shy;му со&shy;дер&shy;жа&shy;нию ви&shy;та&shy;ми&shy;на С и
+                            бе&shy;та-ка&shy;ро&shy;ти&shy;на,
+                            спо&shy;соб&shy;ству&shy;ю&shy;щих об&shy;ще&shy;му креп&shy;ле&shy;нию
+                            ор&shy;га&shy;низ&shy;ма,
+                            ка&shy;бач&shy;ки по&shy;лез&shy;ны для боль&shy;ных, иду&shy;щих на
+                            по&shy;прав&shy;ку,
+                            ослаб&shy;лен&shy;ных лю&shy;дей и очень хо&shy;ро&shy;шо под&shy;хо&shy;дят для
+                            дет&shy;ско&shy;го пи&shy;та&shy;ния.</p>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <label for="page1Item4Modal"><img src="images/tomato.jpg" alt="Помидор"
+                                                      class="itemImg"></label>
+                    <figcaption class="itemDescription">
+                        <p>То&shy;ма&shy;ты и их сок бла&shy;го&shy;да&shy;ря вы&shy;со&shy;ко&shy;му
+                            со&shy;дер&shy;жа&shy;нию
+                            же&shy;ле&shy;за по&shy;лез&shy;ны при
+                            сер&shy;деч&shy;но-со&shy;су&shy;ди&shy;стых
+                            за&shy;бо&shy;ле&shy;ва&shy;ни&shy;ях и ма&shy;ло&shy;кро&shy;вии.
+                            Ве&shy;ще&shy;ства,
+                            со&shy;дер&shy;жа&shy;щи&shy;е&shy;ся в то&shy;ма&shy;тах,
+                            нор&shy;ма&shy;ли&shy;зу&shy;ют
+                            об&shy;мен ве&shy;ществ, сти&shy;му&shy;ли&shy;ру&shy;ют
+                            ра&shy;бо&shy;ту по&shy;чек
+                            и ки&shy;шеч&shy;ни&shy;ка, сни&shy;жа&shy;ют дав&shy;ле&shy;ние и
+                            уро&shy;вень хо&shy;ле&shy;сте&shy;ри&shy;на
+                            в кро&shy;ви. Ли&shy;ко&shy;пин, ко&shy;то&shy;рым бо&shy;га&shy;ты
+                            по&shy;ми&shy;до&shy;ры,
+                            ней&shy;тра&shy;ли&shy;зу&shy;ет сво&shy;бод&shy;ные ра&shy;ди&shy;ка&shy;лы,
+                            предот&shy;вра&shy;ща&shy;ет раз&shy;ви&shy;тие ра&shy;ко&shy;вых
+                            опу&shy;хо&shy;лей
+                            и му&shy;та&shy;ции ДНК. Для усво&shy;е&shy;ния ли&shy;ко&shy;пи&shy;на
+                            не&shy;об&shy;хо&shy;ди&shy;мы
+                            жи&shy;ры, по&shy;это&shy;му сы&shy;рые по&shy;ми&shy;до&shy;ры сле&shy;ду&shy;ет
+                            есть с мас&shy;лом.</p>
+                    </figcaption>
+                </figure>
+                <label for="page1to2" class="nextPage">
+                    <img src="images/002-next.png" alt="Следующая страница"
+                         title="Следующая страница" class="arrow">
+                </label>
+            </section>
+            <section class="page page2">
+                <label for="page2to1" class="prevPage">
+                    <img src="images/001-back.png" alt="Предыдущая страница"
+                         title="Предыдущая страница" class="arrow">
+                </label>
+                <figure class="item">
+                    <label for="page2Item1Modal">
+                        <img src="images/cabbage.jpg" alt="Капуста" class="itemImg">
+                    </label>
+                    <figcaption class="itemDescription">
+                        <p>Бе&shy;ло&shy;ко&shy;чан&shy;ная ка&shy;пу&shy;ста со&shy;дер&shy;жит мак&shy;ро- и
+                            мик&shy;ро&shy;эле&shy;мен&shy;ты, не&shy;ко&shy;то&shy;рые
+                            до&shy;ста&shy;точ&shy;но
+                            ред&shy;кие – это се&shy;ра, каль&shy;ций, маг&shy;ний, ка&shy;лий, фос&shy;фор,
+                            хлор, йод, ко&shy;бальт, же&shy;ле&shy;зо, цинк, медь, мар&shy;га&shy;нец.
+                            Сре&shy;ди
+                            ами&shy;но&shy;кис&shy;лот в ка&shy;пу&shy;сте вы&shy;де&shy;ля&shy;ют&shy;ся
+                            ли&shy;зин,
+                            ка&shy;ро&shy;тин и пек&shy;тин, ко&shy;то&shy;рые по&shy;мо&shy;га&shy;ют
+                            свя&shy;зы&shy;вать
+                            и рас&shy;тво&shy;рять бел&shy;ки чу&shy;же&shy;род&shy;но&shy;го
+                            про&shy;ис&shy;хож&shy;де&shy;ния.
+                            Ка&shy;пуст&shy;ная клет&shy;чат&shy;ка ока&shy;зы&shy;ва&shy;ет
+                            бла&shy;го&shy;при&shy;ят&shy;ное
+                            воз&shy;дей&shy;ствие на де&shy;я&shy;тель&shy;ность ЖКТ, сни&shy;жа&shy;ет
+                            уро&shy;вень
+                            хо&shy;ле&shy;сте&shy;ри&shy;на и ко&shy;ли&shy;че&shy;ство жи&shy;ро&shy;вой
+                            тка&shy;ни,
+                            уни&shy;что&shy;жа&shy;ет в ки&shy;шеч&shy;ни&shy;ке гни&shy;лост&shy;ные
+                            бак&shy;те&shy;рии.</p>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <label for="page2Item2Modal">
+                        <img src="images/carrot.jpg" alt="Морковь" class="itemImg">
+                    </label>
+                    <figcaption class="itemDescription">
+                        <p>Мор&shy;ковь со&shy;дер&shy;жит бе&shy;та-ка&shy;ро&shy;тин, ко&shy;то&shy;рый
+                            улуч&shy;ша&shy;ет
+                            ра&shy;бо&shy;ту лег&shy;ких. Бе&shy;та-ка&shy;ро&shy;тин яв&shy;ля&shy;ет&shy;ся
+                            пред&shy;ше&shy;ствен&shy;ни&shy;ком ви&shy;та&shy;ми&shy;на А. По&shy;па&shy;дая,
+                            в ор&shy;га&shy;низм че&shy;ло&shy;ве&shy;ка ка&shy;ро&shy;тин
+                            пре&shy;вра&shy;ща&shy;ет&shy;ся
+                            в ви&shy;та&shy;мин А, ко&shy;то&shy;рый наи&shy;бо&shy;лее по&shy;ле&shy;зен для
+                            мо&shy;ло&shy;дых жен&shy;щин. Так&shy;же це&shy;ли&shy;тель&shy;ные свой&shy;ства
+                            мор&shy;ко&shy;ви свя&shy;за&shy;ны с укреп&shy;ле&shy;ни&shy;ем
+                            сет&shy;чат&shy;ки
+                            гла&shy;за. Лю&shy;дям, стра&shy;да&shy;ю&shy;щим
+                            бли&shy;зо&shy;ру&shy;ко&shy;стью,
+                            конъ&shy;юнк&shy;ти&shy;ви&shy;та&shy;ми, бле&shy;фа&shy;ри&shy;та&shy;ми,
+                            ноч&shy;ной
+                            сле&shy;по&shy;той и быст&shy;рой утом&shy;ля&shy;е&shy;мо&shy;стью
+                            упо&shy;треб&shy;ле&shy;ние
+                            это&shy;го про&shy;дук&shy;та в пи&shy;щу весь&shy;ма
+                            же&shy;ла&shy;тель&shy;но.</p>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <label for="page2Item3Modal"><img src="images/onion.jpg" alt="Лук"
+                                                      class="itemImg"></label>
+                    <figcaption class="itemDescription">
+                        <p>В лу&shy;ко&shy;ви&shy;цах со&shy;дер&shy;жат&shy;ся
+                            ор&shy;га&shy;ни&shy;че&shy;ские
+                            кис&shy;ло&shy;ты, эфир&shy;ные мас&shy;ла с фи&shy;тон&shy;ци&shy;да&shy;ми,
+                            за&shy;щи&shy;ща&shy;ю&shy;щие
+                            нас от про&shy;студ&shy;ных за&shy;бо&shy;ле&shy;ва&shy;ний, кемп&shy;фе&shy;рол,
+                            ами&shy;но&shy;кис&shy;ло&shy;ты, глю&shy;ко&shy;за,
+                            мик&shy;ро&shy;эле&shy;мен&shy;ты,
+                            ви&shy;та&shy;ми&shy;ны В1, В2, В6, РР, Е, мно&shy;го ви&shy;та&shy;ми&shy;на С,
+                            есть мик&shy;ро и мак&shy;ро&shy;эле&shy;мен&shy;ты: бор, ко&shy;бальт,
+                            мар&shy;га&shy;нец,
+                            мо&shy;либ&shy;ден, медь, ни&shy;кель, ру&shy;би&shy;дий, фтор, хром, фос&shy;фор,
+                            крем&shy;ний, на&shy;трий, ка&shy;лий, каль&shy;ций, маг&shy;ний,
+                            же&shy;ле&shy;зо,
+                            хлор, се&shy;ра (имен&shy;но она от&shy;ве&shy;ча&shy;ет за рез&shy;кий
+                            за&shy;пах),
+                            фла&shy;во&shy;но&shy;и&shy;ды и рас&shy;ти&shy;тель&shy;ный гор&shy;мон
+                            глю&shy;ки&shy;нин.</p>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <label for="page2Item4Modal">
+                        <img src="images/watermelon.jpg" alt="Арбуз" class="itemImg">
+                    </label>
+                    <figcaption class="itemDescription">
+                        <p>На ра&shy;дость всем слад&shy;ко&shy;еж&shy;кам, вы&shy;нуж&shy;ден&shy;ным
+                            огра&shy;ни&shy;чи&shy;вать
+                            се&shy;бя в упо&shy;треб&shy;ле&shy;нии из&shy;люб&shy;лен&shy;ных
+                            про&shy;дук&shy;тов,
+                            ар&shy;буз со&shy;дер&shy;жит лег&shy;ко&shy;усво&shy;я&shy;е&shy;мые ви&shy;ды
+                            са&shy;ха&shy;ра
+                            и не про&shy;ти&shy;во&shy;по&shy;ка&shy;зан да&shy;же боль&shy;ным
+                            са&shy;хар&shy;ным
+                            диа&shy;бе&shy;том. Для лю&shy;дей при&shy;дер&shy;жи&shy;ва&shy;ю&shy;щих&shy;ся
+                            ди&shy;е&shy;ты ар&shy;буз – иде&shy;аль&shy;ное ла&shy;ком&shy;ство, ведь в
+                            ки&shy;ло&shy;грам&shy;ме
+                            ар&shy;буз&shy;ной мя&shy;ко&shy;ти со&shy;дер&shy;жит&shy;ся все&shy;го 500
+                            ка&shy;ло&shy;рий.</p>
+                    </figcaption>
+                </figure>
+                <label for="page2to3" class="nextPage">
+                    <img src="images/002-next.png" alt="Следующая страница"
+                         title="Следующая страница" class="arrow">
+                </label>
+            </section>
+            <section class="page page3">
+                <label for="page3to2" class="prevPage">
+                    <img src="images/001-back.png" alt="Предыдущая страница"
+                         title="Предыдущая страница" class="arrow">
+                </label>
+                <figure class="item">
+                    <label for="page3Item1Modal">
+                        <img src="images/strawberry.jpg" alt="Клубника" class="itemImg">
+                    </label>
+                    <figcaption class="itemDescription">
+                        <p>Клуб&shy;ни&shy;ка сла&shy;вит&shy;ся не толь&shy;ко
+                            не&shy;пре&shy;взой&shy;дён&shy;ны&shy;ми
+                            вку&shy;со&shy;вы&shy;ми ка&shy;че&shy;ства&shy;ми,
+                            но и со&shy;дер&shy;жит мно&shy;же&shy;ство
+                            по&shy;лез&shy;ных ве&shy;ществ: ви&shy;та&shy;ми&shy;ны А, В1, В2, В9, С, Е, К, Н
+                            и РР, а так&shy;же не&shy;об&shy;хо&shy;ди&shy;мые
+                            ор&shy;га&shy;низ&shy;му ми&shy;не&shy;ра&shy;лы:
+                            ка&shy;лий, каль&shy;ций, маг&shy;ний, цинк, йод, фос&shy;фор и на&shy;трий.</p>
+                        <p>Се&shy;зон&shy;ная яго&shy;да очень по&shy;лез&shy;на
+                            для нор&shy;ма&shy;ли&shy;за&shy;ции
+                            де&shy;я&shy;тель&shy;но&shy;сти сер&shy;деч&shy;ной
+                            мыш&shy;цы, ис&shy;поль&shy;зу&shy;ет&shy;ся
+                            как про&shy;фи&shy;лак&shy;ти&shy;ка за&shy;по&shy;ров и
+                            сред&shy;ство для вос&shy;ста&shy;нов&shy;ле&shy;ния
+                            мо&shy;то&shy;ри&shy;ки ки&shy;шеч&shy;ни&shy;ка,
+                            ак&shy;тив&shy;но вли&shy;я&shy;ет
+                            на со&shy;сто&shy;я&shy;ние кож&shy;ных по&shy;кро&shy;вов.
+                            Клуб&shy;ни&shy;ка по&shy;мо&shy;га&shy;ет
+                            при бо&shy;лях в су&shy;ста&shy;вах.</p>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <label for="page3Item2Modal">
+                        <img src="images/red_current.jpg" alt="Красная смородина" class="itemImg">
+                    </label>
+                    <figcaption class="itemDescription">
+                        <p>Крас&shy;ная смо&shy;ро&shy;ди&shy;на бо&shy;га&shy;та ви&shy;та&shy;ми&shy;ном А,
+                            С, Е, со&shy;дер&shy;жит же&shy;ле&shy;зо, ка&shy;лий, ян&shy;тар&shy;ную и
+                            яб&shy;лоч&shy;ную
+                            кис&shy;ло&shy;ту, пек&shy;ти&shy;но&shy;вые и азо&shy;ти&shy;стые
+                            ве&shy;ще&shy;ства
+                            и ми&shy;не&shy;рал се&shy;лен. В яго&shy;дах крас&shy;ной
+                            смо&shy;ро&shy;ди&shy;ны
+                            най&shy;де&shy;но 0,2-0,5 мг/100 г В-ка&shy;ро&shy;ти&shy;на.</p>
+                        <p>
+                            Яго&shy;ды крас&shy;ной смо&shy;ро&shy;ди&shy;ны со&shy;дер&shy;жат
+                            мно&shy;же&shy;ство
+                            ан&shy;ти&shy;ок&shy;си&shy;дан&shy;тов, спо&shy;соб&shy;ных
+                            про&shy;ти&shy;во&shy;сто&shy;ять
+                            ра&shy;ко&shy;вым клет&shy;кам.</p>
+                        <p>
+                            Крас&shy;ная смо&shy;ро&shy;ди&shy;на со&shy;дер&shy;жит
+                            ас&shy;кор&shy;би&shy;но&shy;вой
+                            кис&shy;ло&shy;ты в крас&shy;ных пло&shy;дах в 4-5 раз ни&shy;же, чем в
+                            чёр&shy;ных.
+                            В крас&shy;ной смо&shy;ро&shy;ди&shy;не очень мно&shy;го же&shy;ле&shy;за,
+                            ко&shy;то&shy;рое
+                            так не&shy;об&shy;хо&shy;ди&shy;мо со&shy;су&shy;дам, и ка&shy;лия,
+                            ко&shy;то&shy;рый
+                            бла&shy;го&shy;твор&shy;но вли&shy;я&shy;ет на серд&shy;це и вы&shy;во&shy;дит из
+                            ор&shy;га&shy;низ&shy;ма лиш&shy;нюю жид&shy;кость, не поз&shy;во&shy;ляя
+                            по&shy;яв&shy;лять&shy;ся
+                            оте&shy;кам и меш&shy;кам под гла&shy;за&shy;ми.</p>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <label for="page3Item3Modal">
+                        <img src="images/raspberry.jpg" alt="Малина" class="itemImg">
+                    </label>
+                    <figcaption class="itemDescription">
+                        <p>Яго&shy;да бо&shy;га&shy;та ви&shy;та&shy;ми&shy;на&shy;ми: боль&shy;ше все&shy;го
+                            ви&shy;та&shy;ми&shy;на C, за&shy;тем, в по&shy;ряд&shy;ке убы&shy;ва&shy;ния: B9,
+                            PP, E, B3. А вот спи&shy;сок мик&shy;ро и мак&shy;ро&shy;эле&shy;мен&shy;тов:
+                            ка&shy;лий,
+                            каль&shy;ций, фос&shy;фор, маг&shy;ний, хлор. Со&shy;дер&shy;жит ма&shy;ли&shy;на
+                            и кис&shy;ло&shy;ты: са&shy;ли&shy;ци&shy;ло&shy;вую, яб&shy;лоч&shy;ную,
+                            ли&shy;мон&shy;ную.
+                            На&shy;ли&shy;че&shy;ству&shy;ет в ней и ве&shy;ще&shy;ство
+                            ан&shy;то&shy;ци&shy;ан,
+                            ко&shy;то&shy;рое де&shy;ла&shy;ет ка&shy;пил&shy;ля&shy;ры бо&shy;лее
+                            проч&shy;ны&shy;ми.</p>
+                        <p>Всем из&shy;вест&shy;но по&shy;лез&shy;ное свой&shy;ство ма&shy;ли&shy;ны при
+                            про&shy;студ&shy;ных
+                            за&shy;бо&shy;ле&shy;ва&shy;ни&shy;ях по&shy;ни&shy;жать
+                            тем&shy;пе&shy;ра&shy;ту&shy;ру.
+                            Не мень&shy;ше за&shy;слу&shy;жи&shy;ва&shy;ют вни&shy;ма&shy;ния и
+                            спо&shy;соб&shy;но&shy;сти
+                            этой яго&shy;ды оста&shy;нав&shy;ли&shy;вать кро&shy;во&shy;те&shy;че&shy;ние и
+                            вы&shy;во&shy;дить
+                            ток&shy;си&shy;ны.</p>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <label for="page3Item4Modal">
+                        <img src="images/black_currant.jpg" alt="Чёрная смородина" class="itemImg">
+                    </label>
+                    <figcaption class="itemDescription">
+                        <p>Чер&shy;ная смо&shy;ро&shy;ди&shy;на счи&shy;та&shy;ет&shy;ся кла&shy;де&shy;зем
+                            по&shy;лез&shy;ных
+                            ве&shy;ществ и ви&shy;та&shy;ми&shy;нов, так как в ее яго&shy;дах
+                            со&shy;дер&shy;жат&shy;ся
+                            ви&shy;та&shy;ми&shy;ны C, В1, В2, В6, В9, D, Е, К, Р, А, пек&shy;ти&shy;ны,
+                            ка&shy;ро&shy;ти&shy;но&shy;и&shy;ды,
+                            са&shy;ха&shy;ра, ор&shy;га&shy;ни&shy;че&shy;ская и фос&shy;фор&shy;ная
+                            кис&shy;ло&shy;та,
+                            ду&shy;биль&shy;ные ве&shy;ще&shy;ства, эфир&shy;ное мас&shy;ло,
+                            ви&shy;та&shy;мин
+                            груп&shy;пы К, со&shy;ли фос&shy;фо&shy;ра, же&shy;ле&shy;за и ка&shy;лия.</p>
+                        <p>В ли&shy;стьях чер&shy;ной смо&shy;ро&shy;ди&shy;ны со&shy;дер&shy;жат&shy;ся
+                            по&shy;ми&shy;мо
+                            ви&shy;та&shy;ми&shy;на С, фи&shy;тон&shy;ци&shy;ды, маг&shy;ний,
+                            мар&shy;га&shy;нец,
+                            се&shy;реб&shy;ро, медь, сви&shy;нец, се&shy;ра, эфир&shy;ное мас&shy;ло.</p>
+                    </figcaption>
+                </figure>
+                <div class="buffer nextPage"></div>
+            </section>
+        </main>
+    </body>
 </html>

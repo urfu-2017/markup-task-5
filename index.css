@@ -1,0 +1,171 @@
+body
+{
+    margin: 0;
+}
+
+header
+{
+    background: rgba(239, 233, 104, .55);
+}
+
+h1
+{
+    text-align: center;
+    font: 48px 'Monotype Corsiva', sans-serif;
+    margin-top: 0;
+}
+
+.page
+{
+    display: block;
+    text-align: center;
+    width: 95%;
+    margin: 5% auto 0;
+}
+
+.page2,
+.page3
+{
+    display: none;
+}
+
+.buffer
+{
+    margin: 0 20px;
+    width: 36px;
+}
+
+.item
+{
+    display: inline-block;
+    width: 18%;
+    padding: 5px;
+    margin: 0 10px;
+    vertical-align: top;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.nextPage,
+.prevPage
+{
+    display: inline-block;
+    position: relative;
+    top: 80px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.arrow:hover
+{
+    transform: scale(1.2);
+}
+
+.item:hover .itemDescription
+{
+    display: block;
+}
+
+.item:hover
+{
+    transform: scale(1.2);
+    border: 1px solid rgba(154, 156, 156, .8);
+    box-shadow: 0 0 4px rgba(154, 156, 156, .8);
+}
+
+.itemImg
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+.itemDescription
+{
+    display: none;
+    font: 14px 'Calibri';
+}
+
+.itemDescription p
+{
+    margin: 0;
+    line-height: 1;
+}
+
+.itemModal
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .73);
+    z-index: 1;
+}
+
+.modalBg
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.itemModalImg
+{
+    position: absolute;
+    max-width: 80%;
+    max-height: 80%;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    margin: 0 auto;
+}
+
+.closeButton
+{
+    display: block;
+    width: 3%;
+    height: 5%;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 40px;
+    color: rgba(182, 184, 184, .73);
+    text-align: center;
+    cursor: pointer;
+}
+
+.closeButton:hover
+{
+    color: rgba(223, 225, 225, .86);
+}
+
+input
+{
+    display: none;
+}
+
+input[id$='Modal']:checked + .itemModal
+{
+    display: block;
+}
+
+input[id='page1to2']:checked ~ main .page2,
+input[id='page3to2']:checked ~ main .page2,
+input[id='page2to3']:checked ~ main .page3
+{
+    display: block;
+}
+
+input[id='page2to3']:checked ~ main .page2,
+input[id='page2to3']:checked ~ main .page1,
+input[id='page2to1']:checked ~ main .page2,
+input[id='page2to1']:checked ~ main .page3,
+input[id='page3to2']:checked ~ main .page1,
+input[id='page1to2']:checked ~ main .page1
+{
+    display: none;
+}
