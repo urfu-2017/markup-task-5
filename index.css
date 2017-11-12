@@ -2,7 +2,6 @@
 .description,
 input[name='2'],
 label[for='close'],
-.big-photo,
 label[id='front-1'],
 label[id='front-2'],
 input[name='1']
@@ -15,7 +14,7 @@ input[name='1']
 {
     font-size: 30px;
     height: 50px;
-    margin: 0;
+    margin-top: 12%;
     display: none;
 }
 
@@ -24,7 +23,7 @@ input[name='1']
     float: right;
 }
 
-.big-photo div
+.bigPhoto
 {
     display: none;
     width: 100%;
@@ -34,12 +33,11 @@ input[name='1']
 
 }
 
-.big-photo img
+.bigPhotoImg
 {
     height: 500px;
     width: 600px;
-    margin-left: 250px;
-    float: center;
+    margin-left: 30%;
     background: white;
 
 }
@@ -48,15 +46,15 @@ input[name='1']
 .page2
 {
     position: absolute;
-    margin-top: -60px;
-    margin-left: 150px;
-
+    margin-top: -5%;
+    margin-left: 4%;
+    margin-right: 5%;
 }
 
 .item
 {
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 90px;
     vertical-align: top;
 }
 
@@ -64,6 +62,11 @@ input[name='1']
 .item:hover > .description
 {
     display: block;
+}
+
+.item:hover > .description
+{
+    margin-left: 10%;
 }
 
 .item:hover
@@ -77,36 +80,14 @@ input[name='1']
     text-align: center;
 }
 
-.arrowLeft
-{
-    float: left;
-    background-image: url(images/arrowLeft.svg);
-}
-
-.arrowRight
-{
-    float: right;
-    background-image: url(images/arrowRight.svg);
-}
-
-input[id='front-1']:checked ~ .page1
-{
-    z-index: 1;
-}
-
 input[id='front-1']:checked ~ .page2
 {
-    z-index: -1;
+    display: none;
 }
 
 input[id='front-2']:checked ~ .page1
 {
-    z-index: -1;
-}
-
-input[id='front-2']:checked ~ .page2
-{
-    z-index: 1;
+    display: none;
 }
 
 label[for='close']
@@ -123,14 +104,7 @@ label
     cursor: pointer;
 }
 
-input[id='1']:checked ~ .big-photo .big-photo-1,
-input[id='2']:checked ~ .big-photo .big-photo-2,
-input[id='3']:checked ~ .big-photo .big-photo-3,
-input[id='4']:checked ~ .big-photo .big-photo-4,
-input[id='5']:checked ~ .big-photo .big-photo-5,
-input[id='6']:checked ~ .big-photo .big-photo-6,
-input[id='7']:checked ~ .big-photo .big-photo-7,
-input[id='8']:checked ~ .big-photo .big-photo-8
+.bigPhotoInput:checked + .bigPhoto
 {
     display: block;
     position: absolute;
@@ -138,28 +112,13 @@ input[id='8']:checked ~ .big-photo .big-photo-8
     left: 0;
 }
 
-input[id='1']:checked ~ .page1,
-input[id='1']:checked ~ .page2,
-input[id='2']:checked ~ .page1,
-input[id='2']:checked ~ .page2,
-input[id='3']:checked ~ .page1,
-input[id='3']:checked ~ .page2,
-input[id='4']:checked ~ .page1,
-input[id='4']:checked ~ .page2,
-input[id='5']:checked ~ .page1,
-input[id='5']:checked ~ .page2,
-input[id='6']:checked ~ .page1,
-input[id='6']:checked ~ .page2,
-input[id='7']:checked ~ .page1,
-input[id='7']:checked ~ .page2,
-input[id='8']:checked ~ .page1,
-input[id='8']:checked ~ .page2
+.bigPhotoInput:checked ~ .page1,
+.bigPhotoInput:checked ~ .page2
 {
     display: none;
 }
 
 input:not([id='close']):checked ~ label[for='close'],
-input:not([id='close']):checked ~ .big-photo,
 figure:hover figcaption
 {
     display: block;
