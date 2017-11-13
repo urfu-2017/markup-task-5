@@ -27,7 +27,8 @@ body
     vertical-align: middle;
 }
 
-label[for^='big-image-']:not([class='close-label'])
+label[for^='big-image-']:not([class='close-label']),
+label[class$='-arrow']
 {
     line-height: 300px;
 }
@@ -92,11 +93,6 @@ input[id^='big-image-']:checked ~ .item-content .close-label:before
     right: 2%;
     color: #fff;
     font-size: 3rem;
-}
-
-label[class$='-arrow']
-{
-    line-height: 300px;
 }
 
 label[class$='-arrow']:before
