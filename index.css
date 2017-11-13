@@ -49,7 +49,7 @@ input[type='radio']
     display: none;
 }
 
-.modal
+.modal__popup
 {
     position: fixed;
     left: 0;
@@ -70,7 +70,7 @@ input[type='radio']
 
 }
 
-.modal label:before
+.modal__close:before
 {
     position: absolute;
     right: 0;
@@ -81,12 +81,12 @@ input[type='radio']
     content: '\f00d';
 }
 
-input[name='modal']:not(:checked) + .modal
+.modal__state:not(:checked) + .modal__popup
 {
     display: none;
 }
 
-input[name='modal']:checked + .modal
+.modal__state:checked + .modal__popup
 {
     display: block;
 }
