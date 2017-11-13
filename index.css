@@ -1,0 +1,157 @@
+.img-box
+{
+    display: inline-block;
+    margin: -25px;
+    position: relative;
+    padding: 23px;
+    top: 127px;
+    left: 28px;
+    width: auto;
+}
+
+.img-box:hover
+{
+    -webkit-box-shadow: 0 14px 70px rgba(31, 93, 18, .5);
+    box-shadow: 0 14px 70px rgba(31, 93, 18, .5);
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    z-index: 1;
+    background: rgba(96, 188, 150, .58);
+}
+
+.img-box:hover > p.paragraph-in-img-box
+{
+    display: table-caption;
+    position: relative;
+    z-index: 1;
+}
+
+.img-class
+{
+    max-width: 260px;
+    margin: 14px;
+}
+
+.modal-img
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-img:target
+{
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+p.paragraph-in-img-box
+{
+    display: none;
+    width: 277px;
+    padding: 6px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.modal-image
+{
+    margin: 12% auto;
+    display: -webkit-box;
+    max-width: 41%;
+    max-height: 80%;
+    z-index: 7;
+    position: relative;
+}
+
+.modal-box
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 7;
+}
+
+.close
+{
+    color: #fff;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+input[id='first-fourth-of-img']:checked ~ label[class='pointer right-arrow'],
+input[id='first-fourth-of-img']:checked ~ .first-fourth-of-img,
+input[id='first-fourth-of-img']:checked ~ input[id='second-fourth-of-img'],
+input[id='first-fourth-of-img']:checked ~ .right-arrow::after,
+input[id='second-fourth-of-img']:checked ~ .right-arrow::after,
+input[id='second-fourth-of-img']:checked ~ .second-fourth-of-img
+{
+    display: inline-block;
+}
+
+.left-arrow
+{
+    left: 3%;
+}
+
+.left-arrow::before
+{
+    font-size: 51px;
+    content: '⇇ ';
+}
+
+.left-arrow,
+.right-arrow
+{
+    top: 35%;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    z-index: 9;
+}
+
+.right-arrow
+{
+    right: 2%;
+}
+
+.right-arrow::after
+{
+    font-size: 51px;
+    content: '⇰';
+    display: none;
+}
+
+input[id='first-fourth-of-img']:not(:checked) ~ .first-fourth-of-img,
+input[id='second-fourth-of-img']:not(:checked) ~ .second-fourth-of-img,
+input[id='third-fourth-of-img']:not(:checked) ~ .third-fourth-of-img,
+input[id='first-fourth-of-img']:checked ~ .left-arrow,
+input[id='first-fourth-of-img']:checked ~ input[name='pages'],
+input[id='first-fourth-of-img']:checked ~ label[for*='third'].right-arrow,
+input[id='third-fourth-of-img']:checked ~ label[for*='second'].right-arrow,
+input[id='third-fourth-of-img']:checked ~ label[for*='third'].right-arrow,
+input[id='second-fourth-of-img']:checked ~ label[for*='second'],
+input
+{
+    display: none;
+}
+
+.second-fourth-of-img,
+.third-fourth-of-img
+{
+    margin-left: 66px;
+}
+
+.first-fourth-of-img
+{
+    margin-left: 38px;
+}
