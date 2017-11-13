@@ -3,7 +3,267 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link href="index.css" rel="stylesheet">
 </head>
 <body>
+    <input type="radio" id="page1" class="change_page" name="page" checked>
+    <section class="gallery">
+        <label for="page2">
+            <img class="next_page" src="images/next.png" alt="Стрелка вправо">
+        </label>
+        <section class="harvest">
+            <div class="harvest_content">
+                <label class="photo" for="big_photo_1">
+                    <img class="photo_source" src="images/baklazhan.jpg" alt="Баклажан" title="Баклажан">
+                </label>
+                <div class="description">
+                    <h2 class="harvest_name">Баклажан</h2>
+                    <p class="description_harvest">
+                        Ба&shy;кла&shy;жа&shy;ны - это сыт&shy;ный овощ, од&shy;но&shy;вре&shy;мен&shy;но
+                        об&shy;ла&shy;да&shy;ю&shy;щий низ&shy;кой ка&shy;ло&shy;рий&shy;но&shy;стью
+                        - в 100 г про&shy;дук&shy;та все&shy;го - 24 кКал.
+                        Упо&shy;треб&shy;ле&shy;ние в пи&shy;щу по&shy;мо&shy;га&shy;ет
+                        сни&shy;зить ка&shy;ло&shy;рий&shy;ность ра&shy;ци&shy;о&shy;на
+                        и пре&shy;пят&shy;ству&shy;ют усво&shy;е&shy;нию
+                        лиш&shy;не&shy;го жи&shy;ра и са&shy;ха&shy;ра,
+                        что по&shy;лез&shy;но диа&shy;бе&shy;ти&shy;кам.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="harvest">
+            <div class="harvest_content">
+                <label class="photo" for="big_photo_2">
+                    <img class="photo_source" src="images/carrots.jpg" alt="Морковь" title="Морковь">
+                </label>
+                <div class="description">
+                    <h2 class="harvest_name">Морковь</h2>
+                    <p class="description_harvest">
+                        По&shy;сто&shy;ян&shy;ное упо&shy;треб&shy;ле&shy;ние боль&shy;шо&shy;го
+                        ко&shy;ли&shy;че&shy;ства мор&shy;ко&shy;ви мо&shy;жет
+                        из&shy;ме&shy;нить цвет ко&shy;жи че&shy;ло&shy;ве&shy;ка
+                        на жел&shy;то&shy;ва&shy;то-оран&shy;же&shy;вый.
+                        Это свой&shy;ство мор&shy;ко&shy;ви ис&shy;поль&shy;зу&shy;ют
+                        со&shy;труд&shy;ни&shy;ки рос&shy;сий&shy;ских
+                        зоо&shy;пар&shy;ков, для со&shy;хра&shy;не&shy;ния
+                        окрас&shy;ки опе&shy;ре&shy;ния фла&shy;мин&shy;го.
+                        В при&shy;ро&shy;де фла&shy;мин&shy;го едят рач&shy;ков,
+                        в на&shy;шей стра&shy;не – мор&shy;ковь.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="harvest">
+            <div class="harvest_content">
+                <label class="photo" for="big_photo_3">
+                    <img class="photo_source" src="images/pepper.jpg" alt="Перец" title="Перец">
+                </label>
+                <div class="description">
+                    <h2 class="harvest_name">Перец</h2>
+                    <p class="description_harvest">
+                        По сво&shy;им свой&shy;ствам бол&shy;гар&shy;ский пе&shy;рец в чем-то да&shy;же
+                        по&shy;хож на шо&shy;ко&shy;лад. Он так&shy;же
+                        про&shy;во&shy;ци&shy;ру&shy;ет вы&shy;брос в кровь
+                        эн&shy;дор&shy;фи&shy;нов, &quot;гор&shy;мо&shy;нов
+                        сча&shy;стья&quot;. Од&shy;на&shy;ко по срав&shy;не&shy;нию
+                        со слад&shy;ки&shy;ми ла&shy;ком&shy;ства&shy;ми
+                        он со&shy;всем не ка&shy;ло&shy;рий&shy;ный.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="harvest">
+            <div class="harvest_content">
+                <label class="photo" for="big_photo_4">
+                    <img class="photo_source" src="images/strawberry.jpg" alt="Клубничка" title="Клубничка">
+                </label>
+                <div class="description">
+                    <h2 class="harvest_name">Клубничка</h2>
+                    <p class="description_harvest">
+                        В это труд&shy;но по&shy;ве&shy;рить, но клуб&shy;ни&shy;ка луч&shy;ше
+                        и эф&shy;фек&shy;тив&shy;ней чем зуб&shy;ная па&shy;с&shy;та
+                        спо&shy;соб&shy;ству&shy;ет от&shy;бе&shy;ли&shy;ва&shy;нию
+                        зу&shy;бов!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <input type="checkbox" id="big_photo_1" class="big_photos">
+        <label for="big_photo_1" class="big_photo">
+            <span class="cross"></span>
+            <img class="photo_source" src="images/baklazhan.jpg" alt="Баклажан" title="Баклажан">
+        </label>
+        <input type="checkbox" id="big_photo_2" class="big_photos">
+        <label for="big_photo_2" class="big_photo">
+            <span class="cross"></span>
+            <img class="photo_source" src="images/carrots.jpg" alt="Морковь" title="Морковь">
+        </label>
+        <input type="checkbox" id="big_photo_3" class="big_photos">
+        <label for="big_photo_3" class="big_photo">
+            <span class="cross"></span>
+            <img class="photo_source" src="images/pepper.jpg" alt="Перец" title="Перец">
+        </label>
+        <input type="checkbox" id="big_photo_4" class="big_photos">
+        <label for="big_photo_4" class="big_photo">
+            <span class="cross"></span>
+            <img class="photo_source" src="images/strawberry.jpg" alt="Клубничка" title="Клубничка">
+        </label>
+    </section>
+    <input type="radio" id="page2" class="change_page" name="page">
+    <section class="gallery">
+        <label for="page3">
+            <img class="next_page" src="images/next.png" alt="Стрелка вправо">
+        </label>
+        <label for="page1">
+            <img class="previous_page" src="images/previous.png" alt="Стрелка влево">
+        </label>
+        <section class="harvest">
+            <div class="harvest_content">
+                <label class="photo" for="big_photo_5">
+                    <img class="photo_source" src="images/tomato.jpg" alt="Помидор" title="Помидор">
+                </label>
+                <div class="description">
+                    <h2 class="harvest_name">Помидор</h2>
+                    <p class="description_harvest">
+                        Бла&shy;го&shy;да&shy;ря боль&shy;шо&shy;му со&shy;дер&shy;жа&shy;нию так
+                        на&shy;зы&shy;ва&shy;е&shy;мо&shy;го &quot;гор&shy;мо&shy;на
+                        сча&shy;стья&quot; се&shy;ро&shy;то&shy;ни&shy;на,
+                        по&shy;ми&shy;до&shy;ры спо&shy;соб&shy;ны пре&shy;крас&shy;но
+                        под&shy;ни&shy;мать на&shy;стро&shy;е&shy;ние да&shy;же
+                        в са&shy;мый уны&shy;лый и пас&shy;мур&shy;ный
+                        день.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="harvest">
+            <div class="harvest_content">
+                <label class="photo" for="big_photo_6">
+                    <img class="photo_source" src="images/potatoes.jpg" alt="Картофель" title="Картофель">
+                </label>
+                <div class="description">
+                    <h2 class="harvest_name">Картофель</h2>
+                    <p class="description_harvest">
+                        Кар&shy;то&shy;фель мож&shy;но счи&shy;тать ядо&shy;ви&shy;тым рас&shy;те&shy;
+                        ни&shy;ем, так как его яго&shy;ды весь&shy;ма ток&shy;сич&shy;ны
+                        для че&shy;ло&shy;ве&shy;ка: для отрав&shy;ле&shy;ния
+                        до&shy;ста&shy;точ&shy;но съесть 1-2 шту&shy;ки.
+                        Для то&shy;го, что&shy;бы отра&shy;вить&shy;ся
+                        со&shy;ла&shy;ни&shy;ном, ко&shy;то&shy;рый на&shy;кап&shy;ли&shy;ва&shy;ют
+                        клуб&shy;ни кар&shy;то&shy;фе&shy;ля на све&shy;ту,
+                        не&shy;об&shy;хо&shy;ди&shy;мо съесть око&shy;ло
+                        ки&shy;ло&shy;грам&shy;ма сы&shy;рых не&shy;очи&shy;щен&shy;ных
+                        клуб&shy;ней кар&shy;то&shy;фе&shy;ля зе&shy;лё&shy;но&shy;го
+                        цве&shy;та.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="harvest">
+            <div class="harvest_content">
+                <label class="photo" for="big_photo_7">
+                    <img class="photo_source" src="images/cucumber.jpg" alt="Огурец" title="Огурец">
+                </label>
+                <div class="description">
+                    <h2 class="harvest_name">Огурец</h2>
+                    <p class="description_harvest">
+                        Более 95% огурца состоит из воды.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="harvest">
+            <div class="harvest_content">
+                <label class="photo" for="big_photo_8">
+                    <img class="photo_source" src="images/watermelon.jpg" alt="Арбуз" title="Арбуз">
+                </label>
+                <div class="description">
+                    <h2 class="harvest_name">Арбуз</h2>
+                    <p class="description_harvest">
+                        Ар&shy;буз со&shy;сто&shy;ит на 92 про&shy;цен&shy;та из во&shy;ды,
+                        пре&shy;крас&shy;но осве&shy;жая в жар&shy;кий лет&shy;ний день. Со&shy;глас&shy;но
+                        ис&shy;сле&shy;до&shy;ва&shy;ни&shy;ям, ар&shy;буз
+                        по&shy;мо&shy;га&shy;ет на&shy;сы&shy;тить вас
+                        вла&shy;гой в два ра&shy;за луч&shy;ше ста&shy;ка&shy;на
+                        во&shy;ды по&shy;сле ин&shy;тен&shy;сив&shy;ной
+                        тре&shy;ни&shy;ров&shy;ки. К то&shy;му же он со&shy;дер&shy;жит
+                        та&shy;кие со&shy;ли, как каль&shy;ций, маг&shy;ний,
+                        на&shy;трий и ка&shy;лий, ко&shy;то&shy;рые под&shy;дер&shy;жи&shy;ва&shy;ют
+                        уро&shy;вень вла&shy;ги в ор&shy;га&shy;низ&shy;ме
+                        и умень&shy;ша&shy;ют ве&shy;ро&shy;ят&shy;ность
+                        обез&shy;во&shy;жи&shy;ва&shy;ния.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <input type="checkbox" id="big_photo_5" class="big_photos">
+        <label for="big_photo_5" class="big_photo">
+            <span class="cross"></span>
+            <img class="photo_source" src="images/tomato.jpg" alt="Помидор" title="Помидор">
+        </label>
+        <input type="checkbox" id="big_photo_6" class="big_photos">
+        <label for="big_photo_6" class="big_photo">
+            <span class="cross"></span>
+            <img class="photo_source" src="images/potatoes.jpg" alt="Картофель" title="Картофель">
+        </label>
+        <input type="checkbox" id="big_photo_7" class="big_photos">
+        <label for="big_photo_7" class="big_photo">
+            <span class="cross"></span>
+            <img class="photo_source" src="images/cucumber.jpg" alt="Огурец" title="Огурец">
+        </label>
+        <input type="checkbox" id="big_photo_8" class="big_photos">
+        <label for="big_photo_8" class="big_photo">
+            <span class="cross"></span>
+            <img class="photo_source" src="images/watermelon.jpg" alt="Арбуз" title="Арбуз">
+        </label>
+    </section>
+    <input type="radio" id="page3" class="change_page" name="page">
+    <section class="gallery">
+        <label for="page2">
+            <img class="previous_page" src="images/previous.png" alt="Стрелка влево">
+        </label>
+        <section class="harvest">
+            <div class="harvest_content">
+                <label class="photo" for="big_photo_9">
+                    <img class="photo_source" src="images/apple.jpg" alt="Яблоко" title="Яблоко">
+                </label>
+                <div class="description">
+                    <h2 class="harvest_name">Яблоко</h2>
+                    <p class="description_harvest">
+                        Если бросить яблоко в воду, оно не утонет, так как на четверть состоит
+                        из... воздуха.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="harvest">
+            <div class="harvest_content">
+                <label class="photo" for="big_photo_10">
+                    <img class="photo_source" src="images/pear.jpg" alt="Груша" title="Груша">
+                </label>
+                <div class="description">
+                    <h2 class="harvest_name">Груша</h2>
+                    <p class="description_harvest">
+                        В Рос&shy;сии с дав&shy;них вре&shy;мён из дре&shy;ве&shy;си&shy;ны гру&shy;ши
+                        про&shy;из&shy;во&shy;дят рез&shy;ные дос&shy;ки,
+                        ко&shy;то&shy;рые при&shy;ме&shy;ня&shy;ют&shy;ся
+                        в про&shy;из&shy;вод&shy;стве пе&shy;чат&shy;ных
+                        пря&shy;ни&shy;ков в ка&shy;че&shy;стве ре&shy;льеф&shy;ной
+                        ос&shy;но&shy;вы.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <input type="checkbox" id="big_photo_9" class="big_photos">
+        <label for="big_photo_9" class="big_photo">
+            <span class="cross"></span>
+            <img class="photo_source" src="images/apple.jpg" alt="Яблоко" title="Яблоко">
+        </label>
+        <input type="checkbox" id="big_photo_10" class="big_photos">
+        <label for="big_photo_10" class="big_photo">
+            <span class="cross"></span>
+            <img class="photo_source" src="images/pear.jpg" alt="Груша" title="Груша">
+        </label>
+    </section>
 </body>
 </html>

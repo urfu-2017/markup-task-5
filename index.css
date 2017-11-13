@@ -1,0 +1,158 @@
+@font-face
+{
+    font-family: 'Sirona';
+    src: url('10755.otf');
+}
+
+.gallery
+{
+    margin: 100px 50px;
+    text-align: center;
+}
+
+.next_page
+{
+    width: 50px;
+    margin-top: 8%;
+    float: right;
+}
+
+.previous_page
+{
+    width: 50px;
+    margin-top: 8%;
+    float: left;
+}
+
+.harvest
+{
+    display: inline-block;
+    margin: 0 1%;
+    width: 20%;
+    font-family: 'Sirona';
+    vertical-align: top;
+}
+
+.harvest_content
+{
+    text-align: center;
+}
+
+.photo_source
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+.description
+{
+    display: none;
+}
+
+.harvest_name
+{
+    text-align: center;
+}
+
+.harvest_content:hover
+{
+    position: relative;
+    width: 150%;
+    max-width: 350px;
+    margin: 1% auto;
+    padding: 1%;
+    box-shadow: 0 4px 8px #123;
+    background: white;
+}
+
+.harvest:hover .photo_source
+{
+    width: 70%;
+}
+
+.harvest:hover .description
+{
+    display: block;
+    hyphens: manual;
+    font-size: 14px;
+}
+
+.big_photos,
+.big_photo,
+.close
+{
+    display: none;
+}
+
+.big_photo
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(165, 161, 161, .86);
+    text-align: center;
+}
+
+.big_photos:checked + .big_photo
+{
+    display: block;
+    pointer-events: none;
+}
+
+.big_photos:checked + .big_photo .cross
+{
+    pointer-events: auto;
+}
+
+.big_photos:checked + .big_photo .photo_source
+{
+    width: 40%;
+    margin-top: 3%;
+    border-radius: 80%;
+}
+
+.cross
+{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    width: 40px;
+    height: 40px;
+    opacity: .3;
+    cursor: pointer;
+}
+
+.cross:hover
+{
+    opacity: 1;
+}
+
+.cross:before,
+.cross:after
+{
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+.cross:before
+{
+    transform: rotate(45deg);
+}
+
+.cross:after
+{
+    transform: rotate(-45deg);
+}
+
+.change_page,
+.change_page:not(:checked) + .gallery
+{
+    display: none;
+}
