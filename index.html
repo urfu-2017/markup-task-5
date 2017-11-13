@@ -3,7 +3,169 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <header>
+        <h1 class="header">Галерея овощей</h1>
+    </header>
+    <main>
+        <input type="radio" name="slide" id="slide-1" checked>
+        <input type="radio" name="slide" id="slide-2">
+        <input type="radio" name="slide" id="slide-3">
+        <label for="slide-1" class="pointer pointer__back">
+        </label>
+        <label for="slide-2" class="pointer pointer__forward">
+        </label>
+        <label for="slide-3" class="pointer pointer__forward_to-begin">
+        </label>
+        <section class="slide slide-1">
+            <article class="vegetable">
+                <img class="vegetable__image" src="images/paprika.jpeg" alt="перец">
+                <div class="vegetable__description">
+                    <a href="#modal-1">
+                        <img class="vegetable__image vegetable__image_hover"
+                        src="images/paprika.jpeg" alt="перец">
+                    </a>
+                    <p class="vegetable__text">
+                        Пе́рец стручко́вый, Перец овощной однолетний — вид однолетних травянистых
+                        растений ряда Capsicum семейства Паслёновые, а также его плоды.
+                        Сорта перца стручкового делят на сладкие и горькие.
+                    </p>
+                </div>
+                <div class="modal" id="modal-1">
+                    <img class="modal__image" src="images/paprika.jpeg" alt="перец">
+                    <a href="#" class="modal__close" title="закрыть">X</a>
+                </div>
+            </article>
+            <article class="vegetable">
+                <img class="vegetable__image" src="images/pumpkins.jpeg" alt="тыква">
+                <div class="vegetable__description">
+                    <a href="#modal-2">
+                        <img class="vegetable__image vegetable__image_hover"
+                         src="images/pumpkins.jpeg" alt="тыква">
+                    </a>
+                    <p class="vegetable__text">
+                        Ты́ква — род травянистых растений семейства Тыквенные.
+                        Под словом «тыква» в России обычно понимается вид Тыква
+                        обыкновенная, широко распространённый и культивируемый как
+                        пищевое и кормовое растение.
+                    </p>
+                </div>
+                <div class="modal" id="modal-2">
+                    <img class="modal__image" src="images/pumpkins.jpeg" alt="тыква">
+                    <a href="#" class="modal__close" title="закрыть">X</a>
+                </div>
+            </article>
+            <article class="vegetable">
+                <img class="vegetable__image" src="images/potatoes.jpeg" alt="картофель">
+                <div class="vegetable__description">
+                    <a href="#modal-3">
+                        <img class="vegetable__image vegetable__image_hover"
+                         src="images/potatoes.jpeg" alt="картофель">
+                    </a>
+                    <p class="vegetable__text">
+                        Карто́фель, или Паслён клубнено́сный, — вид многолетних клубненосных
+                        травянистых растений из рода Паслён семейства Паслёновые. Клубни
+                        картофеля являются важным пищевым продуктом.
+                        Плоды ядовиты, в связи с содержанием в них соланина.
+                    </p>
+                </div>
+                <div class="modal" id="modal-3">
+                    <img class="modal__image" src="images/potatoes.jpeg" alt="картофель">
+                    <a href="#" class="modal__close" title="закрыть">X</a>
+                </div>
+            </article>
+            <article class="vegetable">
+                <img class="vegetable__image" src="images/tomatoes.jpeg" alt="томаты">
+                <div class="vegetable__description">
+                    <a href="#modal-4">
+                        <img class="vegetable__image vegetable__image_hover"
+                         src="images/tomatoes.jpeg" alt="томаты">
+                    </a>
+                    <p class="vegetable__text">
+                        Тома́т, или помидор — однолетнее или многолетнее травянистое растение,
+                        вид рода Паслён семейства Паслёновые. Возделывается как овощная
+                        культура.
+                    </p>
+                </div>
+                <div class="modal" id="modal-4">
+                    <img class="modal__image" src="images/tomatoes.jpeg" alt="томаты">
+                    <a href="#" class="modal__close" title="закрыть">X</a>
+                </div>
+            </article>
+        </section>
+        <section class="slide slide-2">
+            <article class="vegetable">
+                <img class="vegetable__image" src="images/carrots.jpeg" alt="морковь">
+                <div class="vegetable__description">
+                    <a href="#modal-5">
+                        <img class="vegetable__image vegetable__image_hover"
+                         src="images/carrots.jpeg" alt="морковь">
+                    </a>
+                    <p class="vegetable__text">
+                        Морковь посевная — двулетнее растение, подвид вида морковь дикая.
+                        Обычно в быту под словом «морковь» подразумевается широко
+                        распространенный корнеплод именно этого растения.
+                    </p>
+                </div>
+                <div class="modal" id="modal-5">
+                    <img class="modal__image" src="images/carrots.jpeg" alt="морковь">
+                    <a href="#" class="modal__close" title="закрыть">X</a>
+                </div>
+            </article>
+            <article class="vegetable">
+                <img class="vegetable__image" src="images/cucumbers.jpeg" alt="огурцы">
+                <div class="vegetable__description">
+                    <a href="#modal-6">
+                        <img class="vegetable__image vegetable__image_hover"
+                         src="images/cucumbers.jpeg" alt="огурцы">
+                    </a>
+                    <p class="vegetable__text">
+                        Огуре́ц обыкнове́нный, или Огурец посевно́й — однолетнее травянистое
+                        растение, вид рода Огурец семейства Тыквенные, овощная культура.
+                    </p>
+                </div>
+                <div class="modal" id="modal-6">
+                    <img class="modal__image" src="images/cucumbers.jpeg" alt="огурцы">
+                    <a href="#" class="modal__close" title="закрыть">X</a>
+                </div>
+            </article>
+            <article class="vegetable">
+                <img class="vegetable__image" src="images/cabbage.jpeg" alt="капуста">
+                <div class="vegetable__description">
+                    <a href="#modal-7">
+                        <img class="vegetable__image vegetable__image_hover"
+                         src="images/cabbage.jpeg" alt="капуста">
+                    </a>
+                    <p class="vegetable__text">
+                        Капу́ста огоро́дная:460 — двулетнее растение, сельскохозяйственная
+                        культура; вид рода Капуста семейства Капустные.
+                    </p>
+                </div>
+                <div class="modal" id="modal-7">
+                    <img class="modal__image" src="images/cabbage.jpeg" alt="капуста">
+                    <a href="#" class="modal__close" title="закрыть">X</a>
+                </div>
+            </article>
+            <article class="vegetable">
+                <img class="vegetable__image" src="images/onion.jpeg" alt="лук">
+                <div class="vegetable__description">
+                    <a href="#modal-8">
+                        <img class="vegetable__image vegetable__image_hover"
+                         src="images/onion.jpeg" alt="лук">
+                    </a>
+                    <p class="vegetable__text">
+                        Лук ре́пчатый — многолетнее травянистое растение, вид рода Лук
+                        семейства Луковые, широко распространённая овощная культура.
+                    </p>
+                </div>
+                <div class="modal" id="modal-8">
+                    <img class="modal__image" src="images/onion.jpeg" alt="лук">
+                    <a href="#" class="modal__close" title="закрыть">X</a>
+                </div>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
