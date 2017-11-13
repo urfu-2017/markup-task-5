@@ -1,34 +1,35 @@
 body
 {
     margin: 0;
-	padding: 0;
+    padding: 0;
 }
 
 p
 {
-	text-align: center;
+    text-align: center;
     overflow: hidden;
     visibility: hidden;
 }
 
 img
 {
-	width: 100%;
-	max-height: 75%;
+    width: 100%;
+    max-height: 75%;
     vertical-align: middle;
 }
 
 section
 {
-	width: 20%;
-	margin-right: 0.25%;
-	height: 100%;
-	display: block;
+    width: 20%;
+    margin-right: .25%;
+    height: 100%;
+    display: block;
     float: left;
 }
+
 .carousel-item
 {
-	width: 33.33%;
+    width: 33.33%;
     height: 100%;
     display: block;
     float: left;
@@ -39,12 +40,11 @@ section
     width: 100%;
     position: relative;
     padding-bottom: 30%;
-    overflow: hidden;
 }
 
 .carousel-items
 {
-	margin: 0;
+    margin: 0;
     padding: 0;
     list-style: none;
     display: block;
@@ -75,13 +75,12 @@ section
     left: -100%;
 }
 
-
 .slide3:checked ~ .carousel-items
 {
     left: -200%;
 }
 
-img:hover ~ p
+label:hover ~ p
 {
     opacity: 1;
     visibility: visible;
@@ -89,7 +88,7 @@ img:hover ~ p
 
 .big-image img
 {
-	z-index: 10;
+    z-index: 10;
     max-height: 100%;
 }
 
@@ -110,8 +109,9 @@ img:hover ~ p
 
 .switch
 {
-	display: none
+    display: none;
 }
+
 .switch:checked + .big-image
 {
     display: block;
@@ -141,17 +141,17 @@ img:hover ~ p
 .cross:before
 {
     -webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .cross:after
 {
     -webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 label.slide1Back,
@@ -159,9 +159,9 @@ label.slide2Back,
 label.slide3Back
 {
     width: 9%;
-	-webkit-transform: scale(.5);
-	-ms-transform: scale(.5);
-    -o-transform: scale(.5);	
+    -webkit-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
     transform: scale(.5);
     margin-top: 60px;
     display: block;
@@ -172,10 +172,10 @@ label.slide1,
 label.slide2,
 label.slide3
 {
-	width: 9%;
-	-webkit-transform: scale(.5);
-	-ms-transform: scale(.5);
-    -o-transform: scale(.5);	
+    width: 9%;
+    -webkit-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
     transform: scale(.5);
     margin-top: 60px;
     display: block;
