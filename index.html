@@ -6,23 +6,27 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+    <input id="card1-selected" name="card-selected" type="radio">
+    <input id="card2-selected" name="card-selected" type="radio">
+    <input id="card3-selected" name="card-selected" type="radio">
+    <input id="card4-selected" name="card-selected" type="radio">
+    <input id="card5-selected" name="card-selected" type="radio">
+    <input id="card6-selected" name="card-selected" type="radio">
+    <input id="card7-selected" name="card-selected" type="radio">
+    <input id="card8-selected" name="card-selected" type="radio">
+    <input id="card9-selected" name="card-selected" type="radio">
+    <input id="card10-selected" name="card-selected" type="radio">
+    <input id="nocard-selected" name="card-selected" type="radio" checked>
     <input name="slide" id="slide1" type="radio" checked>
     <input name="slide" id="slide2" type="radio">
     <input name="slide" id="slide3" type="radio">
-    <input id="cardi-selected" name="cardi-selected" type="checkbox">
-    <input id="cardii-selected" name="cardii-selected" type="checkbox">
-    <input id="cardiii-selected" name="cardiii-selected" type="checkbox">
-    <input id="cardiv-selected" name="cardiv-selected" type="checkbox">
-    <input id="cardv-selected" name="cardv-selected" type="checkbox">
-    <input id="cardvi-selected" name="cardvi-selected" type="checkbox">
-    <input id="cardvii-selected" name="cardvii-selected" type="checkbox">
-    <input id="cardviii-selected" name="cardviii-selected" type="checkbox">
-    <input id="cardix-selected" name="cardix-selected" type="checkbox">
-    <input id="cardx-selected" name="cardx-selected" type="checkbox">
     <div class="gallery">
-        <img src="transparent_arrow.png" alt="стрелка влево" class="arrow slide1-arrows left-arrow">
+        <img src="transparent_arrow.png" alt="стрелка влево"
+            class="arrow slide1-arrows left-arrow" title="стрелка">
         <div class="card first-four">
-            <label for="cardi-selected"><img src="imagens/i.jpg" alt="Томаты"></label>
+            <label for="card1-selected">
+                <img src="imagens/i.jpg" alt="Томаты" title="Фотография томата">
+            </label>
             <div class="description">
                     Список полезных свойств томатов, которые благотворно влияют на организм
                     человека, можно продолжить. Так, помидоры помогают справиться с ожирением.
@@ -33,8 +37,13 @@
                     вкусно.
             </div>
         </div>
+        <div class="filler">
+            <img src="imagens/i.jpg" alt="Томаты" title="Фотография томата">
+        </div>
         <div class="card first-four">
-            <label for="cardii-selected"><img src="imagens/ii.jpg" alt="Тыквы"></label>
+            <label for="card2-selected">
+                <img src="imagens/ii.jpg" alt="Тыквы" title="Фотография тыквы">
+            </label>
             <div class="description">
                     Приход осени всегда радует обилием ярких красок и вкусовых впечатлений.
                     Этот сезон щедро одаривает разнообразными витаминами, буквально засыпая
@@ -43,8 +52,11 @@
                     овощ приятно радует глаз, поднимая настроение даже в непогоду.
             </div>
         </div>
+        <div class="filler">
+            <img src="imagens/ii.jpg" alt="Тыквы" title="Фотография тыквы">
+        </div>
         <div class="card first-four">
-            <label for="cardiii-selected"><img src="imagens/iii.jpg" alt="Яблоки"></label>
+            <label for="card3-selected"><img src="imagens/iii.jpg" alt="Яблоки"></label>
             <div class="description">
                     Свежее, недавно сорванное с дерева яблоко содержит множество полезных веществ,
                     ежедневно необходимых организму для нормальной, здоровой жизнедеятельности.
@@ -52,9 +64,16 @@
                     различных бета-каротинов и аскорбиновая кислота. 
             </div>
         </div>
-        <label for="slide1" class="arrow slide2-arrows left-arrow"><img src="left_arrow.png" alt="стрелка влево"></label>
+        <div class="filler">
+            <img src="imagens/iii.jpg" alt="Яблоки" title="Фотография яблок">
+        </div>
+        <label for="slide1" class="arrow slide2-arrows left-arrow">
+            <img src="left_arrow.png" alt="стрелка влево" title="стрелка">
+        </label>
         <div class="card first-four second-four">
-            <label for="cardiv-selected"><img src="imagens/iv.jpg" alt="Кабачки"></label>
+            <label for="card4-selected">
+                <img src="imagens/iv.jpg" alt="Кабачки" title="Фотография кабачков">
+            </label>
             <div class="description">
                     Польза кабачков состоит не только в их приятном и нежном вкусе, который мы
                     привыкли ощущать в супах или рагу, или в качестве гарнира, но кабачки
@@ -64,9 +83,16 @@
                     других заболеваниях.
             </div>
         </div>
-        <label for="slide2" class="arrow slide1-arrows right-arrow"><img src="right_arrow.png" alt="стрелка вправо"></label>
+        <div class="filler">
+            <img src="imagens/iv.jpg" alt="Кабачки" title="Фотография кабачков">
+        </div>
+        <label for="slide2" class="arrow slide1-arrows right-arrow">
+            <img src="right_arrow.png" alt="стрелка вправо" title="стрелка">
+        </label>
         <div class="card second-four">
-            <label for="cardv-selected"><img src="imagens/v.jpg" alt="Баклажаны"></label>
+            <label for="card5-selected">
+                <img src="imagens/v.jpg" alt="Баклажаны" title="Фотография баклажанов">
+            </label>
             <div class="description">
                     Характер у баклажана непростой, с горчинкой. Вызывает ее соланин – природный
                     яд, который содержится в кожуре фиолетовых плодов.
@@ -75,8 +101,13 @@
                     и минералов, которые оказывают на здоровье человека сильнейшее влияние.
             </div>
         </div>
+        <div class="filler">
+            <img src="imagens/v.jpg" alt="Баклажаны" title="Фотография баклажанов">
+        </div>
         <div class="card second-four">
-            <label for="cardvi-selected"><img src="imagens/vi.jpg" alt="Груши"></label>
+            <label for="card6-selected">
+                <img src="imagens/vi.jpg" alt="Груши" title="Фотография груш">
+            </label>
             <div class="description">
                     Груши – фрукты, известные человеку с глубокой древности.
                     Сейчас уже никто точно не скажет, когда и откуда она пришла к человеку.
@@ -85,18 +116,32 @@
                     Индусы ее одушевляли, а в Европе долгое время ею лечились.
             </div>
         </div>
-        <label for="slide2" class="arrow slide3-arrows left-arrow"><img src="left_arrow.png" alt="стрелка влево"></label>
+        <div class="filler">
+            <img src="imagens/vi.jpg" alt="Груши" title="Фотография груш">
+        </div>
+        <label for="slide2" class="arrow slide3-arrows left-arrow">
+            <img src="left_arrow.png" alt="стрелка влево" title="стрелка">
+        </label>
         <div class="card second-four third-four">
-            <label for="cardvii-selected"><img src="imagens/vii.jpg" alt="Вишни"></label>
+            <label for="card7-selected">
+                <img src="imagens/vii.jpg" alt="Вишни" title="Фотография вишней">
+            </label>
             <div class="description">
                     До сих пор ученые не пришли к единому мнению: вишня — это ягода или фрукт?
                     Одни относят ее к ягодам, вторые утверждают, что это косточковый фрукт.
                     Однако, разногласия не делают вкус вишни хуже, а состав менее ценным.
             </div>
         </div>
-        <label for="slide3" class="arrow slide2-arrows right-arrow"><img src="right_arrow.png" alt="стрелка вправо"></label>
+        <div class="filler">
+            <img src="imagens/vii.jpg" alt="Вишни" title="Фотография вишней">
+        </div>
+        <label for="slide3" class="arrow slide2-arrows right-arrow">
+            <img src="right_arrow.png" alt="стрелка вправо" title="стрелка">
+        </label>
         <div class="card third-four">
-            <label for="cardviii-selected"><img src="imagens/viii.jpg" alt="Малина"></label>
+            <label for="card8-selected">
+                <img src="imagens/viii.jpg" alt="Малина" title="Фотография малины">
+            </label>
             <div class="description">
                     Все мы помним, как в детстве при простуде нам давали малиновое варенье. Дело
                     не только во вкусовых качествах. Малина содержит очень много витамина С и большой
@@ -105,8 +150,13 @@
                     химии. Поэтому чай с малиной предпочтительнее таблеток, особенно для детей.
             </div>
         </div>
+        <div class="filler">
+            <img src="imagens/viii.jpg" alt="Малина" title="Фотография малины">
+        </div>
         <div class="card third-four">
-            <label for="cardix-selected"><img src="imagens/ix.jpg" alt="Черника"></label>
+            <label for="card9-selected">
+                <img src="imagens/ix.jpg" alt="Черника" title="Фотография черники">
+            </label>
             <div class="description">
                     Входящие биологически активные соединения наделяют чернику лечебными
                     свойствами. В ягоде присутствует более 7% дубильных веществ, которые влияют
@@ -116,8 +166,13 @@
                     выделяют флавоноиды, танин, пронтоантоцианиды.
             </div>
         </div>
+        <div class="filler">
+            <img src="imagens/ix.jpg" alt="Черника" title="Фотография черники">
+        </div>
         <div class="card third-four">
-            <label for="cardx-selected"><img src="imagens/x.jpg" alt="Картофель"></label>
+            <label for="card10-selected">
+                <img src="imagens/x.jpg" alt="Картофель" title="Фотография картофеля">
+            </label>
             <div class="description">
                     Картошка — это незаменимый источник крахмала, который благотворно влияет
                     на пищеварение. Периодическое употребление отварного и тушеного картофеля
@@ -126,28 +181,22 @@
                     700 мг калия. Это большая часть рекомендуемой суточной нормы.
             </div>
         </div>
+        <div class="filler">
+            <img src="imagens/x.jpg" alt="Картофель" title="Фотография картофеля">
+        </div>
     </div>
     <div class="images">
-        <label for="cardi-selected"><span class="close"></span></label> 
-        <label for="cardii-selected"><span class="close"></span></label> 
-        <label for="cardiii-selected"><span class="close"></span></label> 
-        <label for="cardiv-selected"><span class="close"></span></label> 
-        <label for="cardv-selected"><span class="close"></span></label> 
-        <label for="cardvi-selected"><span class="close"></span></label> 
-        <label for="cardvii-selected"><span class="close"></span></label> 
-        <label for="cardviii-selected"><span class="close"></span></label> 
-        <label for="cardix-selected"><span class="close"></span></label> 
-        <label for="cardx-selected"><span class="close"></span></label> 
-        <img src="imagens/i.jpg" alt="Томаты">
-        <img src="imagens/ii.jpg" alt="Тыквы">
-        <img src="imagens/iii.jpg" alt="Яблоки">
-        <img src="imagens/iv.jpg" alt="Кабачки">
-        <img src="imagens/v.jpg" alt="Баклажаны">
-        <img src="imagens/vi.jpg" alt="Груши">
-        <img src="imagens/vii.jpg" alt="Вишни">
-        <img src="imagens/viii.jpg" alt="Малина">
-        <img src="imagens/ix.jpg" alt="Черника">
-        <img src="imagens/x.jpg" alt="Картофель">
+        <label for="nocard-selected"><span class="close"></span></label> 
+        <img src="imagens/i.jpg" alt="Томаты" title="Фотография томатов">
+        <img src="imagens/ii.jpg" alt="Тыквы" title="Фотография тыкв">
+        <img src="imagens/iii.jpg" alt="Яблоки" title="Фотография яблок">
+        <img src="imagens/iv.jpg" alt="Кабачки" title="Фотография кабачков">
+        <img src="imagens/v.jpg" alt="Баклажаны" title="Фотография баклажанов">
+        <img src="imagens/vi.jpg" alt="Груши" title="Фотография груш">
+        <img src="imagens/vii.jpg" alt="Вишни" title="Фотография вишней">
+        <img src="imagens/viii.jpg" alt="Малина" title="Фотография малины">
+        <img src="imagens/ix.jpg" alt="Черника" title="Фотография черники">
+        <img src="imagens/x.jpg" alt="Картофель" title="Фотография картофеля">
     </div>
 </body>
 </html>
