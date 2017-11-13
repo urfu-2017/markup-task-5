@@ -1,32 +1,28 @@
-img
+.small-pics1-2
 {
-    width: 200px;
+    max-width: 200px;
     margin: 0 30px 5px 0; /*Интервалы между изображениями*/
 }
 
-.pic
+.small-pics3
 {
+    max-width: 200px;
+    margin: -4% 30px 5px 0;
+}
+
+.small-pics-4
+{
+    max-width: 200px;
+    margin: -2% 30px 5px 0;
+}
+
+.big-image
+{
+    min-width: 35%;
     max-width: 40%;
-    min-width: 40%;
+    min-height: 40%;
+    max-height: 75%;
     margin-top: 10%;
-}
-
-.pic1
-{
-    max-width: 15%;
-    margin-top: 0%;
-}
-
-.pic2
-{
-    max-width: 15%;
-    margin: -7% 20px 20px;
-}
-
-.pic3
-{
-    max-width: 15%;
-    margin-top: -3%;
 }
 
 .close
@@ -65,7 +61,7 @@ img
     display: inline-block;
 }
 
-a:hover + div
+a:hover + article
 {
     background: white;
     position: fixed;
@@ -150,4 +146,3 @@ a:hover + div
     margin-top: 18%;
     margin-left: 1%;
 }
-
