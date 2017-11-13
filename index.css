@@ -1,0 +1,123 @@
+section
+{
+    margin: 60px;
+    width: 90%;
+    background: #fff;
+    text-align: center;
+}
+
+.leftArrow,
+.rightArrow
+{
+    width: 10%;
+}
+
+.leftArrow
+{
+    float: left;
+    
+}
+
+.rightArrow
+{
+    float: right;
+}
+
+.leftArrow img,
+.rightArrow img
+{
+    vertical-align: middle;
+    width: 50%;
+    cursor: pointer;
+}
+
+input,
+.cross,
+.card-text,
+.full-size:checked + .card .card-text,
+.pages:not(:checked) + section,
+.full-size:checked ~ label .cross
+{
+    display: none;
+}
+
+.card
+{
+    display: inline-block;
+    width: 18%;
+    vertical-align: top;
+}
+
+.card-info
+{
+    background-color: #fff;
+}
+
+.card-image
+{
+    text-align: center;
+}
+
+.card-image img
+{
+    cursor: pointer;
+}
+
+.card-info:hover
+{
+    position: relative;
+    z-index: 1;
+    width: 120%;
+    box-shadow: 0 1px 4px rgba(161, 128, 128, .3)
+        , -23px 0 20px -23px rgba(0, 0, 0, .8)
+        , 23px 0 20px -23px rgba(0, 0, 0, .8)
+        , 0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+.card-info:hover .card-text
+{
+    display: block;
+}
+
+img
+{
+    max-width: 100%;
+
+}
+
+.card-image img
+{
+    max-height: 100%;
+}
+
+.full-size:checked + section .card
+{
+    position: static;
+}
+
+.full-size:checked + .card .card-image
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(105,105,105, .9);
+    text-align: center;
+}
+
+.full-size:checked + .card .card-image img
+{
+    margin-top: 10%;
+}
+
+.full-size:not(:checked) ~ label .cross
+{
+    z-index: 11;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
