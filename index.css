@@ -35,7 +35,8 @@ input,
 .cross,
 .card-text,
 .full-size:checked + .card .card-text,
-.pages:not(:checked) + section
+.pages:not(:checked) + section,
+.full-size:checked ~ label .cross
 {
     display: none;
 }
@@ -109,11 +110,6 @@ img
 .full-size:checked + .card .card-image img
 {
     margin-top: 10%;
-}
-
-input.full-size:checked ~ label .cross
-{
-    display: none;
 }
 
 .full-size:not(:checked) ~ label .cross
