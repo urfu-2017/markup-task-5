@@ -21,6 +21,7 @@ main
 {
     margin-top: 30px;
     text-align: center;
+    white-space: nowrap;
 }
 
 .page1,
@@ -32,18 +33,19 @@ main
 
 .item
 {
-    width: 20vw;
+    width: 17vw;
     box-sizing: border-box;
     background-color: #bcb150;
     border: dashed #000;
     padding: .5%;
-    margin: 0 10px;
+    margin: 0 5px;
     vertical-align: top;
 }
 
 .info
 {
     display: none;
+    white-space: normal;
 }
 
 .item:hover
@@ -92,7 +94,8 @@ input
 
 .big-images img
 {
-    height: 80%;
+    max-height: 80%;
+    max-width: 80%;
 }
 
 input[id='1big']:checked ~ div .big1,
