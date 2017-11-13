@@ -3,13 +3,14 @@ img {
 }
 
 body {
-    padding: 0 200px;
+    padding: 0 5%;
 }
 
-.slider {
+.vegetable-slider {
     margin: 100px auto 0;
     white-space: nowrap;
     overflow: hidden;
+    min-width: 980px;
 }
 
 .slider-wrapper {
@@ -18,31 +19,31 @@ body {
     padding: 4% 0;
 }
 
-.slider input[type='radio'] {
+input {
     display: none;
 }
 
-.slider input[type='radio'][id^='button']:checked ~ .slider-wrapper {
+input:checked ~ .slider-wrapper {
     transition: 1s;
 }
 
-.slider input#button-1:checked ~ .slider-wrapper {
+#button-1:checked ~ .slider-wrapper {
     left: 0;
 }
 
-.slider input#button-2:checked ~ .slider-wrapper {
+#button-2:checked ~ .slider-wrapper {
     left: -71%;
 }
 
-.slider input#button-3:checked ~ .slider-wrapper {
+#button-3:checked ~ .slider-wrapper {
     left: -144%;
 }
 
-.slider input#button-4:checked ~ .slider-wrapper {
+#button-4:checked ~ .slider-wrapper {
     left: -218%;
 }
 
-.item {
+article {
     width: 22%;
     font-weight: bold;
     display: inline-block;
@@ -54,17 +55,21 @@ body {
     overflow: hidden;
 }
 
-.description {
+details {
     display: none;
 }
 
-.item:hover {
+details summary {
+    display: none;
+}
+
+article:hover {
     position: relative;
     box-shadow: 0 0 15px 2px #000;
     padding: 5px;
 }
 
-.item:hover .description {
+article:hover details {
     display: block;
     padding: 10px;
     white-space: normal;
@@ -140,9 +145,9 @@ label.arrows:hover {
     opacity: 1;
 }
 
-input#button-1:checked ~ .arrows#arrow-2,
-input#button-2:checked ~ .arrows#arrow-3,
-input#button-3:checked ~ .arrows#arrow-4 {
+#button-1:checked ~ .arrows#arrow-2,
+#button-2:checked ~ .arrows#arrow-3,
+#button-3:checked ~ .arrows#arrow-4 {
     right: 0;
     display: block;
 }
