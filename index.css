@@ -27,7 +27,7 @@ body
     vertical-align: middle;
 }
 
-label[for^='big-image-']
+label[for^='big-image-']:not([class='close-label'])
 {
     line-height: 300px;
 }
