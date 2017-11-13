@@ -1,0 +1,163 @@
+html
+{
+    background-color: #a7a7a7;
+}
+
+body
+{
+    min-width: 1000px;
+}
+
+h1
+{
+    text-shadow: 0 0 15px #fff;
+}
+
+.cards
+{
+    width: 90%;
+    margin: auto;
+}
+
+.card
+{
+    position: relative;
+    background-color: #fbfceca6;
+    box-shadow: 0 0 25px #000;
+    width: 22%;
+    vertical-align: top;
+    padding: .4rem;
+    margin: 15% .3rem .3rem;
+    z-index: 1;
+}
+
+h1,
+.cards,
+.card,
+.card:target
+{
+    text-align: center;
+}
+
+.card:not(:target).card:hover
+{
+    transform: scale(1.25);
+    box-shadow: 0 0 15px #e7e7e7;
+    vertical-align: top;
+    z-index: 2;
+}
+
+.card:hover .info
+{
+    display: block;
+    padding: .8rem;
+}
+
+img
+{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.left_p,
+.right_p
+{
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-top: 20%;
+    opacity: .5;
+}
+
+.left_p
+{
+    float: left;
+    background: url('caret-arrow-left.png') 0 0 no-repeat;
+}
+
+.right_p
+{
+    float: right;
+    background: url('caret-arrow-right.png') 0 0 no-repeat;
+}
+
+#first_p:checked ~ label:not(.first_p),
+#second_p:checked ~ label:not(.second_p),
+#first_p:not(:checked) ~ .cards .first_p,
+#second_p:not(:checked) ~ .cards .second_p,
+.info,
+input,
+.card:target .info,
+.back,
+.close
+{
+    display: none;
+}
+
+#first_p:checked ~ .pointer.right_p,
+#first_p:checked ~ .cards .first_p,
+#second_p:checked ~ .pointer.left_p,
+#second_p:checked ~ .cards .second_p
+{
+    display: inline-block;
+}
+
+.card:target .card:hover
+{
+    transform: none;
+}
+
+.card:target ~ .back
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a7a7a7;
+    opacity: .9;
+    z-index: 3;
+    position: fixed;
+}
+
+.close:before
+{
+    content: '\2717';
+}
+
+.card:target ~ .close
+{
+    display: block;
+    font-size: 1.5rem;
+    z-index: 4;
+    text-decoration: none;
+    color: #1b1b1b;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.card:target
+{
+    position: absolute;
+    z-index: 11;
+    padding: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card:target img
+{
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
