@@ -24,6 +24,12 @@ body
 .item-content img
 {
     width: 90%;
+    vertical-align: middle;
+}
+
+label[for^='big-image-']
+{
+    line-height: 300px;
 }
 
 input,
@@ -88,21 +94,26 @@ input[id^='big-image-']:checked ~ .item-content .close-label:before
     font-size: 3rem;
 }
 
+label[class$='-arrow']
+{
+    line-height: 300px;
+}
+
 label[class$='-arrow']:before
 {
     position: relative;
-    top: 5rem;
-    font-size: 50px;
+    vertical-align: middle;
+    font-size: 40px;
 }
 
 .left-arrow:before
 {
     content: '\2190';
-    right: 4%;
+    right: 3%;
 }
 
 .right-arrow:before
 {
     content: '\2192';
-    left: 4%;
+    left: 3%;
 }
