@@ -10,7 +10,6 @@ body
 
 h1
 {
-    text-align: center;
     text-shadow: 0 0 15px #fff;
 }
 
@@ -18,24 +17,29 @@ h1
 {
     width: 90%;
     margin: auto;
-    text-align: center;
 }
 
 .card
 {
     position: relative;
-    text-align: center;
     background-color: #fbfceca6;
     box-shadow: 0 0 25px #000;
     width: 22%;
     vertical-align: top;
     padding: .4rem;
-    margin: .3rem;
-    margin-top: 15%;
+    margin: 15% .3rem .3rem;
     z-index: 1;
 }
 
-.card:hover
+h1,
+.cards,
+.card,
+.card:target
+{
+    text-align: center;
+}
+
+.card:not(:target).card:hover
 {
     transform: scale(1.25);
     box-shadow: 0 0 15px #e7e7e7;
@@ -49,7 +53,7 @@ h1
     padding: .8rem;
 }
 
-img.little
+img
 {
     width: 100%;
     height: auto;
@@ -61,40 +65,99 @@ img.little
 {
     width: 40px;
     height: 30px;
-    position: fixed;
+    position: relative;
+    margin-top: 20%;
+    opacity: .5;
 }
 
 .left_p
 {
-    top: 50%;
-    left: 3%;
-    background: url('l_p.png') 0 0 no-repeat;
+    float: left;
+    background: url('caret-arrow-left.png') 0 0 no-repeat;
 }
 
 .right_p
 {
-    top: 50%;
-    right: 2%;
-    background: url('r_p.png') 0 0 no-repeat;
+    float: right;
+    background: url('caret-arrow-right.png') 0 0 no-repeat;
 }
 
-input[id='first_p']:checked ~ label:not([class*='first_p']),
-input[id='second_p']:checked ~ label:not([class*='second_p']),
-input[id='first_p']:not(:checked) ~ .cards .first_p,
-input[id='second_p']:not(:checked) ~ .cards .second_p,
+#first_p:checked ~ label:not(.first_p),
+#second_p:checked ~ label:not(.second_p),
+#first_p:not(:checked) ~ .cards .first_p,
+#second_p:not(:checked) ~ .cards .second_p,
 .info,
-.full,
-input
+input,
+.card:target .info,
+.back,
+.close
 {
     display: none;
 }
 
-input[id='first_p']:checked ~ label[class='pointer right_p'],
-input[id='first_p']:checked ~ .cards .first_p,
-input[id='second_p']:checked ~ label[class='pointer left_p'],
-input[id='second_p']:checked ~ .cards .second_p
+#first_p:checked ~ .pointer.right_p,
+#first_p:checked ~ .cards .first_p,
+#second_p:checked ~ .pointer.left_p,
+#second_p:checked ~ .cards .second_p
 {
     display: inline-block;
-    top: 50%;
 }
 
+.card:target .card:hover
+{
+    transform: none;
+}
+
+.card:target ~ .back
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a7a7a7;
+    opacity: .9;
+    z-index: 3;
+    position: fixed;
+}
+
+.close:before
+{
+    content: '\2717';
+}
+
+.card:target ~ .close
+{
+    display: block;
+    font-size: 1.5rem;
+    z-index: 4;
+    text-decoration: none;
+    color: #1b1b1b;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.card:target
+{
+    position: absolute;
+    z-index: 11;
+    padding: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card:target img
+{
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
