@@ -142,15 +142,3 @@ section
         width: 20%;
     }
 }
-
-@media only screen and (min-width: 1000px)
-{
-    .carrot > img
-    {
-        width: 300px;
-    }
-    .carrot
-    {
-        width: 300px;
-    }
-}
