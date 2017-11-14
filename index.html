@@ -3,7 +3,147 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <h1 class="center">Бабуленькин урожай</h1>
+    <input type="radio" id="first" name="1" class="visible first" checked>
+    <div class="scrol">
+        <label for="abrikos" class="card">
+            <img src="images/abrikos.jpg" alt="Абрикос">
+            <span class="description">
+                Вкус&shy;ный, соч&shy;ный, мяг&shy;кий <strong>аб&shy;ри&shy;кос</strong>
+            </span>
+        </label>
+        <label for="apelsin" class="card">
+            <img src="images/apelsin.jpg" alt="Апельсин">
+            <span class="description">
+                Слад&shy;кий, соч&shy;ный, без кос&shy;то&shy;чек <strong>ап&shy;ель&shy;син</strong>.
+                доль&shy;ки иде&shy;аль&shy;ной фор&shy;мы.
+            </span>
+        </label>
+        <label for="baklazhan" class="card">
+            <img src="images/baklazhan.jpg" alt="Баклажан">
+            <span class="description">
+                Фи&shy;оле&shy;то&shy;вый, мя&shy;сис&shy;тый <strong>бак&shy;ла&shy;жан</strong>
+            </span>
+        </label>
+        <label for="banan" class="card">
+            <img src="images/banan.jpg" alt="Банан">
+            <span class="description">
+                Мяг&shy;кий, вкус&shy;ный, жёл&shy;тый <strong>ба&shy;нан</strong>
+            </span>
+        </label>
+    </div>
+    <input type="radio" id="second" name="1" class="visible second">
+    <div class="scrol">
+        <label for="banan" class="card">
+            <img src="images/banan.jpg" alt="Банан">
+            <span class="description">
+                Мяг&shy;кий, вкус&shy;ный, жёл&shy;тый <strong>ба&shy;нан</strong>
+            </span>
+        </label>
+        <label for="kapusta" class="card">
+            <img src="images/kapusta.jpg" alt="Капуста">
+            <span class="description">
+                В эт&shy;ой <strong>ка&shy;пус&shy;те</strong> боль&shy;ше сот&shy;ни од&shy;ёж&shy;ек
+            </span>
+        </label>
+        <label for="limon" class="card">
+            <img src="images/limon.png" alt="Лимон">
+            <span class="description">
+                Кис&shy;лый <strong>ли&shy;мон</strong>. С ча&shy;ем или са&shy;хaр&shy;ком са&shy;мое ТО
+            </span>
+        </label>
+        <label for="luk" class="card">
+            <img src="images/luk.jpg" alt="Лук">
+            <span class="description">
+                Жёст&shy;кий <strong>лук</strong>, но ка&shy;кой же слад&shy;кий пос&shy;ле жар&shy;ки!
+            </span>
+        </label>
+    </div>
+    <input type="radio" id="third" name="1" class="visible third">
+    <div class="scrol">
+        <label for="luk" class="card">
+            <img src="images/luk.jpg" alt="Лук">
+            <span class="description">
+                Жёст&shy;кий <strong>лук</strong>, но ка&shy;кой же слад&shy;кий пос&shy;ле жар&shy;ки!
+            </span>
+        </label>
+        <label for="morkov" class="card">
+            <img src="images/morkov.jpg" alt="Морковь">
+            <span class="description">
+                <strong>Морк&shy;ва</strong> сочная, хрустящая, яркая
+            </span>
+        </label>
+        <label for="perec" class="card">
+            <img src="images/perec.png" alt="Перец">
+            <span class="description">
+                <strong>Пе&shy;рец</strong> бол&shy;гар&shy;ский сдад&shy;кий
+            </span>
+        </label>
+        <label for="yabloko" class="card">
+            <img src="images/yabloko.jpg" alt="Яблоко">
+            <span class="description">
+                <strong>Яб&shy;ло&shy;ко</strong> крас&shy;ное, вкус&shy;ноу. Под ком&shy;по&shy;ты
+                ши&shy;кар&shy;но.
+            </span>
+        </label>
+    </div>
+    <div class="switchers">
+        <label for="first"></label>
+        <label for="second"></label>
+        <label for="third"></label>
+    </div>
+    <input type="checkbox" class="ovosh" id="abrikos">
+    <div class="fullscreen">
+        <img src="images/abrikos.jpg" alt="abrikos">
+        <label for="abrikos" class="close"><img src="images/close.png" alt="Крестик"></label>
+    </div>
+    <input type="checkbox" class="ovosh" id="apelsin">
+    <div class="fullscreen">
+        <img src="images/apelsin.jpg" alt="apelsin">
+        <label for="apelsin" class="close"><img src="images/close.png" alt="Крестик"></label>
+    </div>
+    <input type="checkbox" class="ovosh" id="baklazhan">
+    <div class="fullscreen">
+        <img src="images/baklazhan.jpg" alt="baklazhan">
+        <label for="baklazhan" class="close"><img src="images/close.png" alt="Крестик"></label>
+    </div>
+    <input type="checkbox" class="ovosh" id="banan">
+    <div class="fullscreen">
+        <img src="images/banan.jpg" alt="banan">
+        <label for="banan" class="close"><img src="images/close.png" alt="Крестик"></label>
+    </div>
+    <input type="checkbox" class="ovosh" id="kapusta">
+    <div class="fullscreen">
+        <img src="images/kapusta.jpg" alt="kapusta">
+        <label for="kapusta" class="close"><img src="images/close.png" alt="Крестик"></label>
+    </div>
+    <input type="checkbox" class="ovosh" id="limon">
+    <div class="fullscreen">
+        <img src="images/limon.png" alt="limon">
+        <label for="limon" class="close"><img src="images/close.png" alt="Крестик"></label>
+    </div>
+    <input type="checkbox" class="ovosh" id="luk">
+    <div class="fullscreen">
+        <img src="images/luk.jpg" alt="luk">
+        <label for="luk" class="close"><img src="images/close.png" alt="Крестик"></label>
+    </div>
+    <input type="checkbox" class="ovosh" id="morkov">
+    <div class="fullscreen">
+        <img src="images/morkov.jpg" alt="morkov">
+        <label for="morkov" class="close"><img src="images/close.png" alt="Крестик"></label>
+    </div>
+    <input type="checkbox" class="ovosh" id="perec">
+    <div class="fullscreen">
+        <img src="images/perec.png" alt="perec">
+        <label for="perec" class="close"><img src="images/close.png" alt="Крестик"></label>
+    </div>
+    <input type="checkbox" class="ovosh" id="yabloko">
+    <div class="fullscreen">
+        <img src="images/yabloko.jpg" alt="yabloko">
+        <label for="yabloko" class="close"><img src="images/close.png" alt="Крестик"></label>
+    </div>
 </body>
 </html>
