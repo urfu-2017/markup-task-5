@@ -1,0 +1,144 @@
+.line
+{
+    margin: 30px;
+    text-align: center;
+    width: 98%;
+}
+
+.vegetables
+{
+    margin: 120px 0;
+}
+
+.vegetables-second
+{
+    margin: 120px 0;
+}
+
+.carrot
+{
+    position: relative;
+    height: 500px;
+}
+
+.carrot-poster
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, .7);
+    padding: 5px;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+.carrot:hover .carrot-poster
+{
+    display: block;
+}
+
+.window
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 99999;
+
+    display: none;
+    pointer-events: none;
+}
+
+.window:target
+{
+    display: block;
+    pointer-events: auto;
+    width: 800px;
+    margin: 2% 20%;
+}
+
+.window > div
+{
+    width: 800px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    background: #f2f2f2;
+    box-shadow: 0 0 20px 2px;
+}
+
+.close
+{
+    background: white;
+    color: black;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.paging
+{
+    font-size: 90px;
+}
+
+.close:hover
+{
+    background: white;
+}
+
+input
+{
+    display: none;
+}
+
+section
+{
+    display: none;
+}
+
+.first-vegetables:checked ~ .vegetables
+{
+    display: block;
+}
+
+.first-vegetables:checked ~ .vegetables > div
+{
+    display: inline-block;
+}
+
+.second-vegetables:checked ~ .vegetables-second
+{
+    display: block;
+}
+
+.second-vegetables:checked ~ .vegetables-second > div
+{
+    display: inline-block;
+}
+
+@media only screen and (min-width: 450px)
+{
+    .carrot > img
+    {
+        width: 100%;
+    }
+    .carrot
+    {
+        width: 20%;
+    }
+}
