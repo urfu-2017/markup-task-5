@@ -3,7 +3,275 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
 </head>
 <body>
+<header>
+    <h1>Бабуленькин урожай</h1>
+</header>
+<main>
+    <div class="gallery">
+        <div class="modal">
+            <input class="modal__state" type="radio" name="modal" id="modal-close">
+            <input class="modal__state" type="radio" name="modal" id="modal-open-apple">
+            <div class="modal__popup">
+                <label class="modal__close" for="modal-close"></label>
+                <div class="modal__images">
+                    <img class="modal__image" src="images/apple.jpg" alt="яблоко">
+                </div>
+            </div>
+            <input class="modal__state" type="radio" name="modal" id="modal-open-aubergine">
+            <div class="modal__popup">
+                <label class="modal__close" for="modal-close"></label>
+                <div class="modal__images">
+                    <img class="modal__image" src="images/aubergine.jpg" alt="баклажан">
+                </div>
+            </div>
+            <input class="modal__state" type="radio" name="modal" id="modal-open-cabbage">
+            <div class="modal__popup">
+                <label class="modal__close" for="modal-close"></label>
+                <div class="modal__images">
+                    <img class="modal__image" src="images/cabbage.jpg" alt="капуста">
+                </div>
+            </div>
+            <input class="modal__state" type="radio" name="modal" id="modal-open-cherry">
+            <div class="modal__popup">
+                <label class="modal__close" for="modal-close"></label>
+                <div class="modal__images">
+                    <img class="modal__image" src="images/cherry.jpg" alt="вишня">
+                </div>
+            </div>
+            <input class="modal__state" type="radio" name="modal" id="modal-open-cucumber">
+            <div class="modal__popup">
+                <label class="modal__close" for="modal-close"></label>
+                <div class="modal__images">
+                    <img class="modal__image" src="images/cucumber.jpg" alt="огурец">
+                </div>
+            </div>
+            <input class="modal__state" type="radio" name="modal" id="modal-open-onion">
+            <div class="modal__popup">
+                <label class="modal__close" for="modal-close"></label>
+                <div class="modal__images">
+                    <img class="modal__image" src="images/onion.jpg" alt="лук">
+                </div>
+            </div>
+            <input class="modal__state" type="radio" name="modal" id="modal-open-peach">
+            <div class="modal__popup">
+                <label class="modal__close" for="modal-close"></label>
+                <div class="modal__images">
+                    <img class="modal__image" src="images/peach.jpg" alt="персик">
+                </div>
+            </div>
+            <input class="modal__state" type="radio" name="modal" id="modal-open-peas">
+            <div class="modal__popup">
+                <label class="modal__close" for="modal-close"></label>
+                <div class="modal__images">
+                    <img class="modal__image" src="images/peas.jpg" alt="горох">
+                </div>
+            </div>
+            <input class="modal__state" type="radio" name="modal" id="modal-open-potato">
+            <div class="modal__popup">
+                <label class="modal__close" for="modal-close"></label>
+                <div class="modal__images">
+                    <img class="modal__image" src="images/potato.jpg" alt="картошка">
+                </div>
+            </div>
+            <input class="modal__state" type="radio" name="modal" id="modal-open-pumpkin">
+            <div class="modal__popup">
+                <label class="modal__close" for="modal-close"></label>
+                <div class="modal__images">
+                    <img class="modal__image" src="images/pumpkin.jpg" alt="тыква">
+                </div>
+            </div>
+            <input class="modal__state" type="radio" name="modal" id="modal-open-strawberry">
+            <div class="modal__popup">
+                <label class="modal__close" for="modal-close"></label>
+                <div class="modal__images">
+                    <img class="modal__image" src="images/strawberry.jpg" alt="клубника">
+                </div>
+            </div>
+            <input class="modal__state" type="radio" name="modal" id="modal-open-tomato">
+            <div class="modal__popup">
+                <label class="modal__close" for="modal-close"></label>
+                <div class="modal__images">
+                    <img class="modal__image" src="images/tomato.jpg" alt="помидор">
+                </div>
+            </div>
+        </div>
+        <input type="radio" name="pages" id="next_from_1">
+        <input type="radio" name="pages" id="prev_from_2">
+        <input type="radio" name="pages" id="next_from_2">
+        <input type="radio" name="pages" id="prev_from_3">
+        <div class="page page_index_1">
+            <div class="item">
+                <label for="modal-open-apple">
+                    <img class="item__image" src="images/apple.jpg" alt="яблоко"></label>
+                <div class="item__description">
+                    <p>
+                        Яб&shy;ло&shy;ко — плод яб&shy;ло&shy;ни, ко&shy;то&shy;рый
+                        упо&shy;треб&shy;ля&shy;ет&shy;ся
+                        в пи&shy;щу в све&shy;жем ви&shy;де, слу&shy;жит сы&shy;рьём в
+                        ку&shy;ли&shy;на&shy;рии и для при&shy;го&shy;тов&shy;ле&shy;ния на&shy;пит&shy;ков.
+                        Счи&shy;та&shy;ет&shy;ся, что ро&shy;ди&shy;ной
+                        яб&shy;ло&shy;ни яв&shy;ля&shy;ет&shy;ся
+                        Цен&shy;траль&shy;ная Азия. Наи&shy;боль&shy;шее рас&shy;про&shy;стра&shy;не&shy;ние
+                        по&shy;лу&shy;чи&shy;ла яб&shy;ло&shy;ня до&shy;маш&shy;няя.
+                        На се&shy;го&shy;дняш&shy;ний день су&shy;ще&shy;ству&shy;ет
+                        мно&shy;же&shy;ство сор&shy;тов это&shy;го ви&shy;да
+                        яб&shy;ло&shy;ни, про&shy;из&shy;рас&shy;та&shy;ю&shy;щих в раз&shy;лич&shy;ных
+                        кли&shy;ма&shy;ти&shy;че&shy;ских усло&shy;ви&shy;ях.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <label for="modal-open-aubergine">
+                    <img class="item__image" src="images/aubergine.jpg" alt="баклажан"></label>
+                <div class="item__description">
+                    <p>
+                        Ба&shy;кла&shy;жан — вид мно&shy;го&shy;лет&shy;них тра&shy;вя&shy;ни&shy;стых
+                        рас&shy;те&shy;ний ро&shy;да Пас&shy;лён. Воз&shy;де&shy;лы&shy;ва&shy;ет&shy;ся
+                        как од&shy;но&shy;лет&shy;нее рас&shy;те&shy;ние. Съе&shy;до&shy;бен толь&shy;ко плод.
+                        В бо&shy;та&shy;ни&shy;че&shy;ском смыс&shy;ле это яго&shy;да,
+                        в ку&shy;ли&shy;нар&shy;ном рас&shy;смат&shy;ри&shy;ва&shy;ет&shy;ся как овощ.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <label for="modal-open-cabbage">
+                    <img class="item__image" src="images/cabbage.jpg" alt="капуста"></label>
+                <div class="item__description">
+                    <p>
+                        Ка&shy;пу&shy;ста ого&shy;род&shy;ная — дву&shy;лет&shy;нее рас&shy;те&shy;ние,
+                        сель&shy;ско&shy;хо&shy;зяй&shy;ствен&shy;ная куль&shy;ту&shy;ра;
+                        вид ро&shy;да Ка&shy;пу&shy;ста се&shy;мей&shy;ства Ка&shy;пуст&shy;ные.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <label for="modal-open-cherry">
+                    <img class="item__image" src="images/cherry.jpg" alt="вишня"></label>
+                <div class="item__description">
+                    <p>
+                        Виш&shy;ня — под&shy;род рас&shy;те&shy;ний ро&shy;да Сли&shy;ва
+                        се&shy;мей&shy;ства Ро&shy;зо&shy;вые.
+                    </p>
+                </div>
+            </div>
+            <label class="arrow arrow_right" for="next_from_1"></label>
+        </div>
+        <div class="page page_index_2">
+            <label class="arrow arrow_left" for="prev_from_2"></label>
+            <div class="item">
+                <label for="modal-open-cucumber">
+                    <img class="item__image" src="images/cucumber.jpg" alt="огурец"></label>
+                <div class="item__description">
+                    <p>
+                        Огу&shy;рец обык&shy;но&shy;вен&shy;ный, или Огу&shy;рец по&shy;сев&shy;ной
+                        — од&shy;но&shy;лет&shy;нее тра&shy;вя&shy;ни&shy;стое рас&shy;те&shy;ние,
+                        вид ро&shy;да Огу&shy;рец се&shy;мей&shy;ства Тык&shy;вен&shy;ные, овощ&shy;ная
+                        куль&shy;ту&shy;ра.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <label for="modal-open-onion">
+                    <img class="item__image" src="images/onion.jpg" alt="лук"></label>
+                <div class="item__description">
+                    <p>
+                        Лук — род дву&shy;лет&shy;них и мно&shy;го&shy;лет&shy;них
+                        тра&shy;вя&shy;ни&shy;стых рас&shy;те&shy;ний, от&shy;но&shy;си&shy;мых
+                        к под&shy;се&shy;мей&shy;ству Лу&shy;ко&shy;вые се&shy;мей&shy;ства
+                        Ама&shy;рил&shy;ли&shy;со&shy;вые по&shy;ряд&shy;ка Спар&shy;же&shy;цвет&shy;ные
+                        (ра&shy;нее от&shy;но&shy;си&shy;ли к ли&shy;лей&shy;ным).
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <label for="modal-open-peach">
+                    <img class="item__image" src="images/peach.jpg" alt="персик"></label>
+                <div class="item__description">
+                    <p>
+                        Пер&shy;сик обык&shy;но&shy;вен&shy;ный — рас&shy;те&shy;ние из
+                        под&shy;ро&shy;да Мин&shy;даль ро&shy;да Сли&shy;ва
+                        се&shy;мей&shy;ства Ро&shy;зо&shy;вые.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <label for="modal-open-peas">
+                    <img class="item__image" src="images/peas.jpg" alt="горох"></label>
+                <div class="item__description">
+                    <p>
+                        Го&shy;рох — род тра&shy;вя&shy;ни&shy;стых рас&shy;те&shy;ний
+                        се&shy;мей&shy;ства Бо&shy;бо&shy;вые.
+                    </p>
+                </div>
+            </div>
+            <label class="arrow arrow_right" for="next_from_2"></label>
+        </div>
+        <div class="page page_index_3">
+            <label class="arrow arrow_left" for="prev_from_3"></label>
+            <div class="item">
+                <label for="modal-open-potato">
+                    <img class="item__image" src="images/potato.jpg" alt="картошка"></label>
+                <div class="item__description">
+                    <p>
+                        О, кар&shy;тош&shy;ка и си&shy;роп&shy;чик.<br>
+                        Так мяг&shy;ки, как шерсть ще&shy;ноч&shy;ка,<br>
+                        Как нос&shy;ки теп&shy;лы и вкус&shy;ны, как крем.<br>
+                        Ес&shy;ли хо&shy;чешь, хва&shy;тит всем.<br>
+                        О, кар&shy;тош&shy;ка и си&shy;роп&shy;чик,<br>
+                        Вы&shy;учить ал&shy;геб&shy;ру бу&shy;дет вам про&shy;ще.<br>
+                        В жи&shy;во&shy;ти&shy;ке па&shy;ни&shy;ка,<br>
+                        Язык стал вя&shy;лым, <br>
+                        Но сред&shy;ство есть спа&shy;сти вас от уда&shy;ра.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <label for="modal-open-pumpkin">
+                    <img class="item__image" src="images/pumpkin.jpg" alt="тыква"></label>
+                <div class="item__description">
+                    <p>
+                        Под сло&shy;вом «тык&shy;ва» в Рос&shy;сии обыч&shy;но
+                        по&shy;ни&shy;ма&shy;ет&shy;ся вид Тык&shy;ва обык&shy;но&shy;вен&shy;ная
+                        , ши&shy;ро&shy;ко рас&shy;про&shy;стра&shy;нён&shy;ный и
+                        куль&shy;ти&shy;ви&shy;ру&shy;е&shy;мый как пи&shy;ще&shy;вое и кор&shy;мо&shy;вое
+                        рас&shy;те&shy;ние.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <label for="modal-open-strawberry">
+                    <img class="item__image" src="images/strawberry.jpg" alt="клубника"></label>
+                <div class="item__description">
+                    <p>
+                        Клуб&shy;ника — на&shy;зва&shy;ние рас&shy;те&shy;ний и пло&shy;дов
+                        (мно&shy;го&shy;ореш&shy;ков) од&shy;но&shy;го из ви&shy;дов рас&shy;те&shy;ний
+                        ро&shy;да Зем&shy;ля&shy;ни&shy;ка — зем&shy;ля&shy;ни&shy;ки зе&shy;лё&shy;ной.
+                        Са&shy;мо рус&shy;ское сло&shy;во «клуб&shy;ни&shy;ка» про&shy;изо&shy;шло
+                        из-за ша&shy;ро&shy;об&shy;раз&shy;ных пло&shy;дов это&shy;го рас&shy;те&shy;ния
+                        от ста&shy;ро&shy;рус&shy;ско&shy;го сло&shy;ва «клуб» — клу&shy;бок, сви&shy;тый шар.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <label for="modal-open-tomato">
+                    <img class="item__image" src="images/tomato.jpg" alt="помидор"></label>
+                <div class="item__description">
+                    <p>
+                        То&shy;мат, или по&shy;ми&shy;дор — од&shy;но&shy;лет&shy;нее или
+                        мно&shy;го&shy;лет&shy;нее тра&shy;вя&shy;ни&shy;стое рас&shy;те&shy;ние,
+                        вид ро&shy;да Пас&shy;лён се&shy;мей&shy;ства Пас&shy;лё&shy;но&shy;вые.
+                        Воз&shy;де&shy;лы&shy;ва&shy;ет&shy;ся как овощ&shy;ная куль&shy;ту&shy;ра.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>

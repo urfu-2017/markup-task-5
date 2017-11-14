@@ -1,0 +1,161 @@
+header
+{
+    background: rgba(104,63,126,.5);
+    text-align: center;
+    margin: 0 0 30px;
+    color: #fff;
+    font-family: 'Bad Script', cursive;
+}
+
+main
+{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item
+{
+    margin: 0 1%;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.item:hover
+{
+    transform: scale(1.1);
+    border: rgba(104,63,126,.5) solid 1px;
+}
+
+img
+{
+    width: 90%;
+}
+
+.item__description
+{
+    display: none;
+}
+
+.item:hover .item__description
+{
+    display: block;
+    width: 100%;
+}
+
+input[type='radio']
+{
+    display: none;
+}
+
+.modal__popup
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(126, 111, 124, .2);
+    z-index: 1;
+}
+
+.modal__image
+{
+    width: 40%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.modal__close:before
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: FontAwesome;
+    color: #fff;
+    font-size: 200%;
+    content: '\f00d';
+}
+
+.modal__state:not(:checked) + .modal__popup
+{
+    display: none;
+}
+
+.modal__state:checked + .modal__popup
+{
+    display: block;
+}
+
+.arrow:after,
+.arrow:before
+{
+    font-family: FontAwesome;
+    font-size: 200%;
+    color: rgba(71,85,126, .5);
+}
+
+.arrow_right:after
+{
+    content: '\f054';
+}
+
+.arrow_left:after
+{
+    content: '\f053';
+}
+
+.page
+{
+    display: none;
+    text-align: center;
+}
+
+.page_index_1
+{
+    display: block;
+}
+
+input[id='next_from_1']:checked ~ .page
+{
+    display: none;
+}
+
+input[id='next_from_1']:checked ~ .page_index_2
+{
+    display: block;
+}
+
+input[id='next_from_2']:checked ~ .page
+{
+    display: none;
+}
+
+input[id='next_from_2']:checked ~ .page_index_3
+{
+    display: block;
+}
+
+input[id='prev_from_2']:checked ~ .page
+{
+    display: none;
+}
+
+input[id='prev_from_2']:checked ~ .page_index_1
+{
+    display: block;
+}
+
+input[id='prev_from_3']:checked ~ .page
+{
+    display: none;
+}
+
+input[id='prev_from_3']:checked ~ .page_index_2
+{
+    display: block;
+}
