@@ -3,7 +3,287 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <main class="module">
+        <header><h1>Бабуленькин урожай</h1></header>
+        <input type="radio" name="section" id="section_1" class="section_1" checked>
+        <input type="radio" name="section" id="section_2" class="section_2">
+        <input type="radio" name="section" id="section_3" class="section_3">
+        <input type="radio" name="section" id="section_4" class="section_4">
+        <nav class="control">
+            <label for="section_1" class="section_1 arrow"></label>
+            <label for="section_2" class="section_2 arrow"></label>
+            <label for="section_3" class="section_3 arrow"></label>
+            <label for="section_4" class="section_4 arrow"></label>
+        </nav>
+        <section class="slider">
+            <section class="section_1 page">
+                <input type="checkbox" name="full_size" id="item_1_1" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_1_1" class="cross"></label>
+                        <img src="images/carrot.jpg" alt="carrot" class="small">
+                        <section class="placeholder">
+                            <img src="images/carrot.jpg" alt="carrot" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Морковь</h2></header>
+                            <p>
+                                Это мокровка
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <input type="checkbox" name="full_size" id="item_1_2" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_1_2" class="cross"></label>
+                        <img src="images/apple.jpg" alt="apple" class="small">
+                        <section class="placeholder">
+                            <img src="images/apple.jpg" alt="apple" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Яблоко</h2></header>
+                            <p>
+                                Вкусное полезное
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <input type="checkbox" name="full_size" id="item_1_3" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_1_3" class="cross"></label>
+                        <img src="images/tomato.jpg" alt="Tomato" class="small">
+                        <section class="placeholder">
+                            <img src="images/tomato.jpg" alt="Tomato" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Помидорка</h2></header>
+                            <p>
+                                Большая, сочная, красная
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <input type="checkbox" name="full_size" id="item_1_4" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_1_4" class="cross"></label>
+                        <img src="images/orange.jpg" alt="Orange" class="small">
+                        <section class="placeholder">
+                            <img src="images/orange.jpg" alt="Orange" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Апельсин</h2></header>
+                            <p>
+                                Выращен с использованием Солнца.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+            </section>
+            <section class="section_2 page">
+                <input type="checkbox" name="full_size" id="item_2_1" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_2_1" class="cross"></label>
+                        <img src="images/banana.jpg" alt="Banana" class="small">
+                        <section class="placeholder">
+                            <img src="images/banana.jpg" alt="Banana" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Банан</h2></header>
+                            <p>
+                                Откуда у бабули бананы в огороде?
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <input type="checkbox" name="full_size" id="item_2_2" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_2_2" class="cross"></label>
+                        <img src="images/cukety.jpg" alt="Cukety" class="small">
+                        <section class="placeholder">
+                            <img src="images/cukety.jpg" alt="Cukety" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Кабачок</h2></header>
+                            <p>
+                                Ееее, кабачок
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <input type="checkbox" name="full_size" id="item_2_3" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_2_3" class="cross"></label>
+                        <img src="images/cabbage.jpg" alt="Cabbage" class="small">
+                        <section class="placeholder">
+                            <img src="images/cabbage.jpg" alt="Cabbage" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Капуста</h2></header>
+                            <p>
+                                Обожаю капуста, очень сильно. Очень очень сильно. Просто капец как.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <input type="checkbox" name="full_size" id="item_2_4" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_2_4" class="cross"></label>
+                        <img src="images/onion.jpg" alt="Onion" class="small">
+                        <section class="placeholder">
+                            <img src="images/onion.jpg" alt="Onion" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Лук</h2></header>
+                            <p>
+                                Лук, ты мне ****ь не друг
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+            </section>
+            <section class="section_3 page">
+                <input type="checkbox" name="full_size" id="item_3_1" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_3_1" class="cross"></label>
+                        <img src="images/pumpkin.jpeg" alt="Pumpkin" class="small">
+                        <section class="placeholder">
+                            <img src="images/pumpkin.jpeg" alt="Pumpkin" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Тыква</h2></header>
+                            <p>
+                                HAPPY HALLOWEN!!!
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <input type="checkbox" name="full_size" id="item_3_2" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_3_2" class="cross"></label>
+                        <img src="images/watermelon.jpg" alt="Watermelon" class="small">
+                        <section class="placeholder">
+                            <img src="images/watermelon.jpg" alt="Watermelon" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Арбуз</h2></header>
+                            <p>
+                                Из него выйдет хороший шлем.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <input type="checkbox" name="full_size" id="item_3_3" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_3_3" class="cross"></label>
+                        <img src="images/pear.jpeg" alt="Pear" class="small">
+                        <section class="placeholder">
+                            <img src="images/pear.jpeg" alt="Pear" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Груша</h2></header>
+                            <p>
+                                Главное не препутать с лампочкой.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <input type="checkbox" name="full_size" id="item_3_4" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_3_4" class="cross"></label>
+                        <img src="images/plum.jpg" alt="Plum" class="small">
+                        <section class="placeholder">
+                            <img src="images/plum.jpg" alt="Plum" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Слива</h2></header>
+                            <p>
+                                Это просто слива.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+            </section>
+            <section class="section_4 page">
+                <input type="checkbox" name="full_size" id="item_4_1" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_4_1" class="cross"></label>
+                        <img src="images/raddish.jpg" alt="Radish" class="small">
+                        <section class="placeholder">
+                            <img src="images/raddish.jpg" alt="Radish" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Редиска</h2></header>
+                            <p>
+                                Никогда не будь ей, ты понял?
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <input type="checkbox" name="full_size" id="item_4_2" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_4_2" class="cross"></label>
+                        <img src="images/potato.jpg" alt="Potato" class="small">
+                        <section class="placeholder">
+                            <img src="images/potato.jpg" alt="Potato" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Картошка</h2></header>
+                            <p>
+                                Еда будущего, еда марсиан.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <input type="checkbox" name="full_size" id="item_4_3" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_4_3" class="cross"></label>
+                        <img src="images/figs.jpg" alt="figs" class="small">
+                        <section class="placeholder">
+                            <img src="images/figs.jpg" alt="figs" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Инжир</h2></header>
+                            <p>
+                                А вы знали, что мой брат любит инжир? Теперь знаете.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <input type="checkbox" name="full_size" id="item_4_4" class="full_size">
+                <section class="item">
+                    <figure class="item_card">
+                        <label for="item_4_4" class="cross"></label>
+                        <img src="images/cherry.jpg" alt="cherry" class="small">
+                        <section class="placeholder">
+                            <img src="images/cherry.jpg" alt="cherry" class="big">
+                        </section>
+                        <figcaption class="description">
+                            <header><h2 class="header">Вишня</h2></header>
+                            <p>
+                                А почему бы и нет?
+                            </p>
+                        </figcaption>
+                    </figure>
+                </section>
+            </section>
+        </section>
+    </main>
 </body>
 </html>
