@@ -1,9 +1,297 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    <input name="fullscreen-image" type="checkbox" id="fullscreen-image-1">
+    <div class="fullscreen">
+        <img alt="baklazhan" src="baklazhan.jpg">
+        <label for="fullscreen-image-1" class="close"></label>
+    </div>
+    <input name="fullscreen-image" type="checkbox" id="fullscreen-image-2">
+    <div class="fullscreen">
+        <img alt="Вишня" src="cherry.jpg">
+        <label for="fullscreen-image-2" class="close"></label>
+    </div>
+    <input name="fullscreen-image" type="checkbox" id="fullscreen-image-3">
+    <div class="fullscreen">
+        <img alt="Груша" src="grysha.jpg">
+        <label for="fullscreen-image-3" class="close"></label>
+    </div>
+    <input name="fullscreen-image" type="checkbox" id="fullscreen-image-4">
+    <div class="fullscreen">
+        <img alt="Капуста" src="kapysta.jpg">
+        <label for="fullscreen-image-4" class="close"></label>
+    </div>
+    <input name="fullscreen-image" type="checkbox" id="fullscreen-image-5">
+    <div class="fullscreen">
+        <img alt="Картофель" src="kartofel.jpg">
+        <label for="fullscreen-image-5" class="close"></label>
+    </div>
+    <input name="fullscreen-image" type="checkbox" id="fullscreen-image-6">
+    <div class="fullscreen">
+        <img alt="Клубника" src="klubnika.jpg">
+        <label for="fullscreen-image-6" class="close"></label>
+    </div>
+    <input name="fullscreen-image" type="checkbox" id="fullscreen-image-7">
+    <div class="fullscreen">
+        <img alt="Лук" src="lyk.jpg">
+        <label for="fullscreen-image-7" class="close"></label>
+    </div>
+    <input name="fullscreen-image" type="checkbox" id="fullscreen-image-8">
+    <div class="fullscreen">
+        <img alt="Малина" src="malina.jpg">
+        <label for="fullscreen-image-8" class="close"></label>
+    </div>
+    <input name="fullscreen-image" type="checkbox" id="fullscreen-image-9">
+    <div class="fullscreen">
+        <img alt="Морковь" src="morkov.jpg">
+        <label for="fullscreen-image-9" class="close"></label>
+    </div>
+    <input name="fullscreen-image" type="checkbox" id="fullscreen-image-10">
+    <div class="fullscreen">
+        <img alt="Тыква" src="tikva.jpg">
+        <label for="fullscreen-image-10" class="close"></label>
+    </div>
+    <input name="fullscreen-image" type="checkbox" id="fullscreen-image-11">
+    <div class="fullscreen">
+        <img alt="Виноград" src="vinograd.jpg">
+        <label for="fullscreen-image-11" class="close"></label>
+    </div>
+    <input name="fullscreen-image" type="checkbox" id="fullscreen-image-12">
+    <div class="fullscreen">
+        <img alt="Яблоки" src="yabloki.jpg">
+        <label for="fullscreen-image-12" class="close"></label>
+    </div>
+    <div class="gallery">
+
+        <input name="switch" type="radio" id="switch-1" checked>
+        <div class="buttons">
+            <label for="switch-2">
+                <span class="button-next"></span>
+            </label>
+        </div>
+        <input name="switch" type="radio" id="switch-2">
+        <div class="buttons">
+            <label for="switch-1">
+                <span class="button-prev"></span>
+            </label>
+            <label for="switch-3">
+                <span class="button-next"></span>
+            </label>
+        </div>
+        <input name="switch" type="radio" id="switch-3">
+        <div class="buttons">
+            <label for="switch-2">
+                <span class="button-prev"></span>
+            </label>
+        </div>
+        <div class="scrollable">
+            <div class="mini">
+                <img alt="Баклажан" src="baklazhan.jpg">
+                <div class="card">
+                    <label for="fullscreen-image-1">
+                        <img alt="Баклажан" src="baklazhan.jpg">
+                    </label>
+                    <div class="description">
+                        Баклажа́н, или Паслён тёмнопло́дный (лат. Solánum melongéna) — 
+                        вид многолетних травянистых растений рода Паслён (Solanum). 
+                        Возделывается как однолетнее растение. Съедобен только плод. 
+                        В ботаническом смысле это ягода, в кулинарном рассматривается 
+                        как овощ. Известен также под названием бадриджа́н, а в южных 
+                        районах России и на Украине баклажаны называют си́ненькими.
+                    </div>
+                </div>
+            </div>
+            <div class="mini">
+                <img alt="Вишня" src="cherry.jpg">
+                <div class="card">
+                    <label for="fullscreen-image-2">
+                        <img alt="Вишня" src="cherry.jpg">
+                    </label>
+                    <div class="description">
+                        Русское слово «вишня» считается общеславянским производным 
+                        от той же основы, что и нем. Weichsel «вишня», лат. viscum 
+                        «птичий клей» и т. д. В таком случае первоначальное 
+                        значение слова — «дерево с клейким соком»
+                    </div>
+                </div>
+            </div>
+            <div class="mini">
+                <img alt="Груша" src="grysha.jpg">
+                <div class="card">
+                    <label for="fullscreen-image-3">
+                        <img alt="Груша" src="grysha.jpg">
+                    </label>
+                    <div class="description">
+                        Предполагают, что происхождение культурных сортов груш 
+                        связано с гибридизацией ряда видов, в частности, Pyrus 
+                        achras Gärtn., Pyrus persica Pers., Pyrus cordata Desv., 
+                        Pyrus elaeagnifolia Pall.. Груши культивировались в 
+                        древних Персии, Греции и Римской империи.
+                        В настоящее время насчитываются тысячи сортов груш.
+                    </div>
+                </div>
+            </div>
+            <div class="mini">
+                <img alt="Капуста" src="kapysta.jpg">
+                <div class="card">
+                    <label for="fullscreen-image-4">
+                        <img alt="Капуста" src="kapysta.jpg">
+                    </label>
+                    <div class="description">
+                        Как правило, капусту выращивают рассадным способом, 
+                        в особенности ранние сорта. Так, в восточной части 
+                        Европы семена для рассады капусты начинают высевать 
+                        уже с конца января. Готовую рассаду высаживают в 
+                        открытый грунт одновременно с севом ранних зерновых 
+                        (для ранних сортов капусты) со второй половины 
+                        марта до начала апреля. Урожай капусты собирают 
+                        избирательно, то есть если головки растений 
+                        становятся твёрдыми и достигают спелого нормального 
+                        размера (около 1 кг).
+                    </div>
+                </div>
+            </div>
+            <div class="mini">
+                <img alt="Картофель" src="kartofel.jpg">
+                <div class="card">
+                    <label for="fullscreen-image-5">
+                        <img alt="Картофель" src="kartofel.jpg">
+                    </label>
+                    <div class="description">
+                        Современное научное название картофеля в 1596 году 
+                        ввёл Каспар Баугин в работе «Theatri botanici», позже 
+                        этим названием воспользовался Линней в своей работе 
+                        «Species Plantarum».
+                        В разное время другими авторами публиковались иные 
+                        научные названия, которые теперь составляют синонимику
+                         вида картофель.
+                        Русское слово «картофель» произошло от нем. Kartoffel, 
+                        которое, в свою очередь, произошло от итал. tartufo, 
+                        tartufolo — трюфель.
+                    </div>
+                </div>
+            </div>
+            <div class="mini">
+                <img alt="Клубника" src="klubnika.jpg">
+                <div class="card">
+                    <label for="fullscreen-image-6">
+                        <img alt="Клубника" src="klubnika.jpg">
+                    </label>
+                    <div class="description">
+                        Клубника - распространённое ошибочное бытовое 
+                        именование растений и плодов земляники ананасной,
+                        называемой также земляникой садовой, земляникой 
+                        крупноплодной: это растение появилось только в 
+                        XVIII веке при скрещении двух разных дикорастущих
+                         видов земляники (чилийской и виргинской).
+                    </div>
+                </div>
+            </div>
+            <div class="mini">
+                <img alt="Лук" src="lyk.jpg">
+                <div class="card">
+                    <label for="fullscreen-image-7">
+                        <img alt="Лук" src="lyk.jpg">
+                    </label>
+                    <div class="description">
+                        Многолетние луковичные или с почти неразвитыми 
+                        луковицами травянистые растения, с резким 
+                        луковым за́пахом и вкусом.
+                        Представители рода имеют большую сплюснуто-шаровидную 
+                        луковицу, покрытую красноватыми, белыми или
+                         фиолетовыми оболочками.
+                    </div>
+                </div>
+            </div>
+            <div class="mini">
+                <img alt="Малина" src="malina.jpg">
+                <div class="card">
+                    <label for="fullscreen-image-8">
+                        <img alt="Малина" src="malina.jpg">
+                    </label>
+                    <div class="description">
+                        Плоды малины употребляют как свежими, так и замороженными 
+                        или используют для приготовления варенья, желе, мармелада, 
+                        соков. Малиновые вина, наливки, настойки, ликёры обладают 
+                        высокими вкусовыми качествами.
+                    </div>
+                </div>
+            </div>
+            <div class="mini">
+                <img alt="Морковь" src="morkov.jpg">
+                <div class="card">
+                    <label for="fullscreen-image-9">
+                        <img alt="Морковь" src="morkov.jpg">
+                    </label>
+                    <div class="description">
+                        Корни и плоды дикой и культурной моркови могут быть 
+                        использованы как пряность. Плоды, обладающие жгучим 
+                        пряным вкусом, употребляют как приправу к кушаньям, 
+                        используют в маринадах, ликёро-наливочном 
+                        производстве. Испытаны и одобрены в качестве 
+                        пряности при обработке рыбы. Плоды могут найти 
+                        применение в консервной промышленности.
+                    </div>
+                </div>
+            </div>
+            <div class="mini">
+                <img alt="Тыква" src="tikva.jpg">
+                <div class="card">
+                    <label for="fullscreen-image-10">
+                    <img alt="Тыква" src="tikva.jpg">
+                    </label>
+                    <div class="description">
+                        Русское слово «тыква», по версии словаря Успенского, 
+                        возможно происходит от праславянского 
+                        *tyky из *tykati — «жиреть, толстеть». Однако, дается
+                         и вторая версия: от греческого «sikuos» — «огурец». 
+                         Также эти два варианта отражены в словаре Фасмера.
+                    </div>
+                </div>
+            </div>
+            <div class="mini">
+                <img alt="Виноград" src="vinograd.jpg">
+                <div class="card">
+                    <label for="fullscreen-image-11">
+                    <img alt="Виноград" src="vinograd.jpg">
+                    </label>
+                    <div class="description">
+                        Плоды винограда — шаровидные или яйцевидные ягоды, 
+                        собранные в более или менее рыхлые (редко плотные) 
+                        грозди. Окраска ягод сильно варьирует в зависимости 
+                        от сорта (жёлтые, зеленоватые, тёмно-синие, фиолетовые, 
+                        чёрные и др.).
+                    </div>
+                </div>
+            </div>
+            <div class="mini">
+                <img alt="Яблоки" src="yabloki.jpg">
+                <div class="card">
+                    <label for="fullscreen-image-12">
+                    <img alt="Яблоки" src="yabloki.jpg">
+                    </label>
+                    <div class="description">
+                        Я́блоко — плод яблони, который употребляется 
+                        в пищу в свежем виде, служит сырьём в кулинарии 
+                        и для приготовления напитков. Считается, что 
+                        родиной яблони является Центральная Азия. 
+                        Наибольшее распространение получила яблоня 
+                        домашняя. На сегодняшний день существует множество 
+                        сортов этого вида яблони, произрастающих в 
+                        различных климатических условиях.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background"></div>
 </body>
+
 </html>
