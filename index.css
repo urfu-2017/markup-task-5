@@ -1,0 +1,54 @@
+img 
+{
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+}
+
+.card
+{
+    width: 400px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+
+.card:hover
+{
+    box-shadow: 0 0 15px black;
+}
+
+.card > div
+{
+    opacity: 0;
+}
+
+.card:hover > div
+{
+    opacity: 1;
+}
+
+input[id='show-fisrt-part']:checked + .first-group
+{
+    box-shadow: 0 0 15px pink;
+}
+
+input[id='show-second-part']:checked ~ .second-group
+{
+    box-shadow: 0 0 15px green;
+}
+
+/* input[id="show-first-part"]:checked + div#second-group,
+input[id="show-second-part"]:checked + div#first-group
+{
+    box-shadow: 0 0 15px green;
+} */
+
+/* input[id='show-first-page']:checked ~ .first-group,
+input[id='show-second-page']:checked ~ .second-group
+{
+    display: block;
+} */
