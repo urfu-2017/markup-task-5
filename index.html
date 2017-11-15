@@ -3,7 +3,117 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <main class="gallery">
+        <input type="radio" id="sliderFirst" class="slider" name="slider" checked="checked">
+        <input type="radio" id="sliderSecond" class="slider" name="slider">
+        <input type="radio" id="sliderThird" class="slider" name="slider">
+        
+        <section class="gallery-content">
+            <div class="slide">
+                <a href="#img1" class="item-content">
+                    <img src="img/1.jpg" alt="vegetable">
+                    <span class="description">
+                        Это овощ1. Овощ предназначен для поедания.
+                    </span>
+                </a>
+                
+                <a href="#img2" class="item-content">
+                    <img src="img/2.jpg" alt="vegetable">
+                    <span class="description">
+                        Это овощ2. Овощ предназначен для поедания.
+                    </span>
+                </a>
+                
+                <a href="#img3" class="item-content">
+                    <img src="img/3.jpg" alt="vegetable">
+                    <span class="description">
+                        Это овощ3. Овощ предназначен для поедания.
+                    </span>
+                </a>
+                
+                <a href="#img4" class="item-content">
+                    <img src="img/4.jpg" alt="vegetable">
+                    <span class="description">
+                        Это овощ4. Овощ предназначен для поедания.
+                    </span>
+                </a>
+                
+                <label class="slider-arrow slider-right" for="sliderSecond">
+                    &#x203a;
+                </label>
+            </div>
+            
+            <div class="slide">
+                <label class="slider-arrow slider-left" for="sliderFirst">
+                    &#x2039;
+                </label>
+                
+                <a href="#img5" class="item-content">
+                    <img src="img/5.jpg" alt="vegetable">
+                    <span class="description">
+                        Это овощ5. Овощ предназначен для поедания.
+                    </span>
+                </a>
+                
+                <a href="#img6" class="item-content">
+                    <img src="img/6.jpg" alt="vegetable">
+                    <span class="description">
+                        Это овощ6. Овощ предназначен для поедания.
+                    </span>
+                </a>
+                
+                <a href="#img7" class="item-content">
+                    <img src="img/7.jpg" alt="vegetable">
+                    <span class="description">
+                        Это овощ7. Овощ предназначен для поедания.
+                    </span>
+                </a>
+                
+                <a href="#img8" class="item-content">
+                    <img src="img/8.jpg" alt="vegetable">
+                    <span class="description">
+                        Это овощ8. Овощ предназначен для поедания.
+                    </span>
+                </a>
+                
+                <label class="slider-arrow slider-right" for="sliderThird">
+                    &#x203a;
+                </label>
+            </div>
+            
+            <div class="slide">
+                <label class="slider-arrow slider-left" for="sliderSecond">
+                    &#x2039;
+                </label>
+                
+                <a href="#img9" class="item-content">
+                    <img src="img/9.jpg" alt="vegetable">
+                    <span class="description">
+                        Это овощ9. Овощ предназначен для поедания.
+                    </span>
+                </a>
+            </div>
+        </section>
+        
+        <section class="modal">
+            <img id="img1" src="img/1.jpg" alt="vegetable">
+            <img id="img2" src="img/2.jpg" alt="vegetable">
+            <img id="img3" src="img/3.jpg" alt="vegetable">
+            <img id="img4" src="img/4.jpg" alt="vegetable">
+            <img id="img5" src="img/5.jpg" alt="vegetable">
+            <img id="img6" src="img/6.jpg" alt="vegetable">
+            <img id="img7" src="img/7.jpg" alt="vegetable">
+            <img id="img8" src="img/8.jpg" alt="vegetable">
+            <img id="img9" src="img/9.jpg" alt="vegetable">
+            
+            <a href="#" class="modal-close"></a>
+            
+            <div class="overlay">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
