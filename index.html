@@ -3,7 +3,231 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Бабуленькин урожай»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+    <main>
+        <input class="slide_1" id="slide_1" name="slide" type="radio" checked>
+        <input class="slide_2" id="slide_2" name="slide" type="radio">
+        <input class="slide_3" id="slide_3" name="slide" type="radio">
+        <label class="arrow_left_1" for="slide_1">
+            <img src="стрелка-лево.png" alt="стрелка-влево">
+        </label>
+        <label class="arrow_left_2" for="slide_2">
+            <img src="стрелка-лево.png" alt="стрелка-влево">
+        </label>
+        <label class="arrow_right_1" for="slide_2">
+            <img src="стрелка-право.png" alt="стрелка-вправо">
+        </label>
+        <label class="arrow_right_2" for="slide_3">
+            <img src="стрелка-право.png" alt="стрелка-вправо">
+        </label>
+        <input class="big_carrot" id="big_carrot" name="window" type="checkbox">
+        <div class="modal">
+            <img src="морковь.jpg" alt="">
+            <label class="close" for="big_carrot">
+                &times;
+            </label>
+        </div>
+        <input class="big_cucumber" id="big_cucumber" name="window" type="checkbox">
+        <div class="modal">
+            <img src="огурец.jpeg" alt="">
+            <label class="close" for="big_cucumber">
+                &times;
+            </label>
+        </div>
+        <input class="big_tomato" id="big_tomato" name="window" type="checkbox">
+        <div class="modal">
+            <img src="помидоры.jpg" alt="">
+            <label class="close" for="big_tomato">
+                &times;
+            </label>
+        </div>
+        <input class="big_beet" id="big_beet" name="window" type="checkbox">
+        <div class="modal">
+            <img src="свекла.jpg" alt="">
+            <label class="close" for="big_beet">
+                &times;
+            </label>
+        </div>
+        <input class="big_cabbage" id="big_cabbage" name="window" type="checkbox">
+        <div class="modal">
+            <img src="капуста.jpg" alt="">
+            <label class="close" for="big_cabbage">
+                &times;
+            </label>
+        </div>
+        <input class="big_potato" id="big_potato" name="window" type="checkbox">
+        <div class="modal">
+            <img src="картошка.jpg" alt="">
+            <label class="close" for="big_potato">
+                &times;
+            </label>
+        </div>
+        <input class="big_squash" id="big_squash" name="window" type="checkbox">
+        <div class="modal">
+            <img src="кабачок.jpg" alt="">
+            <label class="close" for="big_squash">
+                &times;
+            </label>
+        </div>
+        <input class="big_apple" id="big_apple" name="window" type="checkbox">
+        <div class="modal">
+            <img src="яблоки.jpg" alt="">
+            <label class="close" for="big_apple">
+                &times;
+            </label>
+        </div>
+        <input class="big_raspberry" id="big_raspberry" name="window" type="checkbox">
+        <div class="modal">
+            <img src="малина.jpg" alt="">
+            <label class="close" for="big_raspberry">
+                &times;
+            </label>
+        </div>
+        <input class="big_strawberry" id="big_strawberry" name="window" type="checkbox">
+        <div class="modal">
+            <img src="клубника.jpg" alt="">
+            <label class="close" for="big_strawberry">
+                &times;
+            </label>
+        </div>
+        <input class="big_onion" id="big_onion" name="window" type="checkbox">
+        <div class="modal">
+            <img src="лук.jpg" alt="">
+            <label class="close" for="big_onion">
+                &times;
+            </label>
+        </div>
+        <input class="big_balloon" id="big_balloon" name="window" type="checkbox">
+        <div class="modal">
+            <img src="шарик.jpg" alt="">
+            <label class="close" for="big_balloon">
+                &times;
+            </label>
+        </div>
+        <section class="vegetables">
+            <article class="vegetables_1">
+                <label for="big_carrot">
+                    <img class="vegetables_picture" src="морковь.jpg" alt="морковь">
+                </label>
+                <p class="description">
+                    Морковь посевная (лат. Daucus carota subsp. sativus) — двулетнее растение,
+                    подвид вида морковь дикая. Обычно в быту под словом «морковь» 
+                    подразумевается широко распространенный корнеплод именно этого растения.
+                </p>
+            </article>
+            <article class="vegetables_1">
+                <label for="big_cucumber">
+                    <img class="vegetables_picture" src="огурец.jpeg" alt="огурцы">
+                </label>
+                <p class="description">
+                    Огуре́ц обыкнове́нный однолетнее травянистое растение, вид рода Огурец
+                    (Cucumis) семейства Тыквенные (Cucurbitaceae), овощная культура.
+                </p>
+            </article>
+            <article class="vegetables_1">
+                <label for="big_tomato">
+                    <img class="vegetables_picture" src="помидоры.jpg" alt="помидоры">
+                </label>
+                <p class="description">
+                    Тома́т, или помидор (лат. Solánum lycopérsicum) — однолетнее или многолетнее
+                    травянистое растение, вид рода Паслён (Solanum)семейства Паслёновые
+                    (Solanaceae). Возделывается как овощная культура.
+                </p>
+            </article>
+            <article class="vegetables_1">
+                <label for="big_beet">
+                    <img class="vegetables_picture" src="свекла.jpg" alt="свекла">
+                </label>
+                <p class="description">
+                    Свёкла (лат. Béta) — род одно-, дву- и многолетних травянистых растений 
+                    семейства Амарантовые (ранее род относился к семейству Маревые).
+                </p>
+            </article>
+            <article class="vegetables_2">
+                <label for="big_cabbage">
+                    <img class="vegetables_picture" src="капуста.jpg" alt="капуста">
+                </label>
+                <p class="description">
+                    Капу́ста огоро́дная (лат. Brássica olerácea) — двулетнее растение, 
+                    сельскохозяйственная культура; вид рода Капуста (лат. Brassica) 
+                    семейства Капустные (Крестоцветные).
+                </p>
+            </article>
+            <article class="vegetables_2">
+                <label for="big_potato">
+                    <img class="vegetables_picture" src="картошка.jpg" alt="картошка">
+                </label>
+                <p class="description">
+                    Карто́фель, или Паслён клубнено́сный (лат. Solánum tuberósum), — вид
+                    многолетних клубненосных травянистых растений из рода Паслён (Solanum)
+                    семейства Паслёновые (Solanaceae). Клубни картофеля являются важным пищевым
+                    продуктом. Плоды ядовиты, в связи с содержанием в них соланина.
+                </p>
+            </article>
+            <article class="vegetables_2">
+                <label for="big_squash">
+                    <img class="vegetables_picture" src="кабачок.jpg" alt="кабачки">
+                </label>
+                <p class="description">
+                    Кабачок (уменьш. от укр. кабак, «тыква», из тюркских языков) — кустовая 
+                    разновидность тыквы обыкновенной с продолговатыми плодами, без плетей. 
+                    Плоды могут быть зелёного, жёлтого, чёрного или белого цвета. Мякоть нежная
+                    и быстроваркая, употребляется также и в сыром виде (в салатах).
+                </p>
+            </article>
+            <article class="vegetables_2">
+                <label for="big_apple">
+                    <img class="vegetables_picture" src="яблоки.jpg" alt="яблоки">
+                </label>
+                <p class="description">
+                    Я́блоко — плод яблони, который употребляется в пищу в свежем виде, 
+                    служит сырьём в кулинарии и для приготовления напитков. Считается, что родиной 
+                    яблони является Центральная Азия. Наибольшее распространение получила яблоня 
+                    домашняя. На сегодняшний день существует множество сортов этого вида яблони, 
+                    произрастающих в различных климатических условиях.
+                </p>
+            </article>
+            <article class="vegetables_3">
+                <label for="big_raspberry">
+                    <img class="vegetables_picture" src="малина.jpg" alt="малина">
+                </label>
+                <p class="description">
+                    Мали́на обыкнове́нная (лат. Rúbus idáeus) — полукустарник; вид рода Рубус 
+                    семейства Розовые (Rosaceae).
+                </p>
+            </article>
+            <article class="vegetables_3">
+                <label for="big_strawberry">
+                    <img class="vegetables_picture" src="клубника.jpg" alt="клубника">
+                </label>
+                <p class="description">
+                    Клубни́ка — название растений и плодов (многоорешков) одного из видов растений 
+                    рода Земляника — земляники зелёной (Fragaria viridis) [syn. Fragaria collina]. 
+                    Само русское слово «клубника» произошло из-за шарообразных плодов этого 
+                    растения от старорусского слова «клуб» — клубок, свитый шар.
+                </p>
+            </article>
+            <article class="vegetables_3">
+                <label for="big_onion">
+                    <img class="vegetables_picture" src="лук.jpg" alt="лук">
+                </label>
+                <p class="description">
+                    Лук ре́пчатый (лат. Állium cépa) — многолетнее травянистое растение, вид рода 
+                    Лук (Allium) семейства Луковые (Alliaceae), широко распространённая 
+                    овощная культура.
+                </p>
+            </article>
+            <article class="vegetables_3">
+                <label for="big_balloon">
+                    <img class="vegetables_picture" src="шарик.jpg" alt="пес шарик">
+                </label>
+                <p class="description">
+                    Шарик тоже овощ.
+                </p>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
