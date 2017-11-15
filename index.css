@@ -5,7 +5,7 @@ main
 
 section
 {
-    margin: 30px 20px;
+    margin: 0 20px;
     padding: 20px 0;
     width: 90%;
 }
@@ -22,15 +22,13 @@ article
 figure
 {
     margin: 0;
-    padding: 5px;
 }
 
-a > img
+.for-img img
 {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    display: inline-block;
 }
 
 .description
@@ -39,41 +37,31 @@ a > img
     background-color: #fff;
 }
 
-figure:hover
+figcaption:hover
 {
     box-shadow: 0 2px 10px 5px #8e8e8e;
     z-index: 1;
-    background-color: #fff;
     position: absolute;
     transform: scale(1.2);
 }
 
 .close-pic
 {
-    display: none;
-}
-
-.close
-{
-    font-size: 50px;
-    color: #000;
-    text-decoration: none;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-}
-
-.big-img:target ~ .close-pic
-{
-    display: block;
     position: fixed;
-    cursor: pointer;
-    z-index: 4;
     top: 10px;
     right: 10px;
+    transform: rotate(45deg);
+    cursor: pointer;
 }
 
-figure:hover .description
+.close-pic::before
+{
+    content: '+';
+    font-size: 50px;
+    color: #000;
+}
+
+figcaption:hover .description
 {
     display: block;
     font: 10px Arial, sans-serif;
@@ -81,9 +69,16 @@ figure:hover .description
 }
 
 input,
+a,
 .big-img
 {
     display: none;
+}
+
+.modal-window:checked ~ .big-img img
+{
+    max-width: 400px;
+    max-height: 400px;
 }
 
 .page,
@@ -138,15 +133,14 @@ figcaption label
 
 .big-img
 {
+    z-index: 100;
     cursor: default;
     top: 0;
     left: 0;
     position: fixed;
     width: 100%;
     height: 100%;
-    display: none;
     background: rgba(17, 17, 17, .3);
-    z-index: 2;
 }
 
 .big-img > img
@@ -155,13 +149,31 @@ figcaption label
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 400px;
 }
 
-.big-img:target
+[class^='modal-window']
 {
-    text-align: center;
-    display: block;
-    pointer-events: auto;
+    display: none;
+    width: 90%;
+    height: 100%;
+    margin: 20px 40px;
 }
 
+.close:checked ~ .big-img
+{
+    display: none;
+}
+
+input[id^='modal-window']:checked ~ .big-img,
+input[id='modal-window1']:checked ~ .big-img > .modal-window1,
+input[id='modal-window2']:checked ~ .big-img > .modal-window2,
+input[id='modal-window3']:checked ~ .big-img > .modal-window3,
+input[id='modal-window4']:checked ~ .big-img > .modal-window4,
+input[id='modal-window5']:checked ~ .big-img > .modal-window5,
+input[id='modal-window6']:checked ~ .big-img > .modal-window6,
+input[id='modal-window7']:checked ~ .big-img > .modal-window7,
+input[id='modal-window8']:checked ~ .big-img > .modal-window8
+{
+    display: block;
+    object-fit: cover;
+}
