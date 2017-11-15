@@ -1,0 +1,179 @@
+main
+{
+    text-align: center;
+}
+
+section
+{
+    margin: 0 20px;
+    padding: 20px 0;
+    width: 90%;
+}
+
+article
+{
+    display: inline-block;
+    width: 22%;
+    position: relative;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+figure
+{
+    margin: 0;
+}
+
+.for-img img
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.description
+{
+    display: none;
+    background-color: #fff;
+}
+
+figcaption:hover
+{
+    box-shadow: 0 2px 10px 5px #8e8e8e;
+    z-index: 1;
+    position: absolute;
+    transform: scale(1.2);
+}
+
+.close-pic
+{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.close-pic::before
+{
+    content: '+';
+    font-size: 50px;
+    color: #000;
+}
+
+figcaption:hover .description
+{
+    display: block;
+    font: 10px Arial, sans-serif;
+    text-align: left;
+}
+
+input,
+a,
+.big-img
+{
+    display: none;
+}
+
+.modal-window:checked ~ .big-img img
+{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.page,
+.arrow
+{
+    display: none;
+}
+
+.arrow.right
+{
+    border-left: 50px solid #000;
+    right: 20px;
+}
+
+.arrow.left
+{
+    border-right: 50px solid #000;
+    left: 20px;
+}
+
+input[name='pages']:checked + .page,
+input[name='pages']:checked + label + .page
+{
+    display: inline-block;
+}
+
+input[name='pages']:checked + .page + label,
+input[name='pages']:checked + label
+{
+    display: block;
+    position: absolute;
+    top: 80px;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    z-index: 2;
+}
+
+figcaption
+{
+    padding: 10px;
+    background-color: #fff;
+
+}
+
+figcaption label
+{
+    display: block;
+}
+
+.big-img
+{
+    z-index: 100;
+    cursor: default;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, .3);
+}
+
+.big-img > img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+[class^='modal-window']
+{
+    display: none;
+    width: 90%;
+    height: 100%;
+    margin: 20px 40px;
+}
+
+.close:checked ~ .big-img
+{
+    display: none;
+}
+
+input[id^='modal-window']:checked ~ .big-img,
+input[id='modal-window1']:checked ~ .big-img > .modal-window1,
+input[id='modal-window2']:checked ~ .big-img > .modal-window2,
+input[id='modal-window3']:checked ~ .big-img > .modal-window3,
+input[id='modal-window4']:checked ~ .big-img > .modal-window4,
+input[id='modal-window5']:checked ~ .big-img > .modal-window5,
+input[id='modal-window6']:checked ~ .big-img > .modal-window6,
+input[id='modal-window7']:checked ~ .big-img > .modal-window7,
+input[id='modal-window8']:checked ~ .big-img > .modal-window8
+{
+    display: block;
+    object-fit: cover;
+}
