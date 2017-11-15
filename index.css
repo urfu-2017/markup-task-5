@@ -32,15 +32,18 @@ input
 
 .item
 {
+    position: relative;
     display: inline-block;
     vertical-align: top;
     width: 17%;
     padding: 5px;
+    z-index: 0;
 }
 
 .item:hover
 {
-    box-shadow: 2px 2px 40px rgb(116, 111, 111);
+    box-shadow: 2px 2px 60px rgb(116, 111, 111);
+    z-index: 100;
 }
 
 .item_description
