@@ -1,0 +1,142 @@
+img
+{
+    vertical-align: middle;
+}
+
+input
+{
+    display: none;
+}
+
+.item_content
+{
+    text-align: center;
+}
+
+.items
+{
+    margin: 30px;
+    text-align: center;
+}
+
+.image > img
+{
+    width: 90%;
+}
+
+.description_title
+{
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.item
+{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 17%;
+    padding: 5px;
+    z-index: 0;
+}
+
+.item:hover
+{
+    box-shadow: 2px 2px 60px rgb(116, 111, 111);
+    z-index: 100;
+}
+
+.item_description
+{
+    margin: 5%;
+    display: none;
+    width: 90%;
+}
+
+.item_content:hover > .item_description
+{
+    display: block;
+}
+
+.item_content:hover img
+{
+    width: 100%;
+}
+
+.full_screen_content
+{
+    display: none;
+}
+
+.full_screen_image
+{
+    max-height: 80%;
+    max-width: 80%;
+}
+
+input:checked ~ .full_screen_content
+{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: inline;
+    position: fixed;
+    text-align: center;
+    background: rgba(120, 120, 120, .8);
+    padding-top: 70px;
+    vertical-align: middle;
+}
+
+.cross
+{
+    border-radius: 50%;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    right: 10px;
+    top: 10px;
+    font-size: 60px;
+    border: 2px solid black;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.cross:hover
+{
+    color: white;
+    background: black;
+}
+
+.paging
+{
+    font-size: 90px;
+    color: gray;
+    margin-top: 250px;
+}
+
+.right_arrow
+{
+    float: right;
+}
+
+.left_arrow
+{
+    float: left;
+}
+
+section
+{
+    display: none;
+}
+
+.page1_selector:checked ~ .page1
+{
+    display: block;
+}
+
+.page2_selector:checked ~ .page2
+{
+    display: block;
+}
