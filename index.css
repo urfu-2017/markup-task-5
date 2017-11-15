@@ -176,8 +176,6 @@ main
 .modal_close_button
 {
     position: relative;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .modal_close_button
