@@ -1,7 +1,7 @@
 main
 {
     margin-left: 5%;
-    margin-top: 15%;
+    margin-top: 10%;
     width: 90%;
 }
 
@@ -49,14 +49,16 @@ main
     z-index: 1;
 }
 
-.vegetables_1 p,
-.vegetables_2 p,
-.vegetables_3 p
+.vegetables_1 .description,
+.vegetables_2 .description,
+.vegetables_3 .description
 {
     display: none;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
-.vg_picture
+.vegetables_picture
 {
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     max-height: 90%;
@@ -69,22 +71,21 @@ main
 .vegetables_3:hover
 {
     z-index: 2;
-    -webkit-transform: scale(1.4);
-    -moz-transform: scale(1.4);
-    -o-transform: scale(1.4);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, .5);
 }
 
-.vegetables_1:hover p,
-.vegetables_2:hover p,
-.vegetables_3:hover p
+.vegetables_1:hover .description,
+.vegetables_2:hover .description,
+.vegetables_3:hover .description
 {
-    margin-right: 5%;
-    margin-left: 5%;
     display: block;
 }
 
-.close_x
+.close
 {
     color: rgb(202, 201, 201);
     font-size: 56px;
@@ -93,34 +94,23 @@ main
     top: 5%;
 }
 
-.big_carrot:not(:checked) ~ .big_carrot_mod,
-.big_cucumber:not(:checked) ~ .big_cucumber_mod,
-.big_tomato:not(:checked) ~ .big_tomato_mod,
-.big_beet:not(:checked) ~ .big_beet_mod,
-.big_cabbage:not(:checked) ~ .big_cabbage_mod,
-.big_potato:not(:checked) ~ .big_potato_mod,
-.big_squash:not(:checked) ~ .big_squash_mod,
-.big_apple:not(:checked) ~ .big_apple_mod,
-.big_raspberry:not(:checked) ~ .big_raspberry_mod,
-.big_strawberry:not(:checked) ~ .big_strawberry_mod,
-.big_onion:not(:checked) ~ .big_onion_mod,
-.big_balloon:not(:checked) ~ .big_balloon_mod
+.big_carrot:not(:checked) + .modal,
+.big_cucumber:not(:checked) + .modal,
+.big_tomato:not(:checked) + .modal,
+.big_beet:not(:checked) + .modal,
+.big_cabbage:not(:checked) + .modal,
+.big_potato:not(:checked) + .modal,
+.big_squash:not(:checked) + .modal,
+.big_apple:not(:checked) + .modal,
+.big_raspberry:not(:checked) + .modal,
+.big_strawberry:not(:checked) + .modal,
+.big_onion:not(:checked) + .modal,
+.big_balloon:not(:checked) + .modal
 {
     display: none;
 }
 
-.big_carrot_mod,
-.big_beet_mod,
-.big_cucumber_mod,
-.big_tomato_mod,
-.big_cabbage_mod,
-.big_potato_mod,
-.big_squash_mod,
-.big_apple_mod,
-.big_raspberry_mod,
-.big_strawberry_mod,
-.big_onion_mod,
-.big_balloon_mod
+.modal
 {
     z-index: 3;
     display: block;
@@ -132,18 +122,7 @@ main
     left: 0;
 }
 
-.big_carrot_mod > img,
-.big_beet_mod > img,
-.big_cucumber_mod > img,
-.big_tomato_mod > img,
-.big_cabbage_mod > img,
-.big_potato_mod > img,
-.big_squash_mod > img,
-.big_apple_mod > img,
-.big_raspberry_mod > img,
-.big_strawberry_mod > img,
-.big_onion_mod > img,
-.big_balloon_mod > img
+.modal > img
 {
     position: absolute;
     top: 0;
