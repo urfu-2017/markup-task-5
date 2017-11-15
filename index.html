@@ -2,8 +2,224 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Задача «Бабуленькин урожай»</title>
+    <title>Ярмарка крутится - бабки любуются</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <header>
+        <h1 class="title">Ярмарка крутится - бабки любуются</h1>
+    </header>
+    <input name="page" type="radio" id="page1" class="page1 slider" checked>
+    <input name="page" type="radio" id="page2" class="page2 slider">
+    <input name="page" type="radio" id="page3" class="page3 slider">
+    <main>
+        <div class="turn-wrapper">
+            <label for="page2" class="turn-right first2sec" title="Далее"></label>
+            <label for="page2" class="turn-left thrid2sec" title="Назад"></label>
+            <label for="page1" class="turn-left sec2first" title="Далее"></label>
+            <label for="page3" class="turn-right sec2thrid" title="Назад"></label>
+        </div>
+        <section class="first-page page">
+            <section class="item-container" id="tomato">
+                <article class="item">
+                    <figure class="item-title">
+                        <figcaption>Томат</figcaption>
+                        <a href="#tomato">
+                            <img src="images/tomato.jpg" alt="Томат" title="Томат" class="item-image">
+                        </a>
+                    </figure>
+                    <div class="item-description">
+                        <p class="text">
+                            Я - томат, я солнцу рад
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="item-container" id="egg">
+                <article class="item">
+                    <figure class="item-title">
+                        <figcaption>Яйцо</figcaption>
+                        <a href="#egg">
+                            <img src="images/egg.jpg" alt="Яйцо" title="Яйцо" class="item-image">
+                        </a>
+                    </figure>
+                    <div class="item-description">
+                        <p class="text">
+                            Случайно затесался в этой толпе
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="item-container" id="lemon">
+                <article class="item">
+                    <figure class="item-title">
+                        <figcaption>Лимон</figcaption>
+                        <a href="#lemon">
+                            <img src="images/lemon.jpg" alt="Лимон" title="Лимон" class="item-image">
+                        </a>
+                    </figure>
+                    <div class="item-description">
+                        <p class="text">
+                            Вы лимон и вы не знаете, что делать в этой жизни? То знайте - вы не одиноки
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="item-container" id="pear">
+                <article class="item">
+                    <figure class="item-title">
+                        <figcaption>Груша</figcaption>
+                        <a href="#pear">
+                            <img src="images/pear.jpg" alt="Груша" title="Груша" class="item-image">
+                        </a>
+                    </figure>
+                    <div class="item-description">
+                        <p class="text">
+                            А я груша
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <a href="#" class="cancel">&times;</a>
+            <div class="modal-image"></div>
+            <div class="cover"></div>
+        </section>
+        <section class="second-page page">
+            <section class="item-container" id="cheese">
+                <article class="item">
+                    <figure class="item-title">
+                        <figcaption>Сыр</figcaption>
+                        <a href="#cheese">
+                            <img src="images/cheese.jpg" alt="Сыр" title="Сыр" class="item-image">
+                        </a>
+                    </figure>
+                    <div class="item-description">
+                        <p class="text">
+                            Не люблю Рокфора из "Чип и Дейл"
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="item-container" id="default">
+                <article class="item">
+                    <figure class="item-title">
+                        <figcaption>Нечто</figcaption>
+                        <a href="#default">
+                            <img src="images/default.jpg" alt="Нечто" title="Нечто" class="item-image">
+                        </a>
+                    </figure>
+                    <div class="item-description">
+                        <p class="text">
+                            Удивление
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="item-container" id="noodles">
+                <article class="item">
+                    <figure class="item-title">
+                        <figcaption>Лапша</figcaption>
+                        <a href="#noodles">
+                            <img src="images/noodles.jpg" alt="Лапша" title="Лапша" class="item-image">
+                        </a>
+                    </figure>
+                    <div class="item-description">
+                        <p class="text">
+                            Фруктов нету нифига, пейте сок "Моя семья"
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="item-container" id="orange">
+                <article class="item">
+                    <figure class="item-title">
+                        <figcaption>orang</figcaption>
+                        <a href="#orange">
+                            <img src="images/orange.jpg" alt="orange" title="orang" class="item-image">
+                        </a>
+                    </figure>
+                    <div class="item-description">
+                        <p class="text">
+                            Я апельсин, и я повидал такое дерьмо, которое вам и не снилось.
+                            Как сейчас помню: всё в дыму, разбросанные куски тел, у сержанта контузия,
+                            мы с Метью отстреливаемся от узкоглазых уже не целясь, сильно раненный
+                            Майкл просит передать его жене письмо, но никто из нас уже не надеется
+                            выжить в этом кровавом аду...
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <a href="#" class="cancel">&times;</a>
+            <div class="modal-image"></div>
+            <div class="cover"></div>
+        </section>
+        <section class="third-page page">
+            <section class="item-container" id="pepper">
+                <article class="item">
+                    <figure class="item-title">
+                        <figcaption>Перец</figcaption>
+                        <a href="#pepper">
+                            <img src="images/pepper.jpg" alt="Перец" title="Перец" class="item-image">
+                        </a>
+                    </figure>
+                    <div class="item-description">
+                        <p class="text">
+                            А я арбуз, замечательный на вкус
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="item-container" id="pumpkin">
+                <article class="item">
+                    <figure class="item-title">
+                        <figcaption>Тыква</figcaption>
+                        <a href="#pumpkin">
+                            <img src="images/pumpkin.jpg" alt="Тыква" title="Тыква" class="item-image">
+                        </a>
+                    </figure>
+                    <div class="item-description">
+                        <p class="text">
+                            Тыква
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="item-container" id="sausage">
+                <article class="item">
+                    <figure class="item-title">
+                        <figcaption>Еда</figcaption>
+                        <a href="#sausage">
+                            <img src="images/sausage.jpg" alt="Еда" title="Еда" class="item-image">
+                        </a>
+                    </figure>
+                    <div class="item-description">
+                        <p class="text">
+                            Я абрикос, на юге рос!
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="item-container" id="bow">
+                <article class="item">
+                    <figure class="item-title">
+                        <figcaption>Лук</figcaption>
+                        <a href="#bow">
+                            <img src="images/bow.jpg" alt="Лук" title="Лук" class="item-image">
+                        </a>
+                    </figure>
+                    <div class="item-description">
+                        <p class="text">
+                            Эта передача называется "Вкусные истории". Ее очень давно крутили по
+                            первому каналу. Если вы прочитали все приписки к картинкам - приношу свои
+                            извинения за весь этот бред, мне было влом гуглить что-то адекватное.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <a href="#" class="cancel">&times;</a>
+            <div class="modal-image"></div>
+            <div class="cover"></div>
+        </section>
+    </main>
 </body>
 </html>
