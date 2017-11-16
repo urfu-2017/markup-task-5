@@ -8,8 +8,9 @@ html
 
 .market
 {
-    margin: 250px auto;
+    margin-top: 250px;
     text-align: center;
+    width: 1400px;
 }
 
 .radio
@@ -126,6 +127,11 @@ input[name='select']
     display: none;
 }
 
+.el-photo:hover
+{
+    cursor: pointer;
+}
+
 .market-el:hover .el-desc
 {
     display: block;
@@ -136,7 +142,7 @@ input[name='select']
     display: inline-block;
 }
 
-.radio-one:checked ~ .radio .label-one
+.radio-one:checked ~ .market .radio .label-one
 {
     color: red;
 }
@@ -146,7 +152,7 @@ input[name='select']
     display: inline-block;
 }
 
-.radio-two:checked ~ .radio .label-two
+.radio-two:checked ~ .market .radio .label-two
 {
     color: red;
 }
