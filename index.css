@@ -16,6 +16,7 @@ main
 
 .vegetable-photo
 {
+    cursor: pointer;
     width: 100%;
 }
 
@@ -72,6 +73,7 @@ main
 
 .cross
 {
+    cursor: pointer;
     position: absolute;
     top: 20px;
     right: 30px;
@@ -104,6 +106,7 @@ main
 
 .right-arrow
 {
+    cursor: pointer;
     position: absolute;
     top: 40%;
     right: 20px;
@@ -113,6 +116,7 @@ main
 
 .left-arrow
 {
+    cursor: pointer;
     position: absolute;
     top: 40%;
     left: 20px;
