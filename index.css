@@ -1,0 +1,125 @@
+.vegetable
+{
+    vertical-align: top;
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+    padding: 10px;
+}
+
+main
+{
+    margin-top: 200px;
+    text-align: center;
+    font-size: .8em;
+}
+
+.vegetable-photo
+{
+    cursor: pointer;
+    width: 100%;
+}
+
+.description
+{
+    display: none;
+    text-align: left;
+    position: absolute;
+}
+
+.vegetable:hover .description 
+{
+    display: block;
+    position: relative;
+}
+
+.vegetable:hover
+{
+    box-shadow: 0 0 50px #000;
+}
+
+.vegetable-photo-large
+{
+    position: absolute;
+    max-height: 75%;
+    max-width: 75%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.full-box
+{
+    display: none;
+}
+
+.full-image-content
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: rgba(128, 128, 128, .86);
+}
+
+.full-box:checked + .full-image-content
+{
+    display: block;
+}
+
+.cross
+{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 4em;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page-1,
+.page-2
+{
+    display: none;
+}
+
+.page-1-selector,
+.page-2-selector
+{
+    display: none;
+}
+
+.page-1-selector:checked ~ .page-1
+{
+    display: block;
+}
+
+.page-2-selector:checked ~ .page-2
+{
+    display: block;
+}
+
+.right-arrow
+{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    margin: auto;
+    font-size: 10em;
+}
+
+.left-arrow
+{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    margin: auto;
+    font-size: 10em;
+}

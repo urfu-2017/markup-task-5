@@ -2,8 +2,142 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./index.css">
     <title>Задача «Бабуленькин урожай»</title>
 </head>
 <body>
+    <main>
+        <input type="radio" name="paging" id="page-1" class="page-1-selector" checked>
+        <input type="radio" name="paging" id="page-2" class="page-2-selector">
+        <section class="page-1">
+            <label for="page-2" class="right-arrow">&gt;</label>
+            <section class="vegetable">
+                <label for="clicked-photo-1">
+                    <img alt="капуста" class="vegetable-photo" src="./images/cabbage.jpg">
+                </label>
+                <p class="description">
+                    Капу́ста огоро́дная (лат. Brássica olerácea) — двулетнее растение,
+                    сельскохозяйственная культура; вид рода Капуста (лат. Brassica)
+                    семейства Капустные (Крестоцветные).
+                </p>
+            </section>
+            <section class="vegetable">
+                <label for="clicked-photo-2">
+                    <img alt="огурец" class="vegetable-photo" src="./images/cucumber.jpg">
+                </label>
+                <p class="description">
+                    Огуре́ц обыкнове́нный, или Огурец посевно́й (лат. Cucumis sativus)
+                    — однолетнее травянистое растение, вид рода Огурец (Cucumis)
+                    семейства Тыквенные (Cucurbitaceae), овощная культура.
+                </p>
+            </section>
+            <section class="vegetable">
+                <label for="clicked-photo-3">
+                    <img alt="баклажан" class="vegetable-photo" src="./images/eggplant.jpg">
+                </label>
+                <p class="description">
+                    Баклажа́н, или Паслён тёмнопло́дный — вид многолетних травянистых
+                    растений рода Паслён. Возделывается как однолетнее растение. Съедобен
+                    только плод. В ботаническом смысле это ягода, в кулинарном рассматривается как овощ.
+                </p>
+            </section>
+            <section class="vegetable">
+                <label for="clicked-photo-4">
+                    <img alt="лук" class="vegetable-photo" src="./images/onion.jpg">
+                </label>
+                <div class="description">
+                    Лук ре́пчатый — многолетнее травянистое растение, вид рода
+                    Лук семейства Луковые, широко распространённая овощная культура.
+                </div>
+            </section>
+        </section>
+        <section class="page-2">
+            <label for="page-1" class="left-arrow">&lt;</label>
+            <section class="vegetable">
+                <label for="clicked-photo-5">
+                    <img alt="морковь" class="vegetable-photo" src="./images/parrot.jpg">
+                </label>
+                <p class="description">
+                    Морковь посевная — двулетнее растение, подвид вида морковь дикая.
+                    Обычно в быту под словом «морковь» подразумевается широко распространенный
+                    корнеплод именно этого растения.
+                </p>
+            </section>
+            <section class="vegetable">
+                <label for="clicked-photo-6">
+                    <img alt="лук" class="vegetable-photo" src="./images/onion.jpg">
+                </label>
+                <p class="description">
+                    Лук ре́пчатый — многолетнее травянистое растение, вид рода
+                    Лук семейства Луковые, широко распространённая овощная культура.
+                </p>
+            </section>
+            <section class="vegetable">
+                <label for="clicked-photo-7">
+                    <img alt="тыква" class="vegetable-photo" src="./images/pumpkin.jpg">
+                </label>
+                <p class="description">
+                    Ты́ква — род травянистых растений семейства Тыквенные. Под словом
+                    «тыква» в России обычно понимается вид Тыква обыкновенная, широко
+                    распространённый и культивируемый как пищевое и кормовое растение.
+                </p>
+            </section>
+            <section class="vegetable">
+                <label for="clicked-photo-8">
+                    <img alt="помидор" class="vegetable-photo" src="./images/tomato.jpg">
+                </label>
+                <p class="description">
+                    Тома́т, или помидор — однолетнее или многолетнее травянистое растение,
+                    вид рода Паслён семейства Паслёновые. Возделывается как овощная культура.
+                </p>
+            </section>
+        </section>
+    </main>
+    <input type="checkbox" name="clicked-photo" id="clicked-photo-1" class="full-box">
+    <div class="full-image-content">
+        <img alt="капуста" class="vegetable-photo-large" src="./images/cabbage.jpg">
+        <label for="clicked-photo-1" class="cross">X</label>
+    </div>
+
+    <input type="checkbox" name="clicked-photo" id="clicked-photo-2" class="full-box">
+    <div class="full-image-content">
+        <img alt="огурец" class="vegetable-photo-large" src="./images/cucumber.jpg">
+        <label for="clicked-photo-2" class="cross">X</label>
+    </div>
+
+    <input type="checkbox" name="clicked-photo" id="clicked-photo-3" class="full-box">
+    <div class="full-image-content">
+        <img alt="баклажан" class="vegetable-photo-large" src="./images/eggplant.jpg">
+        <label for="clicked-photo-3" class="cross">X</label>
+    </div>
+
+    <input type="checkbox" name="clicked-photo" id="clicked-photo-4" class="full-box">
+    <div class="full-image-content">
+        <img alt="лук" class="vegetable-photo-large" src="./images/onion.jpg">
+        <label for="clicked-photo-4" class="cross">X</label>
+    </div>
+
+    <input type="checkbox" name="clicked-photo" id="clicked-photo-5" class="full-box">
+    <div class="full-image-content">
+        <img alt="морковь" class="vegetable-photo-large" src="./images/parrot.jpg">
+        <label for="clicked-photo-5" class="cross">X</label>
+    </div>
+
+    <input type="checkbox" name="clicked-photo" id="clicked-photo-6" class="full-box">
+    <div class="full-image-content">
+        <img alt="лук" class="vegetable-photo-large" src="./images/onion.jpg">
+        <label for="clicked-photo-6" class="cross">X</label>
+    </div>
+    <input type="checkbox" name="clicked-photo" id="clicked-photo-7" class="full-box">
+    <div class="full-image-content">
+        <img alt="тыква" class="vegetable-photo-large" src="./images/pumpkin.jpg">
+        <label for="clicked-photo-7" class="cross">X</label>
+    </div>
+
+    <input type="checkbox" name="clicked-photo" id="clicked-photo-8" class="full-box">
+    <div class="full-image-content">
+        <img alt="помидор" class="vegetable-photo-large" src="./images/tomato.jpg">
+        <label for="clicked-photo-8" class="cross">X</label>
+    </div>
 </body>
 </html>
