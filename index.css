@@ -10,7 +10,6 @@ html
 {
     margin-top: 250px;
     text-align: center;
-    width: 1400px;
 }
 
 .radio
@@ -28,7 +27,7 @@ html
     display: none;
     border-radius: .5rem;
     height: 100%;
-    width: 280px;
+    width: 260px;
     margin: 1rem;
     padding: .5rem;
     background: #fff;
@@ -56,7 +55,7 @@ html
     position: absolute;
     display: none;
     margin: 0;
-    width: 280px;
+    width: 260px;
     background: #fff;
     box-shadow: 0 5rem 4rem #d1d1d1;
     border-radius: .5rem;
