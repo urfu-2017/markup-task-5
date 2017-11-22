@@ -173,9 +173,10 @@ main
 
 .modal_hidden
 {
-    width: 460px;
+    width: 92%;
     left: 50%;
     transform: translateX(-50%);
+
 }
 
 .modal_hidden,
