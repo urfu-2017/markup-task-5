@@ -1,7 +1,6 @@
 body
 {
     margin: 0;
-    padding: 0;
 }
 
 p
@@ -23,7 +22,6 @@ section
     width: 20%;
     margin-right: .25%;
     height: 100%;
-    display: block;
     float: left;
 }
 
@@ -31,15 +29,14 @@ section
 {
     width: 33.33%;
     height: 100%;
-    display: block;
     float: left;
 }
 
 .carousel-wrapper
 {
-    width: 100%;
     position: relative;
     padding-bottom: 30%;
+    overflow: hidden;
 }
 
 .carousel-items
@@ -47,11 +44,9 @@ section
     margin: 0;
     padding: 0;
     list-style: none;
-    display: block;
     width: 300%;
     height: 100%;
     position: absolute;
-    left: 0;
     top: 0;
     transition: left .5s ease-out;
     -o-transition: left .5s ease-out;
@@ -178,6 +173,5 @@ label.slide3
     -o-transform: scale(.5);
     transform: scale(.5);
     margin-top: 60px;
-    display: block;
     float: right;
 }
