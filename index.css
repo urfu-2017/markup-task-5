@@ -1,0 +1,196 @@
+body,
+html
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main
+{
+    width: 975px;
+    margin: 0 auto;
+}
+
+.gallery_label,
+.gallery_input
+{
+    display: none;
+}
+
+.left_gallery_label:after
+{
+    content: '\003C';
+    font: bold 34px sans-serif;
+}
+
+.left_gallery_label,
+.right_gallery_label
+{
+    position: relative;
+    top: 150px;
+}
+
+.left_gallery_label
+{
+    float: left;
+}
+
+.right_gallery_label
+{
+    float: right;
+}
+
+.right_gallery_label:after
+{
+    content: '\003E';
+    font: bold 34px sans-serif;
+}
+
+.left_gallery_label:hover,
+.right_gallery_label:hover
+{
+    color: #924025;
+    cursor: pointer;
+}
+
+.first_page:checked ~ .vegetable_gallery .page_vegetable_gallery
+{
+    left: 0;
+}
+
+.second_page:checked ~ .vegetable_gallery .page_vegetable_gallery
+{
+    left: -100%;
+}
+
+.third_page:checked ~ .vegetable_gallery .page_vegetable_gallery
+{
+    left: -200%;
+}
+
+.first_page:checked ~ .left_gallery_label[for='third_page'],
+.first_page:checked ~ .right_gallery_label[for='second_page'],
+.second_page:checked ~ .left_gallery_label[for='first_page'],
+.second_page:checked ~ .right_gallery_label[for='third_page'],
+.third_page:checked ~ .left_gallery_label[for='second_page'],
+.third_page:checked ~ .right_gallery_label[for='first_page']
+{
+    display: block;
+}
+
+.first_page:checked ~ .left_gallery_label[for='third_page'],
+.third_page:checked ~ .right_gallery_label[for='first_page']
+{
+    pointer-events: none;
+    color: #ddaa9b;
+}
+
+.vegetable_gallery
+{
+    position: relative;
+    top: 100px;
+    font-size: 13px;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.page_vegetable_gallery
+{
+    position: relative;
+    margin-left: 2px;
+    display: inline-block;
+    transition: .6s;
+}
+
+.vegetable_gallery_card
+{
+    width: 230px;
+    box-sizing: border-box;
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.vegetable_gallery_card:hover .vegetable_gallery_card_information
+{
+    display: block;
+    white-space: normal;
+}
+
+.vegetable_gallery_card:hover
+{
+    border: 1px solid #411d11;
+}
+
+.vegetable_gallery_photo_card img,
+.modal_hidden img
+{
+    width: 100%;
+}
+
+.vegetable_gallery_card_information
+{
+    display: none;
+    padding: 5px 10px;
+}
+
+.overlay
+{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+    position: fixed;
+    pointer-events: none;
+    transition: all .6s;
+}
+
+.overlay:target
+{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal
+{
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.overlay:target + .modal
+{
+    display: block;
+}
+
+.modal_hidden
+{
+    width: 92%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.modal_hidden,
+.modal_close_button
+{
+    position: relative;
+}
+
+.modal_close_button
+{
+    float: right;
+    top: -20px;
+    right: -40px;
+    font: bold 30px serif;
+    text-decoration: none;
+    color: #af1d11;
+}
