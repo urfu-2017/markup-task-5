@@ -1,0 +1,187 @@
+@font-face
+{
+    font-family: Antipasto;
+    src: url('Zetafonts - Antipasto Pro DemiBold.ttf');
+}
+
+header
+{
+    font: bold 50px Antipasto;
+    text-align: center;
+    margin: 20px;
+}
+
+.page_1,
+.page_2,
+.page_3
+{
+    margin-top: 50px;
+    width: 100%;
+    display: none;
+    min-height: 600px;
+}
+
+input[id^='page-id_']
+{
+    display: none;
+}
+
+.arrows:active
+{
+    opacity: .7;
+}
+
+.arrows:hover
+{
+    cursor: pointer;
+    opacity: .7;
+}
+
+input[id='page-id_1']:checked ~ .page_1
+{
+    display: inline-block;
+}
+
+input[id='page-id_2']:checked ~ .page_2
+{
+    display: inline-block;
+}
+
+input[id='page-id_3']:checked ~ .page_3
+{
+    display: inline-block;
+}
+
+.arrows
+{
+    display: inline-block;
+    width: 5rem;
+    margin: 8rem  1rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.arrow-hidden
+{
+    opacity: .1;
+}
+
+.vegetable
+{
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2rem 1%;
+    padding: 1rem;
+    width: 15rem;
+    height: 15rem;
+}
+
+.veg_photo
+{
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.veg_pic
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.veg_subscription
+{
+    display: none;
+    position: absolute;
+    margin-top: 13rem;
+    cursor: pointer;
+    text-align: center;
+    font: bold 1rem Antipasto;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+.vegetable:hover > .veg_photo
+{
+    margin: 1.3rem 1.3rem 0 0;
+    box-shadow: .3rem -.3rem .3rem black;
+}
+
+.vegetable:hover .veg_subscription
+{
+    display: block;
+    width: 15rem;
+    height: 15rem;
+}
+
+label[for^='modal_']
+{
+    cursor: pointer;
+}
+
+.full-pic > input
+{
+    display: none;
+}
+
+.full-pic > img
+{
+    position: fixed;
+    z-index: 2;
+    top: 15%;
+    left: 30%;
+    display: none;
+    border: 4px groove green;
+    border-radius: 20px;
+}
+
+.full-pic > .background
+{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .1;
+    display: none;
+}
+
+.closer
+{
+    position: fixed;
+    z-index: 3;
+    top: 3%;
+    left: 96%;
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 25px;
+    display: none;
+}
+
+.closer:hover
+{
+    cursor: pointer;
+    opacity: .3;
+}
+
+input[id^='modal_']:checked + img
+{
+    display: block;
+}
+
+input[id^='modal_']:checked ~ .background
+{
+    display: block;
+}
+
+input[id^='modal_']:checked ~ label .closer
+{
+    display: block;
+}
