@@ -1,8 +1,3 @@
-html
-{
-    overflow: hidden;
-}
-
 @font-face
 {
     font-family: Antipasto;
@@ -23,6 +18,7 @@ header
     margin-top: 50px;
     width: 100%;
     display: none;
+    min-height: 600px;
 }
 
 input[id^='page-id_']
@@ -38,6 +34,7 @@ input[id^='page-id_']
 .arrows:hover
 {
     cursor: pointer;
+    opacity: .7;
 }
 
 input[id='page-id_1']:checked ~ .page_1
@@ -58,7 +55,7 @@ input[id='page-id_3']:checked ~ .page_3
 .arrows
 {
     display: inline-block;
-    width: 6rem;
+    width: 5rem;
     margin: 8rem  1rem;
     padding: 0;
     box-sizing: border-box;
