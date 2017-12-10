@@ -1,17 +1,16 @@
 .carusel
 {
     /*position: relative;*/
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
     display: none;
-    vertical-align: middle;
-    top: 0;
-    bottom: 0;
-    right: 0;
 }
 
 .item
 {
     display: inline-block;
-    width: 300px;
+    width: 20%;
     vertical-align: middle;
     white-space: normal;
 }
@@ -64,6 +63,7 @@
 .arrow
 {
     width: 100px;
+    max-width: 20%;
     vertical-align: middle;
 }
 
@@ -121,6 +121,7 @@ main
     overflow: hidden;
     white-space: nowrap;
     vertical-align: middle;
+    height: 100%;
 }
 
 body
@@ -128,5 +129,10 @@ body
     vertical-align: middle;
     top: 0;
     bottom: 0;
-    right: 1000px;
+    height: 100%;
+}
+
+html
+{
+    height: 100%;
 }
