@@ -1,0 +1,141 @@
+.carusel
+{
+    /*position: relative;*/
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: none;
+}
+
+.item
+{
+    display: inline-block;
+    width: 18%;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+.item:hover .item-content
+{
+    display: block;
+    box-shadow: grey 0 0 10px;
+}
+
+.item-content
+{
+    display: none;
+}
+
+.modal
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.modal img
+{
+    max-height: 80%;
+    max-width: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modals
+{
+    display: none;
+    position: absolute;
+}
+
+.modals:checked .modal
+{
+    display: block;
+}
+
+.arrow
+{
+    width: 100px;
+    max-width: 18%;
+    vertical-align: middle;
+}
+
+.shower
+{
+    display: none;
+}
+
+.close_cross
+{
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+input[id^='ch']:checked + div,
+input[id^='ch']:checked ~ span
+{
+    display: block;
+}
+
+span
+{
+    display: none;
+}
+
+input[id='page_1']:checked ~ section[id='scene_page_1']
+{
+    display: inline-block;
+}
+
+input[id='page_2']:checked ~ section[id='scene_page_2']
+{
+    display: inline-block;
+}
+
+input[id='page_3']:checked ~ section[id='scene_page_3']
+{
+    display: inline-block;
+}
+
+input[type='radio']
+{
+    display: none;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+main
+{
+    overflow: hidden;
+    white-space: nowrap;
+    height: 100%;
+}
+
+body
+{
+    vertical-align: middle;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+html
+{
+    height: 100%;
+}
+
+.close_cross
+{
+    font-size: 26pt;
+    margin-right: 2%;
+    margin-top: 2%;
+}

@@ -2,8 +2,191 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css" type="text/css">
     <title>Задача «Бабуленькин урожай»</title>
 </head>
 <body>
+    <main>
+        <input id="page_1" type="radio" name="page" checked>
+        <input id="page_2" type="radio" name="page">
+        <input id="page_3" type="radio" name="page">
+        <br>
+        <section class="carusel" id="scene_page_1">
+            <article class="item" id="modal1">
+                <label for="ch1">
+                    <img alt="интересная картинка" src="images/potato.jpg">
+                </label>
+                <div class="item-content">
+                    <h2>Картофель</h2>
+                    <p>
+                        Его ещё Пётр I завёз в Россию
+                    </p>
+                </div>
+            </article>
+            <article class="item">
+                <label for="ch2">
+                    <img alt="интересная картинка" src="images/tomato.jpg">
+                </label>
+                <div class="item-content">
+                    <h2>Помидоры</h2>
+                    <p>
+                        Красные... ягоды (с научной точки зрения)
+                    </p>
+                </div>
+            </article>
+            <article class="item">
+                <label for="ch3">
+                    <img alt="интересная картинка" src="images/ogurets.jpeg">
+                </label>
+                <div class="item-content">
+                    <h2>Огурцы</h2>
+                    <p>
+                        Полезные овощи. Очень вкусные. С ними салат хороший получится.
+                    </p>
+                </div>
+            </article>
+            <article class="item">
+                <label for="ch4">
+                    <img alt="интересная картинка" src="images/luk.jpg">
+                </label>
+                <div class="item-content">
+                    <h2>Лук</h2>
+                    <p>
+                        Кто его раздевает, тот слёзы проливает.
+                    </p>
+                </div>
+            </article>
+            <label for="page_2">
+                <img alt="интересная картинка" src="images/arrow-right.png" class="arrow">
+            </label>
+        </section>
+        <section class="carusel" id="scene_page_2">
+            <label for="page_1">
+                <img alt="интересная картинка" src="images/arrow-left.png" class="arrow">
+            </label>
+            <article class="item">
+                <label for="ch5">
+                    <img alt="интересная картинка" src="images/baklazhan.jpg">
+                </label>
+                <div class="item-content">
+                    <h2>Баклажан</h2>
+                    <p>
+                        Вид многолетних травянистых растений рода Паслён (Solanum)
+                    </p>
+                </div>
+            </article>
+            <article class="item">
+                <label for="ch6">
+                    <img alt="интересная картинка" src="images/svekla.jpg">
+                </label>
+                <div class="item-content">
+                    <h2>Свёкла</h2>
+                    <p>
+                        Род одно-, дву- и многолетних травянистых растений семейства Амарантовые
+                    </p>
+                </div>
+            </article>
+            <article class="item">
+                <label for="ch7">
+                    <img alt="интересная картинка" src="images/kapusta.jpg">
+                </label>
+                <div class="item-content">
+                    <h2>Капуста</h2>
+                    <p>
+                        Вкусная и полезная!
+                    </p>
+                </div>
+            </article>
+            <article class="item">
+                <label for="ch8">
+                    <img alt="интересная картинка" src="images/perets.jpg">
+                </label>
+                <div class="item-content">
+                    <h2>Перец</h2>
+                    <p>
+                        Бывает сладкий, бывает острый. Бывает чёрный, бывает красный.
+                    </p>
+                </div>
+            </article>
+            <label for="page_3">
+                <img alt="интересная картинка" src="images/arrow-right.png" class="arrow">
+            </label>
+        </section>
+        <section class="carusel" id="scene_page_3">
+            <label for="page_2">
+                <img alt="интересная картинка" src="images/arrow-left.png" class="arrow">
+            </label>
+            <article class="item">
+                <label for="ch9">
+                    <img alt="интересная картинка" src="images/morkov.jpg">
+                </label>
+                <div class="item-content">
+                    <h2>Морковь</h2>
+                    <p>
+                        Содержит много витамина А. Полезна для роста и глаз.
+                    </p>
+                </div>
+            </article>
+            <article class="item">
+                <label for="ch10">
+                    <img alt="интересная картинка" src="images/tykva.jpg">
+                </label>
+                <div class="item-content">
+                    <h2>Тыква</h2>
+                    <p>
+                        Кого из неё на Хэллоуин только не делают!..
+                    </p>
+                </div>
+            </article>
+        </section>
+        <form>
+            <input type="reset" class="shower" id="cross">
+            <input type="checkbox"  class="shower" id="ch1">
+            <div class="modal" id="modal01">
+                <img alt="интересная картинка" src="images/potato.jpg">
+            </div>
+            <input type="checkbox"  class="shower" id="ch2">
+            <div class="modal" id="modal02">
+                <img alt="интересная картинка" src="images/tomato.jpg">
+            </div>
+            <input type="checkbox"  class="shower" id="ch3">
+            <div class="modal" id="modal03">
+                <img alt="интересная картинка" src="images/ogurets.jpeg">
+            </div>
+            <input type="checkbox"  class="shower" id="ch4">
+            <div class="modal" id="modal04">
+                <img alt="интересная картинка" src="images/luk.jpg">
+            </div>
+            <input type="checkbox"  class="shower" id="ch5">
+            <div class="modal" id="modal05">
+                <img alt="интересная картинка" src="images/baklazhan.jpg">
+            </div>
+            <input type="checkbox"  class="shower" id="ch6">
+            <div class="modal" id="modal06">
+                <img alt="интересная картинка" src="images/svekla.jpg">
+            </div>
+            <input type="checkbox"  class="shower" id="ch7">
+            <div class="modal" id="modal07">
+                <img alt="интересная картинка" src="images/kapusta.jpg">
+            </div>
+            <input type="checkbox"  class="shower" id="ch8">
+            <div class="modal" id="modal08">
+                <img alt="интересная картинка" src="images/perets.jpg">
+            </div>
+            <input type="checkbox"  class="shower" id="ch9">
+            <div class="modal" id="modal09">
+                <img alt="интересная картинка" src="images/morkov.jpg">
+            </div>
+            <input type="checkbox"  class="shower" id="ch10">
+            <div class="modal" id="modal10">
+                <img alt="интересная картинка" src="images/tykva.jpg">
+            </div>
+            <span class="close_cross">
+                <label for="cross">
+                    X
+                </label>
+            </span>
+    </form>
+    </main>
 </body>
 </html>
